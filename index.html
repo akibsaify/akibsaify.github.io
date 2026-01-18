@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Neon Rift Harvester | Endless Flow</title>
+    <title>Aether | Infinite Flow</title>
     <style>
         :root {
-            --bg: #020205;
-            --neon: #00f2ff;
-            --accent: #7000ff;
-            --ui-bg: rgba(10, 10, 20, 0.8);
+            --bg: #030305;
+            --text: #ffffff;
         }
 
         * {
@@ -22,480 +20,301 @@
 
         body {
             background-color: var(--bg);
-            color: #fff;
+            color: var(--text);
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             width: 100vw;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         canvas {
             display: block;
             touch-action: none;
+            filter: contrast(120%) brightness(110%);
         }
 
-        #overlay {
+        #ui {
             position: absolute;
-            inset: 0;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
             pointer-events: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 2rem;
             z-index: 10;
-        }
-
-        .glass {
-            background: var(--ui-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 1rem;
-            padding: 1rem 1.5rem;
-            pointer-events: auto;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .stat-group {
-            display: flex;
-            flex-direction: column;
+            transition: opacity 1s ease;
         }
 
         .label {
-            font-size: 0.65rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            letter-spacing: 0.15rem;
-            color: var(--neon);
-            margin-bottom: 0.2rem;
-            opacity: 0.8;
+            letter-spacing: 0.4rem;
+            color: rgba(255, 255, 255, 0.3);
+            margin-bottom: 0.5rem;
         }
 
-        .value {
-            font-size: 1.8rem;
-            font-weight: 800;
-            font-variant-numeric: tabular-nums;
-            text-shadow: 0 0 10px var(--neon);
+        .title {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 0.2rem;
         }
 
-        .footer {
+        .controls {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             gap: 1rem;
+            pointer-events: auto;
         }
 
-        #start-screen {
+        .btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        #overlay {
             position: fixed;
             inset: 0;
-            background: radial-gradient(circle at center, #0a0a1a 0%, #020205 100%);
+            background: var(--bg);
+            z-index: 100;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            z-index: 100;
-            transition: opacity 0.8s ease;
+            transition: opacity 2s ease;
         }
 
-        .title {
-            font-size: clamp(2rem, 8vw, 4rem);
-            font-weight: 900;
-            letter-spacing: -0.1rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(to bottom, #fff, var(--neon));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .loader {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #333;
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 1s infinite linear;
         }
 
-        .btn {
-            background: #fff;
-            color: #000;
-            border: none;
-            padding: 1rem 3rem;
-            border-radius: 5rem;
-            font-weight: 800;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
-        }
+        @keyframes spin { to { transform: rotate(360deg); } }
 
-        .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 242, 255, 0.5);
-        }
-
-        .upgrade-alert {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            color: var(--neon);
-            font-weight: 800;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 0.2rem;
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .active { opacity: 1 !important; }
-        .hidden { display: none !important; }
-        .fade-out { opacity: 0; pointer-events: none; }
+        .fade-out { opacity: 0 !important; pointer-events: none !important; }
     </style>
 </head>
 <body>
 
-    <div id="start-screen">
-        <h1 class="title">NEON HARVESTER</h1>
-        <p style="color: #444; margin-bottom: 2rem; text-align: center;">Mindless collection. Endless growth.<br>No death. Just flow.</p>
-        <button class="btn" onclick="startGame()">START HARVEST</button>
+    <div id="overlay">
+        <div class="loader"></div>
+        <p style="margin-top: 20px; color: #444; letter-spacing: 0.2rem; font-size: 0.7rem;">INITIALIZING AETHER</p>
     </div>
 
-    <div id="overlay" class="hidden">
-        <div class="header">
-            <div class="glass stat-group">
-                <span class="label">Total Essence</span>
-                <span id="score" class="value">0</span>
-            </div>
-            <div class="glass stat-group">
-                <span class="label">Nebula Depth</span>
-                <span id="level" class="value">1</span>
-            </div>
-        </div>
-
-        <div id="upgrade-msg" class="upgrade-alert">Evolution Complete</div>
-
-        <div class="footer">
-            <div class="glass" style="display: flex; gap: 2rem; font-size: 0.8rem; color: #888;">
-                <div>DRAG TO MOVE</div>
-                <div>COLLECT GEMS</div>
-                <div>GROW FOREVER</div>
-            </div>
-        </div>
+    <div id="ui">
+        <div class="label">Interactive Simulation</div>
+        <div class="title">MOVE TO STIR • BREATHE TO WATCH</div>
     </div>
 
-    <canvas id="gameCanvas"></canvas>
+    <div class="controls">
+        <button class="btn" onclick="toggleColor()">Shift Hue</button>
+        <button class="btn" onclick="resetFlow()">Reset Pattern</button>
+    </div>
+
+    <canvas id="canvas"></canvas>
 
     <script>
         /**
-         * NEON RIFT HARVESTER ENGINE
-         * High-performance entity management and procedural audio
+         * AETHER GENERATIVE ENGINE
+         * Uses custom noise vectors to simulate liquid poly-lines
          */
 
-        const canvas = document.getElementById('gameCanvas');
+        const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d', { alpha: false });
-        const scoreEl = document.getElementById('score');
-        const levelEl = document.getElementById('level');
-        const upgradeMsg = document.getElementById('upgrade-msg');
-
+        
         let width, height;
         let particles = [];
-        let gems = [];
-        let rifts = [];
-        let explosions = [];
+        let tick = 0;
         
-        const state = {
-            score: 0,
-            level: 1,
-            essenceNeeded: 100,
-            vacuumRadius: 120,
-            playerSpeed: 0.15,
-            hue: 180,
-            isMoving: false,
-            mouse: { x: 0, y: 0 },
-            player: { x: 0, y: 0, vx: 0, vy: 0, size: 20 },
-            initialized: false,
-            shake: 0
+        const config = {
+            particleCount: 1200,
+            baseHue: Math.random() * 360,
+            hueRange: 60,
+            lineOpacity: 0.08,
+            speed: 0.6,
+            noiseScale: 0.003,
+            interactionRadius: 300,
+            friction: 0.96,
+            mouse: { x: 0, y: 0, active: false, vx: 0, vy: 0 },
+            autoPilot: { x: 0, y: 0, angle: 0 }
         };
 
-        // --- CLASSES ---
-
-        class Gem {
+        class Particle {
             constructor() {
-                this.reset();
+                this.init();
             }
-            reset() {
+
+            init() {
                 this.x = Math.random() * width;
                 this.y = Math.random() * height;
-                this.size = Math.random() * 3 + 2;
-                this.vx = (Math.random() - 0.5) * 0.5;
-                this.vy = (Math.random() - 0.5) * 0.5;
-                this.collected = false;
-                this.pulse = Math.random() * Math.PI * 2;
+                this.px = this.x;
+                this.py = this.y;
+                this.vx = 0;
+                this.vy = 0;
+                this.accX = 0;
+                this.accY = 0;
+                this.hue = config.baseHue + (Math.random() * config.hueRange);
+                this.life = Math.random() * 0.5 + 0.5;
             }
+
             update() {
-                const dx = state.player.x - this.x;
-                const dy = state.player.y - this.y;
+                // Get Flow Field Noise (Simulated with Math.sin/cos layering for "heavy" interaction)
+                const n1 = noise(this.x * config.noiseScale, this.y * config.noiseScale, tick * 0.001);
+                const n2 = noise(this.x * config.noiseScale * 2, this.y * config.noiseScale * 2, tick * 0.002);
+                
+                const angle = (n1 + n2) * Math.PI * 4;
+                
+                this.accX = Math.cos(angle) * config.speed;
+                this.accY = Math.sin(angle) * config.speed;
+
+                // Mouse/AutoPilot Interaction
+                const targetX = config.mouse.active ? config.mouse.x : config.autoPilot.x;
+                const targetY = config.mouse.active ? config.mouse.y : config.autoPilot.y;
+                
+                const dx = targetX - this.x;
+                const dy = targetY - this.y;
                 const dist = Math.hypot(dx, dy);
 
-                if (dist < state.vacuumRadius) {
-                    const force = (state.vacuumRadius - dist) / state.vacuumRadius;
-                    this.vx += (dx / dist) * force * 1.5;
-                    this.vy += (dy / dist) * force * 1.5;
-                    
-                    if (dist < state.player.size) {
-                        this.collected = true;
-                        state.score += 1;
-                        state.hue += 0.1;
-                        playPop();
-                    }
+                if (dist < config.interactionRadius) {
+                    const power = (1 - dist / config.interactionRadius) * 2;
+                    this.accX += (dx / dist) * power;
+                    this.accY += (dy / dist) * power;
                 }
 
-                this.vx *= 0.95;
-                this.vy *= 0.95;
+                this.vx += this.accX;
+                this.vy += this.accY;
+                this.vx *= config.friction;
+                this.vy *= config.friction;
+
+                this.px = this.x;
+                this.py = this.y;
                 this.x += this.vx;
                 this.y += this.vy;
-                this.pulse += 0.1;
 
-                // Wrap
-                if (this.x < 0) this.x = width;
-                if (this.x > width) this.x = 0;
-                if (this.y < 0) this.y = height;
-                if (this.y > height) this.y = 0;
+                // Reset if off-screen or too fast
+                if (this.x < 0 || this.x > width || this.y < 0 || this.y > height) {
+                    this.init();
+                }
             }
+
             draw() {
-                const s = this.size + Math.sin(this.pulse) * 1;
-                ctx.fillStyle = `hsla(${state.hue}, 100%, 70%, 0.8)`;
                 ctx.beginPath();
-                ctx.arc(this.x, this.y, s, 0, Math.PI * 2);
-                ctx.fill();
+                ctx.moveTo(this.px, this.py);
+                ctx.lineTo(this.x, this.y);
+                ctx.strokeStyle = `hsla(${this.hue}, 80%, 60%, ${config.lineOpacity})`;
+                ctx.stroke();
             }
         }
 
-        class Rift {
-            constructor() {
-                this.x = Math.random() * width;
-                this.y = Math.random() * height;
-                this.targetRadius = 40 + Math.random() * 60;
-                this.radius = 0;
-                this.angle = 0;
-                this.spin = (Math.random() - 0.5) * 0.05;
-                this.life = 1;
-            }
-            update() {
-                if (this.radius < this.targetRadius) this.radius += 1;
-                this.angle += this.spin;
-                
-                const dx = state.player.x - this.x;
-                const dy = state.player.y - this.y;
-                const dist = Math.hypot(dx, dy);
-
-                if (dist < this.radius + state.player.size/2) {
-                    state.shake = 15;
-                    state.score = Math.max(0, state.score - 5);
-                    createExplosion(this.x, this.y);
-                    this.radius = 0; // "Destroyed" visually
-                    this.x = Math.random() * width;
-                    this.y = Math.random() * height;
-                    playBash();
-                }
-            }
-            draw() {
-                ctx.save();
-                ctx.translate(this.x, this.y);
-                ctx.rotate(this.angle);
-                ctx.strokeStyle = `hsla(${state.hue + 120}, 100%, 50%, 0.5)`;
-                ctx.lineWidth = 2;
-                for(let i=0; i<3; i++) {
-                    ctx.beginPath();
-                    ctx.arc(0, 0, this.radius - i*10, 0, Math.PI * 1.5);
-                    ctx.stroke();
-                }
-                ctx.restore();
-            }
+        // --- CUSTOM NOISE (Simplex-Lite for performance) ---
+        // We use a layered Sine generator to simulate complex noise
+        function noise(x, y, z) {
+            return (
+                Math.sin(x + z) * Math.cos(y + z) +
+                Math.sin(x * 0.5 - z) * Math.cos(y * 1.2 + z) +
+                Math.sin(y * 0.8 + x * 0.3 + z)
+            ) / 3;
         }
-
-        // --- EXPLOSION PARTICLES ---
-        function createExplosion(x, y) {
-            for(let i=0; i<20; i++) {
-                explosions.push({
-                    x, y,
-                    vx: (Math.random() - 0.5) * 15,
-                    vy: (Math.random() - 0.5) * 15,
-                    life: 1.0,
-                    hue: state.hue + 120
-                });
-            }
-        }
-
-        // --- AUDIO ---
-        let audioCtx;
-        function initAudio() {
-            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        }
-
-        function playPop() {
-            if(!audioCtx) return;
-            const osc = audioCtx.createOscillator();
-            const g = audioCtx.createGain();
-            osc.frequency.setValueAtTime(400 + (state.score % 100) * 10, audioCtx.currentTime);
-            osc.frequency.exponentialRampToValueAtTime(800, audioCtx.currentTime + 0.05);
-            g.gain.setValueAtTime(0.02, audioCtx.currentTime);
-            g.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.1);
-            osc.connect(g); g.connect(audioCtx.destination);
-            osc.start(); osc.stop(audioCtx.currentTime + 0.1);
-        }
-
-        function playBash() {
-            if(!audioCtx) return;
-            const osc = audioCtx.createOscillator();
-            const g = audioCtx.createGain();
-            osc.type = 'sawtooth';
-            osc.frequency.setValueAtTime(100, audioCtx.currentTime);
-            osc.frequency.linearRampToValueAtTime(20, audioCtx.currentTime + 0.3);
-            g.gain.setValueAtTime(0.1, audioCtx.currentTime);
-            g.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
-            osc.connect(g); g.connect(audioCtx.destination);
-            osc.start(); osc.stop(audioCtx.currentTime + 0.3);
-        }
-
-        // --- SYSTEM ---
 
         function resize() {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
-            state.player.x = width/2;
-            state.player.y = height/2;
+            ctx.fillStyle = '#030305';
+            ctx.fillRect(0, 0, width, height);
+            ctx.lineWidth = 1.2;
+            ctx.lineCap = 'round';
         }
 
-        function startGame() {
-            initAudio();
-            document.getElementById('start-screen').classList.add('fade-out');
-            document.getElementById('overlay').classList.remove('hidden');
+        function toggleColor() {
+            config.baseHue = Math.random() * 360;
+            particles.forEach(p => p.hue = config.baseHue + (Math.random() * config.hueRange));
+        }
+
+        function resetFlow() {
+            ctx.fillStyle = '#030305';
+            ctx.fillRect(0, 0, width, height);
+            particles.forEach(p => p.init());
+        }
+
+        function init() {
             resize();
-            
-            for(let i=0; i<300; i++) gems.push(new Gem());
-            for(let i=0; i<8; i++) rifts.push(new Rift());
-            
-            state.initialized = true;
+            for (let i = 0; i < config.particleCount; i++) {
+                particles.push(new Particle());
+            }
+
+            document.getElementById('overlay').classList.add('fade-out');
+            setTimeout(() => document.getElementById('overlay').remove(), 2000);
+
             loop();
         }
 
         function loop() {
-            // Background logic: Smooth dark clear
-            ctx.fillStyle = '#020205';
+            tick++;
+
+            // Autonomous movement (Infinite loop)
+            config.autoPilot.angle += 0.01;
+            config.autoPilot.x = width/2 + Math.cos(config.autoPilot.angle) * (width * 0.3);
+            config.autoPilot.y = height/2 + Math.sin(config.autoPilot.angle * 1.5) * (height * 0.2);
+
+            // Subtle Fade (creates the "silk" trail effect)
+            ctx.fillStyle = 'rgba(3, 3, 5, 0.04)';
             ctx.fillRect(0, 0, width, height);
 
-            if (state.shake > 0) {
-                ctx.translate(Math.random()*state.shake - state.shake/2, Math.random()*state.shake - state.shake/2);
-                state.shake *= 0.9;
-            }
-
-            // Player movement
-            const dx = state.mouse.x - state.player.x;
-            const dy = state.mouse.y - state.player.y;
-            state.player.vx += dx * state.playerSpeed;
-            state.player.vy += dy * state.playerSpeed;
-            state.player.vx *= 0.85;
-            state.player.vy *= 0.85;
-            state.player.x += state.player.vx;
-            state.player.y += state.player.vy;
-
-            // Evolution Check
-            if (state.score >= state.essenceNeeded) {
-                state.level++;
-                state.essenceNeeded = Math.floor(state.essenceNeeded * 1.8);
-                state.vacuumRadius += 20;
-                state.playerSpeed += 0.02;
-                upgradeMsg.classList.add('active');
-                setTimeout(() => upgradeMsg.classList.remove('active'), 2000);
-            }
-
-            // Draw Wake Particles
-            for(let i=0; i<5; i++) {
-                particles.push({
-                    x: state.player.x,
-                    y: state.player.y,
-                    vx: (Math.random()-0.5)*2,
-                    vy: (Math.random()-0.5)*2,
-                    life: 1.0,
-                    size: Math.random() * 5 + 2
-                });
-            }
-
-            ctx.globalCompositeOperation = 'screen';
-
-            // Update/Draw Particles
-            for(let i = particles.length-1; i>=0; i--) {
-                const p = particles[i];
-                p.x += p.vx; p.y += p.vy;
-                p.life -= 0.02;
-                if(p.life <= 0) particles.splice(i, 1);
-                else {
-                    ctx.fillStyle = `hsla(${state.hue}, 100%, 50%, ${p.life * 0.3})`;
-                    ctx.beginPath();
-                    ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
-                    ctx.fill();
-                }
-            }
-
-            // Update/Draw Gems
-            gems.forEach(g => {
-                g.update();
-                g.draw();
-                if(g.collected) g.reset();
+            // Update & Draw
+            particles.forEach(p => {
+                p.update();
+                p.draw();
             });
-
-            // Update/Draw Rifts
-            rifts.forEach(r => {
-                r.update();
-                r.draw();
-            });
-
-            // Update/Draw Explosions
-            for(let i=explosions.length-1; i>=0; i--) {
-                const e = explosions[i];
-                e.x += e.vx; e.y += e.vy;
-                e.life -= 0.05;
-                if(e.life <= 0) explosions.splice(i, 1);
-                else {
-                    ctx.fillStyle = `hsla(${e.hue}, 100%, 70%, ${e.life})`;
-                    ctx.fillRect(e.x, e.y, 4, 4);
-                }
-            }
-
-            // Draw Harvester
-            ctx.shadowBlur = 20;
-            ctx.shadowColor = `hsl(${state.hue}, 100%, 50%)`;
-            ctx.strokeStyle = '#fff';
-            ctx.lineWidth = 4;
-            ctx.beginPath();
-            ctx.arc(state.player.x, state.player.y, state.player.size, 0, Math.PI * 2);
-            ctx.stroke();
-            
-            // Vacuum Ring
-            ctx.shadowBlur = 0;
-            ctx.strokeStyle = `hsla(${state.hue}, 100%, 50%, 0.1)`;
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.arc(state.player.x, state.player.y, state.vacuumRadius, 0, Math.PI * 2);
-            ctx.stroke();
-
-            ctx.setTransform(1, 0, 0, 1, 0, 0);
-
-            // Update Text
-            scoreEl.innerText = state.score;
-            levelEl.innerText = state.level;
 
             requestAnimationFrame(loop);
         }
 
-        // Input
-        const handleInput = (e) => {
-            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-            state.mouse.x = clientX;
-            state.mouse.y = clientY;
-            if(audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
-        };
+        // Input Listeners
+        window.addEventListener('mousemove', (e) => {
+            config.mouse.x = e.clientX;
+            config.mouse.y = e.clientY;
+            config.mouse.active = true;
+            clearTimeout(config.mouse.timer);
+            config.mouse.timer = setTimeout(() => config.mouse.active = false, 2000);
+        });
 
-        window.addEventListener('mousemove', handleInput);
-        window.addEventListener('touchmove', (e) => { e.preventDefault(); handleInput(e); }, {passive: false});
-        window.addEventListener('resize', resize);
+        window.addEventListener('touchmove', (e) => {
+            config.mouse.x = e.touches[0].clientX;
+            config.mouse.y = e.touches[0].clientY;
+            config.mouse.active = true;
+            clearTimeout(config.mouse.timer);
+            config.mouse.timer = setTimeout(() => config.mouse.active = false, 2000);
+        }, { passive: false });
 
+        window.addEventListener('resize', () => {
+            resize();
+            resetFlow();
+        });
+
+        // Initialize on Load
+        window.onload = init;
     </script>
 </body>
 </html>
