@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Flux | Kinetic Fluid Nebula</title>
+    <title>Flux HD | High-Density Kinetic Fluid</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -11,7 +11,7 @@
         
         body {
             margin: 0;
-            background-color: #050508;
+            background-color: #020205;
             color: #fff;
             font-family: 'Space Grotesk', sans-serif;
             overflow: hidden;
@@ -22,6 +22,8 @@
         canvas {
             display: block;
             touch-action: none;
+            /* Using image-rendering to keep the high-density grid crisp */
+            image-rendering: pixelated;
         }
 
         .controls-ui {
@@ -34,46 +36,41 @@
         }
 
         .glass-panel {
-            background: rgba(15, 15, 25, 0.6);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 2rem;
-            padding: 0.75rem 1.5rem;
+            background: rgba(10, 10, 15, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 1.5rem;
+            padding: 0.75rem 1.25rem;
             display: flex;
             align-items: center;
-            gap: 2rem;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            gap: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
 
-        .instruction {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-            text-align: center;
-            opacity: 0.6;
-            transition: opacity 1s ease;
+        .label-text {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            color: #64748b;
+            margin-bottom: 2px;
         }
-
-        .instruction.fade-out { opacity: 0; }
 
         input[type="range"] {
             appearance: none;
             background: rgba(255, 255, 255, 0.1);
-            height: 4px;
-            border-radius: 2px;
-            width: 80px;
+            height: 2px;
+            border-radius: 1px;
+            width: 70px;
         }
 
         input[type="range"]::-webkit-slider-thumb {
             appearance: none;
-            width: 14px;
-            height: 14px;
+            width: 12px;
+            height: 12px;
             background: #fff;
             border-radius: 50%;
             cursor: pointer;
-            box-shadow: 0 0 10px #00f2ff;
+            box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
         }
 
         #splash {
@@ -85,34 +82,29 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            transition: opacity 1.5s ease;
+            transition: opacity 1s ease;
         }
     </style>
 </head>
 <body>
 
     <div id="splash">
-        <div class="w-16 h-16 border-t-2 border-cyan-400 rounded-full animate-spin mb-6"></div>
-        <h1 class="text-xs tracking-[0.5rem] uppercase font-light">Loading Fluid Dynamics</h1>
-    </div>
-
-    <div id="instruction" class="instruction">
-        <h2 class="text-3xl font-light tracking-widest mb-2">STIR THE NEBULA</h2>
-        <p class="text-xs text-cyan-400 tracking-[0.2rem] uppercase">Experience Kinetic Flow</p>
+        <div class="w-12 h-12 border-t-2 border-white rounded-full animate-spin mb-4"></div>
+        <p class="text-[10px] tracking-[0.4rem] uppercase opacity-40">Initializing High Density Grid</p>
     </div>
 
     <div class="controls-ui">
         <div class="glass-panel">
             <div class="flex flex-col items-center">
-                <span class="text-[10px] uppercase tracking-tighter text-slate-400 mb-1">Viscosity</span>
-                <input type="range" id="viscosity" min="90" max="99" value="97">
+                <span class="label-text">Density</span>
+                <input type="range" id="res-slider" min="4" max="15" value="6" step="1">
             </div>
             <div class="flex flex-col items-center">
-                <span class="text-[10px] uppercase tracking-tighter text-slate-400 mb-1">Vortex</span>
-                <input type="range" id="vortex" min="1" max="10" value="4">
+                <span class="label-text">Fluidity</span>
+                <input type="range" id="visc-slider" min="950" max="995" value="985">
             </div>
-            <button onclick="changeColor()" class="p-2 hover:text-cyan-400 transition-colors">
-                <i data-lucide="palette" class="w-5 h-5"></i>
+            <button onclick="changeColor()" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-all">
+                <i data-lucide="zap" class="w-4 h-4 text-cyan-400"></i>
             </button>
         </div>
     </div>
@@ -121,9 +113,9 @@
 
     <script>
         /**
-         * FLUX ENGINE: STABLE FLUID SOLVER
-         * Principle: Navier-Stokes (Eulerian approach)
-         * High code volume for the mathematical solver grid.
+         * FLUX HD SOLVER
+         * Optimization: Using a TypedArray flat-grid with 10 Gauss-Seidel iterations 
+         * to allow for higher pixel density (smaller spacing).
          */
 
         const canvas = document.getElementById('canvas');
@@ -131,22 +123,21 @@
         
         let width, height;
         let grid_w, grid_h;
-        const spacing = 12; // Resolution of the fluid grid
+        let spacing = 6; // LOW SPACING = HIGH DENSITY (Pixels per grid cell)
 
-        // Fluid Fields
-        let u, v, u_prev, v_prev; // Velocity vectors
-        let dens, dens_prev;      // Density (Color ink)
+        let u, v, u_prev, v_prev, dens, dens_prev;
 
-        const settings = {
-            visc: 0.97,
-            vortex: 4,
-            hue: 180,
+        const state = {
+            visc: 0.985,
+            hue: 200,
             mouse: { x: 0, y: 0, px: 0, py: 0, down: false }
         };
 
+        function IX(i, j) { return i + (grid_w * j); }
+
         function initFields() {
-            grid_w = Math.ceil(width / spacing) + 2;
-            grid_h = Math.ceil(height / spacing) + 2;
+            grid_w = Math.floor(width / spacing) + 2;
+            grid_h = Math.floor(height / spacing) + 2;
             const size = grid_w * grid_h;
 
             u = new Float32Array(size);
@@ -157,17 +148,15 @@
             dens_prev = new Float32Array(size);
         }
 
-        // --- MATH SOLVER CORE ---
-        function addSource(x, s, dt) {
-            for (let i = 0; i < x.length; i++) x[i] += dt * s[i];
-        }
-
+        // --- NAVIER-STOKES MATH CORE ---
         function diffuse(b, x, x0, diff, dt) {
             const a = dt * diff * grid_w * grid_h;
-            for (let k = 0; k < 20; k++) { // Gauss-Seidel iterations
+            for (let k = 0; k < 10; k++) { // Optimized iterations for HD
                 for (let i = 1; i < grid_w - 1; i++) {
+                    const row = i;
                     for (let j = 1; j < grid_h - 1; j++) {
-                        x[IX(i, j)] = (x0[IX(i, j)] + a * (x[IX(i - 1, j)] + x[IX(i + 1, j)] + x[IX(i, j - 1)] + x[IX(i, j + 1)])) / (1 + 4 * a);
+                        const idx = IX(i, j);
+                        x[idx] = (x0[idx] + a * (x[idx-1] + x[idx+1] + x[idx-grid_w] + x[idx+grid_w])) / (1 + 4 * a);
                     }
                 }
                 setBoundary(b, x);
@@ -178,16 +167,17 @@
             const dt0 = dt * grid_w;
             for (let i = 1; i < grid_w - 1; i++) {
                 for (let j = 1; j < grid_h - 1; j++) {
-                    let x = i - dt0 * u[IX(i, j)];
-                    let y = j - dt0 * v[IX(i, j)];
+                    const idx = IX(i, j);
+                    let x = i - dt0 * u[idx];
+                    let y = j - dt0 * v[idx];
                     if (x < 0.5) x = 0.5; if (x > grid_w - 1.5) x = grid_w - 1.5;
-                    let i0 = Math.floor(x); let i1 = i0 + 1;
+                    let i0 = (x) | 0; let i1 = i0 + 1;
                     if (y < 0.5) y = 0.5; if (y > grid_h - 1.5) y = grid_h - 1.5;
-                    let j0 = Math.floor(y); let j1 = j0 + 1;
+                    let j0 = (y) | 0; let j1 = j0 + 1;
                     let s1 = x - i0; let s0 = 1 - s1;
                     let t1 = y - j0; let t0 = 1 - t1;
-                    d[IX(i, j)] = s0 * (t0 * d0[IX(i0, j0)] + t1 * d0[IX(i0, j1)]) +
-                                  s1 * (t0 * d0[IX(i1, j0)] + t1 * d0[IX(i1, j1)]);
+                    d[idx] = s0 * (t0 * d0[IX(i0, j0)] + t1 * d0[IX(i0, j1)]) +
+                             s1 * (t0 * d0[IX(i1, j0)] + t1 * d0[IX(i1, j1)]);
                 }
             }
             setBoundary(b, d);
@@ -196,23 +186,26 @@
         function project(u, v, p, div) {
             for (let i = 1; i < grid_w - 1; i++) {
                 for (let j = 1; j < grid_h - 1; j++) {
-                    div[IX(i, j)] = -0.5 * (u[IX(i + 1, j)] - u[IX(i - 1, j)] + v[IX(i, j + 1)] - v[IX(i, j - 1)]) / grid_w;
-                    p[IX(i, j)] = 0;
+                    const idx = IX(i, j);
+                    div[idx] = -0.5 * (u[idx+1] - u[idx-1] + v[idx+grid_w] - v[idx-grid_w]) / grid_w;
+                    p[idx] = 0;
                 }
             }
             setBoundary(0, div); setBoundary(0, p);
-            for (let k = 0; k < 20; k++) {
+            for (let k = 0; k < 10; k++) {
                 for (let i = 1; i < grid_w - 1; i++) {
                     for (let j = 1; j < grid_h - 1; j++) {
-                        p[IX(i, j)] = (div[IX(i, j)] + p[IX(i - 1, j)] + p[IX(i + 1, j)] + p[IX(i, j - 1)] + p[IX(i, j + 1)]) / 4;
+                        const idx = IX(i, j);
+                        p[idx] = (div[idx] + p[idx-1] + p[idx+1] + p[idx-grid_w] + p[idx+grid_w]) / 4;
                     }
                 }
                 setBoundary(0, p);
             }
             for (let i = 1; i < grid_w - 1; i++) {
                 for (let j = 1; j < grid_h - 1; j++) {
-                    u[IX(i, j)] -= 0.5 * grid_w * (p[IX(i + 1, j)] - p[IX(i - 1, j)]);
-                    v[IX(i, j)] -= 0.5 * grid_w * (p[IX(i, j + 1)] - p[IX(i, j - 1)]);
+                    const idx = IX(i, j);
+                    u[idx] -= 0.5 * grid_w * (p[idx+1] - p[idx-1]);
+                    v[idx] -= 0.5 * grid_w * (p[idx+grid_w] - p[idx-grid_w]);
                 }
             }
             setBoundary(1, u); setBoundary(2, v);
@@ -222,31 +215,27 @@
             for (let i = 1; i < grid_w - 1; i++) {
                 x[IX(0, i)] = b === 1 ? -x[IX(1, i)] : x[IX(1, i)];
                 x[IX(grid_w - 1, i)] = b === 1 ? -x[IX(grid_w - 2, i)] : x[IX(grid_w - 2, i)];
+            }
+            for (let i = 1; i < grid_h - 1; i++) {
                 x[IX(i, 0)] = b === 2 ? -x[IX(i, 1)] : x[IX(i, 1)];
                 x[IX(i, grid_h - 1)] = b === 2 ? -x[IX(i, grid_h - 2)] : x[IX(i, grid_h - 2)];
             }
-            x[IX(0, 0)] = 0.5 * (x[IX(1, 0)] + x[IX(0, 1)]);
-            x[IX(0, grid_h - 1)] = 0.5 * (x[IX(1, grid_h - 1)] + x[IX(0, grid_h - 2)]);
-            x[IX(grid_w - 1, 0)] = 0.5 * (x[IX(grid_w - 2, 0)] + x[IX(grid_w - 1, 1)]);
-            x[IX(grid_w - 1, grid_h - 1)] = 0.5 * (x[IX(grid_w - 2, grid_h - 1)] + x[IX(grid_w - 1, grid_h - 2)]);
         }
 
-        function IX(i, j) { return i + (grid_w * j); }
+        // --- MAIN ENGINE ---
 
-        // --- RENDER & INTERACTION ---
+        function update() {
+            const dt = 0.15;
+            const diff = 0;
 
-        function updateFluid() {
-            const dt = 0.1;
-            const diff = 0.0001;
+            // Velocity step
+            for (let i = 0; i < u.length; i++) {
+                u[i] += u_prev[i] * dt;
+                v[i] += v_prev[i] * dt;
+                dens[i] += dens_prev[i] * dt;
+                u_prev[i] = v_prev[i] = dens_prev[i] = 0;
+            }
 
-            // Density Step
-            addSource(dens, dens_prev, dt);
-            diffuse(0, dens_prev, dens, diff, dt);
-            advect(0, dens, dens_prev, u, v, dt);
-
-            // Velocity Step
-            addSource(u, u_prev, dt);
-            addSource(v, v_prev, dt);
             diffuse(1, u_prev, u, diff, dt);
             diffuse(2, v_prev, v, diff, dt);
             project(u_prev, v_prev, u, v);
@@ -254,60 +243,59 @@
             advect(2, v, v_prev, u_prev, v_prev, dt);
             project(u, v, u_prev, v_prev);
 
-            // Decay
-            const visc = settings.visc;
+            // Density step
+            diffuse(0, dens_prev, dens, diff, dt);
+            advect(0, dens, dens_prev, u, v, dt);
+
+            // Viscosity / Fade
             for (let i = 0; i < dens.length; i++) {
-                dens[i] *= 0.99; // Density decay
-                u[i] *= visc;
-                v[i] *= visc;
-                dens_prev[i] = 0;
-                u_prev[i] = 0;
-                v_prev[i] = 0;
+                dens[i] *= 0.985; // Ink fade
+                u[i] *= state.visc;
+                v[i] *= state.visc;
             }
         }
 
-        function drawFluid() {
-            ctx.fillStyle = '#050508';
+        function draw() {
+            ctx.fillStyle = '#020205';
             ctx.fillRect(0, 0, width, height);
 
+            const h = state.hue;
             for (let i = 1; i < grid_w - 1; i++) {
                 for (let j = 1; j < grid_h - 1; j++) {
                     const d = dens[IX(i, j)];
-                    if (d > 0.01) {
-                        const alpha = Math.min(d, 1);
-                        ctx.fillStyle = `hsla(${settings.hue}, 100%, 50%, ${alpha})`;
+                    if (d > 0.02) {
+                        const alpha = Math.min(d, 0.8);
+                        ctx.fillStyle = `hsla(${h + d * 50}, 100%, 50%, ${alpha})`;
                         ctx.fillRect((i - 1) * spacing, (j - 1) * spacing, spacing, spacing);
                     }
                 }
             }
         }
 
-        function handleInteraction() {
-            if (settings.mouse.down || true) { // Always a bit of autonomous flow if we want, but let's stick to mouse
-                const i = Math.floor(settings.mouse.x / spacing) + 1;
-                const j = Math.floor(settings.mouse.y / spacing) + 1;
-                
+        function loop() {
+            state.visc = document.getElementById('visc-slider').value / 1000;
+            const newSpacing = parseInt(document.getElementById('res-slider').value);
+            if (newSpacing !== spacing) {
+                spacing = newSpacing;
+                initFields();
+            }
+
+            // Interaction
+            if (state.mouse.down || true) {
+                const i = (state.mouse.x / spacing) | 0;
+                const j = (state.mouse.y / spacing) | 0;
                 if (i > 0 && i < grid_w - 1 && j > 0 && j < grid_h - 1) {
-                    const force = settings.vortex;
                     const idx = IX(i, j);
-                    
-                    // Add Ink and Velocity
-                    dens_prev[idx] += 15;
-                    u_prev[idx] += (settings.mouse.x - settings.mouse.px) * force;
-                    v_prev[idx] += (settings.mouse.y - settings.mouse.py) * force;
+                    dens_prev[idx] += 12;
+                    u_prev[idx] += (state.mouse.x - state.mouse.px) * 2.5;
+                    v_prev[idx] += (state.mouse.y - state.mouse.py) * 2.5;
                 }
             }
-            settings.mouse.px = settings.mouse.x;
-            settings.mouse.py = settings.mouse.y;
-        }
+            state.mouse.px = state.mouse.x;
+            state.mouse.py = state.mouse.y;
 
-        function loop() {
-            settings.visc = document.getElementById('viscosity').value / 100;
-            settings.vortex = document.getElementById('vortex').value;
-
-            handleInteraction();
-            updateFluid();
-            drawFluid();
+            update();
+            draw();
             requestAnimationFrame(loop);
         }
 
@@ -318,36 +306,30 @@
         }
 
         function changeColor() {
-            settings.hue = (settings.hue + 45) % 360;
+            state.hue = (state.hue + 60) % 360;
         }
 
-        // Listeners
+        // --- LISTENERS ---
         window.addEventListener('mousemove', (e) => {
-            settings.mouse.x = e.clientX;
-            settings.mouse.y = e.clientY;
-            document.getElementById('instruction').classList.add('fade-out');
+            state.mouse.x = e.clientX;
+            state.mouse.y = e.clientY;
         });
-
-        window.addEventListener('mousedown', () => settings.mouse.down = true);
-        window.addEventListener('mouseup', () => settings.mouse.down = false);
-
+        window.addEventListener('mousedown', () => state.mouse.down = true);
+        window.addEventListener('mouseup', () => state.mouse.down = false);
         window.addEventListener('touchmove', (e) => {
-            e.preventDefault();
-            settings.mouse.x = e.touches[0].clientX;
-            settings.mouse.y = e.touches[0].clientY;
-            settings.mouse.down = true;
-            document.getElementById('instruction').classList.add('fade-out');
-        }, { passive: false });
-
-        window.addEventListener('touchend', () => settings.mouse.down = false);
+            state.mouse.x = e.touches[0].clientX;
+            state.mouse.y = e.touches[0].clientY;
+            state.mouse.down = true;
+        });
+        window.addEventListener('touchend', () => state.mouse.down = false);
 
         window.onload = () => {
             resize();
             lucide.createIcons();
             setTimeout(() => {
                 document.getElementById('splash').style.opacity = '0';
-                setTimeout(() => document.getElementById('splash').remove(), 1500);
-            }, 1000);
+                setTimeout(() => document.getElementById('splash').remove(), 1000);
+            }, 800);
             loop();
         };
 
