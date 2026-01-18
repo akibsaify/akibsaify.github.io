@@ -3,88 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>akib saify BusinessCard</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Alex Sterling | Portfolio & Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
+            font-family: 'Inter', sans-serif;
         }
-        .business-card {
-            width: 600px;
-            border: 1px solid #000;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .tab-content {
+            display: none;
         }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px;
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-out;
         }
-        .header-left {
-            font-size: 1.2em;
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-        .header-left a {
-            color: blue;
-            text-decoration: none;
-        }
-        .header-right {
-            text-align: right;
-        }
-        .header-right .name {
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        .header-right .title {
-            margin-top: 5px;
-            font-size: 0.9em;
-        }
-        .content {
-            font-size: 0.9em;
-            line-height: 1.5;
-        }
-        .contact-info {
-            margin-top: 10px;
-        }
-        .contact-info a {
-            color: blue;
-            text-decoration: none;
+
+        .nav-link.active {
+            background-color: #2563eb;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
         }
     </style>
 </head>
-<body>
-    <div class="business-card">
-        <div class="header">
-            <div class="header-left">
-                <strong>akib saify</strong><br>
-                Schönburgstrasse 11<br>
-                A-1040 Vienna<br>
-                <a href="http://www.l4invest.com">http://www.l4invest.com</a>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-6">
+        <div class="max-w-5xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent cursor-pointer" onclick="switchTab('home')">
+                Alex.
             </div>
-            <div class="header-right">
-                <div class="name">Markus Pernusch</div>
-                <div class="title">Managing Partner</div>
-                <div class="contact-info">
-                    Mobil: +43 676 738 53 80<br>
-                    E-Mail: <a href="mailto:mp@l4invest.com">mp@l4invest.com</a><br>
-                    <a href="#">Impressum</a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center space-x-2 bg-white/50 backdrop-blur-md p-1 rounded-full border border-slate-200">
+                <button onclick="switchTab('home')" class="nav-link active flex items-center space-x-2 px-5 py-2 rounded-full transition-all duration-300">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    <span class="font-medium">Home</span>
+                </button>
+                <button onclick="switchTab('blog')" class="nav-link flex items-center space-x-2 px-5 py-2 rounded-full transition-all duration-300 text-slate-600 hover:bg-slate-100">
+                    <i data-lucide="book-open" class="w-4 h-4"></i>
+                    <span class="font-medium">Blog</span>
+                </button>
+                <button onclick="switchTab('projects')" class="nav-link flex items-center space-x-2 px-5 py-2 rounded-full transition-all duration-300 text-slate-600 hover:bg-slate-100">
+                    <i data-lucide="code" class="w-4 h-4"></i>
+                    <span class="font-medium">Projects</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden p-2 text-slate-600" onclick="toggleMobileMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 p-6 space-y-4 shadow-xl">
+            <button onclick="switchTab('home')" class="flex items-center space-x-3 w-full p-3 rounded-xl hover:bg-slate-50">
+                <i data-lucide="user" class="text-blue-600"></i>
+                <span class="font-medium text-slate-700">Home</span>
+            </button>
+            <button onclick="switchTab('blog')" class="flex items-center space-x-3 w-full p-3 rounded-xl hover:bg-slate-50">
+                <i data-lucide="book-open" class="text-blue-600"></i>
+                <span class="font-medium text-slate-700">Blog</span>
+            </button>
+            <button onclick="switchTab('projects')" class="flex items-center space-x-3 w-full p-3 rounded-xl hover:bg-slate-50">
+                <i data-lucide="code" class="text-blue-600"></i>
+                <span class="font-medium text-slate-700">Projects</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-20 max-w-5xl mx-auto px-6">
+        
+        <!-- Home Section -->
+        <section id="home" class="tab-content active space-y-16">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+                    Building digital <br />
+                    <span class="text-blue-600">experiences</span> with purpose.
+                </h1>
+                <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                    Passionate about building elegant solutions to complex problems. I write about modern web tech, system architecture, and UI design.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="switchTab('blog')" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-semibold hover:bg-slate-800 transition-all shadow-xl shadow-slate-200 active:scale-95">
+                        Read My Blog
+                    </button>
+                    <div class="flex items-center space-x-2">
+                        <a href="#" class="p-3 text-slate-400 hover:text-blue-600 transition-colors"><i data-lucide="github"></i></a>
+                        <a href="#" class="p-3 text-slate-400 hover:text-blue-600 transition-colors"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="p-3 text-slate-400 hover:text-blue-600 transition-colors"><i data-lucide="twitter"></i></a>
+                    </div>
                 </div>
             </div>
+
+            <div class="pt-12">
+                <div class="flex justify-between items-end mb-8">
+                    <h2 class="text-2xl font-bold text-slate-900">Latest from the blog</h2>
+                    <button onclick="switchTab('blog')" class="text-blue-600 font-medium hover:underline flex items-center">
+                        View all <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </button>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="group cursor-pointer p-8 rounded-3xl bg-white border border-slate-100 hover:border-blue-100 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500">
+                        <div class="text-xs text-blue-600 font-bold uppercase tracking-wider mb-4">Architecture</div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-blue-600 transition-colors">The Future of Web Performance</h3>
+                        <p class="text-slate-500 mb-6 line-clamp-2">Exploring how edge computing is changing the way we think about latency.</p>
+                        <div class="flex items-center space-x-4 text-sm text-slate-400">
+                            <span class="flex items-center"><i data-lucide="calendar" class="w-3 h-3 mr-1"></i> Oct 24, 2025</span>
+                            <span class="flex items-center"><i data-lucide="clock" class="w-3 h-3 mr-1"></i> 8 min read</span>
+                        </div>
+                    </div>
+                    <div class="group cursor-pointer p-8 rounded-3xl bg-white border border-slate-100 hover:border-blue-100 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500">
+                        <div class="text-xs text-blue-600 font-bold uppercase tracking-wider mb-4">React</div>
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-blue-600 transition-colors">Mastering Server Components</h3>
+                        <p class="text-slate-500 mb-6 line-clamp-2">A deep dive into the new paradigm of rendering and data fetching.</p>
+                        <div class="flex items-center space-x-4 text-sm text-slate-400">
+                            <span class="flex items-center"><i data-lucide="calendar" class="w-3 h-3 mr-1"></i> Sep 12, 2025</span>
+                            <span class="flex items-center"><i data-lucide="clock" class="w-3 h-3 mr-1"></i> 12 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="tab-content space-y-12">
+            <div class="mb-12">
+                <h1 class="text-4xl font-bold mb-4">Writings</h1>
+                <p class="text-lg text-slate-500">Thoughts on programming, design, and building products.</p>
+            </div>
+            
+            <div class="divide-y divide-slate-100">
+                <article class="py-10 group cursor-pointer">
+                    <div class="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                        <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-lg text-xs font-bold uppercase w-fit">Tech</span>
+                        <div class="flex items-center text-sm text-slate-400 space-x-3">
+                            <span>Oct 24, 2025</span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3 group-hover:text-blue-600 transition-colors tracking-tight">Understanding the impact of WebAssembly on modern development</h2>
+                    <p class="text-slate-600 leading-relaxed max-w-3xl">Wasm is no longer just for high-performance computing. It's finding its way into every part of the web stack...</p>
+                </article>
+
+                <article class="py-10 group cursor-pointer">
+                    <div class="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                        <span class="bg-indigo-50 text-indigo-600 px-3 py-1 rounded-lg text-xs font-bold uppercase w-fit">Design</span>
+                        <div class="flex items-center text-sm text-slate-400 space-x-3">
+                            <span>Sep 05, 2025</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3 group-hover:text-blue-600 transition-colors tracking-tight">Why minimalism is more than just whitespace</h2>
+                    <p class="text-slate-600 leading-relaxed max-w-3xl">Exploring the psychological impact of reduced cognitive load in user interface design.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="tab-content">
+            <div class="mb-12">
+                <h1 class="text-4xl font-bold mb-4">Projects</h1>
+                <p class="text-lg text-slate-500">A collection of things I've built and experiments I've run.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Nebula Dashboard</h3>
+                    <p class="text-slate-600 mb-6">A real-time analytics suite for distributed cloud infrastructure built with D3.js and React.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 bg-slate-50 text-slate-500 text-xs font-semibold rounded-full uppercase">React</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-500 text-xs font-semibold rounded-full uppercase">D3.js</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:translate-x-1 transition-transform">
+                        View Project <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-500">
+                    <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Quantic CMS</h3>
+                    <p class="text-slate-600 mb-6">A headless content management system optimized specifically for high-load retail environments.</p>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 bg-slate-50 text-slate-500 text-xs font-semibold rounded-full uppercase">Next.js</span>
+                        <span class="px-3 py-1 bg-slate-50 text-slate-500 text-xs font-semibold rounded-full uppercase">Go</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center text-blue-600 font-bold hover:translate-x-1 transition-transform">
+                        View Project <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white py-12 mt-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors"><i data-lucide="github"></i></a>
+                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors"><i data-lucide="linkedin"></i></a>
+                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors"><i data-lucide="twitter"></i></a>
+                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors"><i data-lucide="mail"></i></a>
+            </div>
+            <p class="text-sm text-slate-500 font-medium">
+                © 2025 Alex Sterling. Designed for performance.
+            </p>
         </div>
-        <div class="content">
-            Firmenbuchnummer: FN 312006 h<br>
-            UID-Nummer: ATU 691 90 467<br><br>
-            <strong>Bankverbindung:</strong><br>
-            IBAN: AT33 3200 0000 1204 0390<br>
-            BIC: RLNWATWW<br><br>
-            Geschäftsführung: Markus Pernusch
-        </div>
-    </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.remove('bg-white/80', 'backdrop-blur-md', 'shadow-sm', 'py-3');
+                nav.classList.add('py-6');
+            }
+        });
+
+        // Tab switching logic
+        function switchTab(tabId) {
+            // Hide all contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show active content
+            document.getElementById(tabId).classList.add('active');
+            
+            // Update nav links styling
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active', 'bg-blue-600', 'text-white', 'shadow-lg', 'shadow-blue-500/30');
+                link.classList.add('text-slate-600', 'hover:bg-slate-100');
+            });
+
+            // Highlight active link
+            const activeLinks = document.querySelectorAll(`button[onclick="switchTab('${tabId}')"]`);
+            activeLinks.forEach(link => {
+                if (link.classList.contains('nav-link')) {
+                    link.classList.add('active', 'bg-blue-600', 'text-white', 'shadow-lg', 'shadow-blue-500/30');
+                    link.classList.remove('text-slate-600', 'hover:bg-slate-100');
+                }
+            });
+
+            // Close mobile menu if open
+            const menu = document.getElementById('mobile-menu');
+            if (!menu.classList.contains('hidden')) {
+                toggleMobileMenu();
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            const isHidden = menu.classList.toggle('hidden');
+            
+            if (isHidden) {
+                icon.setAttribute('data-lucide', 'menu');
+            } else {
+                icon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        }
+    </script>
 </body>
 </html>
+
