@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Aether | Infinite Flow</title>
+    <title>Harmonic Flow | Coherent Dynamics</title>
     <style>
         :root {
-            --bg: #030305;
-            --text: #ffffff;
+            --bg: #010103;
+            --accent: #00d4ff;
         }
 
         * {
@@ -20,302 +20,314 @@
 
         body {
             background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #fff;
+            font-family: 'Inter', system-ui, sans-serif;
             width: 100vw;
             height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         canvas {
             display: block;
             touch-action: none;
-            filter: contrast(120%) brightness(110%);
         }
 
-        #ui {
+        #ui-overlay {
             position: absolute;
-            bottom: 3rem;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
-            z-index: 10;
-            transition: opacity 1s ease;
-        }
-
-        .label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.4rem;
-            color: rgba(255, 255, 255, 0.3);
-            margin-bottom: 0.5rem;
-        }
-
-        .title {
-            font-size: 1.2rem;
-            font-weight: 300;
-            color: rgba(255, 255, 255, 0.8);
-            letter-spacing: 0.2rem;
-        }
-
-        .controls {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            justify-content: space-between;
+            padding: 3rem;
+            z-index: 10;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            opacity: 0.4;
+        }
+
+        .tag {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+            font-weight: 700;
+        }
+
+        .center-msg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1.5s ease;
+        }
+
+        .center-msg.visible { opacity: 0.15; }
+
+        .controls {
+            display: flex;
+            gap: 2rem;
             pointer-events: auto;
         }
 
-        .btn {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 2rem;
-            font-size: 0.6rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1rem;
-            cursor: pointer;
-            backdrop-filter: blur(5px);
-            transition: all 0.3s;
-        }
-
-        .btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.4);
-        }
-
-        #overlay {
-            position: fixed;
-            inset: 0;
-            background: var(--bg);
-            z-index: 100;
+        .control-item {
             display: flex;
             flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        input[type="range"] {
+            appearance: none;
+            background: rgba(255, 255, 255, 0.1);
+            height: 2px;
+            width: 120px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #intro-curtain {
+            position: fixed;
+            inset: 0;
+            background: #000;
+            z-index: 100;
+            display: flex;
             align-items: center;
             justify-content: center;
-            transition: opacity 2s ease;
+            transition: opacity 2.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .loader {
-            width: 40px;
-            height: 40px;
-            border: 1px solid #333;
-            border-top-color: #fff;
-            border-radius: 50%;
-            animation: spin 1s infinite linear;
-        }
-
-        @keyframes spin { to { transform: rotate(360deg); } }
-
-        .fade-out { opacity: 0 !important; pointer-events: none !important; }
     </style>
 </head>
 <body>
 
-    <div id="overlay">
-        <div class="loader"></div>
-        <p style="margin-top: 20px; color: #444; letter-spacing: 0.2rem; font-size: 0.7rem;">INITIALIZING AETHER</p>
+    <div id="intro-curtain">
+        <div style="text-align: center;">
+            <div style="width: 1px; height: 60px; background: white; margin: 0 auto 20px; animation: scaleY 2s infinite;"></div>
+            <p style="letter-spacing: 0.5rem; font-size: 0.7rem; font-weight: 300;">HARMONIC RESONANCE</p>
+        </div>
     </div>
 
-    <div id="ui">
-        <div class="label">Interactive Simulation</div>
-        <div class="title">MOVE TO STIR • BREATHE TO WATCH</div>
-    </div>
+    <div id="ui-overlay">
+        <div class="header">
+            <div class="tag">System: Coherent Field</div>
+            <div class="tag">Status: Synchronized</div>
+        </div>
 
-    <div class="controls">
-        <button class="btn" onclick="toggleColor()">Shift Hue</button>
-        <button class="btn" onclick="resetFlow()">Reset Pattern</button>
+        <div id="msg" class="center-msg visible">
+            <h1 style="font-size: 3rem; font-weight: 100; letter-spacing: 1rem;">AETHER</h1>
+            <p style="letter-spacing: 0.2rem; font-size: 0.8rem; margin-top: 10px;">Move to shape the resonance</p>
+        </div>
+
+        <div class="footer">
+            <div class="controls">
+                <div class="control-item">
+                    <span class="tag" style="font-size: 0.5rem;">Density</span>
+                    <input type="range" id="density" min="10" max="150" value="80">
+                </div>
+                <div class="control-item">
+                    <span class="tag" style="font-size: 0.5rem;">Viscosity</span>
+                    <input type="range" id="viscosity" min="90" max="99" value="96">
+                </div>
+                <div class="control-item">
+                    <span class="tag" style="font-size: 0.5rem;">Field Force</span>
+                    <input type="range" id="force" min="1" max="50" value="25">
+                </div>
+            </div>
+        </div>
     </div>
 
     <canvas id="canvas"></canvas>
 
     <script>
         /**
-         * AETHER GENERATIVE ENGINE
-         * Uses custom noise vectors to simulate liquid poly-lines
+         * COHERENT FLOW ENGINE
+         * Principles: Vector Field Smoothing & Streamline Integration
          */
 
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d', { alpha: false });
         
         let width, height;
-        let particles = [];
+        let lines = [];
         let tick = 0;
         
-        const config = {
-            particleCount: 1200,
-            baseHue: Math.random() * 360,
-            hueRange: 60,
-            lineOpacity: 0.08,
-            speed: 0.6,
-            noiseScale: 0.003,
-            interactionRadius: 300,
-            friction: 0.96,
-            mouse: { x: 0, y: 0, active: false, vx: 0, vy: 0 },
-            autoPilot: { x: 0, y: 0, angle: 0 }
+        const settings = {
+            lineCount: 80,
+            pointsPerLine: 40,
+            segmentLength: 15,
+            hue: 195,
+            viscosity: 0.96,
+            force: 0.25,
+            mouse: { x: 0, y: 0, targetX: 0, targetY: 0, active: false }
         };
 
-        class Particle {
-            constructor() {
+        class Streamline {
+            constructor(yOffset) {
+                this.yOffset = yOffset;
+                this.points = [];
+                this.hue = settings.hue + (Math.random() * 30 - 15);
                 this.init();
             }
 
             init() {
-                this.x = Math.random() * width;
-                this.y = Math.random() * height;
-                this.px = this.x;
-                this.py = this.y;
-                this.vx = 0;
-                this.vy = 0;
-                this.accX = 0;
-                this.accY = 0;
-                this.hue = config.baseHue + (Math.random() * config.hueRange);
-                this.life = Math.random() * 0.5 + 0.5;
+                this.points = [];
+                const startX = -50;
+                const baseHeight = (height * this.yOffset);
+                
+                for (let i = 0; i < settings.pointsPerLine; i++) {
+                    this.points.push({
+                        x: startX + (i * (width / (settings.pointsPerLine - 5))),
+                        y: baseHeight,
+                        vx: 0,
+                        vy: 0,
+                        originalY: baseHeight
+                    });
+                }
             }
 
             update() {
-                // Get Flow Field Noise (Simulated with Math.sin/cos layering for "heavy" interaction)
-                const n1 = noise(this.x * config.noiseScale, this.y * config.noiseScale, tick * 0.001);
-                const n2 = noise(this.x * config.noiseScale * 2, this.y * config.noiseScale * 2, tick * 0.002);
-                
-                const angle = (n1 + n2) * Math.PI * 4;
-                
-                this.accX = Math.cos(angle) * config.speed;
-                this.accY = Math.sin(angle) * config.speed;
+                this.points.forEach((p, i) => {
+                    // 1. Consistent Base Flow (Sine Harmonics)
+                    const harmonic1 = Math.sin(tick * 0.02 + p.x * 0.002) * 20;
+                    const harmonic2 = Math.cos(tick * 0.01 + p.x * 0.005) * 10;
+                    const targetY = p.originalY + harmonic1 + harmonic2;
 
-                // Mouse/AutoPilot Interaction
-                const targetX = config.mouse.active ? config.mouse.x : config.autoPilot.x;
-                const targetY = config.mouse.active ? config.mouse.y : config.autoPilot.y;
-                
-                const dx = targetX - this.x;
-                const dy = targetY - this.y;
-                const dist = Math.hypot(dx, dy);
+                    // 2. Field Force (Spring back to harmonic state)
+                    p.vy += (targetY - p.y) * 0.02;
 
-                if (dist < config.interactionRadius) {
-                    const power = (1 - dist / config.interactionRadius) * 2;
-                    this.accX += (dx / dist) * power;
-                    this.accY += (dy / dist) * power;
-                }
+                    // 3. User Interaction (The Lenz Effect)
+                    if (settings.mouse.active || true) {
+                        const mx = settings.mouse.active ? settings.mouse.x : width / 2 + Math.cos(tick * 0.01) * width * 0.3;
+                        const my = settings.mouse.active ? settings.mouse.y : height / 2 + Math.sin(tick * 0.02) * height * 0.2;
+                        
+                        const dx = mx - p.x;
+                        const dy = my - p.y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (dist < 250) {
+                            const force = (1 - dist / 250) * settings.force;
+                            p.vx -= (dx / dist) * force;
+                            p.vy -= (dy / dist) * force;
+                        }
+                    }
 
-                this.vx += this.accX;
-                this.vy += this.accY;
-                this.vx *= config.friction;
-                this.vy *= config.friction;
-
-                this.px = this.x;
-                this.py = this.y;
-                this.x += this.vx;
-                this.y += this.vy;
-
-                // Reset if off-screen or too fast
-                if (this.x < 0 || this.x > width || this.y < 0 || this.y > height) {
-                    this.init();
-                }
+                    // 4. Consistent Velocity
+                    p.vx *= settings.viscosity;
+                    p.vy *= settings.viscosity;
+                    
+                    // Don't move horizontally much to keep "consistent" lanes
+                    p.y += p.vy;
+                    p.x += p.vx * 0.1; 
+                });
             }
 
             draw() {
                 ctx.beginPath();
-                ctx.moveTo(this.px, this.py);
-                ctx.lineTo(this.x, this.y);
-                ctx.strokeStyle = `hsla(${this.hue}, 80%, 60%, ${config.lineOpacity})`;
+                ctx.moveTo(this.points[0].x, this.points[0].y);
+
+                for (let i = 1; i < this.points.length; i++) {
+                    const p = this.points[i];
+                    const prev = this.points[i - 1];
+                    
+                    // Bezier smoothing for consistent curves
+                    const xc = (p.x + prev.x) / 2;
+                    const yc = (p.y + prev.y) / 2;
+                    ctx.quadraticCurveTo(prev.x, prev.y, xc, yc);
+                }
+
+                const gradient = ctx.createLinearGradient(0, 0, width, 0);
+                gradient.addColorStop(0, `hsla(${this.hue}, 100%, 50%, 0)`);
+                gradient.addColorStop(0.5, `hsla(${this.hue}, 100%, 50%, 0.4)`);
+                gradient.addColorStop(1, `hsla(${this.hue}, 100%, 50%, 0)`);
+
+                ctx.strokeStyle = gradient;
+                ctx.lineWidth = 1.5;
                 ctx.stroke();
             }
-        }
-
-        // --- CUSTOM NOISE (Simplex-Lite for performance) ---
-        // We use a layered Sine generator to simulate complex noise
-        function noise(x, y, z) {
-            return (
-                Math.sin(x + z) * Math.cos(y + z) +
-                Math.sin(x * 0.5 - z) * Math.cos(y * 1.2 + z) +
-                Math.sin(y * 0.8 + x * 0.3 + z)
-            ) / 3;
         }
 
         function resize() {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
-            ctx.fillStyle = '#030305';
-            ctx.fillRect(0, 0, width, height);
-            ctx.lineWidth = 1.2;
-            ctx.lineCap = 'round';
+            initField();
         }
 
-        function toggleColor() {
-            config.baseHue = Math.random() * 360;
-            particles.forEach(p => p.hue = config.baseHue + (Math.random() * config.hueRange));
-        }
-
-        function resetFlow() {
-            ctx.fillStyle = '#030305';
-            ctx.fillRect(0, 0, width, height);
-            particles.forEach(p => p.init());
-        }
-
-        function init() {
-            resize();
-            for (let i = 0; i < config.particleCount; i++) {
-                particles.push(new Particle());
+        function initField() {
+            lines = [];
+            const count = parseInt(document.getElementById('density').value);
+            for (let i = 0; i <= count; i++) {
+                lines.push(new Streamline(i / count));
             }
-
-            document.getElementById('overlay').classList.add('fade-out');
-            setTimeout(() => document.getElementById('overlay').remove(), 2000);
-
-            loop();
         }
 
         function loop() {
             tick++;
-
-            // Autonomous movement (Infinite loop)
-            config.autoPilot.angle += 0.01;
-            config.autoPilot.x = width/2 + Math.cos(config.autoPilot.angle) * (width * 0.3);
-            config.autoPilot.y = height/2 + Math.sin(config.autoPilot.angle * 1.5) * (height * 0.2);
-
-            // Subtle Fade (creates the "silk" trail effect)
-            ctx.fillStyle = 'rgba(3, 3, 5, 0.04)';
+            
+            // Minimalist clear with slight persistent glow
+            ctx.fillStyle = 'rgba(1, 1, 3, 0.15)';
             ctx.fillRect(0, 0, width, height);
 
-            // Update & Draw
-            particles.forEach(p => {
-                p.update();
-                p.draw();
+            // Global update based on UI
+            settings.viscosity = document.getElementById('viscosity').value / 100;
+            settings.force = document.getElementById('force').value / 100;
+
+            lines.forEach(line => {
+                line.update();
+                line.draw();
             });
 
             requestAnimationFrame(loop);
         }
 
-        // Input Listeners
+        // --- Interaction Listeners ---
         window.addEventListener('mousemove', (e) => {
-            config.mouse.x = e.clientX;
-            config.mouse.y = e.clientY;
-            config.mouse.active = true;
-            clearTimeout(config.mouse.timer);
-            config.mouse.timer = setTimeout(() => config.mouse.active = false, 2000);
+            settings.mouse.x = e.clientX;
+            settings.mouse.y = e.clientY;
+            settings.mouse.active = true;
+            document.getElementById('msg').classList.remove('visible');
+            
+            clearTimeout(settings.mouse.timer);
+            settings.mouse.timer = setTimeout(() => {
+                settings.mouse.active = false;
+                document.getElementById('msg').classList.add('visible');
+            }, 3000);
         });
 
         window.addEventListener('touchmove', (e) => {
-            config.mouse.x = e.touches[0].clientX;
-            config.mouse.y = e.touches[0].clientY;
-            config.mouse.active = true;
-            clearTimeout(config.mouse.timer);
-            config.mouse.timer = setTimeout(() => config.mouse.active = false, 2000);
+            settings.mouse.x = e.touches[0].clientX;
+            settings.mouse.y = e.touches[0].clientY;
+            settings.mouse.active = true;
+            document.getElementById('msg').classList.remove('visible');
         }, { passive: false });
 
-        window.addEventListener('resize', () => {
-            resize();
-            resetFlow();
-        });
+        document.getElementById('density').addEventListener('input', initField);
 
-        // Initialize on Load
-        window.onload = init;
+        window.onload = () => {
+            resize();
+            requestAnimationFrame(loop);
+            setTimeout(() => {
+                document.getElementById('intro-curtain').style.opacity = '0';
+                setTimeout(() => document.getElementById('intro-curtain').remove(), 2500);
+            }, 1000);
+        };
+
+        window.addEventListener('resize', resize);
     </script>
 </body>
 </html>
+
 
