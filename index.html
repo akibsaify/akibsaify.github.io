@@ -2,286 +2,608 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cosmic Flow | Zen Experience</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
-        body { font-family: 'Outfit', sans-serif; }
-        
-        .tab-content { display: none; }
-        .tab-content.active { display: block; animation: slideUp 0.5s ease-out; }
-        
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        :root {
+            --bg: #050508;
+            --panel: rgba(15, 15, 25, 0.7);
+            --accent: #4f46e5;
+            --text: #e2e8f0;
         }
 
-        .nav-btn.active {
-            color: #2563eb;
-            background: #eff6ff;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        canvas {
+            display: block;
+            touch-action: none;
+        }
+
+        /* UI Overlays */
+        #ui-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem;
+            z-index: 10;
+        }
+
+        .glass {
+            background: var(--panel);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(226, 232, 240, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            pointer-events: auto;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .stats-panel {
+            padding: 1rem 1.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            color: #94a3b8;
+            margin-bottom: 0.2rem;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-variant-numeric: tabular-nums;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .control-panel {
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        input[type="range"] {
+            appearance: none;
+            background: rgba(255, 255, 255, 0.1);
+            height: 4px;
+            border-radius: 2px;
+            width: 100px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+        }
+
+        /* Intro Screen */
+        #intro {
+            position: fixed;
+            inset: 0;
+            background: var(--bg);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 1s ease;
+        }
+
+        .intro-content {
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .logo-anim {
+            width: 80px;
+            height: 80px;
+            border: 3px solid var(--accent);
+            border-radius: 50%;
+            margin: 0 auto 2rem;
+            position: relative;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: -0.05rem;
+        }
+
+        .start-btn {
+            background: white;
+            color: black;
+            border: none;
+            padding: 1rem 3rem;
+            border-radius: 3rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: transform 0.2s;
+        }
+
+        .start-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Tips */
+        .tip {
+            position: absolute;
+            bottom: 6rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            color: #64748b;
+            opacity: 0.7;
+            text-align: center;
+            width: 100%;
+        }
+
+        .hidden { display: none !important; }
+        .transparent { opacity: 0 !important; pointer-events: none !important; }
+
+        @media (max-width: 600px) {
+            .control-panel { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+            h1 { font-size: 2rem; }
+            #ui-layer { padding: 1rem; }
         }
     </style>
 </head>
-<body class="bg-[#fcfcfd] text-slate-900 antialiased selection:bg-blue-100">
+<body>
 
-    <!-- Desktop Sidebar Navigation -->
-    <nav class="fixed left-0 top-0 h-full w-20 lg:w-64 bg-white border-r border-slate-100 z-50 flex flex-col items-center lg:items-start py-8 px-4 hidden md:flex">
-        <div class="mb-12 px-4">
-            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
-                A
-            </div>
-        </div>
-        
-        <div class="space-y-2 w-full">
-            <button onclick="switchTab('home')" class="nav-btn active flex items-center space-x-3 w-full p-3 rounded-xl transition-all group">
-                <i data-lucide="home" class="w-5 h-5"></i>
-                <span class="font-semibold hidden lg:block">Home</span>
-            </button>
-            <button onclick="switchTab('blog')" class="nav-btn flex items-center space-x-3 w-full p-3 rounded-xl transition-all text-slate-400 hover:text-slate-600 group">
-                <i data-lucide="book-open" class="w-5 h-5"></i>
-                <span class="font-semibold hidden lg:block">Writings</span>
-            </button>
-            <button onclick="switchTab('projects')" class="nav-btn flex items-center space-x-3 w-full p-3 rounded-xl transition-all text-slate-400 hover:text-slate-600 group">
-                <i data-lucide="layout" class="w-5 h-5"></i>
-                <span class="font-semibold hidden lg:block">Projects</span>
-            </button>
-        </div>
-
-        <div class="mt-auto w-full px-2">
-            <div class="p-4 bg-slate-50 rounded-2xl hidden lg:block">
-                <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Socials</p>
-                <div class="flex space-x-3 text-slate-400">
-                    <a href="#" class="hover:text-blue-600 transition-colors"><i data-lucide="github" class="w-5 h-5"></i></a>
-                    <a href="#" class="hover:text-blue-600 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                    <a href="#" class="hover:text-blue-600 transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Top Nav -->
-    <nav class="md:hidden fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-100 z-50 p-4 flex justify-between items-center">
-        <div class="font-bold text-xl tracking-tighter">Portfolio</div>
-        <button onclick="toggleMobileMenu()" class="p-2 bg-slate-100 rounded-lg">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
-    </nav>
-
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] hidden flex-col p-8 space-y-6">
-        <div class="flex justify-between items-center mb-8">
-            <div class="font-bold text-2xl">Menu</div>
-            <button onclick="toggleMobileMenu()" class="p-2"><i data-lucide="x"></i></button>
-        </div>
-        <button onclick="switchTab('home')" class="text-2xl font-bold">Home</button>
-        <button onclick="switchTab('blog')" class="text-2xl font-bold">Blog</button>
-        <button onclick="switchTab('projects')" class="text-2xl font-bold">Projects</button>
-    </div>
-
-    <!-- Main Content Area -->
-    <main class="md:ml-20 lg:ml-64 p-6 md:p-12 lg:p-20 max-w-7xl mx-auto pt-24 md:pt-20">
-        
-        <!-- Tab: Home -->
-        <section id="home" class="tab-content active space-y-24">
-            <div class="max-w-3xl">
-                <h1 id="name-display" class="text-4xl md:text-7xl font-extrabold tracking-tight mb-8">
-                    Designer & <br/><span class="text-blue-600">Developer</span>.
-                </h1>
-                <p class="text-xl md:text-2xl text-slate-500 leading-relaxed mb-10">
-                    I build accessible, pixel-perfect digital experiences for the web. Currently focused on building high-performance applications with React.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <button onclick="switchTab('blog')" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-blue-600 transition-all shadow-xl shadow-slate-200">
-                        View Writings
-                    </button>
-                    <a href="mailto:hello@example.com" class="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-bold hover:border-blue-600 transition-all flex items-center gap-2">
-                        Get in Touch <i data-lucide="mail" class="w-5 h-5"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Featured Grid -->
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="space-y-8">
-                    <h3 class="text-sm font-black text-slate-400 uppercase tracking-widest">Recent Post</h3>
-                    <div class="group cursor-pointer">
-                        <div class="aspect-video bg-slate-100 rounded-[2rem] mb-6 overflow-hidden">
-                            <div class="w-full h-full bg-gradient-to-br from-blue-100 to-indigo-100 flex items-center justify-center">
-                                <i data-lucide="feather" class="w-12 h-12 text-blue-300"></i>
-                            </div>
-                        </div>
-                        <h4 class="text-2xl font-bold mb-2 group-hover:text-blue-600 transition-colors">The Future of Interactive Design</h4>
-                        <p class="text-slate-500">Exploring how spatial computing is changing web interfaces...</p>
-                    </div>
-                </div>
-                <div class="space-y-8">
-                    <h3 class="text-sm font-black text-slate-400 uppercase tracking-widest">Selected Work</h3>
-                    <div class="bg-white border border-slate-100 p-8 rounded-[2rem] hover:shadow-2xl hover:shadow-blue-500/5 transition-all">
-                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6">
-                            <i data-lucide="layout" class="w-6 h-6"></i>
-                        </div>
-                        <h4 class="text-xl font-bold mb-2">Nebula Dashboard</h4>
-                        <p class="text-slate-500 text-sm mb-6">A complex data visualization tool for cloud infrastructure.</p>
-                        <div class="flex gap-2">
-                            <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">REACT</span>
-                            <span class="text-[10px] font-bold bg-slate-100 px-2 py-1 rounded">TYPESCRIPT</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tab: Blog -->
-        <section id="blog" class="tab-content space-y-12">
-            <div>
-                <h2 class="text-4xl font-bold mb-4">Writings</h2>
-                <p class="text-slate-500 text-lg">Detailed thoughts on engineering and design.</p>
-            </div>
-            <div class="space-y-12">
-                <article class="group cursor-pointer">
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2 block">Technology • Oct 2025</span>
-                    <h3 class="text-3xl font-bold mb-4 group-hover:text-blue-600 transition-colors">Why minimal code is the best security practice</h3>
-                    <p class="text-slate-600 text-lg leading-relaxed max-w-3xl">In this deep dive, we look at how reducing dependencies leads to more resilient systems...</p>
-                </article>
-                <article class="group cursor-pointer">
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2 block">Design • Sep 2025</span>
-                    <h3 class="text-3xl font-bold mb-4 group-hover:text-blue-600 transition-colors">Building for the emotional web</h3>
-                    <p class="text-slate-600 text-lg leading-relaxed max-w-3xl">Moving beyond utility to create interfaces that users genuinely love to interact with every day.</p>
-                </article>
-            </div>
-        </section>
-
-        <!-- Tab: Projects -->
-        <section id="projects" class="tab-content space-y-12">
-            <div>
-                <h2 class="text-4xl font-bold mb-4">Projects</h2>
-                <p class="text-slate-500 text-lg">A selection of my professional work and personal experiments.</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="glass-card p-10 rounded-[2.5rem] group hover:border-blue-200 transition-all">
-                    <h3 class="text-2xl font-bold mb-4">Quantic CMS</h3>
-                    <p class="text-slate-500 mb-8">A headless content management system built specifically for global retail performance.</p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex gap-2">
-                            <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-bold">TS</span>
-                            <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-bold">GO</span>
-                        </div>
-                        <a href="#" class="text-blue-600 font-bold flex items-center gap-1 group-hover:gap-2 transition-all">View <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                    </div>
-                </div>
-                <div class="glass-card p-10 rounded-[2.5rem] group hover:border-blue-200 transition-all">
-                    <h3 class="text-2xl font-bold mb-4">Helios AI</h3>
-                    <p class="text-slate-500 mb-8">An experimental natural language processor focused on code review automation.</p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex gap-2">
-                            <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-bold">PY</span>
-                            <span class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-bold">REACT</span>
-                        </div>
-                        <a href="#" class="text-blue-600 font-bold flex items-center gap-1 group-hover:gap-2 transition-all">View <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Floating AI Sync Mock (For when API is unavailable) -->
-    <div class="fixed bottom-6 right-6 z-[100]">
-        <button onclick="toggleEditor()" class="bg-blue-600 text-white p-4 rounded-2xl shadow-2xl hover:bg-blue-700 transition-all flex items-center gap-2">
-            <i data-lucide="pen-tool" class="w-5 h-5"></i>
-            <span class="font-bold">Edit Details</span>
-        </button>
-    </div>
-
-    <!-- Quick Edit Panel -->
-    <div id="editor-panel" class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl z-[110] border-l border-slate-200 hidden p-8 overflow-y-auto">
-        <div class="flex justify-between items-center mb-8">
-            <h3 class="font-bold text-xl">Quick Edit</h3>
-            <button onclick="toggleEditor()"><i data-lucide="x"></i></button>
-        </div>
-        <div class="space-y-6">
-            <div>
-                <label class="text-xs font-bold text-slate-400 uppercase mb-2 block">Display Name</label>
-                <input type="text" id="edit-name" oninput="updateContent()" value="Designer & Developer" class="w-full border p-3 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none">
-            </div>
-            <div>
-                <label class="text-xs font-bold text-slate-400 uppercase mb-2 block">Primary Color</label>
-                <input type="color" id="edit-color" oninput="updateContent()" value="#2563eb" class="w-full h-12 p-1 rounded-xl cursor-pointer">
-            </div>
-            <div class="p-4 bg-blue-50 rounded-xl">
-                <p class="text-xs text-blue-600 font-medium">Any changes here will reflect on the live site immediately.</p>
-            </div>
+    <div id="intro">
+        <div class="intro-content">
+            <div class="logo-anim"></div>
+            <h1>COSMIC FLOW</h1>
+            <p style="color: #64748b;">A mindless journey through the void.<br>Collect dust. Merge orbs. Just flow.</p>
+            <button class="start-btn" onclick="initGame()">ENTER THE FLOW</button>
         </div>
     </div>
+
+    <div id="ui-layer" class="transparent">
+        <header>
+            <div class="glass stats-panel">
+                <div class="stat-label">Cosmic Mass</div>
+                <div id="mass-val" class="stat-value">0</div>
+            </div>
+            <div class="glass stats-panel">
+                <div class="stat-label">Particles</div>
+                <div id="particle-count" class="stat-value">0</div>
+            </div>
+        </header>
+
+        <div class="tip">Touch or Click and drag to influence the flow.</div>
+
+        <footer>
+            <div class="glass control-panel">
+                <div class="control-group">
+                    <div class="stat-label">Gravity</div>
+                    <input type="range" id="gravity-slider" min="0" max="200" value="100">
+                </div>
+                <div class="control-group">
+                    <div class="stat-label">Friction</div>
+                    <input type="range" id="friction-slider" min="900" max="999" value="985">
+                </div>
+                <div class="control-group">
+                    <div class="stat-label">Visuals</div>
+                    <button onclick="toggleTrails()" class="stat-label" style="background:none; border: 1px solid #334155; padding: 2px 8px; border-radius: 4px; cursor: pointer; color: white;">Bloom ON</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <canvas id="canvas"></canvas>
 
     <script>
-        // Start Lucide
-        lucide.createIcons();
+        /**
+         * ENGINE CORE - COSMIC FLOW
+         * A heavy particle physics simulation using Quadtree partitioning
+         */
 
-        function switchTab(tabId) {
-            // Content update
-            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d', { alpha: false });
+        const massDisplay = document.getElementById('mass-val');
+        const countDisplay = document.getElementById('particle-count');
+        const gravitySlider = document.getElementById('gravity-slider');
+        const frictionSlider = document.getElementById('friction-slider');
 
-            // Nav update
-            document.querySelectorAll('.nav-btn').forEach(b => {
-                b.classList.remove('active', 'text-blue-600', 'bg-blue-50');
-                b.classList.add('text-slate-400');
-            });
+        let width, height;
+        let particles = [];
+        let orbs = [];
+        let state = {
+            totalMass: 0,
+            gravity: 1.0,
+            friction: 0.985,
+            showBloom: true,
+            isMouseDown: false,
+            mouse: { x: 0, y: 0 },
+            initialized: false
+        };
 
-            const activeBtns = document.querySelectorAll(`button[onclick="switchTab('${tabId}')"]`);
-            activeBtns.forEach(btn => {
-                btn.classList.add('active', 'text-blue-600');
-                if (window.innerWidth >= 768) btn.classList.add('bg-blue-50');
-                btn.classList.remove('text-slate-400');
-            });
-
-            // Close mobile menu
-            document.getElementById('mobile-menu').classList.add('hidden');
-            
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        }
-
-        function toggleEditor() {
-            const panel = document.getElementById('editor-panel');
-            panel.classList.toggle('hidden');
-        }
-
-        function updateContent() {
-            const name = document.getElementById('edit-name').value;
-            const color = document.getElementById('edit-color').value;
-
-            document.getElementById('name-display').innerHTML = name.replace('&', '<br/><span style="color:' + color + '">').replace('Developer', 'Developer</span>');
-            
-            // Update all blue text
-            const blueTexts = document.querySelectorAll('.text-blue-600');
-            blueTexts.forEach(el => el.style.color = color);
-
-            // Update blue buttons
-            const blueBtns = document.querySelectorAll('.bg-blue-600');
-            blueBtns.forEach(el => el.style.backgroundColor = color);
-        }
-
-        // Handle URL Hash for Refreshing
-        window.addEventListener('load', () => {
-            const hash = window.location.hash.replace('#', '');
-            if (hash && document.getElementById(hash)) {
-                switchTab(hash);
+        // --- QUAD TREE FOR OPTIMIZED SPATIAL PHYSICS ---
+        class QuadTree {
+            constructor(boundary, capacity) {
+                this.boundary = boundary; // {x, y, w, h}
+                this.capacity = capacity;
+                this.points = [];
+                this.divided = false;
             }
+
+            subdivide() {
+                let x = this.boundary.x;
+                let y = this.boundary.y;
+                let w = this.boundary.w / 2;
+                let h = this.boundary.h / 2;
+
+                this.nw = new QuadTree({x: x, y: y, w: w, h: h}, this.capacity);
+                this.ne = new QuadTree({x: x + w, y: y, w: w, h: h}, this.capacity);
+                this.sw = new QuadTree({x: x, y: y + h, w: w, h: h}, this.capacity);
+                this.se = new QuadTree({x: x + w, y: y + h, w: w, h: h}, this.capacity);
+                this.divided = true;
+            }
+
+            insert(point) {
+                if (!this.contains(point)) return false;
+
+                if (this.points.length < this.capacity) {
+                    this.points.push(point);
+                    return true;
+                }
+
+                if (!this.divided) this.subdivide();
+
+                return (this.nw.insert(point) || this.ne.insert(point) || 
+                        this.sw.insert(point) || this.se.insert(point));
+            }
+
+            contains(point) {
+                return (point.x >= this.boundary.x &&
+                        point.x <= this.boundary.x + this.boundary.w &&
+                        point.y >= this.boundary.y &&
+                        point.y <= this.boundary.y + this.boundary.h);
+            }
+
+            query(range, found) {
+                if (!found) found = [];
+                if (!this.intersects(range)) return found;
+
+                for (let p of this.points) {
+                    if (this.inRange(p, range)) found.push(p);
+                }
+
+                if (this.divided) {
+                    this.nw.query(range, found);
+                    this.ne.query(range, found);
+                    this.sw.query(range, found);
+                    this.se.query(range, found);
+                }
+                return found;
+            }
+
+            intersects(range) {
+                return !(range.x - range.r > this.boundary.x + this.boundary.w ||
+                         range.x + range.r < this.boundary.x ||
+                         range.y - range.r > this.boundary.y + this.boundary.h ||
+                         range.y + range.r < this.boundary.y);
+            }
+
+            inRange(p, range) {
+                let d = Math.hypot(p.x - range.x, p.y - range.y);
+                return d <= range.r;
+            }
+        }
+
+        // --- PARTICLE OBJECT ---
+        class Particle {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.vx = (Math.random() - 0.5) * 2;
+                this.vy = (Math.random() - 0.5) * 2;
+                this.hue = Math.random() * 60 + 200; // Blue/Purple range
+                this.size = Math.random() * 1.5 + 0.5;
+                this.life = 1.0;
+                this.isDead = false;
+            }
+
+            update() {
+                // Apply friction
+                this.vx *= state.friction;
+                this.vy *= state.friction;
+
+                // Mouse gravity
+                if (state.isMouseDown) {
+                    const dx = state.mouse.x - this.x;
+                    const dy = state.mouse.y - this.y;
+                    const dist = Math.hypot(dx, dy);
+                    if (dist < 400) {
+                        const force = (400 - dist) / 400 * (state.gravity * 0.05);
+                        this.vx += (dx / dist) * force;
+                        this.vy += (dy / dist) * force;
+                    }
+                }
+
+                // Orb gravity
+                for (let orb of orbs) {
+                    const dx = orb.x - this.x;
+                    const dy = orb.y - this.y;
+                    const dist = Math.hypot(dx, dy);
+                    if (dist < orb.radius * 5) {
+                        if (dist < orb.radius) {
+                            orb.absorb(this);
+                            this.isDead = true;
+                            break;
+                        }
+                        const f = (orb.radius / dist) * 0.2;
+                        this.vx += (dx / dist) * f;
+                        this.vy += (dy / dist) * f;
+                    }
+                }
+
+                this.x += this.vx;
+                this.y += this.vy;
+
+                // Screen Wrap
+                if (this.x < 0) this.x = width;
+                if (this.x > width) this.x = 0;
+                if (this.y < 0) this.y = height;
+                if (this.y > height) this.y = 0;
+            }
+
+            draw() {
+                ctx.fillStyle = `hsla(${this.hue}, 80%, 70%, ${this.life})`;
+                ctx.fillRect(this.x, this.y, this.size, this.size);
+            }
+        }
+
+        // --- ORB OBJECT (The Mergable Goals) ---
+        class Orb {
+            constructor(x, y, radius = 10) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.vx = (Math.random() - 0.5);
+                this.vy = (Math.random() - 0.5);
+                this.hue = Math.random() * 360;
+                this.pulse = 0;
+            }
+
+            update() {
+                this.vx *= 0.99;
+                this.vy *= 0.99;
+                this.x += this.vx;
+                this.y += this.vy;
+                this.pulse += 0.05;
+
+                if (this.x < this.radius) { this.x = this.radius; this.vx *= -1; }
+                if (this.x > width - this.radius) { this.x = width - this.radius; this.vx *= -1; }
+                if (this.y < this.radius) { this.y = this.radius; this.vy *= -1; }
+                if (this.y > height - this.radius) { this.y = height - this.radius; this.vy *= -1; }
+            }
+
+            draw() {
+                const glow = this.radius * 3;
+                const p = Math.sin(this.pulse) * 2;
+                
+                // Glow
+                const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, glow);
+                grad.addColorStop(0, `hsla(${this.hue}, 100%, 60%, 0.3)`);
+                grad.addColorStop(1, `hsla(${this.hue}, 100%, 60%, 0)`);
+                
+                ctx.fillStyle = grad;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, glow, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Core
+                ctx.fillStyle = `hsla(${this.hue}, 100%, 70%, 1)`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius + p, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.strokeStyle = "white";
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            }
+
+            absorb(particle) {
+                this.radius += 0.05;
+                state.totalMass += 1;
+                if (Math.random() > 0.9) synthHit();
+            }
+        }
+
+        // --- AUDIO ENGINE ---
+        let audioCtx;
+        function initAudio() {
+            if (audioCtx) return;
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+
+        function synthHit() {
+            if (!audioCtx) return;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(200 + Math.random() * 400, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(10, audioCtx.currentTime + 0.5);
+            gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.5);
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.5);
+        }
+
+        // --- SYSTEM FUNCTIONS ---
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+
+        function toggleTrails() {
+            state.showBloom = !state.showBloom;
+            event.target.innerText = state.showBloom ? "Bloom ON" : "Bloom OFF";
+        }
+
+        function initGame() {
+            initAudio();
+            document.getElementById('intro').classList.add('transparent');
+            setTimeout(() => {
+                document.getElementById('intro').classList.add('hidden');
+                document.getElementById('ui-layer').classList.remove('transparent');
+            }, 1000);
+
+            resize();
+            
+            // Generate initial particles
+            for (let i = 0; i < 4000; i++) {
+                particles.push(new Particle(Math.random() * width, Math.random() * height));
+            }
+
+            // Generate initial orbs
+            for (let i = 0; i < 5; i++) {
+                orbs.push(new Orb(Math.random() * width, Math.random() * height, 15 + Math.random() * 10));
+            }
+
+            state.initialized = true;
+            requestAnimationFrame(loop);
+        }
+
+        // --- MAIN LOOP ---
+        function loop() {
+            // Update State from UI
+            state.gravity = gravitySlider.value / 100;
+            state.friction = frictionSlider.value / 1000;
+
+            // Clear Screen
+            ctx.fillStyle = 'rgba(5, 5, 8, 0.2)'; // Slow trail effect
+            ctx.fillRect(0, 0, width, height);
+
+            // Rebuild QuadTree for this frame
+            const boundary = { x: 0, y: 0, w: width, h: height };
+            const qtree = new QuadTree(boundary, 4);
+            
+            // Process Particles
+            let aliveParticles = [];
+            for (let p of particles) {
+                p.update();
+                if (!p.isDead) {
+                    p.draw();
+                    aliveParticles.push(p);
+                    qtree.insert(p);
+                }
+            }
+            particles = aliveParticles;
+
+            // Maintain particle count (infinite mindless fun)
+            if (particles.length < 5000) {
+                for(let i=0; i<10; i++) particles.push(new Particle(Math.random() * width, Math.random() * height));
+            }
+
+            // Process Orbs & Merging
+            for (let i = orbs.length - 1; i >= 0; i--) {
+                let a = orbs[i];
+                a.update();
+                a.draw();
+
+                for (let j = i - 1; j >= 0; j--) {
+                    let b = orbs[j];
+                    let d = Math.hypot(a.x - b.x, a.y - b.y);
+                    if (d < a.radius + b.radius) {
+                        // Merge orbs
+                        const newRadius = Math.sqrt(a.radius * a.radius + b.radius * b.radius);
+                        a.radius = newRadius;
+                        a.vx += b.vx * 0.5;
+                        a.vy += b.vy * 0.5;
+                        orbs.splice(j, 1);
+                        synthHit();
+                    }
+                }
+            }
+
+            // If we have too few orbs, spawn more
+            if (orbs.length < 3) {
+                orbs.push(new Orb(Math.random() * width, Math.random() * height, 10));
+            }
+
+            // Update UI
+            massDisplay.innerText = Math.floor(state.totalMass);
+            countDisplay.innerText = particles.length;
+
+            requestAnimationFrame(loop);
+        }
+
+        // --- INPUT HANDLING ---
+        window.addEventListener('mousedown', (e) => { state.isMouseDown = true; updateMouse(e); });
+        window.addEventListener('mouseup', () => state.isMouseDown = false);
+        window.addEventListener('mousemove', updateMouse);
+        
+        window.addEventListener('touchstart', (e) => { 
+            state.isMouseDown = true; 
+            updateMouse(e.touches[0]); 
+            if(audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
         });
+        window.addEventListener('touchend', () => state.isMouseDown = false);
+        window.addEventListener('touchmove', (e) => updateMouse(e.touches[0]));
+
+        function updateMouse(e) {
+            state.mouse.x = e.clientX;
+            state.mouse.y = e.clientY;
+        }
+
+        window.addEventListener('resize', resize);
     </script>
 </body>
 </html>
