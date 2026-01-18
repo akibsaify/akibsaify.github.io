@@ -1,96 +1,340 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>FIELD</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-html,body{
-  margin:0;
-  background:#0b0b0f;
-  overflow:hidden;
-  cursor:crosshair;
-}
-canvas{display:block}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flux HD | High-Density Kinetic Fluid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+        
+        body {
+            margin: 0;
+            background-color: #020205;
+            color: #fff;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        canvas {
+            display: block;
+            touch-action: none;
+            /* Using image-rendering to keep the high-density grid crisp */
+            image-rendering: pixelated;
+        }
+
+        .controls-ui {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            pointer-events: auto;
+        }
+
+        .glass-panel {
+            background: rgba(10, 10, 15, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 1.5rem;
+            padding: 0.75rem 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .label-text {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            color: #64748b;
+            margin-bottom: 2px;
+        }
+
+        input[type="range"] {
+            appearance: none;
+            background: rgba(255, 255, 255, 0.1);
+            height: 2px;
+            border-radius: 1px;
+            width: 70px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+        }
+
+        #splash {
+            position: fixed;
+            inset: 0;
+            background: #000;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 1s ease;
+        }
+    </style>
 </head>
 <body>
-<canvas id="c"></canvas>
-<script>
-const c = document.getElementById("c");
-const x = c.getContext("2d");
-let w,h;
-function resize(){w=c.width=innerWidth;h=c.height=innerHeight}
-addEventListener("resize",resize);resize();
 
-let balls=[];
-let mouse={x:0,y:0,down:false};
-let mode=0;
+    <div id="splash">
+        <div class="w-12 h-12 border-t-2 border-white rounded-full animate-spin mb-4"></div>
+        <p class="text-[10px] tracking-[0.4rem] uppercase opacity-40">Initializing High Density Grid</p>
+    </div>
 
-addEventListener("mousemove",e=>{mouse.x=e.clientX;mouse.y=e.clientY});
-addEventListener("mousedown",()=>mouse.down=true);
-addEventListener("mouseup",()=>mouse.down=false);
-addEventListener("wheel",e=>{
-  mode=(mode+Math.sign(e.deltaY)+4)%4;
-});
+    <div class="controls-ui">
+        <div class="glass-panel">
+            <div class="flex flex-col items-center">
+                <span class="label-text">Density</span>
+                <input type="range" id="res-slider" min="4" max="15" value="6" step="1">
+            </div>
+            <div class="flex flex-col items-center">
+                <span class="label-text">Fluidity</span>
+                <input type="range" id="visc-slider" min="950" max="995" value="985">
+            </div>
+            <button onclick="changeColor()" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-all">
+                <i data-lucide="zap" class="w-4 h-4 text-cyan-400"></i>
+            </button>
+        </div>
+    </div>
 
-addEventListener("keydown",e=>{
-  if(e.key==="r") balls=[];
-  if(e.key==="c") balls.forEach(b=>b.vx*=5);
-  if(e.key==="s") slow=!slow;
-});
+    <canvas id="canvas"></canvas>
 
-class Ball{
-  constructor(x,y,m){
-    this.x=x;this.y=y;
-    this.vx=(Math.random()-0.5)*6;
-    this.vy=(Math.random()-0.5)*6;
-    this.r=8+Math.sqrt(m)*6;
-    this.m=m;
-    this.h=Math.random()*360;
-  }
-  update(){
-    if(mode===1)this.vy+=0.15*this.m;
-    if(mode===2){
-      let dx=mouse.x-this.x,dy=mouse.y-this.y;
-      let d=Math.hypot(dx,dy)+1;
-      this.vx+=dx/d*0.02;
-      this.vy+=dy/d*0.02;
-    }
-    this.x+=this.vx;
-    this.y+=this.vy;
-    this.vx*=0.99;
-    this.vy*=0.99;
-    if(this.x<this.r||this.x>w-this.r)this.vx*=-1;
-    if(this.y<this.r||this.y>h-this.r)this.vy*=-1;
-  }
-  draw(){
-    x.beginPath();
-    x.fillStyle=`hsla(${this.h},80%,60%,0.85)`;
-    x.shadowBlur=20;
-    x.shadowColor=`hsla(${this.h},80%,60%,0.4)`;
-    x.arc(this.x,this.y,this.r,0,Math.PI*2);
-    x.fill();
-    x.shadowBlur=0;
-  }
-}
+    <script>
+        /**
+         * FLUX HD SOLVER
+         * Optimization: Using a TypedArray flat-grid with 10 Gauss-Seidel iterations 
+         * to allow for higher pixel density (smaller spacing).
+         */
 
-let charge=0;
-function loop(){
-  requestAnimationFrame(loop);
-  x.fillStyle="rgba(11,11,15,0.2)";
-  x.fillRect(0,0,w,h);
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d', { alpha: false });
+        
+        let width, height;
+        let grid_w, grid_h;
+        let spacing = 6; // LOW SPACING = HIGH DENSITY (Pixels per grid cell)
 
-  if(mouse.down){
-    charge+=0.02;
-  }else if(charge>0){
-    balls.push(new Ball(mouse.x,mouse.y,charge));
-    charge=0;
-  }
+        let u, v, u_prev, v_prev, dens, dens_prev;
 
-  balls.forEach(b=>{b.update();b.draw()});
-}
-loop();
-</script>
+        const state = {
+            visc: 0.985,
+            hue: 200,
+            mouse: { x: 0, y: 0, px: 0, py: 0, down: false }
+        };
+
+        function IX(i, j) { return i + (grid_w * j); }
+
+        function initFields() {
+            grid_w = Math.floor(width / spacing) + 2;
+            grid_h = Math.floor(height / spacing) + 2;
+            const size = grid_w * grid_h;
+
+            u = new Float32Array(size);
+            v = new Float32Array(size);
+            u_prev = new Float32Array(size);
+            v_prev = new Float32Array(size);
+            dens = new Float32Array(size);
+            dens_prev = new Float32Array(size);
+        }
+
+        // --- NAVIER-STOKES MATH CORE ---
+        function diffuse(b, x, x0, diff, dt) {
+            const a = dt * diff * grid_w * grid_h;
+            for (let k = 0; k < 10; k++) { // Optimized iterations for HD
+                for (let i = 1; i < grid_w - 1; i++) {
+                    const row = i;
+                    for (let j = 1; j < grid_h - 1; j++) {
+                        const idx = IX(i, j);
+                        x[idx] = (x0[idx] + a * (x[idx-1] + x[idx+1] + x[idx-grid_w] + x[idx+grid_w])) / (1 + 4 * a);
+                    }
+                }
+                setBoundary(b, x);
+            }
+        }
+
+        function advect(b, d, d0, u, v, dt) {
+            const dt0 = dt * grid_w;
+            for (let i = 1; i < grid_w - 1; i++) {
+                for (let j = 1; j < grid_h - 1; j++) {
+                    const idx = IX(i, j);
+                    let x = i - dt0 * u[idx];
+                    let y = j - dt0 * v[idx];
+                    if (x < 0.5) x = 0.5; if (x > grid_w - 1.5) x = grid_w - 1.5;
+                    let i0 = (x) | 0; let i1 = i0 + 1;
+                    if (y < 0.5) y = 0.5; if (y > grid_h - 1.5) y = grid_h - 1.5;
+                    let j0 = (y) | 0; let j1 = j0 + 1;
+                    let s1 = x - i0; let s0 = 1 - s1;
+                    let t1 = y - j0; let t0 = 1 - t1;
+                    d[idx] = s0 * (t0 * d0[IX(i0, j0)] + t1 * d0[IX(i0, j1)]) +
+                             s1 * (t0 * d0[IX(i1, j0)] + t1 * d0[IX(i1, j1)]);
+                }
+            }
+            setBoundary(b, d);
+        }
+
+        function project(u, v, p, div) {
+            for (let i = 1; i < grid_w - 1; i++) {
+                for (let j = 1; j < grid_h - 1; j++) {
+                    const idx = IX(i, j);
+                    div[idx] = -0.5 * (u[idx+1] - u[idx-1] + v[idx+grid_w] - v[idx-grid_w]) / grid_w;
+                    p[idx] = 0;
+                }
+            }
+            setBoundary(0, div); setBoundary(0, p);
+            for (let k = 0; k < 10; k++) {
+                for (let i = 1; i < grid_w - 1; i++) {
+                    for (let j = 1; j < grid_h - 1; j++) {
+                        const idx = IX(i, j);
+                        p[idx] = (div[idx] + p[idx-1] + p[idx+1] + p[idx-grid_w] + p[idx+grid_w]) / 4;
+                    }
+                }
+                setBoundary(0, p);
+            }
+            for (let i = 1; i < grid_w - 1; i++) {
+                for (let j = 1; j < grid_h - 1; j++) {
+                    const idx = IX(i, j);
+                    u[idx] -= 0.5 * grid_w * (p[idx+1] - p[idx-1]);
+                    v[idx] -= 0.5 * grid_w * (p[idx+grid_w] - p[idx-grid_w]);
+                }
+            }
+            setBoundary(1, u); setBoundary(2, v);
+        }
+
+        function setBoundary(b, x) {
+            for (let i = 1; i < grid_w - 1; i++) {
+                x[IX(0, i)] = b === 1 ? -x[IX(1, i)] : x[IX(1, i)];
+                x[IX(grid_w - 1, i)] = b === 1 ? -x[IX(grid_w - 2, i)] : x[IX(grid_w - 2, i)];
+            }
+            for (let i = 1; i < grid_h - 1; i++) {
+                x[IX(i, 0)] = b === 2 ? -x[IX(i, 1)] : x[IX(i, 1)];
+                x[IX(i, grid_h - 1)] = b === 2 ? -x[IX(i, grid_h - 2)] : x[IX(i, grid_h - 2)];
+            }
+        }
+
+        // --- MAIN ENGINE ---
+
+        function update() {
+            const dt = 0.15;
+            const diff = 0;
+
+            // Velocity step
+            for (let i = 0; i < u.length; i++) {
+                u[i] += u_prev[i] * dt;
+                v[i] += v_prev[i] * dt;
+                dens[i] += dens_prev[i] * dt;
+                u_prev[i] = v_prev[i] = dens_prev[i] = 0;
+            }
+
+            diffuse(1, u_prev, u, diff, dt);
+            diffuse(2, v_prev, v, diff, dt);
+            project(u_prev, v_prev, u, v);
+            advect(1, u, u_prev, u_prev, v_prev, dt);
+            advect(2, v, v_prev, u_prev, v_prev, dt);
+            project(u, v, u_prev, v_prev);
+
+            // Density step
+            diffuse(0, dens_prev, dens, diff, dt);
+            advect(0, dens, dens_prev, u, v, dt);
+
+            // Viscosity / Fade
+            for (let i = 0; i < dens.length; i++) {
+                dens[i] *= 0.985; // Ink fade
+                u[i] *= state.visc;
+                v[i] *= state.visc;
+            }
+        }
+
+        function draw() {
+            ctx.fillStyle = '#020205';
+            ctx.fillRect(0, 0, width, height);
+
+            const h = state.hue;
+            for (let i = 1; i < grid_w - 1; i++) {
+                for (let j = 1; j < grid_h - 1; j++) {
+                    const d = dens[IX(i, j)];
+                    if (d > 0.02) {
+                        const alpha = Math.min(d, 0.8);
+                        ctx.fillStyle = `hsla(${h + d * 50}, 100%, 50%, ${alpha})`;
+                        ctx.fillRect((i - 1) * spacing, (j - 1) * spacing, spacing, spacing);
+                    }
+                }
+            }
+        }
+
+        function loop() {
+            state.visc = document.getElementById('visc-slider').value / 1000;
+            const newSpacing = parseInt(document.getElementById('res-slider').value);
+            if (newSpacing !== spacing) {
+                spacing = newSpacing;
+                initFields();
+            }
+
+            // Interaction
+            if (state.mouse.down || true) {
+                const i = (state.mouse.x / spacing) | 0;
+                const j = (state.mouse.y / spacing) | 0;
+                if (i > 0 && i < grid_w - 1 && j > 0 && j < grid_h - 1) {
+                    const idx = IX(i, j);
+                    dens_prev[idx] += 12;
+                    u_prev[idx] += (state.mouse.x - state.mouse.px) * 2.5;
+                    v_prev[idx] += (state.mouse.y - state.mouse.py) * 2.5;
+                }
+            }
+            state.mouse.px = state.mouse.x;
+            state.mouse.py = state.mouse.y;
+
+            update();
+            draw();
+            requestAnimationFrame(loop);
+        }
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            initFields();
+        }
+
+        function changeColor() {
+            state.hue = (state.hue + 60) % 360;
+        }
+
+        // --- LISTENERS ---
+        window.addEventListener('mousemove', (e) => {
+            state.mouse.x = e.clientX;
+            state.mouse.y = e.clientY;
+        });
+        window.addEventListener('mousedown', () => state.mouse.down = true);
+        window.addEventListener('mouseup', () => state.mouse.down = false);
+        window.addEventListener('touchmove', (e) => {
+            state.mouse.x = e.touches[0].clientX;
+            state.mouse.y = e.touches[0].clientY;
+            state.mouse.down = true;
+        });
+        window.addEventListener('touchend', () => state.mouse.down = false);
+
+        window.onload = () => {
+            resize();
+            lucide.createIcons();
+            setTimeout(() => {
+                document.getElementById('splash').style.opacity = '0';
+                setTimeout(() => document.getElementById('splash').remove(), 1000);
+            }, 800);
+            loop();
+        };
+
+        window.addEventListener('resize', resize);
+    </script>
 </body>
 </html>
+
