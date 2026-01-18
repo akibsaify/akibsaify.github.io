@@ -3,25 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Harmonic Flow | Coherent Dynamics</title>
+    <title>Flux | Kinetic Fluid Nebula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        :root {
-            --bg: #010103;
-            --accent: #00d4ff;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            user-select: none;
-            overflow: hidden;
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+        
         body {
-            background-color: var(--bg);
+            margin: 0;
+            background-color: #050508;
             color: #fff;
-            font-family: 'Inter', system-ui, sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow: hidden;
             width: 100vw;
             height: 100vh;
         }
@@ -31,122 +24,96 @@
             touch-action: none;
         }
 
-        #ui-overlay {
+        .controls-ui {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 20;
+            pointer-events: auto;
+        }
+
+        .glass-panel {
+            background: rgba(15, 15, 25, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2rem;
+            padding: 0.75rem 1.5rem;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 3rem;
-            z-index: 10;
+            align-items: center;
+            gap: 2rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            opacity: 0.4;
-        }
-
-        .tag {
-            font-size: 0.6rem;
-            text-transform: uppercase;
-            letter-spacing: 0.3rem;
-            font-weight: 700;
-        }
-
-        .center-msg {
+        .instruction {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            pointer-events: none;
             text-align: center;
-            opacity: 0;
-            transition: opacity 1.5s ease;
+            opacity: 0.6;
+            transition: opacity 1s ease;
         }
 
-        .center-msg.visible { opacity: 0.15; }
-
-        .controls {
-            display: flex;
-            gap: 2rem;
-            pointer-events: auto;
-        }
-
-        .control-item {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
+        .instruction.fade-out { opacity: 0; }
 
         input[type="range"] {
             appearance: none;
             background: rgba(255, 255, 255, 0.1);
-            height: 2px;
-            width: 120px;
-            outline: none;
+            height: 4px;
+            border-radius: 2px;
+            width: 80px;
         }
 
         input[type="range"]::-webkit-slider-thumb {
             appearance: none;
-            width: 10px;
-            height: 10px;
-            background: var(--accent);
+            width: 14px;
+            height: 14px;
+            background: #fff;
             border-radius: 50%;
             cursor: pointer;
+            box-shadow: 0 0 10px #00f2ff;
         }
 
-        #intro-curtain {
+        #splash {
             position: fixed;
             inset: 0;
             background: #000;
             z-index: 100;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            transition: opacity 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 1.5s ease;
         }
     </style>
 </head>
 <body>
 
-    <div id="intro-curtain">
-        <div style="text-align: center;">
-            <div style="width: 1px; height: 60px; background: white; margin: 0 auto 20px; animation: scaleY 2s infinite;"></div>
-            <p style="letter-spacing: 0.5rem; font-size: 0.7rem; font-weight: 300;">HARMONIC RESONANCE</p>
-        </div>
+    <div id="splash">
+        <div class="w-16 h-16 border-t-2 border-cyan-400 rounded-full animate-spin mb-6"></div>
+        <h1 class="text-xs tracking-[0.5rem] uppercase font-light">Loading Fluid Dynamics</h1>
     </div>
 
-    <div id="ui-overlay">
-        <div class="header">
-            <div class="tag">System: Coherent Field</div>
-            <div class="tag">Status: Synchronized</div>
-        </div>
+    <div id="instruction" class="instruction">
+        <h2 class="text-3xl font-light tracking-widest mb-2">STIR THE NEBULA</h2>
+        <p class="text-xs text-cyan-400 tracking-[0.2rem] uppercase">Experience Kinetic Flow</p>
+    </div>
 
-        <div id="msg" class="center-msg visible">
-            <h1 style="font-size: 3rem; font-weight: 100; letter-spacing: 1rem;">AETHER</h1>
-            <p style="letter-spacing: 0.2rem; font-size: 0.8rem; margin-top: 10px;">Move to shape the resonance</p>
-        </div>
-
-        <div class="footer">
-            <div class="controls">
-                <div class="control-item">
-                    <span class="tag" style="font-size: 0.5rem;">Density</span>
-                    <input type="range" id="density" min="10" max="150" value="80">
-                </div>
-                <div class="control-item">
-                    <span class="tag" style="font-size: 0.5rem;">Viscosity</span>
-                    <input type="range" id="viscosity" min="90" max="99" value="96">
-                </div>
-                <div class="control-item">
-                    <span class="tag" style="font-size: 0.5rem;">Field Force</span>
-                    <input type="range" id="force" min="1" max="50" value="25">
-                </div>
+    <div class="controls-ui">
+        <div class="glass-panel">
+            <div class="flex flex-col items-center">
+                <span class="text-[10px] uppercase tracking-tighter text-slate-400 mb-1">Viscosity</span>
+                <input type="range" id="viscosity" min="90" max="99" value="97">
             </div>
+            <div class="flex flex-col items-center">
+                <span class="text-[10px] uppercase tracking-tighter text-slate-400 mb-1">Vortex</span>
+                <input type="range" id="vortex" min="1" max="10" value="4">
+            </div>
+            <button onclick="changeColor()" class="p-2 hover:text-cyan-400 transition-colors">
+                <i data-lucide="palette" class="w-5 h-5"></i>
+            </button>
         </div>
     </div>
 
@@ -154,180 +121,238 @@
 
     <script>
         /**
-         * COHERENT FLOW ENGINE
-         * Principles: Vector Field Smoothing & Streamline Integration
+         * FLUX ENGINE: STABLE FLUID SOLVER
+         * Principle: Navier-Stokes (Eulerian approach)
+         * High code volume for the mathematical solver grid.
          */
 
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d', { alpha: false });
         
         let width, height;
-        let lines = [];
-        let tick = 0;
-        
+        let grid_w, grid_h;
+        const spacing = 12; // Resolution of the fluid grid
+
+        // Fluid Fields
+        let u, v, u_prev, v_prev; // Velocity vectors
+        let dens, dens_prev;      // Density (Color ink)
+
         const settings = {
-            lineCount: 80,
-            pointsPerLine: 40,
-            segmentLength: 15,
-            hue: 195,
-            viscosity: 0.96,
-            force: 0.25,
-            mouse: { x: 0, y: 0, targetX: 0, targetY: 0, active: false }
+            visc: 0.97,
+            vortex: 4,
+            hue: 180,
+            mouse: { x: 0, y: 0, px: 0, py: 0, down: false }
         };
 
-        class Streamline {
-            constructor(yOffset) {
-                this.yOffset = yOffset;
-                this.points = [];
-                this.hue = settings.hue + (Math.random() * 30 - 15);
-                this.init();
-            }
+        function initFields() {
+            grid_w = Math.ceil(width / spacing) + 2;
+            grid_h = Math.ceil(height / spacing) + 2;
+            const size = grid_w * grid_h;
 
-            init() {
-                this.points = [];
-                const startX = -50;
-                const baseHeight = (height * this.yOffset);
-                
-                for (let i = 0; i < settings.pointsPerLine; i++) {
-                    this.points.push({
-                        x: startX + (i * (width / (settings.pointsPerLine - 5))),
-                        y: baseHeight,
-                        vx: 0,
-                        vy: 0,
-                        originalY: baseHeight
-                    });
-                }
-            }
+            u = new Float32Array(size);
+            v = new Float32Array(size);
+            u_prev = new Float32Array(size);
+            v_prev = new Float32Array(size);
+            dens = new Float32Array(size);
+            dens_prev = new Float32Array(size);
+        }
 
-            update() {
-                this.points.forEach((p, i) => {
-                    // 1. Consistent Base Flow (Sine Harmonics)
-                    const harmonic1 = Math.sin(tick * 0.02 + p.x * 0.002) * 20;
-                    const harmonic2 = Math.cos(tick * 0.01 + p.x * 0.005) * 10;
-                    const targetY = p.originalY + harmonic1 + harmonic2;
+        // --- MATH SOLVER CORE ---
+        function addSource(x, s, dt) {
+            for (let i = 0; i < x.length; i++) x[i] += dt * s[i];
+        }
 
-                    // 2. Field Force (Spring back to harmonic state)
-                    p.vy += (targetY - p.y) * 0.02;
-
-                    // 3. User Interaction (The Lenz Effect)
-                    if (settings.mouse.active || true) {
-                        const mx = settings.mouse.active ? settings.mouse.x : width / 2 + Math.cos(tick * 0.01) * width * 0.3;
-                        const my = settings.mouse.active ? settings.mouse.y : height / 2 + Math.sin(tick * 0.02) * height * 0.2;
-                        
-                        const dx = mx - p.x;
-                        const dy = my - p.y;
-                        const dist = Math.sqrt(dx * dx + dy * dy);
-                        
-                        if (dist < 250) {
-                            const force = (1 - dist / 250) * settings.force;
-                            p.vx -= (dx / dist) * force;
-                            p.vy -= (dy / dist) * force;
-                        }
+        function diffuse(b, x, x0, diff, dt) {
+            const a = dt * diff * grid_w * grid_h;
+            for (let k = 0; k < 20; k++) { // Gauss-Seidel iterations
+                for (let i = 1; i < grid_w - 1; i++) {
+                    for (let j = 1; j < grid_h - 1; j++) {
+                        x[IX(i, j)] = (x0[IX(i, j)] + a * (x[IX(i - 1, j)] + x[IX(i + 1, j)] + x[IX(i, j - 1)] + x[IX(i, j + 1)])) / (1 + 4 * a);
                     }
-
-                    // 4. Consistent Velocity
-                    p.vx *= settings.viscosity;
-                    p.vy *= settings.viscosity;
-                    
-                    // Don't move horizontally much to keep "consistent" lanes
-                    p.y += p.vy;
-                    p.x += p.vx * 0.1; 
-                });
-            }
-
-            draw() {
-                ctx.beginPath();
-                ctx.moveTo(this.points[0].x, this.points[0].y);
-
-                for (let i = 1; i < this.points.length; i++) {
-                    const p = this.points[i];
-                    const prev = this.points[i - 1];
-                    
-                    // Bezier smoothing for consistent curves
-                    const xc = (p.x + prev.x) / 2;
-                    const yc = (p.y + prev.y) / 2;
-                    ctx.quadraticCurveTo(prev.x, prev.y, xc, yc);
                 }
-
-                const gradient = ctx.createLinearGradient(0, 0, width, 0);
-                gradient.addColorStop(0, `hsla(${this.hue}, 100%, 50%, 0)`);
-                gradient.addColorStop(0.5, `hsla(${this.hue}, 100%, 50%, 0.4)`);
-                gradient.addColorStop(1, `hsla(${this.hue}, 100%, 50%, 0)`);
-
-                ctx.strokeStyle = gradient;
-                ctx.lineWidth = 1.5;
-                ctx.stroke();
+                setBoundary(b, x);
             }
+        }
+
+        function advect(b, d, d0, u, v, dt) {
+            const dt0 = dt * grid_w;
+            for (let i = 1; i < grid_w - 1; i++) {
+                for (let j = 1; j < grid_h - 1; j++) {
+                    let x = i - dt0 * u[IX(i, j)];
+                    let y = j - dt0 * v[IX(i, j)];
+                    if (x < 0.5) x = 0.5; if (x > grid_w - 1.5) x = grid_w - 1.5;
+                    let i0 = Math.floor(x); let i1 = i0 + 1;
+                    if (y < 0.5) y = 0.5; if (y > grid_h - 1.5) y = grid_h - 1.5;
+                    let j0 = Math.floor(y); let j1 = j0 + 1;
+                    let s1 = x - i0; let s0 = 1 - s1;
+                    let t1 = y - j0; let t0 = 1 - t1;
+                    d[IX(i, j)] = s0 * (t0 * d0[IX(i0, j0)] + t1 * d0[IX(i0, j1)]) +
+                                  s1 * (t0 * d0[IX(i1, j0)] + t1 * d0[IX(i1, j1)]);
+                }
+            }
+            setBoundary(b, d);
+        }
+
+        function project(u, v, p, div) {
+            for (let i = 1; i < grid_w - 1; i++) {
+                for (let j = 1; j < grid_h - 1; j++) {
+                    div[IX(i, j)] = -0.5 * (u[IX(i + 1, j)] - u[IX(i - 1, j)] + v[IX(i, j + 1)] - v[IX(i, j - 1)]) / grid_w;
+                    p[IX(i, j)] = 0;
+                }
+            }
+            setBoundary(0, div); setBoundary(0, p);
+            for (let k = 0; k < 20; k++) {
+                for (let i = 1; i < grid_w - 1; i++) {
+                    for (let j = 1; j < grid_h - 1; j++) {
+                        p[IX(i, j)] = (div[IX(i, j)] + p[IX(i - 1, j)] + p[IX(i + 1, j)] + p[IX(i, j - 1)] + p[IX(i, j + 1)]) / 4;
+                    }
+                }
+                setBoundary(0, p);
+            }
+            for (let i = 1; i < grid_w - 1; i++) {
+                for (let j = 1; j < grid_h - 1; j++) {
+                    u[IX(i, j)] -= 0.5 * grid_w * (p[IX(i + 1, j)] - p[IX(i - 1, j)]);
+                    v[IX(i, j)] -= 0.5 * grid_w * (p[IX(i, j + 1)] - p[IX(i, j - 1)]);
+                }
+            }
+            setBoundary(1, u); setBoundary(2, v);
+        }
+
+        function setBoundary(b, x) {
+            for (let i = 1; i < grid_w - 1; i++) {
+                x[IX(0, i)] = b === 1 ? -x[IX(1, i)] : x[IX(1, i)];
+                x[IX(grid_w - 1, i)] = b === 1 ? -x[IX(grid_w - 2, i)] : x[IX(grid_w - 2, i)];
+                x[IX(i, 0)] = b === 2 ? -x[IX(i, 1)] : x[IX(i, 1)];
+                x[IX(i, grid_h - 1)] = b === 2 ? -x[IX(i, grid_h - 2)] : x[IX(i, grid_h - 2)];
+            }
+            x[IX(0, 0)] = 0.5 * (x[IX(1, 0)] + x[IX(0, 1)]);
+            x[IX(0, grid_h - 1)] = 0.5 * (x[IX(1, grid_h - 1)] + x[IX(0, grid_h - 2)]);
+            x[IX(grid_w - 1, 0)] = 0.5 * (x[IX(grid_w - 2, 0)] + x[IX(grid_w - 1, 1)]);
+            x[IX(grid_w - 1, grid_h - 1)] = 0.5 * (x[IX(grid_w - 2, grid_h - 1)] + x[IX(grid_w - 1, grid_h - 2)]);
+        }
+
+        function IX(i, j) { return i + (grid_w * j); }
+
+        // --- RENDER & INTERACTION ---
+
+        function updateFluid() {
+            const dt = 0.1;
+            const diff = 0.0001;
+
+            // Density Step
+            addSource(dens, dens_prev, dt);
+            diffuse(0, dens_prev, dens, diff, dt);
+            advect(0, dens, dens_prev, u, v, dt);
+
+            // Velocity Step
+            addSource(u, u_prev, dt);
+            addSource(v, v_prev, dt);
+            diffuse(1, u_prev, u, diff, dt);
+            diffuse(2, v_prev, v, diff, dt);
+            project(u_prev, v_prev, u, v);
+            advect(1, u, u_prev, u_prev, v_prev, dt);
+            advect(2, v, v_prev, u_prev, v_prev, dt);
+            project(u, v, u_prev, v_prev);
+
+            // Decay
+            const visc = settings.visc;
+            for (let i = 0; i < dens.length; i++) {
+                dens[i] *= 0.99; // Density decay
+                u[i] *= visc;
+                v[i] *= visc;
+                dens_prev[i] = 0;
+                u_prev[i] = 0;
+                v_prev[i] = 0;
+            }
+        }
+
+        function drawFluid() {
+            ctx.fillStyle = '#050508';
+            ctx.fillRect(0, 0, width, height);
+
+            for (let i = 1; i < grid_w - 1; i++) {
+                for (let j = 1; j < grid_h - 1; j++) {
+                    const d = dens[IX(i, j)];
+                    if (d > 0.01) {
+                        const alpha = Math.min(d, 1);
+                        ctx.fillStyle = `hsla(${settings.hue}, 100%, 50%, ${alpha})`;
+                        ctx.fillRect((i - 1) * spacing, (j - 1) * spacing, spacing, spacing);
+                    }
+                }
+            }
+        }
+
+        function handleInteraction() {
+            if (settings.mouse.down || true) { // Always a bit of autonomous flow if we want, but let's stick to mouse
+                const i = Math.floor(settings.mouse.x / spacing) + 1;
+                const j = Math.floor(settings.mouse.y / spacing) + 1;
+                
+                if (i > 0 && i < grid_w - 1 && j > 0 && j < grid_h - 1) {
+                    const force = settings.vortex;
+                    const idx = IX(i, j);
+                    
+                    // Add Ink and Velocity
+                    dens_prev[idx] += 15;
+                    u_prev[idx] += (settings.mouse.x - settings.mouse.px) * force;
+                    v_prev[idx] += (settings.mouse.y - settings.mouse.py) * force;
+                }
+            }
+            settings.mouse.px = settings.mouse.x;
+            settings.mouse.py = settings.mouse.y;
+        }
+
+        function loop() {
+            settings.visc = document.getElementById('viscosity').value / 100;
+            settings.vortex = document.getElementById('vortex').value;
+
+            handleInteraction();
+            updateFluid();
+            drawFluid();
+            requestAnimationFrame(loop);
         }
 
         function resize() {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
-            initField();
+            initFields();
         }
 
-        function initField() {
-            lines = [];
-            const count = parseInt(document.getElementById('density').value);
-            for (let i = 0; i <= count; i++) {
-                lines.push(new Streamline(i / count));
-            }
+        function changeColor() {
+            settings.hue = (settings.hue + 45) % 360;
         }
 
-        function loop() {
-            tick++;
-            
-            // Minimalist clear with slight persistent glow
-            ctx.fillStyle = 'rgba(1, 1, 3, 0.15)';
-            ctx.fillRect(0, 0, width, height);
-
-            // Global update based on UI
-            settings.viscosity = document.getElementById('viscosity').value / 100;
-            settings.force = document.getElementById('force').value / 100;
-
-            lines.forEach(line => {
-                line.update();
-                line.draw();
-            });
-
-            requestAnimationFrame(loop);
-        }
-
-        // --- Interaction Listeners ---
+        // Listeners
         window.addEventListener('mousemove', (e) => {
             settings.mouse.x = e.clientX;
             settings.mouse.y = e.clientY;
-            settings.mouse.active = true;
-            document.getElementById('msg').classList.remove('visible');
-            
-            clearTimeout(settings.mouse.timer);
-            settings.mouse.timer = setTimeout(() => {
-                settings.mouse.active = false;
-                document.getElementById('msg').classList.add('visible');
-            }, 3000);
+            document.getElementById('instruction').classList.add('fade-out');
         });
 
+        window.addEventListener('mousedown', () => settings.mouse.down = true);
+        window.addEventListener('mouseup', () => settings.mouse.down = false);
+
         window.addEventListener('touchmove', (e) => {
+            e.preventDefault();
             settings.mouse.x = e.touches[0].clientX;
             settings.mouse.y = e.touches[0].clientY;
-            settings.mouse.active = true;
-            document.getElementById('msg').classList.remove('visible');
+            settings.mouse.down = true;
+            document.getElementById('instruction').classList.add('fade-out');
         }, { passive: false });
 
-        document.getElementById('density').addEventListener('input', initField);
+        window.addEventListener('touchend', () => settings.mouse.down = false);
 
         window.onload = () => {
             resize();
-            requestAnimationFrame(loop);
+            lucide.createIcons();
             setTimeout(() => {
-                document.getElementById('intro-curtain').style.opacity = '0';
-                setTimeout(() => document.getElementById('intro-curtain').remove(), 2500);
+                document.getElementById('splash').style.opacity = '0';
+                setTimeout(() => document.getElementById('splash').remove(), 1500);
             }, 1000);
+            loop();
         };
 
         window.addEventListener('resize', resize);
     </script>
 </body>
 </html>
-
 
