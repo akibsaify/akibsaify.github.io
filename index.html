@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Cosmic Flow | Zen Experience</title>
+    <title>Neon Rift Harvester | Endless Flow</title>
     <style>
         :root {
-            --bg: #050508;
-            --panel: rgba(15, 15, 25, 0.7);
-            --accent: #4f46e5;
-            --text: #e2e8f0;
+            --bg: #020205;
+            --neon: #00f2ff;
+            --accent: #7000ff;
+            --ui-bg: rgba(10, 10, 20, 0.8);
         }
 
         * {
@@ -17,14 +17,13 @@
             margin: 0;
             padding: 0;
             user-select: none;
-            -webkit-tap-highlight-color: transparent;
+            overflow: hidden;
         }
 
         body {
             background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            overflow: hidden;
+            color: #fff;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             width: 100vw;
             height: 100vh;
         }
@@ -34,13 +33,9 @@
             touch-action: none;
         }
 
-        /* UI Overlays */
-        #ui-layer {
+        #overlay {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            inset: 0;
             pointer-events: none;
             display: flex;
             flex-direction: column;
@@ -50,560 +45,457 @@
         }
 
         .glass {
-            background: var(--panel);
-            backdrop-filter: blur(12px);
+            background: var(--ui-bg);
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 1.5rem;
+            border-radius: 1rem;
+            padding: 1rem 1.5rem;
             pointer-events: auto;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        header {
+        .header {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
         }
 
-        .stats-panel {
-            padding: 1rem 1.5rem;
+        .stat-group {
+            display: flex;
+            flex-direction: column;
         }
 
-        .stat-label {
-            font-size: 0.7rem;
+        .label {
+            font-size: 0.65rem;
             text-transform: uppercase;
-            letter-spacing: 0.1rem;
-            color: #94a3b8;
+            letter-spacing: 0.15rem;
+            color: var(--neon);
             margin-bottom: 0.2rem;
+            opacity: 0.8;
         }
 
-        .stat-value {
-            font-size: 1.5rem;
+        .value {
+            font-size: 1.8rem;
             font-weight: 800;
             font-variant-numeric: tabular-nums;
+            text-shadow: 0 0 10px var(--neon);
         }
 
-        footer {
+        .footer {
             display: flex;
             justify-content: center;
             gap: 1rem;
         }
 
-        .control-panel {
-            padding: 0.8rem 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .control-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.3rem;
-        }
-
-        input[type="range"] {
-            appearance: none;
-            background: rgba(255, 255, 255, 0.1);
-            height: 4px;
-            border-radius: 2px;
-            width: 100px;
-        }
-
-        input[type="range"]::-webkit-slider-thumb {
-            appearance: none;
-            width: 14px;
-            height: 14px;
-            background: white;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
-        }
-
-        /* Intro Screen */
-        #intro {
+        #start-screen {
             position: fixed;
             inset: 0;
-            background: var(--bg);
-            z-index: 100;
+            background: radial-gradient(circle at center, #0a0a1a 0%, #020205 100%);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            transition: opacity 1s ease;
+            z-index: 100;
+            transition: opacity 0.8s ease;
         }
 
-        .intro-content {
-            text-align: center;
-            max-width: 400px;
-        }
-
-        .logo-anim {
-            width: 80px;
-            height: 80px;
-            border: 3px solid var(--accent);
-            border-radius: 50%;
-            margin: 0 auto 2rem;
-            position: relative;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.1); opacity: 0.5; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        h1 {
-            font-size: 2.5rem;
+        .title {
+            font-size: clamp(2rem, 8vw, 4rem);
             font-weight: 900;
+            letter-spacing: -0.1rem;
             margin-bottom: 1rem;
-            letter-spacing: -0.05rem;
+            background: linear-gradient(to bottom, #fff, var(--neon));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .start-btn {
-            background: white;
-            color: black;
+        .btn {
+            background: #fff;
+            color: #000;
             border: none;
             padding: 1rem 3rem;
-            border-radius: 3rem;
-            font-weight: bold;
-            font-size: 1.1rem;
+            border-radius: 5rem;
+            font-weight: 800;
+            font-size: 1.2rem;
             cursor: pointer;
-            margin-top: 2rem;
-            transition: transform 0.2s;
+            transition: all 0.2s;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
         }
 
-        .start-btn:active {
-            transform: scale(0.95);
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.5);
         }
 
-        /* Tips */
-        .tip {
+        .upgrade-alert {
             position: absolute;
-            bottom: 6rem;
+            top: 20%;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 0.9rem;
-            color: #64748b;
-            opacity: 0.7;
-            text-align: center;
-            width: 100%;
+            color: var(--neon);
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s;
         }
 
+        .active { opacity: 1 !important; }
         .hidden { display: none !important; }
-        .transparent { opacity: 0 !important; pointer-events: none !important; }
-
-        @media (max-width: 600px) {
-            .control-panel { flex-wrap: wrap; justify-content: center; gap: 1rem; }
-            h1 { font-size: 2rem; }
-            #ui-layer { padding: 1rem; }
-        }
+        .fade-out { opacity: 0; pointer-events: none; }
     </style>
 </head>
 <body>
 
-    <div id="intro">
-        <div class="intro-content">
-            <div class="logo-anim"></div>
-            <h1>COSMIC FLOW</h1>
-            <p style="color: #64748b;">A mindless journey through the void.<br>Collect dust. Merge orbs. Just flow.</p>
-            <button class="start-btn" onclick="initGame()">ENTER THE FLOW</button>
+    <div id="start-screen">
+        <h1 class="title">NEON HARVESTER</h1>
+        <p style="color: #444; margin-bottom: 2rem; text-align: center;">Mindless collection. Endless growth.<br>No death. Just flow.</p>
+        <button class="btn" onclick="startGame()">START HARVEST</button>
+    </div>
+
+    <div id="overlay" class="hidden">
+        <div class="header">
+            <div class="glass stat-group">
+                <span class="label">Total Essence</span>
+                <span id="score" class="value">0</span>
+            </div>
+            <div class="glass stat-group">
+                <span class="label">Nebula Depth</span>
+                <span id="level" class="value">1</span>
+            </div>
+        </div>
+
+        <div id="upgrade-msg" class="upgrade-alert">Evolution Complete</div>
+
+        <div class="footer">
+            <div class="glass" style="display: flex; gap: 2rem; font-size: 0.8rem; color: #888;">
+                <div>DRAG TO MOVE</div>
+                <div>COLLECT GEMS</div>
+                <div>GROW FOREVER</div>
+            </div>
         </div>
     </div>
 
-    <div id="ui-layer" class="transparent">
-        <header>
-            <div class="glass stats-panel">
-                <div class="stat-label">Cosmic Mass</div>
-                <div id="mass-val" class="stat-value">0</div>
-            </div>
-            <div class="glass stats-panel">
-                <div class="stat-label">Particles</div>
-                <div id="particle-count" class="stat-value">0</div>
-            </div>
-        </header>
-
-        <div class="tip">Touch or Click and drag to influence the flow.</div>
-
-        <footer>
-            <div class="glass control-panel">
-                <div class="control-group">
-                    <div class="stat-label">Gravity</div>
-                    <input type="range" id="gravity-slider" min="0" max="200" value="100">
-                </div>
-                <div class="control-group">
-                    <div class="stat-label">Friction</div>
-                    <input type="range" id="friction-slider" min="900" max="999" value="985">
-                </div>
-                <div class="control-group">
-                    <div class="stat-label">Visuals</div>
-                    <button onclick="toggleTrails()" class="stat-label" style="background:none; border: 1px solid #334155; padding: 2px 8px; border-radius: 4px; cursor: pointer; color: white;">Bloom ON</button>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <canvas id="canvas"></canvas>
+    <canvas id="gameCanvas"></canvas>
 
     <script>
         /**
-         * ENGINE CORE - COSMIC FLOW
-         * A heavy particle physics simulation using Quadtree partitioning
+         * NEON RIFT HARVESTER ENGINE
+         * High-performance entity management and procedural audio
          */
 
-        const canvas = document.getElementById('canvas');
+        const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d', { alpha: false });
-        const massDisplay = document.getElementById('mass-val');
-        const countDisplay = document.getElementById('particle-count');
-        const gravitySlider = document.getElementById('gravity-slider');
-        const frictionSlider = document.getElementById('friction-slider');
+        const scoreEl = document.getElementById('score');
+        const levelEl = document.getElementById('level');
+        const upgradeMsg = document.getElementById('upgrade-msg');
 
         let width, height;
         let particles = [];
-        let orbs = [];
-        let state = {
-            totalMass: 0,
-            gravity: 1.0,
-            friction: 0.985,
-            showBloom: true,
-            isMouseDown: false,
+        let gems = [];
+        let rifts = [];
+        let explosions = [];
+        
+        const state = {
+            score: 0,
+            level: 1,
+            essenceNeeded: 100,
+            vacuumRadius: 120,
+            playerSpeed: 0.15,
+            hue: 180,
+            isMoving: false,
             mouse: { x: 0, y: 0 },
-            initialized: false
+            player: { x: 0, y: 0, vx: 0, vy: 0, size: 20 },
+            initialized: false,
+            shake: 0
         };
 
-        // --- QUAD TREE FOR OPTIMIZED SPATIAL PHYSICS ---
-        class QuadTree {
-            constructor(boundary, capacity) {
-                this.boundary = boundary; // {x, y, w, h}
-                this.capacity = capacity;
-                this.points = [];
-                this.divided = false;
+        // --- CLASSES ---
+
+        class Gem {
+            constructor() {
+                this.reset();
             }
-
-            subdivide() {
-                let x = this.boundary.x;
-                let y = this.boundary.y;
-                let w = this.boundary.w / 2;
-                let h = this.boundary.h / 2;
-
-                this.nw = new QuadTree({x: x, y: y, w: w, h: h}, this.capacity);
-                this.ne = new QuadTree({x: x + w, y: y, w: w, h: h}, this.capacity);
-                this.sw = new QuadTree({x: x, y: y + h, w: w, h: h}, this.capacity);
-                this.se = new QuadTree({x: x + w, y: y + h, w: w, h: h}, this.capacity);
-                this.divided = true;
+            reset() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.size = Math.random() * 3 + 2;
+                this.vx = (Math.random() - 0.5) * 0.5;
+                this.vy = (Math.random() - 0.5) * 0.5;
+                this.collected = false;
+                this.pulse = Math.random() * Math.PI * 2;
             }
-
-            insert(point) {
-                if (!this.contains(point)) return false;
-
-                if (this.points.length < this.capacity) {
-                    this.points.push(point);
-                    return true;
-                }
-
-                if (!this.divided) this.subdivide();
-
-                return (this.nw.insert(point) || this.ne.insert(point) || 
-                        this.sw.insert(point) || this.se.insert(point));
-            }
-
-            contains(point) {
-                return (point.x >= this.boundary.x &&
-                        point.x <= this.boundary.x + this.boundary.w &&
-                        point.y >= this.boundary.y &&
-                        point.y <= this.boundary.y + this.boundary.h);
-            }
-
-            query(range, found) {
-                if (!found) found = [];
-                if (!this.intersects(range)) return found;
-
-                for (let p of this.points) {
-                    if (this.inRange(p, range)) found.push(p);
-                }
-
-                if (this.divided) {
-                    this.nw.query(range, found);
-                    this.ne.query(range, found);
-                    this.sw.query(range, found);
-                    this.se.query(range, found);
-                }
-                return found;
-            }
-
-            intersects(range) {
-                return !(range.x - range.r > this.boundary.x + this.boundary.w ||
-                         range.x + range.r < this.boundary.x ||
-                         range.y - range.r > this.boundary.y + this.boundary.h ||
-                         range.y + range.r < this.boundary.y);
-            }
-
-            inRange(p, range) {
-                let d = Math.hypot(p.x - range.x, p.y - range.y);
-                return d <= range.r;
-            }
-        }
-
-        // --- PARTICLE OBJECT ---
-        class Particle {
-            constructor(x, y) {
-                this.x = x;
-                this.y = y;
-                this.vx = (Math.random() - 0.5) * 2;
-                this.vy = (Math.random() - 0.5) * 2;
-                this.hue = Math.random() * 60 + 200; // Blue/Purple range
-                this.size = Math.random() * 1.5 + 0.5;
-                this.life = 1.0;
-                this.isDead = false;
-            }
-
             update() {
-                // Apply friction
-                this.vx *= state.friction;
-                this.vy *= state.friction;
+                const dx = state.player.x - this.x;
+                const dy = state.player.y - this.y;
+                const dist = Math.hypot(dx, dy);
 
-                // Mouse gravity
-                if (state.isMouseDown) {
-                    const dx = state.mouse.x - this.x;
-                    const dy = state.mouse.y - this.y;
-                    const dist = Math.hypot(dx, dy);
-                    if (dist < 400) {
-                        const force = (400 - dist) / 400 * (state.gravity * 0.05);
-                        this.vx += (dx / dist) * force;
-                        this.vy += (dy / dist) * force;
+                if (dist < state.vacuumRadius) {
+                    const force = (state.vacuumRadius - dist) / state.vacuumRadius;
+                    this.vx += (dx / dist) * force * 1.5;
+                    this.vy += (dy / dist) * force * 1.5;
+                    
+                    if (dist < state.player.size) {
+                        this.collected = true;
+                        state.score += 1;
+                        state.hue += 0.1;
+                        playPop();
                     }
                 }
 
-                // Orb gravity
-                for (let orb of orbs) {
-                    const dx = orb.x - this.x;
-                    const dy = orb.y - this.y;
-                    const dist = Math.hypot(dx, dy);
-                    if (dist < orb.radius * 5) {
-                        if (dist < orb.radius) {
-                            orb.absorb(this);
-                            this.isDead = true;
-                            break;
-                        }
-                        const f = (orb.radius / dist) * 0.2;
-                        this.vx += (dx / dist) * f;
-                        this.vy += (dy / dist) * f;
-                    }
-                }
-
+                this.vx *= 0.95;
+                this.vy *= 0.95;
                 this.x += this.vx;
                 this.y += this.vy;
+                this.pulse += 0.1;
 
-                // Screen Wrap
+                // Wrap
                 if (this.x < 0) this.x = width;
                 if (this.x > width) this.x = 0;
                 if (this.y < 0) this.y = height;
                 if (this.y > height) this.y = 0;
             }
-
             draw() {
-                ctx.fillStyle = `hsla(${this.hue}, 80%, 70%, ${this.life})`;
-                ctx.fillRect(this.x, this.y, this.size, this.size);
+                const s = this.size + Math.sin(this.pulse) * 1;
+                ctx.fillStyle = `hsla(${state.hue}, 100%, 70%, 0.8)`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, s, 0, Math.PI * 2);
+                ctx.fill();
             }
         }
 
-        // --- ORB OBJECT (The Mergable Goals) ---
-        class Orb {
-            constructor(x, y, radius = 10) {
-                this.x = x;
-                this.y = y;
-                this.radius = radius;
-                this.vx = (Math.random() - 0.5);
-                this.vy = (Math.random() - 0.5);
-                this.hue = Math.random() * 360;
-                this.pulse = 0;
+        class Rift {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.targetRadius = 40 + Math.random() * 60;
+                this.radius = 0;
+                this.angle = 0;
+                this.spin = (Math.random() - 0.5) * 0.05;
+                this.life = 1;
             }
-
             update() {
-                this.vx *= 0.99;
-                this.vy *= 0.99;
-                this.x += this.vx;
-                this.y += this.vy;
-                this.pulse += 0.05;
+                if (this.radius < this.targetRadius) this.radius += 1;
+                this.angle += this.spin;
+                
+                const dx = state.player.x - this.x;
+                const dy = state.player.y - this.y;
+                const dist = Math.hypot(dx, dy);
 
-                if (this.x < this.radius) { this.x = this.radius; this.vx *= -1; }
-                if (this.x > width - this.radius) { this.x = width - this.radius; this.vx *= -1; }
-                if (this.y < this.radius) { this.y = this.radius; this.vy *= -1; }
-                if (this.y > height - this.radius) { this.y = height - this.radius; this.vy *= -1; }
+                if (dist < this.radius + state.player.size/2) {
+                    state.shake = 15;
+                    state.score = Math.max(0, state.score - 5);
+                    createExplosion(this.x, this.y);
+                    this.radius = 0; // "Destroyed" visually
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    playBash();
+                }
             }
-
             draw() {
-                const glow = this.radius * 3;
-                const p = Math.sin(this.pulse) * 2;
-                
-                // Glow
-                const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, glow);
-                grad.addColorStop(0, `hsla(${this.hue}, 100%, 60%, 0.3)`);
-                grad.addColorStop(1, `hsla(${this.hue}, 100%, 60%, 0)`);
-                
-                ctx.fillStyle = grad;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, glow, 0, Math.PI * 2);
-                ctx.fill();
-
-                // Core
-                ctx.fillStyle = `hsla(${this.hue}, 100%, 70%, 1)`;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius + p, 0, Math.PI * 2);
-                ctx.fill();
-                
-                ctx.strokeStyle = "white";
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle);
+                ctx.strokeStyle = `hsla(${state.hue + 120}, 100%, 50%, 0.5)`;
                 ctx.lineWidth = 2;
-                ctx.stroke();
-            }
-
-            absorb(particle) {
-                this.radius += 0.05;
-                state.totalMass += 1;
-                if (Math.random() > 0.9) synthHit();
+                for(let i=0; i<3; i++) {
+                    ctx.beginPath();
+                    ctx.arc(0, 0, this.radius - i*10, 0, Math.PI * 1.5);
+                    ctx.stroke();
+                }
+                ctx.restore();
             }
         }
 
-        // --- AUDIO ENGINE ---
+        // --- EXPLOSION PARTICLES ---
+        function createExplosion(x, y) {
+            for(let i=0; i<20; i++) {
+                explosions.push({
+                    x, y,
+                    vx: (Math.random() - 0.5) * 15,
+                    vy: (Math.random() - 0.5) * 15,
+                    life: 1.0,
+                    hue: state.hue + 120
+                });
+            }
+        }
+
+        // --- AUDIO ---
         let audioCtx;
         function initAudio() {
-            if (audioCtx) return;
             audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         }
 
-        function synthHit() {
-            if (!audioCtx) return;
+        function playPop() {
+            if(!audioCtx) return;
             const osc = audioCtx.createOscillator();
-            const gain = audioCtx.createGain();
-            osc.type = 'sine';
-            osc.frequency.setValueAtTime(200 + Math.random() * 400, audioCtx.currentTime);
-            osc.frequency.exponentialRampToValueAtTime(10, audioCtx.currentTime + 0.5);
-            gain.gain.setValueAtTime(0.05, audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.5);
-            osc.connect(gain);
-            gain.connect(audioCtx.destination);
-            osc.start();
-            osc.stop(audioCtx.currentTime + 0.5);
+            const g = audioCtx.createGain();
+            osc.frequency.setValueAtTime(400 + (state.score % 100) * 10, audioCtx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(800, audioCtx.currentTime + 0.05);
+            g.gain.setValueAtTime(0.02, audioCtx.currentTime);
+            g.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.1);
+            osc.connect(g); g.connect(audioCtx.destination);
+            osc.start(); osc.stop(audioCtx.currentTime + 0.1);
         }
 
-        // --- SYSTEM FUNCTIONS ---
+        function playBash() {
+            if(!audioCtx) return;
+            const osc = audioCtx.createOscillator();
+            const g = audioCtx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(100, audioCtx.currentTime);
+            osc.frequency.linearRampToValueAtTime(20, audioCtx.currentTime + 0.3);
+            g.gain.setValueAtTime(0.1, audioCtx.currentTime);
+            g.gain.linearRampToValueAtTime(0, audioCtx.currentTime + 0.3);
+            osc.connect(g); g.connect(audioCtx.destination);
+            osc.start(); osc.stop(audioCtx.currentTime + 0.3);
+        }
+
+        // --- SYSTEM ---
+
         function resize() {
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
+            state.player.x = width/2;
+            state.player.y = height/2;
         }
 
-        function toggleTrails() {
-            state.showBloom = !state.showBloom;
-            event.target.innerText = state.showBloom ? "Bloom ON" : "Bloom OFF";
-        }
-
-        function initGame() {
+        function startGame() {
             initAudio();
-            document.getElementById('intro').classList.add('transparent');
-            setTimeout(() => {
-                document.getElementById('intro').classList.add('hidden');
-                document.getElementById('ui-layer').classList.remove('transparent');
-            }, 1000);
-
+            document.getElementById('start-screen').classList.add('fade-out');
+            document.getElementById('overlay').classList.remove('hidden');
             resize();
             
-            // Generate initial particles
-            for (let i = 0; i < 4000; i++) {
-                particles.push(new Particle(Math.random() * width, Math.random() * height));
-            }
-
-            // Generate initial orbs
-            for (let i = 0; i < 5; i++) {
-                orbs.push(new Orb(Math.random() * width, Math.random() * height, 15 + Math.random() * 10));
-            }
-
+            for(let i=0; i<300; i++) gems.push(new Gem());
+            for(let i=0; i<8; i++) rifts.push(new Rift());
+            
             state.initialized = true;
-            requestAnimationFrame(loop);
+            loop();
         }
 
-        // --- MAIN LOOP ---
         function loop() {
-            // Update State from UI
-            state.gravity = gravitySlider.value / 100;
-            state.friction = frictionSlider.value / 1000;
-
-            // Clear Screen
-            ctx.fillStyle = 'rgba(5, 5, 8, 0.2)'; // Slow trail effect
+            // Background logic: Smooth dark clear
+            ctx.fillStyle = '#020205';
             ctx.fillRect(0, 0, width, height);
 
-            // Rebuild QuadTree for this frame
-            const boundary = { x: 0, y: 0, w: width, h: height };
-            const qtree = new QuadTree(boundary, 4);
+            if (state.shake > 0) {
+                ctx.translate(Math.random()*state.shake - state.shake/2, Math.random()*state.shake - state.shake/2);
+                state.shake *= 0.9;
+            }
+
+            // Player movement
+            const dx = state.mouse.x - state.player.x;
+            const dy = state.mouse.y - state.player.y;
+            state.player.vx += dx * state.playerSpeed;
+            state.player.vy += dy * state.playerSpeed;
+            state.player.vx *= 0.85;
+            state.player.vy *= 0.85;
+            state.player.x += state.player.vx;
+            state.player.y += state.player.vy;
+
+            // Evolution Check
+            if (state.score >= state.essenceNeeded) {
+                state.level++;
+                state.essenceNeeded = Math.floor(state.essenceNeeded * 1.8);
+                state.vacuumRadius += 20;
+                state.playerSpeed += 0.02;
+                upgradeMsg.classList.add('active');
+                setTimeout(() => upgradeMsg.classList.remove('active'), 2000);
+            }
+
+            // Draw Wake Particles
+            for(let i=0; i<5; i++) {
+                particles.push({
+                    x: state.player.x,
+                    y: state.player.y,
+                    vx: (Math.random()-0.5)*2,
+                    vy: (Math.random()-0.5)*2,
+                    life: 1.0,
+                    size: Math.random() * 5 + 2
+                });
+            }
+
+            ctx.globalCompositeOperation = 'screen';
+
+            // Update/Draw Particles
+            for(let i = particles.length-1; i>=0; i--) {
+                const p = particles[i];
+                p.x += p.vx; p.y += p.vy;
+                p.life -= 0.02;
+                if(p.life <= 0) particles.splice(i, 1);
+                else {
+                    ctx.fillStyle = `hsla(${state.hue}, 100%, 50%, ${p.life * 0.3})`;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
+                    ctx.fill();
+                }
+            }
+
+            // Update/Draw Gems
+            gems.forEach(g => {
+                g.update();
+                g.draw();
+                if(g.collected) g.reset();
+            });
+
+            // Update/Draw Rifts
+            rifts.forEach(r => {
+                r.update();
+                r.draw();
+            });
+
+            // Update/Draw Explosions
+            for(let i=explosions.length-1; i>=0; i--) {
+                const e = explosions[i];
+                e.x += e.vx; e.y += e.vy;
+                e.life -= 0.05;
+                if(e.life <= 0) explosions.splice(i, 1);
+                else {
+                    ctx.fillStyle = `hsla(${e.hue}, 100%, 70%, ${e.life})`;
+                    ctx.fillRect(e.x, e.y, 4, 4);
+                }
+            }
+
+            // Draw Harvester
+            ctx.shadowBlur = 20;
+            ctx.shadowColor = `hsl(${state.hue}, 100%, 50%)`;
+            ctx.strokeStyle = '#fff';
+            ctx.lineWidth = 4;
+            ctx.beginPath();
+            ctx.arc(state.player.x, state.player.y, state.player.size, 0, Math.PI * 2);
+            ctx.stroke();
             
-            // Process Particles
-            let aliveParticles = [];
-            for (let p of particles) {
-                p.update();
-                if (!p.isDead) {
-                    p.draw();
-                    aliveParticles.push(p);
-                    qtree.insert(p);
-                }
-            }
-            particles = aliveParticles;
+            // Vacuum Ring
+            ctx.shadowBlur = 0;
+            ctx.strokeStyle = `hsla(${state.hue}, 100%, 50%, 0.1)`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.arc(state.player.x, state.player.y, state.vacuumRadius, 0, Math.PI * 2);
+            ctx.stroke();
 
-            // Maintain particle count (infinite mindless fun)
-            if (particles.length < 5000) {
-                for(let i=0; i<10; i++) particles.push(new Particle(Math.random() * width, Math.random() * height));
-            }
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
 
-            // Process Orbs & Merging
-            for (let i = orbs.length - 1; i >= 0; i--) {
-                let a = orbs[i];
-                a.update();
-                a.draw();
-
-                for (let j = i - 1; j >= 0; j--) {
-                    let b = orbs[j];
-                    let d = Math.hypot(a.x - b.x, a.y - b.y);
-                    if (d < a.radius + b.radius) {
-                        // Merge orbs
-                        const newRadius = Math.sqrt(a.radius * a.radius + b.radius * b.radius);
-                        a.radius = newRadius;
-                        a.vx += b.vx * 0.5;
-                        a.vy += b.vy * 0.5;
-                        orbs.splice(j, 1);
-                        synthHit();
-                    }
-                }
-            }
-
-            // If we have too few orbs, spawn more
-            if (orbs.length < 3) {
-                orbs.push(new Orb(Math.random() * width, Math.random() * height, 10));
-            }
-
-            // Update UI
-            massDisplay.innerText = Math.floor(state.totalMass);
-            countDisplay.innerText = particles.length;
+            // Update Text
+            scoreEl.innerText = state.score;
+            levelEl.innerText = state.level;
 
             requestAnimationFrame(loop);
         }
 
-        // --- INPUT HANDLING ---
-        window.addEventListener('mousedown', (e) => { state.isMouseDown = true; updateMouse(e); });
-        window.addEventListener('mouseup', () => state.isMouseDown = false);
-        window.addEventListener('mousemove', updateMouse);
-        
-        window.addEventListener('touchstart', (e) => { 
-            state.isMouseDown = true; 
-            updateMouse(e.touches[0]); 
+        // Input
+        const handleInput = (e) => {
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            state.mouse.x = clientX;
+            state.mouse.y = clientY;
             if(audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
-        });
-        window.addEventListener('touchend', () => state.isMouseDown = false);
-        window.addEventListener('touchmove', (e) => updateMouse(e.touches[0]));
+        };
 
-        function updateMouse(e) {
-            state.mouse.x = e.clientX;
-            state.mouse.y = e.clientY;
-        }
-
+        window.addEventListener('mousemove', handleInput);
+        window.addEventListener('touchmove', (e) => { e.preventDefault(); handleInput(e); }, {passive: false});
         window.addEventListener('resize', resize);
+
     </script>
 </body>
 </html>
