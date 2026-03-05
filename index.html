@@ -3,88 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akib Saify Business Card</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Akib Saify</title>
     <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #0f0f0f;
+            --surface: #1a1a1a;
+            --border: #2a2a2a;
+            --accent: #7c6af7;
+            --accent-soft: rgba(124, 106, 247, 0.12);
+            --text: #e8e8e8;
+            --muted: #888;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
+            justify-content: center;
+            padding: 2rem;
         }
-        .business-card {
-            width: 600px;
-            border: 1px solid #000;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .container {
+            max-width: 680px;
+            width: 100%;
         }
-        .header {
+
+        /* Hero */
+        .hero {
+            margin-bottom: 3rem;
+        }
+
+        .hero .label {
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 6vw, 3.2rem);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            color: var(--muted);
+            line-height: 1.7;
+            max-width: 480px;
+        }
+
+        /* Divider */
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        /* Skills */
+        .section-title {
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        .skills {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2.5rem;
         }
-        .header-left {
-            font-size: 1.2em;
+
+        .skill-tag {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
+            font-size: 0.82rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
         }
-        .header-left a {
-            color: blue;
+
+        /* Links */
+        .links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: 500;
             text-decoration: none;
+            transition: background 0.15s, color 0.15s;
         }
-        .header-right {
-            text-align: right;
+
+        .link-btn.primary {
+            background: var(--accent);
+            color: #fff;
         }
-        .header-right .name {
-            font-weight: bold;
-            font-size: 1.2em;
+
+        .link-btn.primary:hover {
+            background: #6a58e0;
         }
-        .header-right .title {
-            margin-top: 5px;
-            font-size: 0.9em;
+
+        .link-btn.secondary {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
         }
-        .content {
-            font-size: 0.9em;
-            line-height: 1.5;
+
+        .link-btn.secondary:hover {
+            background: var(--accent-soft);
+            border-color: var(--accent);
+            color: var(--accent);
         }
-        .contact-info {
-            margin-top: 10px;
-        }
-        .contact-info a {
-            color: blue;
-            text-decoration: none;
+
+        /* Footer */
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.75rem;
+            color: var(--muted);
         }
     </style>
 </head>
 <body>
-    <div class="business-card">
-        <div class="header">
-            <div class="header-left">
-                <strong>Akib Saify</strong><br>
-                West Delhi 110059<br>
-                <br>
-                <a href="https://www.linkedin.com/in/akibsaify/">https://www.linkedin.com/in/akibsaify</a>
-            </div>
-            <div class="header-right">
-                <div class="name">Markus Pernusch</div>
-                <div class="title">Managing Partner</div>
-                <div class="contact-info">
-                    Mobil: +43 676 738 53 80<br>
-                    E-Mail: <a href="mailto:mp@l4invest.com">mp@l4invest.com</a><br>
-                    <a href="#">Impressum</a>
-                </div>
-            </div>
+    <div class="container">
+        <div class="hero">
+            <div class="label">Portfolio</div>
+            <h1>Akib Saify</h1>
+            <p>Developer interested in building clean, useful software. Open to collaboration and new opportunities.</p>
         </div>
-        <div class="content">
-            Firmenbuchnummer: FN 312006 h<br>
-            UID-Nummer: ATU 691 90 467<br><br>
-            <strong>Bankverbindung:</strong><br>
-            IBAN: AT33 3200 0000 1204 0390<br>
-            BIC: RLNWATWW<br><br>
-            Geschäftsführung: Markus Pernusch
+
+        <hr>
+
+        <p class="section-title">Skills</p>
+        <div class="skills">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Linux</span>
+        </div>
+
+        <hr>
+
+        <p class="section-title">Connect</p>
+        <div class="links">
+            <a class="link-btn primary" href="https://www.linkedin.com/in/akibsaify/" target="_blank" rel="noopener">
+                LinkedIn
+            </a>
+            <a class="link-btn secondary" href="https://github.com/akibsaify" target="_blank" rel="noopener">
+                GitHub
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; <span id="year"></span> Akib Saify
         </div>
     </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
