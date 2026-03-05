@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akib Saify</title>
+    <title>Akib Saify — Legal & Compliance Professional</title>
     <style>
         *, *::before, *::after {
             box-sizing: border-box;
@@ -14,6 +14,7 @@
         :root {
             --bg: #0f0f0f;
             --surface: #1a1a1a;
+            --surface2: #222;
             --border: #2a2a2a;
             --accent: #7c6af7;
             --accent-soft: rgba(124, 106, 247, 0.12);
@@ -26,15 +27,14 @@
             color: var(--text);
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             min-height: 100vh;
+            padding: 3rem 1.5rem 4rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            padding: 2rem;
         }
 
         .container {
-            max-width: 680px;
+            max-width: 700px;
             width: 100%;
         }
 
@@ -44,26 +44,31 @@
         }
 
         .hero .label {
-            font-size: 0.75rem;
-            letter-spacing: 0.15em;
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--accent);
             margin-bottom: 1rem;
         }
 
         .hero h1 {
-            font-size: clamp(2rem, 6vw, 3.2rem);
+            font-size: clamp(2.2rem, 6vw, 3.2rem);
             font-weight: 700;
             line-height: 1.1;
             letter-spacing: -0.02em;
-            margin-bottom: 1rem;
+            margin-bottom: 0.6rem;
         }
 
-        .hero p {
-            font-size: 1.05rem;
+        .hero .title {
+            font-size: 1rem;
             color: var(--muted);
-            line-height: 1.7;
-            max-width: 480px;
+            margin-bottom: 0.3rem;
+        }
+
+        .hero .location {
+            font-size: 0.85rem;
+            color: var(--muted);
+            opacity: 0.7;
         }
 
         /* Divider */
@@ -73,20 +78,27 @@
             margin: 2rem 0;
         }
 
-        /* Skills */
+        /* Section titles */
         .section-title {
             font-size: 0.7rem;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             color: var(--muted);
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
         }
 
+        /* About */
+        .about p {
+            font-size: 0.96rem;
+            color: var(--muted);
+            line-height: 1.75;
+        }
+
+        /* Skills */
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-bottom: 2.5rem;
         }
 
         .skill-tag {
@@ -96,6 +108,144 @@
             font-size: 0.82rem;
             padding: 0.35rem 0.75rem;
             border-radius: 6px;
+        }
+
+        /* Experience */
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .company-block {
+            margin-bottom: 2rem;
+        }
+
+        .company-name {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .company-name::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .role {
+            padding-left: 1rem;
+            border-left: 2px solid var(--border);
+            margin-bottom: 1rem;
+            padding-bottom: 0.25rem;
+        }
+
+        .role-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.2rem;
+        }
+
+        .role-meta {
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .role-desc {
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        /* Education */
+        .edu-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.1rem 1.3rem;
+        }
+
+        .edu-degree {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .edu-school {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        /* Volunteer */
+        .volunteer-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.1rem 1.3rem;
+        }
+
+        .vol-role {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+
+        .vol-org {
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-bottom: 0.2rem;
+        }
+
+        .vol-meta {
+            font-size: 0.78rem;
+            color: var(--muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .vol-desc {
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        /* Recommendations */
+        .rec-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .rec-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.2rem 1.4rem;
+        }
+
+        .rec-quote {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.7;
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+
+        .rec-author {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .rec-author-title {
+            font-size: 0.78rem;
+            color: var(--muted);
         }
 
         /* Links */
@@ -114,7 +264,7 @@
             font-size: 0.88rem;
             font-weight: 500;
             text-decoration: none;
-            transition: background 0.15s, color 0.15s;
+            transition: background 0.15s, color 0.15s, border-color 0.15s;
         }
 
         .link-btn.primary {
@@ -148,36 +298,146 @@
 </head>
 <body>
     <div class="container">
+
+        <!-- Hero -->
         <div class="hero">
-            <div class="label">Portfolio</div>
+            <div class="label">Professional Portfolio</div>
             <h1>Akib Saify</h1>
-            <p>Developer interested in building clean, useful software. Open to collaboration and new opportunities.</p>
+            <p class="title">Deputy Manager, Legal, Compliance &amp; Public Affairs · Marsh</p>
+            <p class="location">West Delhi, Delhi, India</p>
         </div>
 
         <hr>
 
-        <p class="section-title">Skills</p>
-        <div class="skills">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">TypeScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">Linux</span>
+        <!-- About -->
+        <p class="section-title">About</p>
+        <div class="about" style="margin-bottom:2.5rem;">
+            <p>Seasoned Legal and Compliance Professional with 8+ years of experience in regulatory compliance, risk management, and corporate governance. Leading a team of compliance specialists to ensure ethical, efficient, and legally sound operations. Skilled in developing compliance frameworks, interpreting regulations, and managing audits across multiple jurisdictions. Known for aligning legal insight with business goals to support sustainable growth and integrity.</p>
         </div>
 
         <hr>
 
+        <!-- Core Skills -->
+        <p class="section-title">Core Skills</p>
+        <div class="skills" style="margin-bottom:2.5rem;">
+            <span class="skill-tag">Legal &amp; Regulatory Compliance</span>
+            <span class="skill-tag">Risk Management &amp; Mitigation</span>
+            <span class="skill-tag">Compliance Program Development</span>
+            <span class="skill-tag">Team Leadership &amp; People Management</span>
+            <span class="skill-tag">Anti-Money Laundering (AML)</span>
+            <span class="skill-tag">Data Privacy &amp; Ethics</span>
+            <span class="skill-tag">Internal Audits</span>
+            <span class="skill-tag">Stakeholder Management</span>
+            <span class="skill-tag">Project Management</span>
+            <span class="skill-tag">Regulatory Reporting</span>
+            <span class="skill-tag">Analytical Skills</span>
+            <span class="skill-tag">Customer Service</span>
+        </div>
+
+        <hr>
+
+        <!-- Experience -->
+        <p class="section-title">Experience</p>
+        <div class="experience-list" style="margin-bottom:1rem;">
+
+            <div class="company-block">
+                <div class="company-name">Marsh &nbsp;·&nbsp; 7 yrs 4 mos</div>
+
+                <div class="role">
+                    <div class="role-title">Deputy Manager</div>
+                    <div class="role-meta">Jul 2025 – Present · 9 mos &nbsp;·&nbsp; Gurugram, Haryana, India</div>
+                    <div class="role-desc">Leading the legal, compliance, and public affairs function, overseeing team operations and ensuring adherence to regulatory requirements across multiple jurisdictions.</div>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">Senior Compliance Specialist</div>
+                    <div class="role-meta">Aug 2023 – Jul 2025 · 2 yrs &nbsp;·&nbsp; Gurugram, Haryana, India</div>
+                    <div class="role-desc">Developed and implemented robust compliance programs, policies, and procedures. Managed cross-functional audits and regulatory reporting while mentoring junior compliance analysts.</div>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">Compliance Specialist</div>
+                    <div class="role-meta">Nov 2021 – Jul 2023 · 1 yr 9 mos &nbsp;·&nbsp; Gurugram, Haryana, India</div>
+                    <div class="role-desc">Interpreted and applied regulatory guidelines, conducted compliance reviews, and supported governance frameworks across business units.</div>
+                </div>
+
+                <div class="role">
+                    <div class="role-title">Senior Analyst</div>
+                    <div class="role-meta">Dec 2018 – Oct 2021 · 2 yrs 11 mos &nbsp;·&nbsp; Gurugram, Haryana, India</div>
+                    <div class="role-desc">Performed in-depth analysis of compliance data, identified risk exposures, and contributed to the development of internal audit frameworks.</div>
+                </div>
+            </div>
+
+            <div class="company-block">
+                <div class="company-name">Quatrro</div>
+
+                <div class="role">
+                    <div class="role-title">Fraud Analyst</div>
+                    <div class="role-meta">Sep 2017 – Sep 2018 · 1 yr 1 mo &nbsp;·&nbsp; Gurugram, Haryana, India</div>
+                    <div class="role-desc">Monitored real-time queues to identify high-risk transactions within the business portfolio. Observed customer transactions to detect and flag fraudulent activity, contributing to reduced financial exposure.</div>
+                </div>
+            </div>
+
+            <div class="company-block">
+                <div class="company-name">The Leela Palaces, Hotels and Resorts</div>
+
+                <div class="role">
+                    <div class="role-title">Industrial Trainee</div>
+                    <div class="role-meta">Jul 2015 – Nov 2015 · 5 mos</div>
+                    <div class="role-desc">Completed industrial training in hospitality operations, gaining hands-on experience in customer service and organizational management.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Education -->
+        <p class="section-title">Education</p>
+        <div style="margin-bottom:2.5rem;">
+            <div class="edu-item">
+                <div class="edu-degree">Bachelor's Degree &nbsp;·&nbsp; Tourism and Travel Services Management</div>
+                <div class="edu-school">Indira Gandhi National Open University (IGNOU)</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Volunteer -->
+        <p class="section-title">Volunteer Experience</p>
+        <div style="margin-bottom:2.5rem;">
+            <div class="volunteer-item">
+                <div class="vol-role">Facilitator</div>
+                <div class="vol-org">NASSCOM Covid-19 Helpline</div>
+                <div class="vol-meta">Oct 2020 – Nov 2020 · 2 mos &nbsp;·&nbsp; Social Services</div>
+                <div class="vol-desc">Made outbound calls to Covid-19 patients to provide health and medical support information. Facilitated district administration work in collaboration with NASSCOM during the pandemic.</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Recommendations -->
+        <p class="section-title">Recommendations</p>
+        <div class="rec-list" style="margin-bottom:2.5rem;">
+            <div class="rec-item">
+                <div class="rec-quote">"Akib is a good team player. He has active voice in group discussions. Thought process on industry topics is superlative. Handles situations with tact and patience."</div>
+                <div class="rec-author">Maneesh Kapoor</div>
+                <div class="rec-author-title">Corporate Communications Specialist in Media Relations and Advertising</div>
+            </div>
+            <div class="rec-item">
+                <div class="rec-quote">"Mr Akib Saify is a very hard working and passionate person. He is excellent as a Compliance Analyst. He is very friendly and a great professional to work with."</div>
+                <div class="rec-author">Colleague Recommendation</div>
+                <div class="rec-author-title">via LinkedIn</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Connect -->
         <p class="section-title">Connect</p>
         <div class="links">
             <a class="link-btn primary" href="https://www.linkedin.com/in/akibsaify/" target="_blank" rel="noopener">
                 LinkedIn
-            </a>
-            <a class="link-btn secondary" href="https://github.com/akibsaify" target="_blank" rel="noopener">
-                GitHub
             </a>
         </div>
 
