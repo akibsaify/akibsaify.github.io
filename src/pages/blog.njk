@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+permalink: /blog/
+pageTitle: "Buying Guides & Deal Roundups — Deal Drops"
+pageDescription: "Best buying guides, product comparisons and deal roundups for Indian shoppers. Save money with expert recommendations."
+---
+
+<div class="category-hero" style="background:var(--blue);">
+  <div class="container">
+    <h1 class="category-hero__title" style="margin-top:0.5rem;">📝 Buying Guides & Roundups</h1>
+    <p class="category-hero__desc">Expert comparisons and money-saving guides for Indian shoppers.</p>
+  </div>
+</div>
+
+<div class="container" style="padding:2rem 1rem 3rem;">
+  {% if collections.blog.length > 0 %}
+  <div style="display:flex;flex-direction:column;gap:1rem;">
+    {% for post in collections.blog %}
+    <a href="{{ post.url }}" style="display:flex;gap:1rem;background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;align-items:flex-start;transition:box-shadow 0.15s;" class="deal-card">
+      <div style="flex:1;">
+        <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.3rem;">{{ post.date | shortDate }} · {{ post.data.category | capitalize if post.data.category else "Guide" }}</div>
+        <div style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.4rem;line-height:1.35;">{{ post.data.title }}</div>
+        <div style="font-size:0.85rem;color:var(--text-muted);">{{ post.data.description }}</div>
+      </div>
+      <span style="color:var(--orange);font-size:1.2rem;font-weight:700;flex-shrink:0;">→</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <div class="empty-state__icon">📝</div>
+    <p>Buying guides coming soon!</p>
+  </div>
+  {% endif %}
+</div>

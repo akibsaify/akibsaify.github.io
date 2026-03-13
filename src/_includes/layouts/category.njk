@@ -1,0 +1,75 @@
+---
+layout: layouts/base.njk
+---
+{% set cat = categories | selectattr("slug", "equalto", categorySlug) | first %}
+{% set pageTitle = cat.metaTitle if cat else (categorySlug | capitalize) + " Deals | Deal Drops" %}
+{% set pageDescription = cat.metaDescription if cat else "Best " + (categorySlug | capitalize) + " deals and coupons." %}
+
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "{{ cat.name if cat else categorySlug }}", "item": "{{ site.url }}/{{ categorySlug }}/" }
+  ]
+}
+</script>
+{% endblock %}
+
+<!-- Category Hero -->
+<div class="category-hero">
+  <div class="container">
+    <nav class="breadcrumb" style="color:rgba(255,255,255,0.6);padding:0 0 0.75rem;">
+      <a href="/" style="color:rgba(255,255,255,0.7);">Home</a>
+      <span class="breadcrumb__sep">›</span>
+      <span style="color:#fff;">{{ cat.name if cat else categorySlug }}</span>
+    </nav>
+    <div class="category-hero__emoji">{{ cat.emoji if cat else "🏷️" }}</div>
+    <h1 class="category-hero__title">{{ cat.name if cat else categorySlug }} Deals &amp; Offers</h1>
+    <p class="category-hero__desc">{{ cat.description if cat else "Best deals and coupon codes." }} Updated {{ site.currentMonth }}.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section" style="padding-top:1.5rem;">
+
+    {% set catDeals = collections.deals | filterByCategory(categorySlug) %}
+
+    {% if catDeals.length > 0 %}
+    <!-- Sort bar -->
+    <div class="sort-bar">
+      <span style="font-size:0.8rem;color:var(--text-muted);font-weight:600;white-space:nowrap;">{{ catDeals.length }} active deals</span>
+      <button class="sort-btn active" data-sort="newest">Newest First</button>
+      <button class="sort-btn" data-sort="discount">Highest Discount</button>
+    </div>
+
+    <div class="deals-grid" id="deals-grid">
+      {% for dealItem in catDeals %}
+        {% set deal = dealItem %}
+        {% include "partials/deal-card.njk" %}
+      {% endfor %}
+    </div>
+
+    {% else %}
+    <div class="empty-state">
+      <div class="empty-state__icon">🔍</div>
+      <p>No active deals in this category right now.</p>
+      <p>Check back soon or <a href="{{ site.whatsapp }}" target="_blank" rel="noopener" style="color:var(--orange)">join our WhatsApp channel</a> for instant alerts.</p>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+<!-- WhatsApp CTA -->
+<div class="section section--white">
+  <div class="container container--narrow" style="text-align:center;">
+    <h2 style="font-size:1.1rem;font-weight:700;margin-bottom:0.5rem;">Get {{ cat.name if cat else categorySlug }} Deal Alerts Instantly</h2>
+    <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:1rem;">Join our WhatsApp channel — we post verified {{ cat.name if cat else categorySlug }} deals as soon as they go live.</p>
+    <a href="{{ site.whatsapp }}" target="_blank" rel="noopener" class="btn btn--whatsapp">
+      💬 Join Daily Deal Drops on WhatsApp
+    </a>
+  </div>
+</div>

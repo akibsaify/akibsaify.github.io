@@ -1,0 +1,227 @@
+---
+layout: layouts/base.njk
+---
+{% set pageTitle = title + " | Deal Drops" %}
+{% set pageDescription = description %}
+{% set ogImage = image if image else "" %}
+{% set ogType = "product" %}
+
+{# ── Schema markup (Product + Offer + BreadcrumbList) ── #}
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "{{ title }}",
+      "description": "{{ description }}",
+      {% if image %}"image": "{{ site.url }}{{ image }}",{% endif %}
+      "offers": {
+        "@type": "Offer",
+        "url": "{{ site.url }}{{ page.url }}",
+        "priceCurrency": "INR",
+        "price": "{{ dealPrice }}",
+        "priceValidUntil": "{{ date | isoDate }}",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "{{ store | capitalize }}"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.url }}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ category | capitalize }}",
+          "item": "{{ site.url }}/{{ category }}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "{{ title }}",
+          "item": "{{ site.url }}{{ page.url }}"
+        }
+      ]
+    }
+  ]
+}
+</script>
+{% endblock %}
+
+<div class="container">
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="breadcrumb__sep">›</span>
+    <a href="/{{ category }}/">{{ category | capitalize }}</a>
+    <span class="breadcrumb__sep">›</span>
+    <span>{{ title }}</span>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="deal-layout">
+
+    <!-- Left: Product Image -->
+    <div>
+      <div class="deal-image-wrap">
+        {% if image %}
+        <img src="{{ image }}" alt="{{ title }}" width="400" height="400">
+        {% else %}
+        <div class="deal-card__placeholder" style="height:100%;font-size:5rem;display:flex;align-items:center;justify-content:center;">
+          {% if category == 'electronics' %}📱
+          {% elif category == 'fashion' %}👗
+          {% elif category == 'home-kitchen' %}🏠
+          {% elif category == 'grocery' %}🛒
+          {% elif category == 'travel' %}✈️
+          {% else %}🏷️{% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Right: Deal Info -->
+    <div>
+      <!-- Tags -->
+      <div class="deal-meta__tags">
+        <span class="tag tag--store">🏪 {{ store | capitalize }}</span>
+        <span class="tag tag--category">{{ category | capitalize }}</span>
+        <span class="tag tag--verified">✅ Verified</span>
+        {% for t in tags %}
+        <span class="tag">{{ t }}</span>
+        {% endfor %}
+      </div>
+
+      <!-- Title -->
+      <h1 class="deal-meta__title">{{ title }}</h1>
+      <p class="last-updated">Last checked: {{ date | shortDate }}</p>
+
+      <!-- Price Box -->
+      {% include "partials/price-box.njk" %}
+
+      <!-- Coupon Code -->
+      {% if couponCode %}
+      <div class="coupon-box">
+        <div>
+          <div class="coupon-box__label">Coupon Code</div>
+          <div class="coupon-box__code" id="coupon-code">{{ couponCode }}</div>
+        </div>
+        <button class="coupon-box__copy" id="copy-coupon-btn" data-code="{{ couponCode }}">
+          Copy Code
+        </button>
+      </div>
+      {% endif %}
+
+      <!-- CTA -->
+      <a
+        class="btn btn--deal"
+        href="{{ affiliateLink }}"
+        target="_blank"
+        rel="nofollow sponsored noopener noreferrer"
+        id="main-deal-btn">
+        Get This Deal on {{ store | capitalize }} →
+      </a>
+
+      <p style="font-size:0.72rem;color:var(--text-muted);margin-top:0.5rem;text-align:center;">
+        Affiliate link — we earn a small commission at no extra cost to you.
+      </p>
+
+      <!-- Share Buttons -->
+      <div style="margin-top:1.25rem;">
+        {% include "partials/share-buttons.njk" %}
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Deal Content (from markdown body) -->
+  <div class="deal-content container--narrow" style="margin-top:2rem;">
+    {{ content | safe }}
+  </div>
+
+  <!-- How to Claim -->
+  <div class="container--narrow" style="margin-top:2rem;margin-bottom:2.5rem;">
+    <h2 style="font-size:1.05rem;font-weight:700;color:var(--blue);margin-bottom:1rem;">How to Claim This Deal</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">1</div>
+        <div class="step__text">Click <strong>"Get This Deal"</strong> button above — it opens {{ store | capitalize }} in a new tab.</div>
+      </div>
+      {% if couponCode %}
+      <div class="step">
+        <div class="step__num">2</div>
+        <div class="step__text">Copy the coupon code <strong>{{ couponCode }}</strong> and paste it at checkout.</div>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <div class="step__text">Add the product to your cart, apply the code, and complete payment to save {{ discountPercent }}%.</div>
+      </div>
+      {% else %}
+      <div class="step">
+        <div class="step__num">2</div>
+        <div class="step__text">Add the product to your cart — the discounted price is already applied automatically.</div>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <div class="step__text">Complete your payment. No coupon code needed — discount is auto-applied.</div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Related Deals -->
+  {% set relatedDeals = collections.deals | filterByCategory(category) | exclude(page.url) | limit(4) %}
+  {% if relatedDeals.length > 0 %}
+  <div style="margin-bottom:2.5rem;">
+    <div class="section-header">
+      <h2 class="section-title">More {{ category | capitalize }} Deals</h2>
+      <a href="/{{ category }}/" class="view-all">View all →</a>
+    </div>
+    <div class="deals-grid">
+      {% for dealItem in relatedDeals %}
+        {% set deal = dealItem %}
+        {% include "partials/deal-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<!-- Sticky CTA (mobile) -->
+<div class="sticky-cta" id="sticky-cta">
+  <div class="sticky-cta__price">
+    <div class="price">{{ dealPrice | priceFormat }}</div>
+    {% if originalPrice %}<div class="mrp">MRP {{ originalPrice | priceFormat }}</div>{% endif %}
+  </div>
+  <a
+    class="btn btn--deal"
+    href="{{ affiliateLink }}"
+    target="_blank"
+    rel="nofollow sponsored noopener noreferrer">
+    Get Deal →
+  </a>
+</div>
+
+{% block scripts %}
+<script>
+  // Hide sticky CTA when main button is visible
+  const mainBtn = document.getElementById('main-deal-btn');
+  const stickyCta = document.getElementById('sticky-cta');
+  if (mainBtn && stickyCta) {
+    const obs = new IntersectionObserver(entries => {
+      stickyCta.style.display = entries[0].isIntersecting ? 'none' : 'flex';
+    }, { threshold: 0 });
+    obs.observe(mainBtn);
+  }
+</script>
+{% endblock %}

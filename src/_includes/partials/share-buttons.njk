@@ -1,0 +1,26 @@
+<div class="share-buttons">
+  <span class="share-buttons__label">Share:</span>
+  <a
+    class="share-btn share-btn--wa"
+    href="https://wa.me/?text={{ title | urlencode }}%20{{ site.url }}{{ page.url | urlencode }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on WhatsApp">
+    💬 WhatsApp
+  </a>
+  <a
+    class="share-btn share-btn--tw"
+    href="https://twitter.com/intent/tweet?text={{ title | urlencode }}&url={{ site.url }}{{ page.url | urlencode }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Share on Twitter">
+    🐦 Tweet
+  </a>
+  <button
+    class="share-btn share-btn--copy"
+    id="copy-link-btn"
+    data-url="{{ site.url }}{{ page.url }}"
+    aria-label="Copy link">
+    🔗 Copy Link
+  </button>
+</div>

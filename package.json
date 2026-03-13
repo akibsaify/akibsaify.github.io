@@ -1,0 +1,13 @@
+{
+  "name": "deal-drops",
+  "version": "1.0.0",
+  "description": "Deal Drops — Verified Deals, Coupons & Cashback for India",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --port=8080",
+    "clean": "rm -rf _site"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
