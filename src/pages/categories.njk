@@ -1,0 +1,11 @@
+---
+pagination:
+  data: categories
+  size: 1
+  alias: cat
+permalink: "/{{ cat.slug }}/"
+layout: layouts/category.njk
+categorySlug: "{{ cat.slug }}"
+eleventyComputed:
+  categorySlug: "{{ cat.slug }}"
+---

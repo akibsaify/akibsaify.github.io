@@ -1,0 +1,61 @@
+{% set d = deal %}
+<article class="deal-card">
+
+  {% if d.data.discountPercent >= 50 %}
+  <div class="deal-card__badge deal-card__badge--hot">{{ d.data.discountPercent }}% OFF</div>
+  {% elif d.data.discountPercent %}
+  <div class="deal-card__badge">{{ d.data.discountPercent }}% OFF</div>
+  {% endif %}
+
+  <a href="{{ d.url }}" aria-label="{{ d.data.title }}">
+    <div class="deal-card__image-wrap">
+      {% if d.data.image %}
+      <img
+        src="{{ d.data.image }}"
+        alt="{{ d.data.title }}"
+        loading="lazy"
+        width="400"
+        height="300">
+      {% else %}
+      <div class="deal-card__placeholder">
+        {% if d.data.category == 'electronics' %}📱
+        {% elif d.data.category == 'fashion' %}👗
+        {% elif d.data.category == 'home-kitchen' %}🏠
+        {% elif d.data.category == 'grocery' %}🛒
+        {% elif d.data.category == 'travel' %}✈️
+        {% else %}🏷️{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </a>
+
+  <div class="deal-card__body">
+    <div class="deal-card__store">
+      <span class="deal-card__store-dot"></span>
+      {{ d.data.store | capitalize }}
+    </div>
+
+    <a href="{{ d.url }}">
+      <h2 class="deal-card__title">{{ d.data.title }}</h2>
+    </a>
+
+    <div class="deal-card__prices">
+      <span class="deal-card__price">{{ d.data.dealPrice | priceFormat }}</span>
+      {% if d.data.originalPrice %}
+      <span class="deal-card__mrp">{{ d.data.originalPrice | priceFormat }}</span>
+      {% endif %}
+      {% if d.data.discountPercent %}
+      <span class="deal-card__discount">{{ d.data.discountPercent }}% off</span>
+      {% endif %}
+    </div>
+
+    <div class="deal-card__verified">✅ Verified · {{ d.date | shortDate }}</div>
+
+    <a
+      class="deal-card__cta"
+      href="{{ d.url }}">
+      View Deal →
+    </a>
+  </div>
+
+</article>

@@ -1,0 +1,65 @@
+---
+layout: layouts/base.njk
+---
+{% set storeData = stores | selectattr("slug", "equalto", storeSlug) | first %}
+{% set pageTitle = storeData.metaTitle if storeData else storeSlug + " Deals | Deal Drops" %}
+{% set pageDescription = storeData.metaDescription if storeData else "Best " + storeSlug + " deals and coupons." %}
+
+{% block head %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+    { "@type": "ListItem", "position": 2, "name": "{{ storeData.name if storeData else storeSlug }}", "item": "{{ site.url }}/store/{{ storeSlug }}/" }
+  ]
+}
+</script>
+{% endblock %}
+
+<!-- Store Hero -->
+<div class="store-hero">
+  <div class="container">
+    <nav class="breadcrumb" style="padding:0 0 1rem;">
+      <a href="/">Home</a>
+      <span class="breadcrumb__sep">›</span>
+      <a href="/store/">Stores</a>
+      <span class="breadcrumb__sep">›</span>
+      <span>{{ storeData.name if storeData else storeSlug }}</span>
+    </nav>
+    <div class="store-hero__icon" style="background:{{ storeData.bgColor if storeData }};color:{{ storeData.color if storeData }};">
+      {{ storeData.initials if storeData else storeSlug | upper | truncate(2, false, "") }}
+    </div>
+    <h1 class="store-hero__title">All {{ storeData.name if storeData else storeSlug }} Coupon Codes &amp; Deals — {{ site.currentMonth }}</h1>
+    <p class="store-hero__desc">{{ storeData.description if storeData else "Best deals from " + storeSlug }}</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section" style="padding-top:1.5rem;">
+
+    {% set storeDeals = collections.deals | filterByStore(storeSlug) %}
+
+    {% if storeDeals.length > 0 %}
+    <div class="sort-bar">
+      <span style="font-size:0.8rem;color:var(--text-muted);font-weight:600;white-space:nowrap;">{{ storeDeals.length }} active deals</span>
+    </div>
+
+    <div class="deals-grid">
+      {% for dealItem in storeDeals %}
+        {% set deal = dealItem %}
+        {% include "partials/deal-card.njk" %}
+      {% endfor %}
+    </div>
+
+    {% else %}
+    <div class="empty-state">
+      <div class="empty-state__icon">🔍</div>
+      <p>No active {{ storeData.name if storeData else storeSlug }} deals right now.</p>
+      <p>Check back soon or <a href="{{ site.whatsapp }}" target="_blank" rel="noopener" style="color:var(--orange)">join our WhatsApp channel</a>.</p>
+    </div>
+    {% endif %}
+
+  </div>
+</div>

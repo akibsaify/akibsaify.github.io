@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Amazon",
+    "slug": "amazon",
+    "initials": "AZ",
+    "color": "#FF9900",
+    "bgColor": "#FFF8EE",
+    "url": "https://amzn.to/dealdrops",
+    "description": "India's largest online marketplace. Best deals on electronics, fashion, home and more.",
+    "metaTitle": "Amazon Coupon Codes & Deals — March 2026 | Deal Drops",
+    "metaDescription": "Today's best Amazon India deals and coupon codes. Verified discounts on electronics, fashion, home and more."
+  },
+  {
+    "name": "Flipkart",
+    "slug": "flipkart",
+    "initials": "FK",
+    "color": "#2874F0",
+    "bgColor": "#EEF4FF",
+    "url": "https://fkrt.it/dealdrops",
+    "description": "India's homegrown shopping platform. Great deals on mobiles, appliances and fashion.",
+    "metaTitle": "Flipkart Coupon Codes & Deals — March 2026 | Deal Drops",
+    "metaDescription": "Latest Flipkart deals, offers and coupon codes. Save on mobiles, appliances and fashion in March 2026."
+  },
+  {
+    "name": "Myntra",
+    "slug": "myntra",
+    "initials": "MN",
+    "color": "#FF3F6C",
+    "bgColor": "#FFF0F3",
+    "url": "https://myntra.com",
+    "description": "India's leading fashion platform with top brands at great prices.",
+    "metaTitle": "Myntra Coupon Codes & Deals — March 2026 | Deal Drops",
+    "metaDescription": "Latest Myntra offers and promo codes. Get the best fashion deals on clothing, shoes and accessories."
+  },
+  {
+    "name": "Ajio",
+    "slug": "ajio",
+    "initials": "AJ",
+    "color": "#7C4DFF",
+    "bgColor": "#F5F0FF",
+    "url": "https://ajio.com",
+    "description": "Reliance's fashion brand offering trendy clothes and accessories.",
+    "metaTitle": "Ajio Coupon Codes & Deals — March 2026 | Deal Drops",
+    "metaDescription": "Best Ajio coupon codes and deals for March 2026. Save on fashion, clothing and accessories."
+  },
+  {
+    "name": "Swiggy",
+    "slug": "swiggy",
+    "initials": "SW",
+    "color": "#FC8019",
+    "bgColor": "#FFF4ED",
+    "url": "https://swiggy.com",
+    "description": "Order food online from your favourite restaurants.",
+    "metaTitle": "Swiggy Coupon Codes & Promo Codes — March 2026 | Deal Drops",
+    "metaDescription": "Latest Swiggy promo codes and offers. Get discounts on food delivery in March 2026."
+  },
+  {
+    "name": "Zomato",
+    "slug": "zomato",
+    "initials": "ZO",
+    "color": "#E23744",
+    "bgColor": "#FFF0F1",
+    "url": "https://zomato.com",
+    "description": "Food delivery from top restaurants near you.",
+    "metaTitle": "Zomato Coupon Codes & Promo Codes — March 2026 | Deal Drops",
+    "metaDescription": "Today's Zomato promo codes and offers. Save on food delivery and restaurant orders."
+  }
+]

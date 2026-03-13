@@ -1,0 +1,10 @@
+---
+pagination:
+  data: stores
+  size: 1
+  alias: storeItem
+permalink: "/store/{{ storeItem.slug }}/"
+layout: layouts/store.njk
+eleventyComputed:
+  storeSlug: "{{ storeItem.slug }}"
+---
