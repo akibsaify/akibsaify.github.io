@@ -4,11 +4,11 @@ description: "Save ₹15,000 on the Samsung Galaxy S24 FE. Snapdragon 8 Gen 1 pr
 date: 2026-03-13
 category: electronics
 store: amazon
-originalPrice: 49999
-dealPrice: 34999
-discountPercent: 28
+originalPrice: 59999
+dealPrice: 40595
+discountPercent: 32
 couponCode: ""
-affiliateLink: "https://amzn.to/samsung-s24-fe"
+affiliateLink: "https://www.amazon.in/dp/B0DHL7YT5S?tag=mas03ad-21"
 image: ""
 expired: false
 tags: ["samsung", "smartphone", "android", "5g"]

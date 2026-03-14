@@ -4,11 +4,11 @@ description: "boAt Airdopes 141 True Wireless Earbuds with 42H playback at just 
 date: 2026-03-13
 category: electronics
 store: amazon
-originalPrice: 2990
-dealPrice: 799
-discountPercent: 75
+originalPrice: 3990
+dealPrice: 798
+discountPercent: 80
 couponCode: ""
-affiliateLink: "https://amzn.to/boat-airdopes-141"
+affiliateLink: "https://www.amazon.in/dp/B0F8BVSK21?tag=mas03ad-21"
 image: ""
 expired: false
 tags: ["boat", "earbuds", "tws", "bluetooth", "audio"]

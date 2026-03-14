@@ -4,11 +4,11 @@ description: "Voltas 185V Vectra Plus 1.5 Ton 5 Star Inverter Split AC at ₹8,0
 date: 2026-03-11
 category: home-kitchen
 store: amazon
-originalPrice: 42490
-dealPrice: 34490
-discountPercent: 19
+originalPrice: 62990
+dealPrice: 38480
+discountPercent: 39
 couponCode: ""
-affiliateLink: "https://amzn.to/voltas-1-5-ton-ac"
+affiliateLink: "https://www.amazon.in/dp/B0CWVDN3HZ?tag=mas03ad-21"
 image: ""
 expired: false
 tags: ["voltas", "ac", "air conditioner", "inverter", "5-star"]
