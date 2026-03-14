@@ -290,11 +290,28 @@ async function fetchProductDetails() {
   statusEl.textContent = 'Fetching product page...';
 
   try {
-    // Use CORS proxy to fetch the Amazon page
-    const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
-    const res = await fetch(proxyUrl);
-    if (!res.ok) throw new Error('Could not fetch page');
-    const html = await res.text();
+    // Try multiple CORS proxies — Amazon blocks some of them
+    const proxies = [
+      u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
+      u => 'https://corsproxy.io/?' + encodeURIComponent(u),
+      u => 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u)
+    ];
+    let html = '';
+    let proxyWorked = false;
+    for (const makeProxy of proxies) {
+      try {
+        statusEl.textContent = 'Trying to fetch product page...';
+        const res = await fetch(makeProxy(url));
+        if (res.ok) {
+          html = await res.text();
+          if (html.length > 1000 && html.includes('productTitle')) {
+            proxyWorked = true;
+            break;
+          }
+        }
+      } catch (e) { /* try next proxy */ }
+    }
+    if (!proxyWorked) throw new Error('All proxies failed. Fill details manually');
 
     // Extract title
     const titleMatch = html.match(/<span[^>]*id="productTitle"[^>]*>([\s\S]*?)<\/span>/);
@@ -444,17 +461,26 @@ async function handlePublish() {
     if (fetchedImageUrl) {
       statusEl.textContent = 'Downloading image...';
       try {
-        // Use CORS proxy to download Amazon image
-        const proxyImgUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(fetchedImageUrl);
-        const imgRes = await fetch(proxyImgUrl);
-        if (imgRes.ok) {
-          const blob = await imgRes.blob();
-          if (blob.size > 1000) {
-            const base64 = await blobToBase64(blob);
-            statusEl.textContent = 'Uploading image...';
-            await githubPutFile(token, `src/images/${slug}.jpg`, base64, `Add image: ${slug}`);
-            hasImage = true;
-          }
+        // Try multiple proxies to download Amazon image
+        const imgProxies = [
+          u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
+          u => 'https://corsproxy.io/?' + encodeURIComponent(u),
+          u => 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u)
+        ];
+        for (const makeProxy of imgProxies) {
+          try {
+            const imgRes = await fetch(makeProxy(fetchedImageUrl));
+            if (imgRes.ok) {
+              const blob = await imgRes.blob();
+              if (blob.size > 1000) {
+                const base64 = await blobToBase64(blob);
+                statusEl.textContent = 'Uploading image...';
+                await githubPutFile(token, `src/images/${slug}.jpg`, base64, `Add image: ${slug}`);
+                hasImage = true;
+                break;
+              }
+            }
+          } catch (e) { /* try next */ }
         }
       } catch (e) {
         console.warn('Image download failed, skipping:', e);
