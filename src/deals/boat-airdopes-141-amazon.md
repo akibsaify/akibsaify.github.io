@@ -9,7 +9,7 @@ dealPrice: 798
 discountPercent: 80
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0F8BVSK21?tag=mas03ad-21"
-image: ""
+image: "/images/boat-airdopes-141.jpg"
 expired: false
 tags: ["boat", "earbuds", "tws", "bluetooth", "audio"]
 ---

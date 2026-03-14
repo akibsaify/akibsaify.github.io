@@ -9,7 +9,7 @@ dealPrice: 38480
 discountPercent: 39
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CWVDN3HZ?tag=mas03ad-21"
-image: ""
+image: "/images/voltas-ac.jpg"
 expired: false
 tags: ["voltas", "ac", "air conditioner", "inverter", "5-star"]
 ---

@@ -9,7 +9,7 @@ dealPrice: 40595
 discountPercent: 32
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DHL7YT5S?tag=mas03ad-21"
-image: ""
+image: "/images/samsung-s24-fe.jpg"
 expired: false
 tags: ["samsung", "smartphone", "android", "5g"]
 ---
