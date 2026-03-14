@@ -94,6 +94,7 @@ eleventyExcludeFromCollections: true
     .btn:hover:not(:disabled) { opacity: 0.9; }
 
     .btn-primary { background: linear-gradient(135deg, #FF3D57, #FF6B3D); color: #fff; }
+    .btn-fetch { background: #6C2BD9; color: #fff; margin-top: 12px; }
     .btn-save { background: #6C2BD9; color: #fff; }
     .btn-wa-send { background: linear-gradient(135deg, #25D366, #128C7E); color: #fff; margin-top: 10px; }
     .btn-wa-copy { background: #25D366; color: #fff; margin-top: 8px; }
@@ -156,29 +157,31 @@ eleventyExcludeFromCollections: true
   <!-- PUBLISHER: Main form -->
   <div id="publisher">
     <div class="card">
-      <h2>Links</h2>
+      <h2>Step 1: Paste Links</h2>
+      <label>Amazon Product URL</label>
+      <input type="url" id="field-url" placeholder="https://www.amazon.in/dp/B0..." />
+
       <label>SiteStripe Short Link</label>
       <input type="url" id="field-sitestripe" placeholder="https://amzn.to/..." />
-      <p class="hint">SiteStripe → Get Link → Short Link → paste here</p>
+      <p class="hint">SiteStripe → Get Link → Short Link</p>
 
-      <label>Amazon Product URL (for image)</label>
-      <input type="url" id="field-url" placeholder="https://www.amazon.in/dp/B0..." />
-      <p class="hint">Copy the product page URL from browser address bar</p>
+      <button class="btn btn-fetch" id="btn-fetch">Fetch Product Details</button>
+      <div id="fetch-status" class="status" style="display:none;"></div>
     </div>
 
     <div class="card">
-      <h2>Deal Details</h2>
+      <h2>Step 2: Verify & Edit</h2>
       <label>Title</label>
-      <input type="text" id="field-title" placeholder="Product name" />
+      <input type="text" id="field-title" placeholder="Auto-filled after fetch" />
 
       <div class="row">
         <div>
           <label>Deal Price (₹)</label>
-          <input type="number" id="field-deal-price" placeholder="999" />
+          <input type="number" id="field-deal-price" placeholder="0" />
         </div>
         <div>
           <label>MRP (₹)</label>
-          <input type="number" id="field-mrp" placeholder="1999" />
+          <input type="number" id="field-mrp" placeholder="0" />
         </div>
       </div>
 
@@ -266,6 +269,114 @@ document.getElementById('btn-logout').addEventListener('click', () => {
   showScreen('setup');
 });
 
+// Fetch product details from Amazon URL
+let fetchedImageUrl = '';
+document.getElementById('btn-fetch').addEventListener('click', fetchProductDetails);
+
+async function fetchProductDetails() {
+  const url = document.getElementById('field-url').value.trim();
+  const statusEl = document.getElementById('fetch-status');
+  const btn = document.getElementById('btn-fetch');
+
+  if (!url || !url.includes('amazon.in')) {
+    alert('Please paste an Amazon.in product URL first');
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Fetching...';
+  statusEl.style.display = 'block';
+  statusEl.className = 'status loading';
+  statusEl.textContent = 'Fetching product page...';
+
+  try {
+    // Use CORS proxy to fetch the Amazon page
+    const proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url);
+    const res = await fetch(proxyUrl);
+    if (!res.ok) throw new Error('Could not fetch page');
+    const html = await res.text();
+
+    // Extract title
+    const titleMatch = html.match(/<span[^>]*id="productTitle"[^>]*>([\s\S]*?)<\/span>/);
+    if (titleMatch) {
+      document.getElementById('field-title').value = titleMatch[1].trim();
+    }
+
+    // Extract deal price
+    const pricePatterns = [
+      /class="priceToPay"[\s\S]*?<span[^>]*class="a-offscreen"[^>]*>([\s\S]*?)<\/span>/,
+      /class="apexPriceToPay"[\s\S]*?<span[^>]*class="a-offscreen"[^>]*>([\s\S]*?)<\/span>/,
+      /id="corePrice_feature_div"[\s\S]*?<span[^>]*class="a-offscreen"[^>]*>([\s\S]*?)<\/span>/,
+      /<span[^>]*class="a-price-whole"[^>]*>([\d,]+)/
+    ];
+    for (const pat of pricePatterns) {
+      const m = html.match(pat);
+      if (m) {
+        const price = parseInt(m[1].replace(/[^\d]/g, '')) || 0;
+        if (price > 0) {
+          document.getElementById('field-deal-price').value = price;
+          break;
+        }
+      }
+    }
+
+    // Extract MRP
+    const mrpPatterns = [
+      /class="basisPrice"[\s\S]*?<span[^>]*class="a-offscreen"[^>]*>([\s\S]*?)<\/span>/,
+      /class="a-text-price"[\s\S]*?<span[^>]*class="a-offscreen"[^>]*>([\s\S]*?)<\/span>/,
+      /id="listPrice"[^>]*>([\s\S]*?)</
+    ];
+    for (const pat of mrpPatterns) {
+      const m = html.match(pat);
+      if (m) {
+        const price = parseInt(m[1].replace(/[^\d]/g, '')) || 0;
+        if (price > 0) {
+          document.getElementById('field-mrp').value = price;
+          break;
+        }
+      }
+    }
+
+    // Extract hi-res image
+    const imgMatch = html.match(/"hiRes"\s*:\s*"(https:\/\/m\.media-amazon\.com\/images\/I\/[^"]+)"/);
+    if (imgMatch) {
+      fetchedImageUrl = imgMatch[1];
+    } else {
+      // Fallback: try landingImage src
+      const imgMatch2 = html.match(/id="landingImage"[^>]*src="(https:\/\/m\.media-amazon\.com\/images\/I\/[^"]+)"/);
+      if (imgMatch2) fetchedImageUrl = imgMatch2[1];
+    }
+
+    // Extract category from breadcrumbs
+    const catMatch = html.match(/id="wayfinding-breadcrumbs_feature_div"[\s\S]*?<a[^>]*>([\s\S]*?)<\/a>/);
+    if (catMatch) {
+      const cat = catMatch[1].trim().toLowerCase();
+      if (cat.includes('computer') || cat.includes('electronic') || cat.includes('mobile') || cat.includes('phone') || cat.includes('laptop') || cat.includes('tv') || cat.includes('camera'))
+        document.getElementById('field-category').value = 'electronics';
+      else if (cat.includes('cloth') || cat.includes('fashion') || cat.includes('shoe') || cat.includes('jewel') || cat.includes('watch'))
+        document.getElementById('field-category').value = 'fashion';
+      else if (cat.includes('home') || cat.includes('kitchen') || cat.includes('furniture') || cat.includes('appliance'))
+        document.getElementById('field-category').value = 'home-kitchen';
+      else if (cat.includes('grocer') || cat.includes('food') || cat.includes('gourmet'))
+        document.getElementById('field-category').value = 'grocery';
+      else if (cat.includes('travel') || cat.includes('luggage') || cat.includes('outdoor'))
+        document.getElementById('field-category').value = 'travel';
+    }
+
+    updateDiscount();
+    updatePreview();
+
+    statusEl.className = 'status success';
+    statusEl.textContent = fetchedImageUrl ? 'Details fetched! Image found.' : 'Details fetched! No image found.';
+  } catch (e) {
+    statusEl.className = 'status error';
+    statusEl.textContent = 'Fetch failed: ' + e.message + '. Fill details manually.';
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Fetch Product Details';
+}
+
 // Auto-calculate discount
 function updateDiscount() {
   const deal = parseInt(document.getElementById('field-deal-price').value) || 0;
@@ -309,13 +420,6 @@ async function handlePublish() {
   if (!title) { alert('Please enter a product title'); return; }
   if (!dealPrice) { alert('Please enter the deal price'); return; }
 
-  // Extract ASIN from Amazon URL for image
-  let asin = '';
-  if (amazonUrl) {
-    const asinMatch = amazonUrl.match(/\/dp\/([A-Z0-9]{10})/i) || amazonUrl.match(/\/gp\/product\/([A-Z0-9]{10})/i);
-    if (asinMatch) asin = asinMatch[1];
-  }
-
   const category = document.getElementById('field-category').value;
   const discount = parseInt(document.getElementById('field-discount').value) || 0;
 
@@ -329,30 +433,22 @@ async function handlePublish() {
   const savings = mrp - dealPrice;
 
   try {
-    // Step 1: Try to download product image using ASIN
+    // Step 1: Try to download product image (fetched earlier via CORS proxy)
     let hasImage = false;
-    if (asin) {
-      statusEl.textContent = 'Fetching product image...';
+    if (fetchedImageUrl) {
+      statusEl.textContent = 'Downloading image...';
       try {
-        // Try Amazon's product image URL pattern (multiple sizes)
-        const imageUrls = [
-          `https://m.media-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_SX600_.jpg`,
-          `https://images-eu.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_SX600_.jpg`
-        ];
-        for (const imgUrl of imageUrls) {
-          try {
-            const imgRes = await fetch(imgUrl);
-            if (imgRes.ok && imgRes.headers.get('content-length') > 1000) {
-              const blob = await imgRes.blob();
-              if (blob.size > 1000) {
-                const base64 = await blobToBase64(blob);
-                statusEl.textContent = 'Uploading image...';
-                await githubPutFile(token, `src/images/${slug}.jpg`, base64, `Add image: ${slug}`);
-                hasImage = true;
-                break;
-              }
-            }
-          } catch (e) { continue; }
+        // Use CORS proxy to download Amazon image
+        const proxyImgUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(fetchedImageUrl);
+        const imgRes = await fetch(proxyImgUrl);
+        if (imgRes.ok) {
+          const blob = await imgRes.blob();
+          if (blob.size > 1000) {
+            const base64 = await blobToBase64(blob);
+            statusEl.textContent = 'Uploading image...';
+            await githubPutFile(token, `src/images/${slug}.jpg`, base64, `Add image: ${slug}`);
+            hasImage = true;
+          }
         }
       } catch (e) {
         console.warn('Image download failed, skipping:', e);
@@ -493,8 +589,9 @@ document.getElementById('btn-new-deal').addEventListener('click', () => {
   document.getElementById('field-deal-price').value = '';
   document.getElementById('field-mrp').value = '';
   document.getElementById('field-discount').value = '';
-  document.getElementById('field-image').value = '';
+  document.getElementById('fetch-status').style.display = 'none';
   document.getElementById('pub-status').style.display = 'none';
+  fetchedImageUrl = '';
   document.getElementById('btn-publish').disabled = false;
   document.getElementById('btn-publish').textContent = 'Publish Deal';
   updatePreview();
