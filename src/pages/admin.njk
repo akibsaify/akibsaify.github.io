@@ -143,14 +143,29 @@ eleventyExcludeFromCollections: true
 
 <div class="container">
 
-  <!-- SETUP: GitHub token -->
+  <!-- SETUP: GitHub token + Worker URL -->
   <div id="setup">
     <div class="card">
       <h2>Setup</h2>
-      <p>Enter your GitHub personal access token. This is stored only on this device.</p>
+      <p>Enter your GitHub token and Cloudflare Worker URL. Stored only on this device.</p>
       <label>GitHub Token</label>
       <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx" />
-      <button class="btn btn-save" id="btn-save-token">Save Token</button>
+      <label>CORS Proxy URL (Cloudflare Worker)</label>
+      <input type="url" id="worker-input" placeholder="https://your-worker.username.workers.dev" />
+      <p class="hint">Free setup — see instructions below the form</p>
+      <button class="btn btn-save" id="btn-save-token">Save & Continue</button>
+    </div>
+    <div class="card">
+      <h2>How to Get Your Worker URL</h2>
+      <ol style="font-size:13px;color:#64748b;line-height:1.8;padding-left:1.2rem;">
+        <li>Go to <strong>dash.cloudflare.com</strong> → sign up (free)</li>
+        <li>Click <strong>Workers & Pages</strong> → Create</li>
+        <li>Name it <strong>dealdrops-proxy</strong> → Deploy</li>
+        <li>Click <strong>Edit Code</strong> → delete everything</li>
+        <li>Paste the worker code (ask me for it)</li>
+        <li>Click <strong>Deploy</strong></li>
+        <li>Copy your URL: <code>https://dealdrops-proxy.YOUR-NAME.workers.dev</code></li>
+      </ol>
     </div>
   </div>
 
@@ -255,12 +270,18 @@ function showScreen(id) {
 (function init() {
   const token = localStorage.getItem('dd_github_token');
   showScreen(token ? 'publisher' : 'setup');
+  // Pre-fill setup fields if returning
+  if (localStorage.getItem('dd_worker_url')) {
+    document.getElementById('worker-input').value = localStorage.getItem('dd_worker_url');
+  }
 })();
 
 document.getElementById('btn-save-token').addEventListener('click', () => {
   const token = document.getElementById('token-input').value.trim();
   if (!token) return;
   localStorage.setItem('dd_github_token', token);
+  const workerUrl = document.getElementById('worker-input').value.trim().replace(/\/+$/, '');
+  if (workerUrl) localStorage.setItem('dd_worker_url', workerUrl);
   showScreen('publisher');
 });
 
@@ -290,28 +311,42 @@ async function fetchProductDetails() {
   statusEl.textContent = 'Fetching product page...';
 
   try {
-    // Try multiple CORS proxies — Amazon blocks some of them
-    const proxies = [
+    // Build proxy list — your own Cloudflare Worker first (most reliable), then public fallbacks
+    const workerUrl = localStorage.getItem('dd_worker_url');
+    const proxies = [];
+    if (workerUrl) {
+      proxies.push(u => workerUrl + '/?url=' + encodeURIComponent(u));
+    }
+    proxies.push(
       u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
       u => 'https://corsproxy.io/?' + encodeURIComponent(u),
-      u => 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u)
-    ];
+      u => 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u),
+      u => 'https://thingproxy.freeboard.io/fetch/' + encodeURIComponent(u)
+    );
     let html = '';
     let proxyWorked = false;
+    let proxyIndex = 0;
     for (const makeProxy of proxies) {
+      proxyIndex++;
       try {
-        statusEl.textContent = 'Trying to fetch product page...';
-        const res = await fetch(makeProxy(url));
+        statusEl.textContent = `Trying proxy ${proxyIndex}/${proxies.length}...`;
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 10000);
+        const res = await fetch(makeProxy(url), { signal: controller.signal });
+        clearTimeout(timeout);
         if (res.ok) {
           html = await res.text();
-          if (html.length > 1000 && html.includes('productTitle')) {
+          // Accept if page is long enough (Amazon pages are large)
+          if (html.length > 5000) {
             proxyWorked = true;
             break;
           }
         }
       } catch (e) { /* try next proxy */ }
     }
-    if (!proxyWorked) throw new Error('All proxies failed. Fill details manually');
+    if (!proxyWorked) throw new Error(workerUrl
+      ? 'Fetch failed. Check your Worker URL in settings.'
+      : 'All proxies failed. Set up a Cloudflare Worker (tap Change Token → see instructions)');
 
     // Extract title
     const titleMatch = html.match(/<span[^>]*id="productTitle"[^>]*>([\s\S]*?)<\/span>/);
@@ -461,12 +496,17 @@ async function handlePublish() {
     if (fetchedImageUrl) {
       statusEl.textContent = 'Downloading image...';
       try {
-        // Try multiple proxies to download Amazon image
-        const imgProxies = [
+        // Try worker first, then public proxies for image download
+        const imgWorkerUrl = localStorage.getItem('dd_worker_url');
+        const imgProxies = [];
+        if (imgWorkerUrl) {
+          imgProxies.push(u => imgWorkerUrl + '/?url=' + encodeURIComponent(u));
+        }
+        imgProxies.push(
           u => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u),
           u => 'https://corsproxy.io/?' + encodeURIComponent(u),
           u => 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u)
-        ];
+        );
         for (const makeProxy of imgProxies) {
           try {
             const imgRes = await fetch(makeProxy(fetchedImageUrl));
