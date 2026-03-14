@@ -8,7 +8,7 @@ originalPrice: 26999
 dealPrice: 16000
 discountPercent: 41
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0BXSRCPJ1?tag=mas03ad-21"
+affiliateLink: "https://amzn.to/3P5kp9e"
 image: "/images/godrej-223-l-2-star-95-food-surface-disinfection-uniform-360-amazon.jpg"
 expired: false
 tags: ["godrej", "223", "star", "food", "surface", "disinfection"]
