@@ -11,30 +11,35 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://deals.0110059.xyz">
     <link rel="canonical" href="https://deals.0110059.xyz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --bg: #f7f8fa;
+            --bg: #F5F3FF;
             --white: #ffffff;
-            --border: #e4e7ec;
-            --accent: #e85d2c;
-            --accent-dark: #c94c1e;
-            --accent-soft: #fff3ef;
-            --green: #1a9e5c;
-            --green-soft: #edfaf3;
-            --text: #1a1d23;
-            --muted: #6b7280;
-            --tag-bg: #f0f2f5;
-            --shadow: 0 2px 8px rgba(0,0,0,0.07);
+            --border: #E5E1F0;
+            --accent: #FF3D57;
+            --accent-dark: #E0293F;
+            --accent-soft: #FFF0F2;
+            --green: #00B67A;
+            --green-soft: #E6FAF2;
+            --text: #111827;
+            --muted: #6B7280;
+            --tag-bg: #F3EEFF;
+            --shadow: 0 2px 8px rgba(108,43,217,0.08);
             --radius: 12px;
+            --primary: #6C2BD9;
+            --primary-dark: #5220A8;
         }
 
         body {
             background: var(--bg);
             color: var(--text);
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
             font-size: 15px;
             line-height: 1.6;
         }
@@ -43,8 +48,8 @@
 
         /* ── Header ── */
         header {
-            background: var(--white);
-            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, var(--primary) 0%, #4A1FA0 100%);
+            border-bottom: 3px solid var(--accent);
             padding: 0 1.5rem;
             position: sticky;
             top: 0;
@@ -60,19 +65,19 @@
             gap: 1rem;
         }
         .logo {
-            font-size: 1.2rem;
-            font-weight: 800;
+            font-size: 1.4rem;
+            font-weight: 900;
             letter-spacing: -0.03em;
-            color: var(--accent);
+            color: #fff;
         }
-        .logo span { color: var(--text); }
+        .logo span { color: var(--accent); }
         .header-search {
             flex: 1;
             max-width: 400px;
             display: flex;
             align-items: center;
-            background: var(--bg);
-            border: 1px solid var(--border);
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.25);
             border-radius: 8px;
             padding: 0.4rem 0.9rem;
             gap: 0.5rem;
@@ -83,14 +88,14 @@
             outline: none;
             width: 100%;
             font-size: 0.88rem;
-            color: var(--text);
+            color: #fff;
         }
-        .header-search input::placeholder { color: var(--muted); }
-        .search-icon { color: var(--muted); font-size: 0.9rem; }
+        .header-search input::placeholder { color: rgba(255,255,255,0.6); }
+        .search-icon { color: rgba(255,255,255,0.6); font-size: 0.9rem; }
 
         /* ── Hero ── */
         .hero {
-            background: linear-gradient(135deg, var(--accent) 0%, #f0622a 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, #4A1FA0 50%, #3D1590 100%);
             color: #fff;
             text-align: center;
             padding: 3rem 1.5rem 2.5rem;
@@ -462,8 +467,9 @@
 
         /* ── Footer ── */
         footer {
-            border-top: 1px solid var(--border);
-            background: var(--white);
+            border-top: none;
+            background: linear-gradient(180deg, #1A0D3B 0%, #0F0824 100%);
+            color: rgba(255,255,255,0.75);
             padding: 2rem 1.5rem;
         }
         .footer-inner {
@@ -480,9 +486,9 @@
             gap: 1.5rem;
             flex-wrap: wrap;
         }
-        .footer-links a { font-size: 0.82rem; color: var(--muted); }
+        .footer-links a { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
         .footer-links a:hover { color: var(--accent); }
-        .footer-note { font-size: 0.78rem; color: var(--muted); }
+        .footer-note { font-size: 0.78rem; color: rgba(255,255,255,0.4); }
 
         /* ── Responsive ── */
         @media (max-width: 640px) {
@@ -499,7 +505,7 @@
 <!-- Header -->
 <header>
     <div class="header-inner">
-        <a class="logo" href="/">Deal<span>Scout</span></a>
+        <a class="logo" href="/">Deal<span>Drops</span></a>
         <div class="header-search">
             <span class="search-icon">&#128269;</span>
             <input type="text" placeholder="Search stores or categories..." aria-label="Search coupons">
@@ -820,7 +826,7 @@
 <footer>
     <div class="footer-inner">
         <div>
-            <a class="logo" href="/" style="font-size:1rem;">Deal<span>Scout</span></a>
+            <a class="logo" href="/" style="font-size:1rem;color:#fff;">Deal<span>Drops</span></a>
             <p class="footer-note" style="margin-top:0.4rem;">Deals updated daily. Some links are affiliate links.</p>
         </div>
         <nav class="footer-links">

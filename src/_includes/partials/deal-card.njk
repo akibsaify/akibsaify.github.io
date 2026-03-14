@@ -49,12 +49,18 @@
       {% endif %}
     </div>
 
+    {% if d.data.discountPercent >= 40 %}
+    <div class="deal-card__savings-callout">
+      🎉 Save {{ d.data.originalPrice | savings(d.data.dealPrice) }}
+    </div>
+    {% endif %}
+
     <div class="deal-card__verified">✅ Verified · {{ d.date | shortDate }}</div>
 
     <a
       class="deal-card__cta"
       href="{{ d.url }}">
-      View Deal →
+      Get Deal →
     </a>
   </div>
 

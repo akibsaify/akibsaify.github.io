@@ -14,6 +14,20 @@ pageDescription: "Find today's best deals and verified coupon codes on Amazon, F
       <a href="#today-deals" class="btn btn--primary">Today's Deals ↓</a>
       <a href="{{ site.whatsapp }}" target="_blank" rel="noopener" class="btn btn--secondary">💬 WhatsApp Alerts</a>
     </div>
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <strong>500+</strong>
+        <span>Active Deals</span>
+      </div>
+      <div class="hero__stat">
+        <strong>100%</strong>
+        <span>Verified</span>
+      </div>
+      <div class="hero__stat">
+        <strong>Daily</strong>
+        <span>Updates</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -153,7 +167,7 @@ pageDescription: "Find today's best deals and verified coupon codes on Amazon, F
           <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.2rem;">{{ post.date | shortDate }}</div>
           <div style="font-size:0.92rem;font-weight:700;color:var(--text);">{{ post.data.title }}</div>
         </div>
-        <span style="color:var(--orange);font-size:1rem;font-weight:700;">→</span>
+        <span style="color:var(--accent);font-size:1rem;font-weight:700;">→</span>
       </a>
       {% endfor %}
     </div>
