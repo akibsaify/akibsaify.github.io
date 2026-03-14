@@ -72,7 +72,7 @@ layout: layouts/base.njk
   {% set relatedPosts = collections.blog | exclude(page.url) | limit(3) %}
   {% if relatedPosts.length > 0 %}
   <div style="margin-top:2.5rem;">
-    <h2 style="font-size:1rem;font-weight:700;color:var(--blue);margin-bottom:1rem;">More Guides</h2>
+    <h2 style="font-size:1rem;font-weight:700;color:var(--primary);margin-bottom:1rem;">More Guides</h2>
     <div style="display:flex;flex-direction:column;gap:0.75rem;">
       {% for post in relatedPosts %}
       <a href="{{ post.url }}" style="display:flex;gap:0.75rem;background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);padding:1rem;align-items:flex-start;">
@@ -80,7 +80,7 @@ layout: layouts/base.njk
           <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.25rem;">{{ post.date | shortDate }}</div>
           <div style="font-size:0.92rem;font-weight:700;color:var(--text);">{{ post.data.title }}</div>
         </div>
-        <span style="color:var(--orange);font-size:0.9rem;">→</span>
+        <span style="color:var(--accent);font-size:0.9rem;">→</span>
       </a>
       {% endfor %}
     </div>

@@ -4,7 +4,14 @@
 <!-- Core meta -->
 <meta name="description" content="{{ pageDescription if pageDescription else site.description }}">
 <meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<!-- Geo & Language targeting for India -->
+<meta name="geo.region" content="IN">
+<meta name="geo.placename" content="Delhi">
+<meta name="language" content="English">
+<meta name="author" content="{{ site.author }}">
 
 <!-- Open Graph -->
 <meta property="og:type" content="{{ ogType if ogType else 'website' }}">
@@ -24,3 +31,47 @@
 <meta name="twitter:title" content="{{ pageTitle if pageTitle else site.name }}">
 <meta name="twitter:description" content="{{ pageDescription if pageDescription else site.description }}">
 {% if ogImage %}<meta name="twitter:image" content="{{ site.url }}{{ ogImage }}">{% endif %}
+
+<!-- Homepage-only: WebSite + Organization schema -->
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}",
+      "description": "{{ site.description }}",
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ site.url }}/electronics/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}",
+      "description": "{{ site.description }}",
+      "founder": {
+        "@type": "Person",
+        "name": "{{ site.author }}",
+        "url": "{{ site.instagram }}"
+      },
+      "sameAs": [
+        "{{ site.instagram }}",
+        "{{ site.whatsapp }}"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "{{ site.whatsapp }}",
+        "availableLanguage": ["English", "Hindi"]
+      }
+    }
+  ]
+}
+</script>
+{% endif %}

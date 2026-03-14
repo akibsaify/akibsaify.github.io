@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-{% set pageTitle = title + " | Deal Drops" %}
+{% set pageTitle = title + " | Deal Drops — Verified Deal" %}
 {% set pageDescription = description %}
 {% set ogImage = image if image else "" %}
 {% set ogType = "product" %}
@@ -141,6 +141,14 @@ layout: layouts/base.njk
         {% include "partials/share-buttons.njk" %}
       </div>
 
+      <!-- WhatsApp Channel CTA -->
+      <div style="margin-top:1.25rem;padding:0.85rem 1rem;background:linear-gradient(135deg,#dcfce7,#d1fae5);border:1.5px solid #86efac;border-radius:var(--radius);text-align:center;">
+        <div style="font-size:0.82rem;font-weight:700;color:#166534;">Want deals like this in your pocket?</div>
+        <a href="{{ site.whatsapp }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:0.4rem;padding:0.4rem 1rem;background:#25D366;color:#fff;font-size:0.78rem;font-weight:700;border-radius:6px;text-decoration:none;">
+          💬 Join WhatsApp Channel
+        </a>
+      </div>
+
     </div>
   </div>
 
@@ -151,7 +159,7 @@ layout: layouts/base.njk
 
   <!-- How to Claim -->
   <div class="container--narrow" style="margin-top:2rem;margin-bottom:2.5rem;">
-    <h2 style="font-size:1.05rem;font-weight:700;color:var(--blue);margin-bottom:1rem;">How to Claim This Deal</h2>
+    <h2 style="font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:1rem;">How to Claim This Deal</h2>
     <div class="steps">
       <div class="step">
         <div class="step__num">1</div>
