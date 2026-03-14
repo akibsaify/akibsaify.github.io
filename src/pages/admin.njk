@@ -302,6 +302,12 @@ async function fetchProductDetails() {
       document.getElementById('field-title').value = titleMatch[1].trim();
     }
 
+    // Parse price string like "₹5,499.00" → 5499
+    function parsePrice(str) {
+      const cleaned = str.replace(/[^0-9.]/g, ''); // keep digits and decimal
+      return Math.round(parseFloat(cleaned)) || 0;
+    }
+
     // Extract deal price
     const pricePatterns = [
       /class="priceToPay"[\s\S]*?<span[^>]*class="a-offscreen"[^>]*>([\s\S]*?)<\/span>/,
@@ -312,7 +318,7 @@ async function fetchProductDetails() {
     for (const pat of pricePatterns) {
       const m = html.match(pat);
       if (m) {
-        const price = parseInt(m[1].replace(/[^\d]/g, '')) || 0;
+        const price = parsePrice(m[1]);
         if (price > 0) {
           document.getElementById('field-deal-price').value = price;
           break;
@@ -329,7 +335,7 @@ async function fetchProductDetails() {
     for (const pat of mrpPatterns) {
       const m = html.match(pat);
       if (m) {
-        const price = parseInt(m[1].replace(/[^\d]/g, '')) || 0;
+        const price = parsePrice(m[1]);
         if (price > 0) {
           document.getElementById('field-mrp').value = price;
           break;
