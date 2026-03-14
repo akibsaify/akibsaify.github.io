@@ -8,7 +8,7 @@ originalPrice: 8500
 dealPrice: 3199
 discountPercent: 62
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B09Y32FPNP?tag=mas03ad-21"
+affiliateLink: "https://amzn.to/4uteKtz"
 image: "/images/deckup-apollo-kt-engineered-wood-study-computer-table-and-of-amazon.jpg"
 expired: false
 tags: ["deckup", "apollokt", "engineered", "wood", "study", "computer"]
