@@ -1,0 +1,20 @@
+---
+pagination:
+  data: collections.deals
+  size: 1
+  alias: deal
+permalink: "/go/{{ deal.fileSlug }}/"
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url={{ deal.data.affiliateLink }}">
+  <title>Redirecting to {{ deal.data.title }}</title>
+  <link rel="canonical" href="{{ deal.data.affiliateLink }}">
+</head>
+<body>
+  <p>Redirecting to <a href="{{ deal.data.affiliateLink }}">{{ deal.data.title }}</a>...</p>
+</body>
+</html>
