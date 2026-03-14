@@ -34,7 +34,6 @@ eleventyExcludeFromCollections: true
     }
     .container { max-width: 480px; margin: 0 auto; padding: 16px; }
 
-    /* Setup screen */
     #setup, #publisher, #result { display: none; }
     #setup.active, #publisher.active, #result.active { display: block; }
 
@@ -76,7 +75,6 @@ eleventyExcludeFromCollections: true
       font-family: inherit;
     }
     input:focus, select:focus, textarea:focus { border-color: #6C2BD9; }
-    textarea { resize: vertical; min-height: 60px; }
 
     .row { display: flex; gap: 10px; }
     .row > div { flex: 1; }
@@ -95,42 +93,13 @@ eleventyExcludeFromCollections: true
     .btn:disabled { opacity: 0.5; cursor: not-allowed; }
     .btn:hover:not(:disabled) { opacity: 0.9; }
 
-    .btn-primary {
-      background: linear-gradient(135deg, #FF3D57, #FF6B3D);
-      color: #fff;
-    }
-    .btn-save {
-      background: #6C2BD9;
-      color: #fff;
-    }
-    .btn-wa-send {
-      background: linear-gradient(135deg, #25D366, #128C7E);
-      color: #fff;
-      margin-top: 10px;
-    }
-    .btn-wa-copy {
-      background: #25D366;
-      color: #fff;
-      margin-top: 8px;
-    }
-    .btn-copy {
-      background: #f1f5f9;
-      color: #475569;
-      border: 1.5px solid #e2e8f0;
-      margin-top: 8px;
-    }
-    .btn-new {
-      background: #6C2BD9;
-      color: #fff;
-      margin-top: 12px;
-    }
-    .btn-logout {
-      background: transparent;
-      color: #94a3b8;
-      font-size: 12px;
-      padding: 8px;
-      margin-top: 8px;
-    }
+    .btn-primary { background: linear-gradient(135deg, #FF3D57, #FF6B3D); color: #fff; }
+    .btn-save { background: #6C2BD9; color: #fff; }
+    .btn-wa-send { background: linear-gradient(135deg, #25D366, #128C7E); color: #fff; margin-top: 10px; }
+    .btn-wa-copy { background: #25D366; color: #fff; margin-top: 8px; }
+    .btn-copy { background: #f1f5f9; color: #475569; border: 1.5px solid #e2e8f0; margin-top: 8px; }
+    .btn-new { background: #6C2BD9; color: #fff; margin-top: 12px; }
+    .btn-logout { background: transparent; color: #94a3b8; font-size: 12px; padding: 8px; margin-top: 8px; }
 
     .status {
       padding: 10px 14px;
@@ -160,20 +129,7 @@ eleventyExcludeFromCollections: true
       background: #FF3D57; padding: 2px 8px; border-radius: 4px;
     }
 
-    .asin-badge {
-      display: inline-block;
-      background: #f0fdf4;
-      color: #16a34a;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 4px 10px;
-      border-radius: 6px;
-      margin-top: 8px;
-    }
-    .asin-badge.error { background: #fef2f2; color: #dc2626; }
-
     .divider { height: 1px; background: #e2e8f0; margin: 16px 0; }
-
     .hint { font-size: 11px; color: #94a3b8; margin-top: 4px; }
   </style>
 </head>
@@ -200,17 +156,14 @@ eleventyExcludeFromCollections: true
   <!-- PUBLISHER: Main form -->
   <div id="publisher">
     <div class="card">
-      <h2>Amazon Product URL</h2>
-      <label>Paste Amazon.in link</label>
-      <input type="url" id="field-url" placeholder="https://www.amazon.in/dp/B0..." />
-      <div id="asin-status"></div>
-    </div>
-
-    <div class="card">
-      <h2>SiteStripe Link</h2>
-      <label>Paste your affiliate short link</label>
+      <h2>Links</h2>
+      <label>SiteStripe Short Link</label>
       <input type="url" id="field-sitestripe" placeholder="https://amzn.to/..." />
-      <p class="hint">Get this from the SiteStripe bar → "Get Link" → Short Link</p>
+      <p class="hint">SiteStripe → Get Link → Short Link → paste here</p>
+
+      <label>Amazon Product URL (for image)</label>
+      <input type="url" id="field-url" placeholder="https://www.amazon.in/dp/B0..." />
+      <p class="hint">Copy the product page URL from browser address bar</p>
     </div>
 
     <div class="card">
@@ -246,9 +199,6 @@ eleventyExcludeFromCollections: true
         </div>
       </div>
 
-      <label>Product Image URL (optional)</label>
-      <input type="url" id="field-image" placeholder="https://m.media-amazon.com/images/I/..." />
-      <p class="hint">Long-press product image on Amazon → Copy image address</p>
     </div>
 
     <!-- Live Preview -->
@@ -290,28 +240,20 @@ eleventyExcludeFromCollections: true
 const REPO_OWNER = 'akibsaify';
 const REPO_NAME = 'akibsaify.github.io';
 const BRANCH = 'main';
-const AFFILIATE_TAG = 'mas03ad-21';
 
 let currentWaMessage = '';
 let currentAffiliateLink = '';
 
-// --- Screens ---
 function showScreen(id) {
   document.querySelectorAll('#setup, #publisher, #result').forEach(el => el.classList.remove('active'));
   document.getElementById(id).classList.add('active');
 }
 
-// --- Init ---
 (function init() {
   const token = localStorage.getItem('dd_github_token');
-  if (token) {
-    showScreen('publisher');
-  } else {
-    showScreen('setup');
-  }
+  showScreen(token ? 'publisher' : 'setup');
 })();
 
-// --- Save token ---
 document.getElementById('btn-save-token').addEventListener('click', () => {
   const token = document.getElementById('token-input').value.trim();
   if (!token) return;
@@ -319,27 +261,12 @@ document.getElementById('btn-save-token').addEventListener('click', () => {
   showScreen('publisher');
 });
 
-// --- Logout ---
 document.getElementById('btn-logout').addEventListener('click', () => {
   localStorage.removeItem('dd_github_token');
   showScreen('setup');
 });
 
-// --- Extract ASIN from URL ---
-document.getElementById('field-url').addEventListener('input', (e) => {
-  const url = e.target.value;
-  const match = url.match(/\/dp\/([A-Z0-9]{10})/i) || url.match(/\/gp\/product\/([A-Z0-9]{10})/i);
-  const statusEl = document.getElementById('asin-status');
-  if (match) {
-    statusEl.innerHTML = `<span class="asin-badge">ASIN: ${match[1]}</span>`;
-  } else if (url.length > 10) {
-    statusEl.innerHTML = `<span class="asin-badge error">Could not find ASIN</span>`;
-  } else {
-    statusEl.innerHTML = '';
-  }
-});
-
-// --- Auto-calculate discount ---
+// Auto-calculate discount
 function updateDiscount() {
   const deal = parseInt(document.getElementById('field-deal-price').value) || 0;
   const mrp = parseInt(document.getElementById('field-mrp').value) || 0;
@@ -362,7 +289,7 @@ function updatePreview() {
   document.getElementById('prev-off').textContent = `${discount}% OFF`;
 }
 
-// --- Publish ---
+// Publish
 document.getElementById('btn-publish').addEventListener('click', handlePublish);
 
 async function handlePublish() {
@@ -372,23 +299,25 @@ async function handlePublish() {
 
   if (!token) { showScreen('setup'); return; }
 
-  // Validate
-  const url = document.getElementById('field-url').value;
-  const asinMatch = url.match(/\/dp\/([A-Z0-9]{10})/i) || url.match(/\/gp\/product\/([A-Z0-9]{10})/i);
+  const affiliateLink = document.getElementById('field-sitestripe').value.trim();
+  const amazonUrl = document.getElementById('field-url').value.trim();
   const title = document.getElementById('field-title').value.trim();
   const dealPrice = parseInt(document.getElementById('field-deal-price').value) || 0;
   const mrp = parseInt(document.getElementById('field-mrp').value) || 0;
 
-  if (!asinMatch) { alert('Please enter a valid Amazon.in product URL'); return; }
+  if (!affiliateLink) { alert('Please paste the SiteStripe link'); return; }
   if (!title) { alert('Please enter a product title'); return; }
   if (!dealPrice) { alert('Please enter the deal price'); return; }
 
-  const asin = asinMatch[1];
-  const siteStripeLink = document.getElementById('field-sitestripe').value.trim();
+  // Extract ASIN from Amazon URL for image
+  let asin = '';
+  if (amazonUrl) {
+    const asinMatch = amazonUrl.match(/\/dp\/([A-Z0-9]{10})/i) || amazonUrl.match(/\/gp\/product\/([A-Z0-9]{10})/i);
+    if (asinMatch) asin = asinMatch[1];
+  }
+
   const category = document.getElementById('field-category').value;
   const discount = parseInt(document.getElementById('field-discount').value) || 0;
-  const imageUrl = document.getElementById('field-image').value.trim();
-  const affiliateLink = siteStripeLink || `https://www.amazon.in/dp/${asin}?tag=${AFFILIATE_TAG}`;
 
   btn.disabled = true;
   btn.textContent = 'Publishing...';
@@ -400,21 +329,33 @@ async function handlePublish() {
   const savings = mrp - dealPrice;
 
   try {
-    // Step 1: Try to download and upload image
+    // Step 1: Try to download product image using ASIN
     let hasImage = false;
-    if (imageUrl) {
-      statusEl.textContent = 'Downloading image...';
+    if (asin) {
+      statusEl.textContent = 'Fetching product image...';
       try {
-        const imgRes = await fetch(imageUrl);
-        if (imgRes.ok) {
-          const blob = await imgRes.blob();
-          const base64 = await blobToBase64(blob);
-          statusEl.textContent = 'Uploading image...';
-          await githubPutFile(token, `src/images/${slug}.jpg`, base64, `Add image: ${slug}`);
-          hasImage = true;
+        // Try Amazon's product image URL pattern (multiple sizes)
+        const imageUrls = [
+          `https://m.media-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_SX600_.jpg`,
+          `https://images-eu.ssl-images-amazon.com/images/P/${asin}.01._SCLZZZZZZZ_SX600_.jpg`
+        ];
+        for (const imgUrl of imageUrls) {
+          try {
+            const imgRes = await fetch(imgUrl);
+            if (imgRes.ok && imgRes.headers.get('content-length') > 1000) {
+              const blob = await imgRes.blob();
+              if (blob.size > 1000) {
+                const base64 = await blobToBase64(blob);
+                statusEl.textContent = 'Uploading image...';
+                await githubPutFile(token, `src/images/${slug}.jpg`, base64, `Add image: ${slug}`);
+                hasImage = true;
+                break;
+              }
+            }
+          } catch (e) { continue; }
         }
       } catch (e) {
-        console.warn('Image fetch failed (CORS), skipping:', e);
+        console.warn('Image download failed, skipping:', e);
       }
     }
 
@@ -457,11 +398,10 @@ The **${title}** is available at ${discount}% off on Amazon India. Deal price is
     const mdBase64 = btoa(unescape(encodeURIComponent(markdown)));
     await githubPutFile(token, `src/deals/${slug}.md`, mdBase64, `Add deal: ${title.substring(0, 50)}`);
 
-    // Success!
+    // Success
     statusEl.className = 'status success';
     statusEl.textContent = 'Published!';
 
-    // Build WhatsApp message
     currentAffiliateLink = affiliateLink;
     currentWaMessage = `🔥 *${title} — ${discount}% OFF!*
 
@@ -484,7 +424,7 @@ _Limited time deal on Amazon India_
   }
 }
 
-// --- GitHub API ---
+// GitHub API
 async function githubPutFile(token, path, contentBase64, message) {
   let sha = null;
   try {
@@ -516,7 +456,6 @@ async function githubPutFile(token, path, contentBase64, message) {
   return res.json();
 }
 
-// --- Helpers ---
 function generateSlug(title) {
   return title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-')
     .replace(/-+/g, '-').substring(0, 60).replace(/-$/, '') + '-amazon';
@@ -530,7 +469,7 @@ function blobToBase64(blob) {
   });
 }
 
-// --- Result screen buttons ---
+// Result screen buttons
 document.getElementById('btn-wa-send').addEventListener('click', () => {
   window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(currentWaMessage), '_blank');
 });
@@ -548,14 +487,13 @@ document.getElementById('btn-copy-link').addEventListener('click', async () => {
 });
 
 document.getElementById('btn-new-deal').addEventListener('click', () => {
-  document.getElementById('field-url').value = '';
   document.getElementById('field-sitestripe').value = '';
+  document.getElementById('field-url').value = '';
   document.getElementById('field-title').value = '';
   document.getElementById('field-deal-price').value = '';
   document.getElementById('field-mrp').value = '';
   document.getElementById('field-discount').value = '';
   document.getElementById('field-image').value = '';
-  document.getElementById('asin-status').innerHTML = '';
   document.getElementById('pub-status').style.display = 'none';
   document.getElementById('btn-publish').disabled = false;
   document.getElementById('btn-publish').textContent = 'Publish Deal';
