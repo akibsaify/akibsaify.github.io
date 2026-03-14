@@ -378,11 +378,14 @@ async function fetchProductDetails() {
       }
     }
 
-    // Extract MRP
+    // Extract MRP — Amazon shows it in many different ways
     const mrpPatterns = [
       /class="basisPrice"[\s\S]*?<span[^>]*class="a-offscreen"[^>]*>([\s\S]*?)<\/span>/,
       /class="a-text-price"[\s\S]*?<span[^>]*class="a-offscreen"[^>]*>([\s\S]*?)<\/span>/,
-      /id="listPrice"[^>]*>([\s\S]*?)</
+      /id="listPrice"[^>]*>([\s\S]*?)</,
+      /M\.?R\.?P\.?\s*:?\s*(?:<[^>]*>)*\s*(?:₹|&#x20B9;?)\s*([\d,]+)/i,
+      /priceBlockStrikePriceString[^>]*>([\s\S]*?)</,
+      /class="a-price a-text-price"[\s\S]*?<span[^>]*>([\s\S]*?)<\/span>/
     ];
     for (const pat of mrpPatterns) {
       const m = html.match(pat);
@@ -392,6 +395,18 @@ async function fetchProductDetails() {
           document.getElementById('field-mrp').value = price;
           break;
         }
+      }
+    }
+
+    // Extract discount percentage directly (e.g. "-68%")
+    const discountMatch = html.match(/[-−](\d+)%/);
+    if (discountMatch) {
+      const disc = parseInt(discountMatch[1]);
+      const dealPrice = parseInt(document.getElementById('field-deal-price').value) || 0;
+      // If we got discount but no MRP, calculate MRP from discount + deal price
+      if (disc > 0 && dealPrice > 0 && !(parseInt(document.getElementById('field-mrp').value) > 0)) {
+        const calculatedMrp = Math.round(dealPrice / (1 - disc / 100));
+        document.getElementById('field-mrp').value = calculatedMrp;
       }
     }
 
