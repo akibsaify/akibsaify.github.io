@@ -1,0 +1,568 @@
+---
+permalink: /admin/
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>DealDrops Admin</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      background: #f5f3ff;
+      color: #1a1a2e;
+      min-height: 100vh;
+    }
+    .header {
+      background: linear-gradient(135deg, #6C2BD9, #5b21b6);
+      color: #fff;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header h1 { font-size: 18px; font-weight: 800; }
+    .header .badge {
+      font-size: 11px;
+      background: rgba(255,255,255,0.2);
+      padding: 3px 10px;
+      border-radius: 12px;
+    }
+    .container { max-width: 480px; margin: 0 auto; padding: 16px; }
+
+    /* Setup screen */
+    #setup, #publisher, #result { display: none; }
+    #setup.active, #publisher.active, #result.active { display: block; }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .card h2 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #6C2BD9;
+    }
+    .card p { font-size: 13px; color: #64748b; margin-bottom: 12px; line-height: 1.5; }
+
+    label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+      margin-top: 12px;
+    }
+    label:first-child { margin-top: 0; }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+      font-family: inherit;
+    }
+    input:focus, select:focus, textarea:focus { border-color: #6C2BD9; }
+    textarea { resize: vertical; min-height: 60px; }
+
+    .row { display: flex; gap: 10px; }
+    .row > div { flex: 1; }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 16px;
+      transition: opacity 0.2s;
+    }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn:hover:not(:disabled) { opacity: 0.9; }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #FF3D57, #FF6B3D);
+      color: #fff;
+    }
+    .btn-save {
+      background: #6C2BD9;
+      color: #fff;
+    }
+    .btn-wa-send {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: #fff;
+      margin-top: 10px;
+    }
+    .btn-wa-copy {
+      background: #25D366;
+      color: #fff;
+      margin-top: 8px;
+    }
+    .btn-copy {
+      background: #f1f5f9;
+      color: #475569;
+      border: 1.5px solid #e2e8f0;
+      margin-top: 8px;
+    }
+    .btn-new {
+      background: #6C2BD9;
+      color: #fff;
+      margin-top: 12px;
+    }
+    .btn-logout {
+      background: transparent;
+      color: #94a3b8;
+      font-size: 12px;
+      padding: 8px;
+      margin-top: 8px;
+    }
+
+    .status {
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 12px;
+    }
+    .status.loading { background: #eff6ff; color: #2563eb; }
+    .status.success { background: #f0fdf4; color: #16a34a; }
+    .status.error { background: #fef2f2; color: #dc2626; }
+
+    .preview {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 12px;
+    }
+    .preview-title { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+    .preview-price { display: flex; align-items: baseline; gap: 8px; }
+    .preview-deal { font-size: 20px; font-weight: 800; color: #00B67A; }
+    .preview-mrp { font-size: 13px; color: #94a3b8; text-decoration: line-through; }
+    .preview-off {
+      font-size: 11px; font-weight: 700; color: #fff;
+      background: #FF3D57; padding: 2px 8px; border-radius: 4px;
+    }
+
+    .asin-badge {
+      display: inline-block;
+      background: #f0fdf4;
+      color: #16a34a;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-top: 8px;
+    }
+    .asin-badge.error { background: #fef2f2; color: #dc2626; }
+
+    .divider { height: 1px; background: #e2e8f0; margin: 16px 0; }
+
+    .hint { font-size: 11px; color: #94a3b8; margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>DealDrops Admin</h1>
+  <span class="badge">Mobile Publisher</span>
+</div>
+
+<div class="container">
+
+  <!-- SETUP: GitHub token -->
+  <div id="setup">
+    <div class="card">
+      <h2>Setup</h2>
+      <p>Enter your GitHub personal access token. This is stored only on this device.</p>
+      <label>GitHub Token</label>
+      <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx" />
+      <button class="btn btn-save" id="btn-save-token">Save Token</button>
+    </div>
+  </div>
+
+  <!-- PUBLISHER: Main form -->
+  <div id="publisher">
+    <div class="card">
+      <h2>Amazon Product URL</h2>
+      <label>Paste Amazon.in link</label>
+      <input type="url" id="field-url" placeholder="https://www.amazon.in/dp/B0..." />
+      <div id="asin-status"></div>
+    </div>
+
+    <div class="card">
+      <h2>SiteStripe Link</h2>
+      <label>Paste your affiliate short link</label>
+      <input type="url" id="field-sitestripe" placeholder="https://amzn.to/..." />
+      <p class="hint">Get this from the SiteStripe bar → "Get Link" → Short Link</p>
+    </div>
+
+    <div class="card">
+      <h2>Deal Details</h2>
+      <label>Title</label>
+      <input type="text" id="field-title" placeholder="Product name" />
+
+      <div class="row">
+        <div>
+          <label>Deal Price (₹)</label>
+          <input type="number" id="field-deal-price" placeholder="999" />
+        </div>
+        <div>
+          <label>MRP (₹)</label>
+          <input type="number" id="field-mrp" placeholder="1999" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Discount %</label>
+          <input type="number" id="field-discount" readonly />
+        </div>
+        <div>
+          <label>Category</label>
+          <select id="field-category">
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="home-kitchen">Home & Kitchen</option>
+            <option value="grocery">Grocery</option>
+            <option value="travel">Travel</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Product Image URL (optional)</label>
+      <input type="url" id="field-image" placeholder="https://m.media-amazon.com/images/I/..." />
+      <p class="hint">Long-press product image on Amazon → Copy image address</p>
+    </div>
+
+    <!-- Live Preview -->
+    <div class="card">
+      <h2>Preview</h2>
+      <div class="preview">
+        <div class="preview-title" id="prev-title">—</div>
+        <div class="preview-price">
+          <span class="preview-deal" id="prev-deal">₹0</span>
+          <span class="preview-mrp" id="prev-mrp">₹0</span>
+          <span class="preview-off" id="prev-off">0% OFF</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" id="btn-publish">Publish Deal</button>
+    <div id="pub-status" class="status" style="display:none;"></div>
+    <button class="btn btn-logout" id="btn-logout">Change Token</button>
+  </div>
+
+  <!-- RESULT: After publish -->
+  <div id="result">
+    <div class="card">
+      <h2>Deal Published!</h2>
+      <p id="result-msg">Your deal will be live in ~1 minute.</p>
+
+      <div class="divider"></div>
+
+      <button class="btn btn-wa-send" id="btn-wa-send">Send via WhatsApp</button>
+      <button class="btn btn-wa-copy" id="btn-wa-copy">Copy for WhatsApp Channel</button>
+      <button class="btn btn-copy" id="btn-copy-link">Copy Affiliate Link</button>
+      <button class="btn btn-new" id="btn-new-deal">+ Add Another Deal</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const REPO_OWNER = 'akibsaify';
+const REPO_NAME = 'akibsaify.github.io';
+const BRANCH = 'main';
+const AFFILIATE_TAG = 'mas03ad-21';
+
+let currentWaMessage = '';
+let currentAffiliateLink = '';
+
+// --- Screens ---
+function showScreen(id) {
+  document.querySelectorAll('#setup, #publisher, #result').forEach(el => el.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+// --- Init ---
+(function init() {
+  const token = localStorage.getItem('dd_github_token');
+  if (token) {
+    showScreen('publisher');
+  } else {
+    showScreen('setup');
+  }
+})();
+
+// --- Save token ---
+document.getElementById('btn-save-token').addEventListener('click', () => {
+  const token = document.getElementById('token-input').value.trim();
+  if (!token) return;
+  localStorage.setItem('dd_github_token', token);
+  showScreen('publisher');
+});
+
+// --- Logout ---
+document.getElementById('btn-logout').addEventListener('click', () => {
+  localStorage.removeItem('dd_github_token');
+  showScreen('setup');
+});
+
+// --- Extract ASIN from URL ---
+document.getElementById('field-url').addEventListener('input', (e) => {
+  const url = e.target.value;
+  const match = url.match(/\/dp\/([A-Z0-9]{10})/i) || url.match(/\/gp\/product\/([A-Z0-9]{10})/i);
+  const statusEl = document.getElementById('asin-status');
+  if (match) {
+    statusEl.innerHTML = `<span class="asin-badge">ASIN: ${match[1]}</span>`;
+  } else if (url.length > 10) {
+    statusEl.innerHTML = `<span class="asin-badge error">Could not find ASIN</span>`;
+  } else {
+    statusEl.innerHTML = '';
+  }
+});
+
+// --- Auto-calculate discount ---
+function updateDiscount() {
+  const deal = parseInt(document.getElementById('field-deal-price').value) || 0;
+  const mrp = parseInt(document.getElementById('field-mrp').value) || 0;
+  const discount = mrp > 0 ? Math.round((1 - deal / mrp) * 100) : 0;
+  document.getElementById('field-discount').value = discount;
+  updatePreview();
+}
+document.getElementById('field-deal-price').addEventListener('input', updateDiscount);
+document.getElementById('field-mrp').addEventListener('input', updateDiscount);
+document.getElementById('field-title').addEventListener('input', updatePreview);
+
+function updatePreview() {
+  const title = document.getElementById('field-title').value || '—';
+  const deal = parseInt(document.getElementById('field-deal-price').value) || 0;
+  const mrp = parseInt(document.getElementById('field-mrp').value) || 0;
+  const discount = parseInt(document.getElementById('field-discount').value) || 0;
+  document.getElementById('prev-title').textContent = title;
+  document.getElementById('prev-deal').textContent = `₹${deal.toLocaleString('en-IN')}`;
+  document.getElementById('prev-mrp').textContent = `₹${mrp.toLocaleString('en-IN')}`;
+  document.getElementById('prev-off').textContent = `${discount}% OFF`;
+}
+
+// --- Publish ---
+document.getElementById('btn-publish').addEventListener('click', handlePublish);
+
+async function handlePublish() {
+  const btn = document.getElementById('btn-publish');
+  const statusEl = document.getElementById('pub-status');
+  const token = localStorage.getItem('dd_github_token');
+
+  if (!token) { showScreen('setup'); return; }
+
+  // Validate
+  const url = document.getElementById('field-url').value;
+  const asinMatch = url.match(/\/dp\/([A-Z0-9]{10})/i) || url.match(/\/gp\/product\/([A-Z0-9]{10})/i);
+  const title = document.getElementById('field-title').value.trim();
+  const dealPrice = parseInt(document.getElementById('field-deal-price').value) || 0;
+  const mrp = parseInt(document.getElementById('field-mrp').value) || 0;
+
+  if (!asinMatch) { alert('Please enter a valid Amazon.in product URL'); return; }
+  if (!title) { alert('Please enter a product title'); return; }
+  if (!dealPrice) { alert('Please enter the deal price'); return; }
+
+  const asin = asinMatch[1];
+  const siteStripeLink = document.getElementById('field-sitestripe').value.trim();
+  const category = document.getElementById('field-category').value;
+  const discount = parseInt(document.getElementById('field-discount').value) || 0;
+  const imageUrl = document.getElementById('field-image').value.trim();
+  const affiliateLink = siteStripeLink || `https://www.amazon.in/dp/${asin}?tag=${AFFILIATE_TAG}`;
+
+  btn.disabled = true;
+  btn.textContent = 'Publishing...';
+  statusEl.style.display = 'block';
+  statusEl.className = 'status loading';
+
+  const slug = generateSlug(title);
+  const today = new Date().toISOString().split('T')[0];
+  const savings = mrp - dealPrice;
+
+  try {
+    // Step 1: Try to download and upload image
+    let hasImage = false;
+    if (imageUrl) {
+      statusEl.textContent = 'Downloading image...';
+      try {
+        const imgRes = await fetch(imageUrl);
+        if (imgRes.ok) {
+          const blob = await imgRes.blob();
+          const base64 = await blobToBase64(blob);
+          statusEl.textContent = 'Uploading image...';
+          await githubPutFile(token, `src/images/${slug}.jpg`, base64, `Add image: ${slug}`);
+          hasImage = true;
+        }
+      } catch (e) {
+        console.warn('Image fetch failed (CORS), skipping:', e);
+      }
+    }
+
+    // Step 2: Build and upload markdown
+    statusEl.textContent = 'Publishing deal...';
+
+    const description = `Save ₹${savings.toLocaleString('en-IN')} on ${title.substring(0, 60)}. Deal price ₹${dealPrice.toLocaleString('en-IN')} vs MRP ₹${mrp.toLocaleString('en-IN')}. ${discount}% off on Amazon India.`;
+
+    const tags = title.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/)
+      .filter(w => w.length > 2 && !['the','and','with','for','from','that','this','its','plus','new'].includes(w))
+      .slice(0, 6)
+      .map(t => `"${t}"`)
+      .join(', ');
+
+    const imagePath = hasImage ? `/images/${slug}.jpg` : '';
+
+    const markdown = `---
+title: "${escapeYaml(title)} — ${discount}% Off on Amazon"
+description: "${escapeYaml(description)}"
+date: ${today}
+category: ${category}
+store: amazon
+originalPrice: ${mrp}
+dealPrice: ${dealPrice}
+discountPercent: ${discount}
+couponCode: ""
+affiliateLink: "${affiliateLink}"
+image: "${imagePath}"
+expired: false
+tags: [${tags}]
+---
+
+## About This Deal
+
+The **${title}** is available at ${discount}% off on Amazon India. Deal price is ₹${dealPrice.toLocaleString('en-IN')} compared to MRP ₹${mrp.toLocaleString('en-IN')} — saving you ₹${savings.toLocaleString('en-IN')}.
+
+> No coupon code needed — the price is already discounted on Amazon's product page. Click "Get Deal" to verify the current price.
+`;
+
+    const mdBase64 = btoa(unescape(encodeURIComponent(markdown)));
+    await githubPutFile(token, `src/deals/${slug}.md`, mdBase64, `Add deal: ${title.substring(0, 50)}`);
+
+    // Success!
+    statusEl.className = 'status success';
+    statusEl.textContent = 'Published!';
+
+    // Build WhatsApp message
+    currentAffiliateLink = affiliateLink;
+    currentWaMessage = `🔥 *${title} — ${discount}% OFF!*
+
+💰 Deal Price: ₹${dealPrice.toLocaleString('en-IN')}
+~~MRP: ₹${mrp.toLocaleString('en-IN')}~~
+🎉 You save ₹${savings.toLocaleString('en-IN')}
+
+👉 ${affiliateLink}
+
+_Limited time deal on Amazon India_
+🛒 Follow this channel for daily deals!`;
+
+    setTimeout(() => showScreen('result'), 800);
+
+  } catch (err) {
+    statusEl.className = 'status error';
+    statusEl.textContent = err.message;
+    btn.textContent = 'Publish Deal';
+    btn.disabled = false;
+  }
+}
+
+// --- GitHub API ---
+async function githubPutFile(token, path, contentBase64, message) {
+  let sha = null;
+  try {
+    const checkRes = await fetch(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}?ref=${BRANCH}`,
+      { headers: { Authorization: `token ${token}` } }
+    );
+    if (checkRes.ok) {
+      const existing = await checkRes.json();
+      sha = existing.sha;
+    }
+  } catch (e) {}
+
+  const body = { message, content: contentBase64, branch: BRANCH };
+  if (sha) body.sha = sha;
+
+  const res = await fetch(
+    `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${path}`,
+    {
+      method: 'PUT',
+      headers: { Authorization: `token ${token}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    }
+  );
+  if (!res.ok) {
+    const err = await res.json();
+    throw new Error(err.message || `GitHub API error: ${res.status}`);
+  }
+  return res.json();
+}
+
+// --- Helpers ---
+function generateSlug(title) {
+  return title.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-')
+    .replace(/-+/g, '-').substring(0, 60).replace(/-$/, '') + '-amazon';
+}
+function escapeYaml(str) { return str.replace(/"/g, '\\"').replace(/\n/g, ' '); }
+function blobToBase64(blob) {
+  return new Promise(resolve => {
+    const reader = new FileReader();
+    reader.onloadend = () => resolve(reader.result.split(',')[1]);
+    reader.readAsDataURL(blob);
+  });
+}
+
+// --- Result screen buttons ---
+document.getElementById('btn-wa-send').addEventListener('click', () => {
+  window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(currentWaMessage), '_blank');
+});
+
+document.getElementById('btn-wa-copy').addEventListener('click', async () => {
+  await navigator.clipboard.writeText(currentWaMessage);
+  document.getElementById('btn-wa-copy').textContent = 'Copied!';
+  setTimeout(() => { document.getElementById('btn-wa-copy').textContent = 'Copy for WhatsApp Channel'; }, 2000);
+});
+
+document.getElementById('btn-copy-link').addEventListener('click', async () => {
+  await navigator.clipboard.writeText(currentAffiliateLink);
+  document.getElementById('btn-copy-link').textContent = 'Copied!';
+  setTimeout(() => { document.getElementById('btn-copy-link').textContent = 'Copy Affiliate Link'; }, 2000);
+});
+
+document.getElementById('btn-new-deal').addEventListener('click', () => {
+  document.getElementById('field-url').value = '';
+  document.getElementById('field-sitestripe').value = '';
+  document.getElementById('field-title').value = '';
+  document.getElementById('field-deal-price').value = '';
+  document.getElementById('field-mrp').value = '';
+  document.getElementById('field-discount').value = '';
+  document.getElementById('field-image').value = '';
+  document.getElementById('asin-status').innerHTML = '';
+  document.getElementById('pub-status').style.display = 'none';
+  document.getElementById('btn-publish').disabled = false;
+  document.getElementById('btn-publish').textContent = 'Publish Deal';
+  updatePreview();
+  showScreen('publisher');
+});
+</script>
+
+</body>
+</html>
