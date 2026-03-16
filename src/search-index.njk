@@ -1,0 +1,5 @@
+---
+permalink: /search-index.json
+eleventyExcludeFromCollections: true
+---
+[{% for deal in collections.deals %}{"t":"{{ deal.data.title | replace('"', '\\"') }}","p":"₹{{ deal.data.dealPrice }}","m":"₹{{ deal.data.originalPrice }}","d":"{{ deal.data.discountPercent }}","c":"{{ deal.data.category }}","u":"{{ deal.url }}","i":"{{ deal.data.image }}"}{% if not loop.last %},{% endif %}{% endfor %}]

@@ -20,10 +20,19 @@
         <a href="/guides/">Blog</a>
       </nav>
 
+      <!-- Search -->
+      <button class="search-toggle" id="search-toggle" aria-label="Search deals">🔍</button>
+
       <!-- Hamburger -->
       <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span id="nav-icon">☰</span>
       </button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="search-bar" style="display:none;">
+      <input type="text" id="search-input" placeholder="Search deals... e.g. headphones, shoes, TV" autocomplete="off" />
+      <div id="search-results" class="search-results"></div>
     </div>
   </div>
 

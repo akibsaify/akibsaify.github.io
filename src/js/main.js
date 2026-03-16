@@ -122,4 +122,85 @@
     });
   });
 
+  // ── Search ──────────────────────────────────────────────────
+  const searchToggle = document.getElementById("search-toggle");
+  const searchBar = document.getElementById("search-bar");
+  const searchInput = document.getElementById("search-input");
+  const searchResults = document.getElementById("search-results");
+  let searchIndex = null;
+
+  if (searchToggle && searchBar) {
+    searchToggle.addEventListener("click", function () {
+      const isOpen = searchBar.style.display === "none";
+      searchBar.style.display = isOpen ? "block" : "none";
+      if (isOpen) {
+        searchInput.focus();
+        // Load search index on first open
+        if (!searchIndex) {
+          fetch("/search-index.json")
+            .then(function (r) { return r.json(); })
+            .then(function (data) { searchIndex = data; })
+            .catch(function () { searchIndex = []; });
+        }
+      } else {
+        searchResults.innerHTML = "";
+        searchInput.value = "";
+      }
+    });
+
+    // Close search on outside click
+    document.addEventListener("click", function (e) {
+      if (searchBar && searchBar.style.display === "block" &&
+          !searchBar.contains(e.target) && e.target !== searchToggle) {
+        searchBar.style.display = "none";
+        searchResults.innerHTML = "";
+        searchInput.value = "";
+      }
+    });
+
+    // Search on typing
+    let debounce = null;
+    searchInput.addEventListener("input", function () {
+      clearTimeout(debounce);
+      debounce = setTimeout(function () {
+        var q = searchInput.value.trim().toLowerCase();
+        if (!q || q.length < 2 || !searchIndex) {
+          searchResults.innerHTML = "";
+          return;
+        }
+
+        var words = q.split(/\s+/);
+        var matches = searchIndex.filter(function (deal) {
+          var title = deal.t.toLowerCase();
+          return words.every(function (w) { return title.indexOf(w) !== -1; });
+        }).slice(0, 8);
+
+        if (matches.length === 0) {
+          searchResults.innerHTML = '<div class="search-no-results">No deals found for "' + q + '"</div>';
+          return;
+        }
+
+        searchResults.innerHTML = matches.map(function (deal) {
+          return '<a href="' + deal.u + '" class="search-result-item">' +
+            '<div class="search-result-title">' + deal.t.substring(0, 60) + '</div>' +
+            '<div class="search-result-meta">' +
+              '<span class="search-result-price">' + deal.p + '</span>' +
+              '<span class="search-result-discount">' + deal.d + '% OFF</span>' +
+              '<span class="search-result-cat">' + deal.c + '</span>' +
+            '</div>' +
+          '</a>';
+        }).join("");
+      }, 200);
+    });
+
+    // Close on Escape
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        searchBar.style.display = "none";
+        searchResults.innerHTML = "";
+        searchInput.value = "";
+      }
+    });
+  }
+
 })();
