@@ -216,6 +216,41 @@ ul, ol { list-style: none; }
   letter-spacing: 0.08em;
 }
 
+/* ── How It Works ─────────────────────────────────────────────── */
+.how-it-works {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.how-step {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: transform 0.2s;
+}
+.how-step:hover { transform: translateY(-4px); }
+.how-step__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.how-step h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+.how-step p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .how-it-works { grid-template-columns: 1fr; }
+}
+
 /* ── Buttons ──────────────────────────────────────────────────── */
 .btn {
   display: inline-flex;
