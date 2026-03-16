@@ -1,0 +1,93 @@
+---
+layout: layouts/base.njk
+title: "Today's Deals — Copy for WhatsApp"
+pageDescription: "Copy today's best deals in one click to share on your WhatsApp channel or group."
+permalink: /whatsapp/
+---
+
+<section style="max-width:700px;margin:2rem auto;padding:0 1rem;">
+  <h1 style="font-size:1.5rem;margin-bottom:0.5rem;">Share Today's Deals</h1>
+  <p style="color:var(--text-muted);margin-bottom:1.5rem;">One click to copy all today's deals — paste directly into your WhatsApp channel.</p>
+
+  <div style="display:flex;gap:0.5rem;margin-bottom:1.5rem;flex-wrap:wrap;">
+    <button id="btn-copy" style="background:var(--accent);color:#fff;border:none;padding:0.7rem 1.5rem;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;">
+      Copy Today's Deals
+    </button>
+    <button id="btn-copy-top5" style="background:#25D366;color:#fff;border:none;padding:0.7rem 1.5rem;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer;">
+      Copy Top 5 Only
+    </button>
+  </div>
+
+  <div id="copy-status" style="display:none;padding:0.7rem 1rem;background:#d4edda;color:#155724;border-radius:8px;margin-bottom:1rem;font-weight:500;"></div>
+
+  <h2 style="font-size:1.1rem;margin-bottom:1rem;color:var(--text-muted);">Preview</h2>
+  <pre id="wa-preview" style="background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:1rem;font-size:0.85rem;white-space:pre-wrap;word-break:break-word;line-height:1.6;max-height:500px;overflow-y:auto;font-family:'Inter',sans-serif;"></pre>
+</section>
+
+<script>
+(function() {
+  const deals = [
+    {% for deal in collections.deals | limit(30) %}
+    {
+      title: {{ deal.data.title | dump | safe }},
+      dealPrice: {{ deal.data.dealPrice or 0 }},
+      originalPrice: {{ deal.data.originalPrice or 0 }},
+      discount: {{ deal.data.discountPercent or 0 }},
+      category: {{ deal.data.category | dump | safe }},
+      url: "https://deals.0110059.xyz{{ deal.url }}",
+      date: "{{ deal.date | isoDate }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ];
+
+  const today = new Date().toISOString().split('T')[0];
+  const todayDeals = deals.filter(d => d.date === today);
+  const showDeals = todayDeals.length > 0 ? todayDeals : deals.slice(0, 15);
+
+  function formatDeals(list) {
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+
+    let text = `*DealDrops* - ${dateStr}\n`;
+    text += `Today's Best Amazon Deals\n`;
+    text += `${'─'.repeat(30)}\n\n`;
+
+    list.forEach((deal, i) => {
+      const saved = deal.originalPrice - deal.dealPrice;
+      text += `*${i + 1}. ${deal.title}*\n`;
+      text += `   Price: *Rs.${deal.dealPrice.toLocaleString('en-IN')}* (was Rs.${deal.originalPrice.toLocaleString('en-IN')})\n`;
+      text += `   Save: Rs.${saved.toLocaleString('en-IN')} (${deal.discount}% OFF)\n`;
+      text += `   ${deal.url}\n\n`;
+    });
+
+    text += `${'─'.repeat(30)}\n`;
+    text += `Prices may change anytime\n`;
+    text += `More deals: https://deals.0110059.xyz`;
+
+    return text;
+  }
+
+  // Show preview
+  const preview = document.getElementById('wa-preview');
+  preview.textContent = formatDeals(showDeals);
+
+  function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      const status = document.getElementById('copy-status');
+      status.textContent = 'Copied! Now paste it in your WhatsApp channel.';
+      status.style.display = 'block';
+      setTimeout(() => { status.style.display = 'none'; }, 4000);
+    });
+  }
+
+  document.getElementById('btn-copy').addEventListener('click', () => {
+    copyText(formatDeals(showDeals));
+  });
+
+  document.getElementById('btn-copy-top5').addEventListener('click', () => {
+    // Top 5 by discount
+    const top5 = [...showDeals].sort((a, b) => b.discount - a.discount).slice(0, 5);
+    copyText(formatDeals(top5));
+  });
+})();
+</script>
