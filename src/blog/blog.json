@@ -1,4 +1,4 @@
 {
   "tags": ["blog"],
-  "permalink": "/blog/{{ page.fileSlug }}/"
+  "permalink": "/guides/{{ page.fileSlug }}/"
 }
