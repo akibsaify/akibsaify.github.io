@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("CNAME");
+  eleventyConfig.addPassthroughCopy("src/ads.txt");
 
   // ── Collections ─────────────────────────────────────────────────────
   eleventyConfig.addCollection("deals", function(collection) {
