@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 ₹770 off a BSB bedsheet? That's a no-brainer for most people. The **BSB HOME 3D Printed 144 Tc Microfiber Double Bedsheet with 2 King...** at **₹229** won't stay at this price forever.
 
-**[Buy Now on Amazon — 77% Off →](https://www.amazon.in/dp/B08JKQN5P3?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 77% Off →](https://www.amazon.in/dp/B08JKQN5P3?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

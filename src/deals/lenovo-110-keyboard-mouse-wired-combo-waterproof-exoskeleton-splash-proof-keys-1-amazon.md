@@ -8,7 +8,7 @@ originalPrice: 1390
 dealPrice: 749
 discountPercent: 46
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0G7D9DV3M?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0G7D9DV3M?tag=mas03ad-21"
 image: "/images/lenovo-110-keyboard-mouse-wired-combo-waterproof-exoskeleton-splash-proof-keys-1-amazon.jpg"
 expired: false
 tags: ["lenovo", "110", "keyboard", "mouse", "wired", "combo", "waterproof", "exoskeleton"]

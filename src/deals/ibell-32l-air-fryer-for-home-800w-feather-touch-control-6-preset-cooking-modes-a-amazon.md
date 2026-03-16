@@ -8,7 +8,7 @@ originalPrice: 5290
 dealPrice: 2368
 discountPercent: 55
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FTFCG9VR?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FTFCG9VR?tag=mas03ad-21"
 image: "/images/ibell-32l-air-fryer-for-home-800w-feather-touch-control-6-preset-cooking-modes-a-amazon.jpg"
 expired: false
 tags: ["ibell", "air", "fryer", "for", "home", "800w", "feather", "touch"]

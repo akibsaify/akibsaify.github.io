@@ -8,7 +8,7 @@ originalPrice: 2430
 dealPrice: 970
 discountPercent: 60
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DFW6Y14L?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DFW6Y14L?tag=mas03ad-21"
 image: "/images/perch-zenith-isi-certified-hot-and-cold-steel-water-bottle-1-ltr-vacuum-insulate-amazon.jpg"
 expired: false
 tags: ["perch", "zenith", "isi", "certified", "hot", "and", "cold", "steel"]

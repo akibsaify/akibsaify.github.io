@@ -8,7 +8,7 @@ originalPrice: 3790
 dealPrice: 1799
 discountPercent: 53
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DGTTKCJX?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DGTTKCJX?tag=mas03ad-21"
 image: "/images/boat-rockerz-480-rgb-leds6-light-modes-40mm-driversbeast-mode-60h-battery-enx-te-amazon.jpg"
 expired: false
 tags: ["boat", "rockerz", "480", "rgb", "leds", "light", "modes", "40mm"]

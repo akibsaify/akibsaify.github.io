@@ -8,7 +8,7 @@ originalPrice: 999
 dealPrice: 229
 discountPercent: 77
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B08JKQN5P3?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B08JKQN5P3?tag=mas03ad-21"
 image: "/images/bsb-home-3d-printed-144-tc-microfiber-double-bedsheet-with-2-king-size-pillow-co-amazon.jpg"
 expired: false
 tags: ["bsb", "home", "printed", "144", "microfiber", "double", "bedsheet", "with"]

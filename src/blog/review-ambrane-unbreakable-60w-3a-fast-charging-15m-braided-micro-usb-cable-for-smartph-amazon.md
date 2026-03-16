@@ -37,6 +37,6 @@ If you're already set on buying laptop and just need a good deal — this is it.
 
 The **Ambrane Unbreakable 60W / 3A Fast Charging 1.5m Braided Micro USB...** at **₹149** (~~₹299~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹150 on a Ambrane laptop is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B082LZGK39?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B082LZGK39?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

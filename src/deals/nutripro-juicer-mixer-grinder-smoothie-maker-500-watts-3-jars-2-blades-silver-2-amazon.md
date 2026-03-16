@@ -8,7 +8,7 @@ originalPrice: 5000
 dealPrice: 1799
 discountPercent: 64
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B09J2SCVQT?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B09J2SCVQT?tag=mas03ad-21"
 image: "/images/nutripro-juicer-mixer-grinder-smoothie-maker-500-watts-3-jars-2-blades-silver-2-amazon.jpg"
 expired: false
 tags: ["nutripro", "juicer", "mixer", "grinder", "smoothie", "maker", "500", "watts"]

@@ -8,7 +8,7 @@ originalPrice: 1299
 dealPrice: 699
 discountPercent: 46
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FCS5V5V1?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FCS5V5V1?tag=mas03ad-21"
 image: "/images/acer-palmease-wired-keyboard-mouse-combo-with-palm-rest-plug-play-usb-20-1600-dp-amazon.jpg"
 expired: false
 tags: ["acer", "palmease", "wired", "keyboard", "mouse", "combo", "with", "palm"]

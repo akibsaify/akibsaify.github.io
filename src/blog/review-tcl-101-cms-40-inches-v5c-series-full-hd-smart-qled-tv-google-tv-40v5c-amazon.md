@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 At ₹16,990 with 53% off, the **TCL 101 cms (40 inches) V5C Series Full HD Smart QLED TV Google T...** delivers solid value. TCL makes reliable TV, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0DZHRYFG7?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0DZHRYFG7?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

@@ -8,7 +8,7 @@ originalPrice: 499
 dealPrice: 115
 discountPercent: 77
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DTJ6BJYP?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DTJ6BJYP?tag=mas03ad-21"
 image: "/images/portronics-konnect-core-3-usb-a-to-micro-fast-charging-cable-for-smartphonestabl-amazon.jpg"
 expired: false
 tags: ["portronics", "konnect", "core", "usb", "micro", "fast", "charging", "cable"]

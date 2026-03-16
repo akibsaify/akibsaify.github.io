@@ -8,7 +8,7 @@ originalPrice: 899
 dealPrice: 408
 discountPercent: 55
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B07JLBFYX7?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B07JLBFYX7?tag=mas03ad-21"
 image: "/images/nova-nht-1076-cordless-30-minutes-runtime-trimmer-for-men-black-amazon.jpg"
 expired: false
 tags: ["nova", "nht", "1076", "cordless", "minutes", "runtime", "trimmer", "for"]

@@ -8,7 +8,7 @@ originalPrice: 1999
 dealPrice: 440
 discountPercent: 78
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0GD7Q1HYC?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0GD7Q1HYC?tag=mas03ad-21"
 image: "/images/wireless-earbuds-bluetooth-v53-35-hours-playtime-enc-noise-cancelling-type-c-fas-amazon.jpg"
 expired: false
 tags: ["wireless", "earbuds", "bluetooth", "hours", "playtime", "enc", "noise", "cancelling"]

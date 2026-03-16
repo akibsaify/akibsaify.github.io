@@ -8,7 +8,7 @@ originalPrice: 447
 dealPrice: 299
 discountPercent: 33
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0F9GPFX63?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0F9GPFX63?tag=mas03ad-21"
 image: "/images/3-in-1-fast-charging-data-cable120w-portable-charger-cord-with-usb-type-c-micro-amazon.jpg"
 expired: false
 tags: ["fast", "charging", "data", "cable", "120w", "portable", "charger", "cord"]

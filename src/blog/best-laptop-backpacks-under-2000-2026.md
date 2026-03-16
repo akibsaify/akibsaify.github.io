@@ -16,14 +16,14 @@ Here's what we found.
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Aristocrat Nova 15L Laptop Backpack for Me...](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21) | ₹379 | ~~₹999~~ | 62% off |
-| [Impulse Vissionvault 30L Unisex Water Resi...](https://www.amazon.in/dp/B0FS1PJ7H1?tag=dealdrops0d-21) | ₹459 | ~~₹2,999~~ | 85% off |
-| [Wesley Vintage Milestone Travel Laptop Bac...](https://www.amazon.in/dp/B085S444JV?tag=dealdrops0d-21) | ₹471 | ~~₹1,199~~ | 61% off |
-| [Safari Omega Spacious/Large 5 Compartment ...](https://www.amazon.in/dp/B097LC1DJ6?tag=dealdrops0d-21) | ₹649 | ~~₹3,396~~ | 81% off |
-| [Wesley Spartan Unisex Travel Hiking Laptop...](https://www.amazon.in/dp/B0D5QTFT2T?tag=dealdrops0d-21) | ₹694 | ~~₹2,999~~ | 77% off |
-| [Safari Quill Large Laptop Backpack 26 Ltrs...](https://www.amazon.in/dp/B09B25Z8M2?tag=dealdrops0d-21) | ₹699 | ~~₹2,899~~ | 76% off |
-| [FUR JADEN 40L Weekender Travel Laptop Back...](https://www.amazon.in/dp/B0B34WJK3X?tag=dealdrops0d-21) | ₹920 | ~~₹2,000~~ | 54% off |
-| [Gear Classic 4 19 inch/31L Anti Theft Faux...](https://www.amazon.in/dp/B0D87KZP1Z?tag=dealdrops0d-21) | ₹1,399 | ~~₹4,399~~ | 68% off |
+| [Aristocrat Nova 15L Laptop Backpack for Me...](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21) | ₹379 | ~~₹999~~ | 62% off |
+| [Impulse Vissionvault 30L Unisex Water Resi...](https://www.amazon.in/dp/B0FS1PJ7H1?tag=mas03ad-21) | ₹459 | ~~₹2,999~~ | 85% off |
+| [Wesley Vintage Milestone Travel Laptop Bac...](https://www.amazon.in/dp/B085S444JV?tag=mas03ad-21) | ₹471 | ~~₹1,199~~ | 61% off |
+| [Safari Omega Spacious/Large 5 Compartment ...](https://www.amazon.in/dp/B097LC1DJ6?tag=mas03ad-21) | ₹649 | ~~₹3,396~~ | 81% off |
+| [Wesley Spartan Unisex Travel Hiking Laptop...](https://www.amazon.in/dp/B0D5QTFT2T?tag=mas03ad-21) | ₹694 | ~~₹2,999~~ | 77% off |
+| [Safari Quill Large Laptop Backpack 26 Ltrs...](https://www.amazon.in/dp/B09B25Z8M2?tag=mas03ad-21) | ₹699 | ~~₹2,899~~ | 76% off |
+| [FUR JADEN 40L Weekender Travel Laptop Back...](https://www.amazon.in/dp/B0B34WJK3X?tag=mas03ad-21) | ₹920 | ~~₹2,000~~ | 54% off |
+| [Gear Classic 4 19 inch/31L Anti Theft Faux...](https://www.amazon.in/dp/B0D87KZP1Z?tag=mas03ad-21) | ₹1,399 | ~~₹4,399~~ | 68% off |
 
 ---
 
@@ -43,7 +43,7 @@ Here's what we found.
 
 A solid pick at this price point. Aristocrat Nova 15L Laptop Backpack for Men & Women with Bottle Pocket offers good value with a 62% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21)**
 
 ---
 
@@ -59,7 +59,7 @@ A solid pick at this price point. Aristocrat Nova 15L Laptop Backpack for Men & 
 
 A solid pick at this price point. Impulse Vissionvault 30L Unisex Water Resistant Travel Laptop Backpack offers good value with a 85% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FS1PJ7H1?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FS1PJ7H1?tag=mas03ad-21)**
 
 ---
 
@@ -75,7 +75,7 @@ A solid pick at this price point. Impulse Vissionvault 30L Unisex Water Resistan
 
 At 61% off, the Wesley Vintage Milestone Travel Laptop Backpack is a steal. You save ₹728 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B085S444JV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B085S444JV?tag=mas03ad-21)**
 
 ---
 
@@ -91,7 +91,7 @@ At 61% off, the Wesley Vintage Milestone Travel Laptop Backpack is a steal. You 
 
 Currently going for ₹649 (down from ₹3,396), this is one of the better deals we've seen on Safari Omega Spacious/Large 5 Compartment Laptop Backpack With Raincover.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B097LC1DJ6?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B097LC1DJ6?tag=mas03ad-21)**
 
 ---
 
@@ -107,7 +107,7 @@ Currently going for ₹649 (down from ₹3,396), this is one of the better deals
 
 Currently going for ₹694 (down from ₹2,999), this is one of the better deals we've seen on Wesley Spartan Unisex Travel Hiking Laptop Bag fits Upto 17.3 inch.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D5QTFT2T?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D5QTFT2T?tag=mas03ad-21)**
 
 ---
 
@@ -123,7 +123,7 @@ Currently going for ₹694 (down from ₹2,999), this is one of the better deals
 
 A solid pick at this price point. Safari Quill Large Laptop Backpack 26 Ltrs Water Resistant Fabric - Black offers good value with a 76% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B09B25Z8M2?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B09B25Z8M2?tag=mas03ad-21)**
 
 ---
 
@@ -139,7 +139,7 @@ A solid pick at this price point. Safari Quill Large Laptop Backpack 26 Ltrs Wat
 
 This FUR JADEN 40L Weekender Travel Laptop Backpack with Anti Theft Pocket drops from ₹2,000 to just ₹920 — that's a saving of ₹1,080.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0B34WJK3X?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0B34WJK3X?tag=mas03ad-21)**
 
 ---
 
@@ -155,7 +155,7 @@ This FUR JADEN 40L Weekender Travel Laptop Backpack with Anti Theft Pocket drops
 
 At 68% off, the Gear Classic 4 19 inch/31L Anti Theft Faux Leather Medium Water Resistant 3... is a steal. You save ₹3,000 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D87KZP1Z?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D87KZP1Z?tag=mas03ad-21)**
 
 ---
 

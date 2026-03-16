@@ -16,14 +16,14 @@ Scroll down to see each deal with the exact discount and savings.
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [New Offer T9 Vintage Professional Hair Tri...](https://www.amazon.in/dp/B0G93PWRPV?tag=dealdrops0d-21) | ₹99 | ~~₹499~~ | 80% off |
-| [Portronics Konnect Core 3 USB-A to Micro F...](https://www.amazon.in/dp/B0DTJ6BJYP?tag=dealdrops0d-21) | ₹115 | ~~₹499~~ | 77% off |
-| [Portronics Konnect L POR-1403 Fast Chargin...](https://www.amazon.in/dp/B09KH58JZR?tag=dealdrops0d-21) | ₹119 | ~~₹699~~ | 83% off |
-| [Ambrane Unbreakable 60W / 3A Fast Charging...](https://www.amazon.in/dp/B082LZGK39?tag=dealdrops0d-21) | ₹149 | ~~₹299~~ | 50% off |
-| [Lapster USB all types smartwatch charger c...](https://www.amazon.in/dp/B09WJCRHKV?tag=dealdrops0d-21) | ₹149 | ~~₹999~~ | 85% off |
-| [Ambrane Unbreakable 3 in 1 USB Fast Chargi...](https://www.amazon.in/dp/B094JNXNPV?tag=dealdrops0d-21) | ₹249 | ~~₹399~~ | 38% off |
-| [One Plus Fast 100W Original USB Type C Dat...](https://www.amazon.in/dp/B099S3F6ZD?tag=dealdrops0d-21) | ₹250 | ~~₹999~~ | 75% off |
-| [3 In 1 Fast Charging Data Cable](https://www.amazon.in/dp/B0F9GPFX63?tag=dealdrops0d-21) | ₹299 | ~~₹447~~ | 33% off |
+| [New Offer T9 Vintage Professional Hair Tri...](https://www.amazon.in/dp/B0G93PWRPV?tag=mas03ad-21) | ₹99 | ~~₹499~~ | 80% off |
+| [Portronics Konnect Core 3 USB-A to Micro F...](https://www.amazon.in/dp/B0DTJ6BJYP?tag=mas03ad-21) | ₹115 | ~~₹499~~ | 77% off |
+| [Portronics Konnect L POR-1403 Fast Chargin...](https://www.amazon.in/dp/B09KH58JZR?tag=mas03ad-21) | ₹119 | ~~₹699~~ | 83% off |
+| [Ambrane Unbreakable 60W / 3A Fast Charging...](https://www.amazon.in/dp/B082LZGK39?tag=mas03ad-21) | ₹149 | ~~₹299~~ | 50% off |
+| [Lapster USB all types smartwatch charger c...](https://www.amazon.in/dp/B09WJCRHKV?tag=mas03ad-21) | ₹149 | ~~₹999~~ | 85% off |
+| [Ambrane Unbreakable 3 in 1 USB Fast Chargi...](https://www.amazon.in/dp/B094JNXNPV?tag=mas03ad-21) | ₹249 | ~~₹399~~ | 38% off |
+| [One Plus Fast 100W Original USB Type C Dat...](https://www.amazon.in/dp/B099S3F6ZD?tag=mas03ad-21) | ₹250 | ~~₹999~~ | 75% off |
+| [3 In 1 Fast Charging Data Cable](https://www.amazon.in/dp/B0F9GPFX63?tag=mas03ad-21) | ₹299 | ~~₹447~~ | 33% off |
 
 ---
 
@@ -43,7 +43,7 @@ Scroll down to see each deal with the exact discount and savings.
 
 Currently going for ₹99 (down from ₹499), this is one of the better deals we've seen on New Offer T9 Vintage Professional Hair Trimmer For Men –Golden Body.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0G93PWRPV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0G93PWRPV?tag=mas03ad-21)**
 
 ---
 
@@ -59,7 +59,7 @@ Currently going for ₹99 (down from ₹499), this is one of the better deals we
 
 If you're looking for something reliable without overspending, Portronics Konnect Core 3 USB-A to Micro Fast Charging Cable for Smartphones at ₹115 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DTJ6BJYP?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DTJ6BJYP?tag=mas03ad-21)**
 
 ---
 
@@ -75,7 +75,7 @@ If you're looking for something reliable without overspending, Portronics Konnec
 
 This Portronics Konnect L POR-1403 Fast Charging 3A Type-C Cable 1.2 Meter drops from ₹699 to just ₹119 — that's a saving of ₹580.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B09KH58JZR?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B09KH58JZR?tag=mas03ad-21)**
 
 ---
 
@@ -91,7 +91,7 @@ This Portronics Konnect L POR-1403 Fast Charging 3A Type-C Cable 1.2 Meter drops
 
 If you're looking for something reliable without overspending, Ambrane Unbreakable 60W / 3A Fast Charging 1.5m Braided Micro USB Cable at ₹149 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B082LZGK39?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B082LZGK39?tag=mas03ad-21)**
 
 ---
 
@@ -107,7 +107,7 @@ If you're looking for something reliable without overspending, Ambrane Unbreakab
 
 This Lapster USB all types smartwatch charger cable for Boat Xtend drops from ₹999 to just ₹149 — that's a saving of ₹850.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B09WJCRHKV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B09WJCRHKV?tag=mas03ad-21)**
 
 ---
 
@@ -123,7 +123,7 @@ This Lapster USB all types smartwatch charger cable for Boat Xtend drops from �
 
 A solid pick at this price point. Ambrane Unbreakable 3 in 1 USB Fast Charging USB Cable with Type C offers good value with a 38% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B094JNXNPV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B094JNXNPV?tag=mas03ad-21)**
 
 ---
 
@@ -139,7 +139,7 @@ A solid pick at this price point. Ambrane Unbreakable 3 in 1 USB Fast Charging U
 
 A solid pick at this price point. One Plus Fast 100W Original USB Type C Data Sync Fast Charging Charger Cable offers good value with a 75% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B099S3F6ZD?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B099S3F6ZD?tag=mas03ad-21)**
 
 ---
 
@@ -155,7 +155,7 @@ A solid pick at this price point. One Plus Fast 100W Original USB Type C Data Sy
 
 If you're looking for something reliable without overspending, 3 In 1 Fast Charging Data Cable at ₹299 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0F9GPFX63?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0F9GPFX63?tag=mas03ad-21)**
 
 ---
 

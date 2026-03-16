@@ -38,6 +38,6 @@ If you're already set on buying headphones and just need a good deal — this is
 
 The **Boat BassHeads 100 in-Ear Headphones with Mic (Black)** at **₹399** (~~₹999~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹600 on a boAt headphones is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B071Z8M4KX?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B071Z8M4KX?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

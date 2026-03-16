@@ -8,7 +8,7 @@ originalPrice: 1699
 dealPrice: 899
 discountPercent: 47
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DPDH4H4Y?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DPDH4H4Y?tag=mas03ad-21"
 image: "/images/cpensus-mini-multipurpose-electric-kettle-with-steamer-12-liters-inner-pot-non-s-amazon.jpg"
 expired: false
 tags: ["cpensus", "mini", "multipurpose", "electric", "kettle", "with", "steamer", "liters"]

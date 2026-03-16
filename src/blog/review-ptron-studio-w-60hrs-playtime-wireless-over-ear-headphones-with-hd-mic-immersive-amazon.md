@@ -38,6 +38,6 @@ If you're already set on buying headphones and just need a good deal — this is
 
 At ₹599 with 77% off, the **pTron Studio w/ 60Hrs Playtime, Wireless Over-Ear Headphones with...** delivers solid value. pTron makes reliable headphones, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0FQJGBKCX?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0FQJGBKCX?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 At ₹99 with 80% off, the **Hair Trimmer,Electric Shaving Machine** delivers solid value. Hair makes reliable trimmer, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0G2HDVHK2?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0G2HDVHK2?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

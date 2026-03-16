@@ -8,7 +8,7 @@ originalPrice: 4990
 dealPrice: 1899
 discountPercent: 62
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0D6W7F7WH?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D6W7F7WH?tag=mas03ad-21"
 image: "/images/boat-stone-352-prostone-358-pro-w-14w-signature-sound-up-to-12-hours-playback-rg-amazon.jpg"
 expired: false
 tags: ["boat", "stone", "352", "pro", "stone", "358", "pro", "14w"]

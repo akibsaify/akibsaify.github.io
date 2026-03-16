@@ -8,7 +8,7 @@ originalPrice: 5196
 dealPrice: 849
 discountPercent: 84
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0BSQ9WYYQ?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0BSQ9WYYQ?tag=mas03ad-21"
 image: "/images/london-hills-amazon.jpg"
 expired: false
 tags: ["london", "hills"]

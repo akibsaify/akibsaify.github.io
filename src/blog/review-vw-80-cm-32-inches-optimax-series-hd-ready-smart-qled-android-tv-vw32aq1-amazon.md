@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 At ₹8,199 with 57% off, the **VW 80 cm (32 inches) OptimaX Series HD Ready Smart QLED Android T...** delivers solid value. VW makes reliable TV, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0FCM61QWL?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0FCM61QWL?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

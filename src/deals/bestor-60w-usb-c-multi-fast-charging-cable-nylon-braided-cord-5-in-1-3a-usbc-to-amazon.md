@@ -8,7 +8,7 @@ originalPrice: 1299
 dealPrice: 390
 discountPercent: 70
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0C85KFLGR?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0C85KFLGR?tag=mas03ad-21"
 image: "/images/bestor-60w-usb-c-multi-fast-charging-cable-nylon-braided-cord-5-in-1-3a-usbc-to-amazon.jpg"
 expired: false
 tags: ["bestor", "60w", "usb", "multi", "fast", "charging", "cable", "nylon"]

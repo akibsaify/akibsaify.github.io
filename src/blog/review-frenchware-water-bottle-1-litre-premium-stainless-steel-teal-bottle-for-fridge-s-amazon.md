@@ -37,6 +37,6 @@ If you're already set on buying water bottle and just need a good deal — this 
 
 At ₹199 with 87% off, the **Frenchware Water Bottle (1 Litre** delivers solid value. Frenchware makes reliable water bottle, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0D8W7KHCP?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0D8W7KHCP?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

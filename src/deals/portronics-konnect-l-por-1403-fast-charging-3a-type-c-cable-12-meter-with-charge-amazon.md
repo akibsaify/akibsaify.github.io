@@ -8,7 +8,7 @@ originalPrice: 699
 dealPrice: 119
 discountPercent: 83
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B09KH58JZR?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B09KH58JZR?tag=mas03ad-21"
 image: "/images/portronics-konnect-l-por-1403-fast-charging-3a-type-c-cable-12-meter-with-charge-amazon.jpg"
 expired: false
 tags: ["portronics", "konnect", "por", "1403", "fast", "charging", "type", "cable"]

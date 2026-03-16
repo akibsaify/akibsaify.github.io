@@ -38,6 +38,6 @@ If you're already set on buying kettle and just need a good deal — this is it.
 
 The **Pigeon Amaze Plus Electric Kettle 1.5 L** at **₹479** (~~₹1,245~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹766 on a Pigeon kettle is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B07WMS7TWB?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B07WMS7TWB?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

@@ -8,7 +8,7 @@ originalPrice: 1499
 dealPrice: 594
 discountPercent: 60
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B07KR5P3YD?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B07KR5P3YD?tag=mas03ad-21"
 image: "/images/zebronics-wired-keyboard-and-mouse-combo-with-104-keys-and-a-usb-mouse-with-1200-amazon.jpg"
 expired: false
 tags: ["zebronics", "wired", "keyboard", "and", "mouse", "combo", "with", "104"]

@@ -8,7 +8,7 @@ originalPrice: 999
 dealPrice: 149
 discountPercent: 85
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B09WJCRHKV?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B09WJCRHKV?tag=mas03ad-21"
 image: "/images/lapster-usb-all-types-smartwatch-charger-cable-for-boat-xtendboat-storm-w26-w26-amazon.jpg"
 expired: false
 tags: ["lapster", "usb", "all", "types", "smartwatch", "charger", "cable", "for"]

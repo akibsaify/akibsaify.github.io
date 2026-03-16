@@ -8,7 +8,7 @@ originalPrice: 2499
 dealPrice: 999
 discountPercent: 60
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DS2SG8YP?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DS2SG8YP?tag=mas03ad-21"
 image: "/images/noise-buds-trance-in-ear-truly-wireless-earbuds-with-45h-of-playtime-low-latency-amazon.jpg"
 expired: false
 tags: ["noise", "buds", "trance", "ear", "truly", "wireless", "earbuds", "with"]

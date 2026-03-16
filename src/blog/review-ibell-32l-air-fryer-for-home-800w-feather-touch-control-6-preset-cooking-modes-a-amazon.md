@@ -38,6 +38,6 @@ If you're already set on buying air fryer and just need a good deal — this is 
 
 The **iBELL 3.2L Air Fryer For Home |800W** at **₹2,368** (~~₹5,290~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹2,922 on a ibell air fryer is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0FTFCG9VR?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0FTFCG9VR?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

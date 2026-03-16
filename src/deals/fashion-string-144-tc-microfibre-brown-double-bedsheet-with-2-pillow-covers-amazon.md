@@ -8,7 +8,7 @@ originalPrice: 999
 dealPrice: 259
 discountPercent: 74
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B08RB5LK5Y?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B08RB5LK5Y?tag=mas03ad-21"
 image: "/images/fashion-string-144-tc-microfibre-brown-double-bedsheet-with-2-pillow-covers-amazon.jpg"
 expired: false
 tags: ["fashion", "string", "144", "microfibre", "brown", "double", "bedsheet", "with"]

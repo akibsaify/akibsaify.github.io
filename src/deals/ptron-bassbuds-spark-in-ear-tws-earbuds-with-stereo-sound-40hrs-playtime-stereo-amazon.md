@@ -8,7 +8,7 @@ originalPrice: 1999
 dealPrice: 598
 discountPercent: 70
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0F62JBFBS?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0F62JBFBS?tag=mas03ad-21"
 image: "/images/ptron-bassbuds-spark-in-ear-tws-earbuds-with-stereo-sound-40hrs-playtime-stereo-amazon.jpg"
 expired: false
 tags: ["ptron", "bassbuds", "spark", "ear", "tws", "earbuds", "with", "stereo"]

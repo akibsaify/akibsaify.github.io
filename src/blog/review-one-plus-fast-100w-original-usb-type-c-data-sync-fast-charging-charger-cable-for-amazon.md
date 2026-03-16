@@ -37,6 +37,6 @@ If you're already set on buying cable and just need a good deal — this is it.
 
 At ₹250 with 75% off, the **One Plus Fast 100W Original USB Type C Data Sync Fast Charging Ch...** delivers solid value. One makes reliable cable, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B099S3F6ZD?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B099S3F6ZD?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

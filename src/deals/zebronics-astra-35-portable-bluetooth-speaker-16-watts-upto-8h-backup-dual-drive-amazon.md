@@ -8,7 +8,7 @@ originalPrice: 1899
 dealPrice: 769
 discountPercent: 60
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DJ3FFC8R?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DJ3FFC8R?tag=mas03ad-21"
 image: "/images/zebronics-astra-35-portable-bluetooth-speaker-16-watts-upto-8h-backup-dual-drive-amazon.jpg"
 expired: false
 tags: ["zebronics", "astra", "portable", "bluetooth", "speaker", "watts", "upto", "backup"]

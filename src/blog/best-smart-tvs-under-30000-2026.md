@@ -16,14 +16,14 @@ All prices below are verified deal prices — most include significant discounts
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [pTron Bassbuds Astra in-Ear TWS Earbuds w/...](https://www.amazon.in/dp/B0D78XSMSM?tag=dealdrops0d-21) | ₹597 | ~~₹2,899~~ | 79% off |
-| [Boat Stone 352 Pro/Stone 358 Pro w/ 14W Si...](https://www.amazon.in/dp/B0D6W7F7WH?tag=dealdrops0d-21) | ₹1,899 | ~~₹4,990~~ | 62% off |
-| [60 cm (24 Inches) HD Ready Smart LED TV](https://www.amazon.in/dp/B0GDG3Q5P5?tag=dealdrops0d-21) | ₹6,777 | ~~₹12,999~~ | 48% off |
-| [VW 80 cm (32 inches) Frameless Series HD R...](https://www.amazon.in/dp/B07MNNH484?tag=dealdrops0d-21) | ₹7,999 | ~~₹16,999~~ | 53% off |
-| [VW 80 cm (32 inches) OptimaX Series HD Rea...](https://www.amazon.in/dp/B0FCM61QWL?tag=dealdrops0d-21) | ₹8,199 | ~~₹18,999~~ | 57% off |
-| [acer 100 cm (40 inches) Ultra I Series FHD...](https://www.amazon.in/dp/B0FDW1QWNC?tag=dealdrops0d-21) | ₹14,990 | ~~₹38,999~~ | 62% off |
-| [TCL 101 cms (40 inches) V5C Series Full HD...](https://www.amazon.in/dp/B0DZHRYFG7?tag=dealdrops0d-21) | ₹16,990 | ~~₹35,990~~ | 53% off |
-| [Toshiba 108 cm (43 inches) C350NP Series 4...](https://www.amazon.in/dp/B0D3XD9M5D?tag=dealdrops0d-21) | ₹20,999 | ~~₹39,999~~ | 48% off |
+| [pTron Bassbuds Astra in-Ear TWS Earbuds w/...](https://www.amazon.in/dp/B0D78XSMSM?tag=mas03ad-21) | ₹597 | ~~₹2,899~~ | 79% off |
+| [Boat Stone 352 Pro/Stone 358 Pro w/ 14W Si...](https://www.amazon.in/dp/B0D6W7F7WH?tag=mas03ad-21) | ₹1,899 | ~~₹4,990~~ | 62% off |
+| [60 cm (24 Inches) HD Ready Smart LED TV](https://www.amazon.in/dp/B0GDG3Q5P5?tag=mas03ad-21) | ₹6,777 | ~~₹12,999~~ | 48% off |
+| [VW 80 cm (32 inches) Frameless Series HD R...](https://www.amazon.in/dp/B07MNNH484?tag=mas03ad-21) | ₹7,999 | ~~₹16,999~~ | 53% off |
+| [VW 80 cm (32 inches) OptimaX Series HD Rea...](https://www.amazon.in/dp/B0FCM61QWL?tag=mas03ad-21) | ₹8,199 | ~~₹18,999~~ | 57% off |
+| [acer 100 cm (40 inches) Ultra I Series FHD...](https://www.amazon.in/dp/B0FDW1QWNC?tag=mas03ad-21) | ₹14,990 | ~~₹38,999~~ | 62% off |
+| [TCL 101 cms (40 inches) V5C Series Full HD...](https://www.amazon.in/dp/B0DZHRYFG7?tag=mas03ad-21) | ₹16,990 | ~~₹35,990~~ | 53% off |
+| [Toshiba 108 cm (43 inches) C350NP Series 4...](https://www.amazon.in/dp/B0D3XD9M5D?tag=mas03ad-21) | ₹20,999 | ~~₹39,999~~ | 48% off |
 
 ---
 
@@ -43,7 +43,7 @@ All prices below are verified deal prices — most include significant discounts
 
 A solid pick at this price point. pTron Bassbuds Astra in-Ear TWS Earbuds w/Stereo Sound offers good value with a 79% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D78XSMSM?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D78XSMSM?tag=mas03ad-21)**
 
 ---
 
@@ -59,7 +59,7 @@ A solid pick at this price point. pTron Bassbuds Astra in-Ear TWS Earbuds w/Ster
 
 At 62% off, the Boat Stone 352 Pro/Stone 358 Pro w/ 14W Signature Sound is a steal. You save ₹3,091 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D6W7F7WH?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D6W7F7WH?tag=mas03ad-21)**
 
 ---
 
@@ -75,7 +75,7 @@ At 62% off, the Boat Stone 352 Pro/Stone 358 Pro w/ 14W Signature Sound is a ste
 
 Currently going for ₹6,777 (down from ₹12,999), this is one of the better deals we've seen on 60 cm (24 Inches) HD Ready Smart LED TV.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GDG3Q5P5?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GDG3Q5P5?tag=mas03ad-21)**
 
 ---
 
@@ -91,7 +91,7 @@ Currently going for ₹6,777 (down from ₹12,999), this is one of the better de
 
 Currently going for ₹7,999 (down from ₹16,999), this is one of the better deals we've seen on VW 80 cm (32 inches) Frameless Series HD Ready Android Smart LED TV VW32S.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B07MNNH484?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B07MNNH484?tag=mas03ad-21)**
 
 ---
 
@@ -107,7 +107,7 @@ Currently going for ₹7,999 (down from ₹16,999), this is one of the better de
 
 Currently going for ₹8,199 (down from ₹18,999), this is one of the better deals we've seen on VW 80 cm (32 inches) OptimaX Series HD Ready Smart QLED Android TV VW32AQ1.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FCM61QWL?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FCM61QWL?tag=mas03ad-21)**
 
 ---
 
@@ -123,7 +123,7 @@ Currently going for ₹8,199 (down from ₹18,999), this is one of the better de
 
 At 62% off, the acer 100 cm (40 inches) Ultra I Series FHD Smart LED Google TV AR40FDGGU2841BD is a steal. You save ₹24,009 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FDW1QWNC?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FDW1QWNC?tag=mas03ad-21)**
 
 ---
 
@@ -139,7 +139,7 @@ At 62% off, the acer 100 cm (40 inches) Ultra I Series FHD Smart LED Google TV A
 
 If you're looking for something reliable without overspending, TCL 101 cms (40 inches) V5C Series Full HD Smart QLED TV Google TV 40V5C at ₹16,990 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DZHRYFG7?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DZHRYFG7?tag=mas03ad-21)**
 
 ---
 
@@ -155,7 +155,7 @@ If you're looking for something reliable without overspending, TCL 101 cms (40 i
 
 This Toshiba 108 cm (43 inches) C350NP Series 4K Ultra HD Smart LED Google TV... drops from ₹39,999 to just ₹20,999 — that's a saving of ₹19,000.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D3XD9M5D?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D3XD9M5D?tag=mas03ad-21)**
 
 ---
 

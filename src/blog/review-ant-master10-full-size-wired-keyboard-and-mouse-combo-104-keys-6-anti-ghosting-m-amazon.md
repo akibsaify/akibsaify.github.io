@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 ₹1,150 off a Ant keyboard? That's a no-brainer for most people. The **Ant MASTER10 Full Size Wired Keyboard and Mouse Combo** at **₹349** won't stay at this price forever.
 
-**[Buy Now on Amazon — 77% Off →](https://www.amazon.in/dp/B0FH25BLFV?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 77% Off →](https://www.amazon.in/dp/B0FH25BLFV?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

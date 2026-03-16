@@ -37,6 +37,6 @@ If you're already set on buying product and just need a good deal — this is it
 
 At ₹659 with 40% off, the **Van Heusen** delivers solid value. Van makes reliable product, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B076CJMH9V?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B076CJMH9V?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

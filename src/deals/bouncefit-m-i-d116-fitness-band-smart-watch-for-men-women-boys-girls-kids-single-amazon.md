@@ -8,7 +8,7 @@ originalPrice: 2999
 dealPrice: 398
 discountPercent: 87
 couponCode: "Save 2%"
-affiliateLink: "https://www.amazon.in/dp/B0D95TMQ3M?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D95TMQ3M?tag=mas03ad-21"
 image: "/images/bouncefit-m-i-d116-fitness-band-smart-watch-for-men-women-boys-girls-kids-single-amazon.jpg"
 expired: false
 tags: ["bouncefit", "d116", "fitness", "band", "smart", "watch", "for", "men"]

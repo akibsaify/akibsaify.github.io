@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 The **Boat Lunar Discovery w/ 1.39 inch (3.5 cm) HD Display** at **₹1,299** (~~₹8,499~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹7,200 on a boAt smartwatch is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0DFYL4635?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0DFYL4635?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

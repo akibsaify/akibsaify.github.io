@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 At ₹239 with 70% off, the **TECHONTO® Ultra Boost Mini Portable Wireless Bluetooth Speaker wi...** delivers solid value. TECHONTO® makes reliable speaker, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0GNM6464L?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0GNM6464L?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

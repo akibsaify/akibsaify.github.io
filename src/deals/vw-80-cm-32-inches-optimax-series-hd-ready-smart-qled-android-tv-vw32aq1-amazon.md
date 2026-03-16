@@ -8,7 +8,7 @@ originalPrice: 18999
 dealPrice: 8199
 discountPercent: 57
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FCM61QWL?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FCM61QWL?tag=mas03ad-21"
 image: "/images/vw-80-cm-32-inches-optimax-series-hd-ready-smart-qled-android-tv-vw32aq1-amazon.jpg"
 expired: false
 tags: ["inches", "optimax", "series", "ready", "smart", "qled", "android", "vw32aq1"]

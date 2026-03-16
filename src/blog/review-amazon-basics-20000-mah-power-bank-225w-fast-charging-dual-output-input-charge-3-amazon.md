@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 ₹3,100 off a Amazon Basics earbuds? That's a no-brainer for most people. The **Amazon Basics 20000 mAh Power Bank** at **₹899** won't stay at this price forever.
 
-**[Buy Now on Amazon — 78% Off →](https://www.amazon.in/dp/B0D96HMLYX?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 78% Off →](https://www.amazon.in/dp/B0D96HMLYX?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

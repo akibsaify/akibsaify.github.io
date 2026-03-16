@@ -38,6 +38,6 @@ If you're already set on buying product and just need a good deal — this is it
 
 ₹591 off a Amazon product? That's a no-brainer for most people. The **Amazon Solimo Set of 3 Stainless Steel Casseroles** at **₹1,109** won't stay at this price forever.
 
-**[Buy Now on Amazon — 35% Off →](https://www.amazon.in/dp/B0BWRKRHST?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 35% Off →](https://www.amazon.in/dp/B0BWRKRHST?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

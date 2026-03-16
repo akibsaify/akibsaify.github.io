@@ -16,15 +16,15 @@ Here's what we found.
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Lapster USB all types smartwatch charger c...](https://www.amazon.in/dp/B09WJCRHKV?tag=dealdrops0d-21) | ₹149 | ~~₹999~~ | 85% off |
-| [Bouncefit D20 Y68 Fitness Band Smart Watch...](https://www.amazon.in/dp/B0C6F1GT12?tag=dealdrops0d-21) | ₹397 | ~~₹2,999~~ | 87% off |
-| [Bouncefit M I D116 Fitness Band Smart Watc...](https://www.amazon.in/dp/B0D95TMQ3M?tag=dealdrops0d-21) | ₹398 | ~~₹2,999~~ | 87% off |
-| [mi Smart Watch for Kids Men Boys 10-12 Yea...](https://www.amazon.in/dp/B0GPWBM6T1?tag=dealdrops0d-21) | ₹419 | ~~₹2,899~~ | 86% off |
-| [PunnkFunnk NovoLux HD Display Smartwatch f...](https://www.amazon.in/dp/B0DT98L8LJ?tag=dealdrops0d-21) | ₹849 | ~~₹4,999~~ | 83% off |
-| [Boat Lunar Discovery w/ 1.39 inch (3.5 cm)...](https://www.amazon.in/dp/B0DFYL4635?tag=dealdrops0d-21) | ₹1,299 | ~~₹8,499~~ | 85% off |
-| [Fire-Boltt Ninja Call Pro Plus Bluetooth C...](https://www.amazon.in/dp/B0BF57RN3K?tag=dealdrops0d-21) | ₹1,399 | ~~₹19,999~~ | 93% off |
-| [Noise Pulse 2 Max 1.85 inch Display](https://www.amazon.in/dp/B0B6BPTFT5?tag=dealdrops0d-21) | ₹1,399 | ~~₹5,999~~ | 77% off |
-| [Fire‑Boltt Rise Smart Watch 1.85″ HD Displ...](https://www.amazon.in/dp/B0CMF25TKG?tag=dealdrops0d-21) | ₹1,499 | ~~₹11,999~~ | 88% off |
+| [Lapster USB all types smartwatch charger c...](https://www.amazon.in/dp/B09WJCRHKV?tag=mas03ad-21) | ₹149 | ~~₹999~~ | 85% off |
+| [Bouncefit D20 Y68 Fitness Band Smart Watch...](https://www.amazon.in/dp/B0C6F1GT12?tag=mas03ad-21) | ₹397 | ~~₹2,999~~ | 87% off |
+| [Bouncefit M I D116 Fitness Band Smart Watc...](https://www.amazon.in/dp/B0D95TMQ3M?tag=mas03ad-21) | ₹398 | ~~₹2,999~~ | 87% off |
+| [mi Smart Watch for Kids Men Boys 10-12 Yea...](https://www.amazon.in/dp/B0GPWBM6T1?tag=mas03ad-21) | ₹419 | ~~₹2,899~~ | 86% off |
+| [PunnkFunnk NovoLux HD Display Smartwatch f...](https://www.amazon.in/dp/B0DT98L8LJ?tag=mas03ad-21) | ₹849 | ~~₹4,999~~ | 83% off |
+| [Boat Lunar Discovery w/ 1.39 inch (3.5 cm)...](https://www.amazon.in/dp/B0DFYL4635?tag=mas03ad-21) | ₹1,299 | ~~₹8,499~~ | 85% off |
+| [Fire-Boltt Ninja Call Pro Plus Bluetooth C...](https://www.amazon.in/dp/B0BF57RN3K?tag=mas03ad-21) | ₹1,399 | ~~₹19,999~~ | 93% off |
+| [Noise Pulse 2 Max 1.85 inch Display](https://www.amazon.in/dp/B0B6BPTFT5?tag=mas03ad-21) | ₹1,399 | ~~₹5,999~~ | 77% off |
+| [Fire‑Boltt Rise Smart Watch 1.85″ HD Displ...](https://www.amazon.in/dp/B0CMF25TKG?tag=mas03ad-21) | ₹1,499 | ~~₹11,999~~ | 88% off |
 
 ---
 
@@ -44,7 +44,7 @@ Here's what we found.
 
 If you're looking for something reliable without overspending, Lapster USB all types smartwatch charger cable for Boat Xtend at ₹149 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B09WJCRHKV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B09WJCRHKV?tag=mas03ad-21)**
 
 ---
 
@@ -60,7 +60,7 @@ If you're looking for something reliable without overspending, Lapster USB all t
 
 At 87% off, the Bouncefit D20 Y68 Fitness Band Smart Watch for Men is a steal. You save ₹2,602 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0C6F1GT12?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0C6F1GT12?tag=mas03ad-21)**
 
 ---
 
@@ -76,7 +76,7 @@ At 87% off, the Bouncefit D20 Y68 Fitness Band Smart Watch for Men is a steal. Y
 
 A solid pick at this price point. Bouncefit M I D116 Fitness Band Smart Watch for Men offers good value with a 87% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D95TMQ3M?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D95TMQ3M?tag=mas03ad-21)**
 
 ---
 
@@ -92,7 +92,7 @@ A solid pick at this price point. Bouncefit M I D116 Fitness Band Smart Watch fo
 
 This mi Smart Watch for Kids Men Boys 10-12 Years Old drops from ₹2,899 to just ₹419 — that's a saving of ₹2,480.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GPWBM6T1?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GPWBM6T1?tag=mas03ad-21)**
 
 ---
 
@@ -108,7 +108,7 @@ This mi Smart Watch for Kids Men Boys 10-12 Years Old drops from ₹2,899 to jus
 
 At 83% off, the PunnkFunnk NovoLux HD Display Smartwatch for Men & Women Answer/Make Calls is a steal. You save ₹4,150 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DT98L8LJ?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DT98L8LJ?tag=mas03ad-21)**
 
 ---
 
@@ -124,7 +124,7 @@ At 83% off, the PunnkFunnk NovoLux HD Display Smartwatch for Men & Women Answer/
 
 If you're looking for something reliable without overspending, Boat Lunar Discovery w/ 1.39 inch (3.5 cm) HD Display at ₹1,299 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DFYL4635?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DFYL4635?tag=mas03ad-21)**
 
 ---
 
@@ -140,7 +140,7 @@ If you're looking for something reliable without overspending, Boat Lunar Discov
 
 If you're looking for something reliable without overspending, Fire-Boltt Ninja Call Pro Plus Bluetooth Calling Smart Watch at ₹1,399 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0BF57RN3K?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0BF57RN3K?tag=mas03ad-21)**
 
 ---
 
@@ -156,7 +156,7 @@ If you're looking for something reliable without overspending, Fire-Boltt Ninja 
 
 At 77% off, the Noise Pulse 2 Max 1.85 inch Display is a steal. You save ₹4,600 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0B6BPTFT5?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0B6BPTFT5?tag=mas03ad-21)**
 
 ---
 
@@ -172,7 +172,7 @@ At 77% off, the Noise Pulse 2 Max 1.85 inch Display is a steal. You save ₹4,60
 
 This Fire‑Boltt Rise Smart Watch 1.85″ HD Display with Bluetooth Calling drops from ₹11,999 to just ₹1,499 — that's a saving of ₹10,500.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0CMF25TKG?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0CMF25TKG?tag=mas03ad-21)**
 
 ---
 

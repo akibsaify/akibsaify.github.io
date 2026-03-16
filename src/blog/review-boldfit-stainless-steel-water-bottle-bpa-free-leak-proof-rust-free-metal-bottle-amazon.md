@@ -37,6 +37,6 @@ If you're already set on buying water bottle and just need a good deal — this 
 
 At ₹249 with 69% off, the **Boldfit Stainless Steel Water Bottle – BPA-Free** delivers solid value. Boldfit makes reliable water bottle, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0FCFC9ZTV?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0FCFC9ZTV?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

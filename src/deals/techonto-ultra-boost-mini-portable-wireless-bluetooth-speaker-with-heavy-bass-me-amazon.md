@@ -8,7 +8,7 @@ originalPrice: 799
 dealPrice: 239
 discountPercent: 70
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0GNM6464L?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0GNM6464L?tag=mas03ad-21"
 image: "/images/techonto-ultra-boost-mini-portable-wireless-bluetooth-speaker-with-heavy-bass-me-amazon.jpg"
 expired: false
 tags: ["techonto", "ultra", "boost", "mini", "portable", "wireless", "bluetooth", "speaker"]

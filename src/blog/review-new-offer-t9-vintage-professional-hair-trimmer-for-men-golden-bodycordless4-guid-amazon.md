@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 The **New Offer T9 Vintage Professional Hair Trimmer For Men –Golden Body** at **₹99** (~~₹499~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹400 on a New trimmer is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0G93PWRPV?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0G93PWRPV?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

@@ -8,7 +8,7 @@ originalPrice: 2000
 dealPrice: 920
 discountPercent: 54
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0B34WJK3X?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0B34WJK3X?tag=mas03ad-21"
 image: "/images/fur-jaden-40l-weekender-travel-laptop-backpack-with-anti-theft-pocket-organizer-amazon.jpg"
 expired: false
 tags: ["fur", "jaden", "40l", "weekender", "travel", "laptop", "backpack", "with"]

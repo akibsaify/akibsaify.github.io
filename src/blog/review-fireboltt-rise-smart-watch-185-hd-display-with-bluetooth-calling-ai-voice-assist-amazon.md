@@ -37,6 +37,6 @@ If you're already set on buying smartwatch and just need a good deal — this is
 
 The **Fire‑Boltt Rise Smart Watch 1.85″ HD Display with Bluetooth Calling** at **₹1,499** (~~₹11,999~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹10,500 on a Fire‑Boltt smartwatch is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0CMF25TKG?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0CMF25TKG?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

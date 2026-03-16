@@ -37,6 +37,6 @@ If you're already set on buying laptop and just need a good deal — this is it.
 
 ₹2,747 off a Safari laptop? That's a no-brainer for most people. The **Safari Omega Spacious/Large 5 Compartment Laptop Backpack With Ra...** at **₹649** won't stay at this price forever.
 
-**[Buy Now on Amazon — 81% Off →](https://www.amazon.in/dp/B097LC1DJ6?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 81% Off →](https://www.amazon.in/dp/B097LC1DJ6?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

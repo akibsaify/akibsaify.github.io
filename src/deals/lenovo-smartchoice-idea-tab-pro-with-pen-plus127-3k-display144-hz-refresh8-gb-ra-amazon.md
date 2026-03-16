@@ -8,7 +8,7 @@ originalPrice: 43000
 dealPrice: 28999
 discountPercent: 33
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DZCC8QZW?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DZCC8QZW?tag=mas03ad-21"
 image: "/images/lenovo-smartchoice-idea-tab-pro-with-pen-plus127-3k-display144-hz-refresh8-gb-ra-amazon.jpg"
 expired: false
 tags: ["lenovo", "smartchoice", "idea", "tab", "pro", "with", "pen", "plus"]

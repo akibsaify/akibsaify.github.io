@@ -37,6 +37,6 @@ If you're already set on buying vegetable chopper and just need a good deal — 
 
 At ₹511 with 57% off, the **Ganesh 14 in 1 Multipurpose Chopper** delivers solid value. Ganesh makes reliable vegetable chopper, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B01BVDS1BE?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B01BVDS1BE?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

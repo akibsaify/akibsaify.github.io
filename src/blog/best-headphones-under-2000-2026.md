@@ -16,16 +16,16 @@ Here are the best deals available right now on Amazon India, sorted by value. Ev
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Boat BassHeads 100 in-Ear Headphones with ...](https://www.amazon.in/dp/B071Z8M4KX?tag=dealdrops0d-21) | ₹399 | ~~₹999~~ | 60% off |
-| [Wireless Earbuds, Bluetooth V5.3](https://www.amazon.in/dp/B0GD7Q1HYC?tag=dealdrops0d-21) | ₹440 | ~~₹1,999~~ | 78% off |
-| [pTron Bassbuds Astra in-Ear TWS Earbuds w/...](https://www.amazon.in/dp/B0D78XSMSM?tag=dealdrops0d-21) | ₹597 | ~~₹2,899~~ | 79% off |
-| [pTron Bassbuds Spark in-Ear TWS Earbuds wi...](https://www.amazon.in/dp/B0F62JBFBS?tag=dealdrops0d-21) | ₹598 | ~~₹1,999~~ | 70% off |
-| [Mivi DuoPods Maxx TWS [New Launch]](https://www.amazon.in/dp/B0FDGS4SQR?tag=dealdrops0d-21) | ₹599 | ~~₹2,999~~ | 80% off |
-| [pTron Studio w/ 60Hrs Playtime, Wireless O...](https://www.amazon.in/dp/B0FQJGBKCX?tag=dealdrops0d-21) | ₹599 | ~~₹2,599~~ | 77% off |
-| [Fire-Boltt Aero TWS Earbuds Custom EQ](https://www.amazon.in/dp/B0FM6B9Z45?tag=dealdrops0d-21) | ₹699 | ~~₹8,999~~ | 92% off |
-| [Mivi DuoPods Sync Earbuds [New Launch]](https://www.amazon.in/dp/B0G2GGLTMF?tag=dealdrops0d-21) | ₹699 | ~~₹3,499~~ | 80% off |
-| [pTron Studio Pro w/ 65Hrs Playtime](https://www.amazon.in/dp/B0FPRCDS5J?tag=dealdrops0d-21) | ₹699 | ~~₹2,599~~ | 73% off |
-| [pTron Studio Evo 70hrs Playtime Wireless O...](https://www.amazon.in/dp/B0FGV2CNN5?tag=dealdrops0d-21) | ₹799 | ~~₹3,199~~ | 75% off |
+| [Boat BassHeads 100 in-Ear Headphones with ...](https://www.amazon.in/dp/B071Z8M4KX?tag=mas03ad-21) | ₹399 | ~~₹999~~ | 60% off |
+| [Wireless Earbuds, Bluetooth V5.3](https://www.amazon.in/dp/B0GD7Q1HYC?tag=mas03ad-21) | ₹440 | ~~₹1,999~~ | 78% off |
+| [pTron Bassbuds Astra in-Ear TWS Earbuds w/...](https://www.amazon.in/dp/B0D78XSMSM?tag=mas03ad-21) | ₹597 | ~~₹2,899~~ | 79% off |
+| [pTron Bassbuds Spark in-Ear TWS Earbuds wi...](https://www.amazon.in/dp/B0F62JBFBS?tag=mas03ad-21) | ₹598 | ~~₹1,999~~ | 70% off |
+| [Mivi DuoPods Maxx TWS [New Launch]](https://www.amazon.in/dp/B0FDGS4SQR?tag=mas03ad-21) | ₹599 | ~~₹2,999~~ | 80% off |
+| [pTron Studio w/ 60Hrs Playtime, Wireless O...](https://www.amazon.in/dp/B0FQJGBKCX?tag=mas03ad-21) | ₹599 | ~~₹2,599~~ | 77% off |
+| [Fire-Boltt Aero TWS Earbuds Custom EQ](https://www.amazon.in/dp/B0FM6B9Z45?tag=mas03ad-21) | ₹699 | ~~₹8,999~~ | 92% off |
+| [Mivi DuoPods Sync Earbuds [New Launch]](https://www.amazon.in/dp/B0G2GGLTMF?tag=mas03ad-21) | ₹699 | ~~₹3,499~~ | 80% off |
+| [pTron Studio Pro w/ 65Hrs Playtime](https://www.amazon.in/dp/B0FPRCDS5J?tag=mas03ad-21) | ₹699 | ~~₹2,599~~ | 73% off |
+| [pTron Studio Evo 70hrs Playtime Wireless O...](https://www.amazon.in/dp/B0FGV2CNN5?tag=mas03ad-21) | ₹799 | ~~₹3,199~~ | 75% off |
 
 ---
 
@@ -45,7 +45,7 @@ Here are the best deals available right now on Amazon India, sorted by value. Ev
 
 At 60% off, the Boat BassHeads 100 in-Ear Headphones with Mic (Black) is a steal. You save ₹600 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B071Z8M4KX?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B071Z8M4KX?tag=mas03ad-21)**
 
 ---
 
@@ -61,7 +61,7 @@ At 60% off, the Boat BassHeads 100 in-Ear Headphones with Mic (Black) is a steal
 
 This Wireless Earbuds, Bluetooth V5.3 drops from ₹1,999 to just ₹440 — that's a saving of ₹1,559.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GD7Q1HYC?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GD7Q1HYC?tag=mas03ad-21)**
 
 ---
 
@@ -77,7 +77,7 @@ This Wireless Earbuds, Bluetooth V5.3 drops from ₹1,999 to just ₹440 — tha
 
 This pTron Bassbuds Astra in-Ear TWS Earbuds w/Stereo Sound drops from ₹2,899 to just ₹597 — that's a saving of ₹2,302.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D78XSMSM?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D78XSMSM?tag=mas03ad-21)**
 
 ---
 
@@ -93,7 +93,7 @@ This pTron Bassbuds Astra in-Ear TWS Earbuds w/Stereo Sound drops from ₹2,899 
 
 If you're looking for something reliable without overspending, pTron Bassbuds Spark in-Ear TWS Earbuds with Stereo Sound at ₹598 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0F62JBFBS?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0F62JBFBS?tag=mas03ad-21)**
 
 ---
 
@@ -109,7 +109,7 @@ If you're looking for something reliable without overspending, pTron Bassbuds Sp
 
 At 80% off, the Mivi DuoPods Maxx TWS [New Launch] is a steal. You save ₹2,400 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FDGS4SQR?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FDGS4SQR?tag=mas03ad-21)**
 
 ---
 
@@ -125,7 +125,7 @@ At 80% off, the Mivi DuoPods Maxx TWS [New Launch] is a steal. You save ₹2,400
 
 At 77% off, the pTron Studio w/ 60Hrs Playtime, Wireless Over-Ear Headphones is a steal. You save ₹2,000 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FQJGBKCX?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FQJGBKCX?tag=mas03ad-21)**
 
 ---
 
@@ -141,7 +141,7 @@ At 77% off, the pTron Studio w/ 60Hrs Playtime, Wireless Over-Ear Headphones is 
 
 If you're looking for something reliable without overspending, Fire-Boltt Aero TWS Earbuds Custom EQ at ₹699 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FM6B9Z45?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FM6B9Z45?tag=mas03ad-21)**
 
 ---
 
@@ -157,7 +157,7 @@ If you're looking for something reliable without overspending, Fire-Boltt Aero T
 
 A solid pick at this price point. Mivi DuoPods Sync Earbuds [New Launch] offers good value with a 80% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0G2GGLTMF?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0G2GGLTMF?tag=mas03ad-21)**
 
 ---
 
@@ -173,7 +173,7 @@ A solid pick at this price point. Mivi DuoPods Sync Earbuds [New Launch] offers 
 
 Currently going for ₹699 (down from ₹2,599), this is one of the better deals we've seen on pTron Studio Pro w/ 65Hrs Playtime.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FPRCDS5J?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FPRCDS5J?tag=mas03ad-21)**
 
 ---
 
@@ -189,7 +189,7 @@ Currently going for ₹699 (down from ₹2,599), this is one of the better deals
 
 This pTron Studio Evo 70hrs Playtime Wireless Over Ear Headphones with HD Mic drops from ₹3,199 to just ₹799 — that's a saving of ₹2,400.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FGV2CNN5?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FGV2CNN5?tag=mas03ad-21)**
 
 ---
 

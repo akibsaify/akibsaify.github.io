@@ -16,9 +16,9 @@ Each product below is currently discounted and available at the deal price shown
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Aristocrat Nova 15L Laptop Backpack for Me...](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21) | ₹379 | ~~₹999~~ | 62% off |
-| [Impulse Vissionvault 30L Unisex Water Resi...](https://www.amazon.in/dp/B0FS1PJ7H1?tag=dealdrops0d-21) | ₹459 | ~~₹2,999~~ | 85% off |
-| [Wesley Vintage Milestone Travel Laptop Bac...](https://www.amazon.in/dp/B085S444JV?tag=dealdrops0d-21) | ₹471 | ~~₹1,199~~ | 61% off |
+| [Aristocrat Nova 15L Laptop Backpack for Me...](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21) | ₹379 | ~~₹999~~ | 62% off |
+| [Impulse Vissionvault 30L Unisex Water Resi...](https://www.amazon.in/dp/B0FS1PJ7H1?tag=mas03ad-21) | ₹459 | ~~₹2,999~~ | 85% off |
+| [Wesley Vintage Milestone Travel Laptop Bac...](https://www.amazon.in/dp/B085S444JV?tag=mas03ad-21) | ₹471 | ~~₹1,199~~ | 61% off |
 
 ---
 
@@ -38,7 +38,7 @@ Each product below is currently discounted and available at the deal price shown
 
 Currently going for ₹379 (down from ₹999), this is one of the better deals we've seen on Aristocrat Nova 15L Laptop Backpack for Men & Women with Bottle Pocket.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21)**
 
 ---
 
@@ -54,7 +54,7 @@ Currently going for ₹379 (down from ₹999), this is one of the better deals w
 
 At 85% off, the Impulse Vissionvault 30L Unisex Water Resistant Travel Laptop Backpack is a steal. You save ₹2,540 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FS1PJ7H1?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FS1PJ7H1?tag=mas03ad-21)**
 
 ---
 
@@ -70,7 +70,7 @@ At 85% off, the Impulse Vissionvault 30L Unisex Water Resistant Travel Laptop Ba
 
 This Wesley Vintage Milestone Travel Laptop Backpack drops from ₹1,199 to just ₹471 — that's a saving of ₹728.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B085S444JV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B085S444JV?tag=mas03ad-21)**
 
 ---
 

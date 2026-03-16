@@ -8,7 +8,7 @@ originalPrice: 30000
 dealPrice: 12990
 discountPercent: 57
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FC64RYH1?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FC64RYH1?tag=mas03ad-21"
 image: "/images/browsebook-141-fhd-ips-laptop-best-student-office-work-laptop-celeron-n4020-4gb-amazon.jpg"
 expired: false
 tags: ["browsebook", "fhd", "ips", "laptop", "best", "student", "office", "work"]

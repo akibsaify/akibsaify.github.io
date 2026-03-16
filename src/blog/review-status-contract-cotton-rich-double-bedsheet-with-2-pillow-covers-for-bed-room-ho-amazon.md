@@ -37,6 +37,6 @@ If you're already set on buying bedsheet and just need a good deal — this is i
 
 ₹500 off a Status bedsheet? That's a no-brainer for most people. The **Status Contract Cotton Rich Double Bedsheet with 2 Pillow Covers...** at **₹299** won't stay at this price forever.
 
-**[Buy Now on Amazon — 63% Off →](https://www.amazon.in/dp/B0DHZP39G2?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 63% Off →](https://www.amazon.in/dp/B0DHZP39G2?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

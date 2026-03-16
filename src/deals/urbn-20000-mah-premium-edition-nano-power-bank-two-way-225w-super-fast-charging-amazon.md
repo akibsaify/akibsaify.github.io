@@ -8,7 +8,7 @@ originalPrice: 4999
 dealPrice: 1399
 discountPercent: 72
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0BXSR4ZBD?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0BXSR4ZBD?tag=mas03ad-21"
 image: "/images/urbn-20000-mah-premium-edition-nano-power-bank-two-way-225w-super-fast-charging-amazon.jpg"
 expired: false
 tags: ["urbn", "20000", "mah", "premium", "edition", "nano", "power", "bank"]

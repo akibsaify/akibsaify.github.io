@@ -8,7 +8,7 @@ originalPrice: 4399
 dealPrice: 1399
 discountPercent: 68
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0D87KZP1Z?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D87KZP1Z?tag=mas03ad-21"
 image: "/images/gear-classic-4-1931l-anti-theft-faux-leather-medium-water-resistant-3-compartmen-amazon.jpg"
 expired: false
 tags: ["gear", "classic", "31l", "anti", "theft", "faux", "leather", "medium"]

@@ -8,7 +8,7 @@ originalPrice: 1999
 dealPrice: 499
 discountPercent: 75
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0GGBMDBG2?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0GGBMDBG2?tag=mas03ad-21"
 image: "/images/salpido-10000mah-power-bank-with-dual-output-portable-slim-design-lithium-ion-po-amazon.jpg"
 expired: false
 tags: ["salpido", "10000mah", "power", "bank", "with", "dual", "output", "portable"]

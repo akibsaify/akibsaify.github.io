@@ -37,6 +37,6 @@ If you're already set on buying headphones and just need a good deal — this is
 
 ₹1,991 off a boAt headphones? That's a no-brainer for most people. The **boAt Rockerz 480, RGB LEDs,6 Light Modes** at **₹1,799** won't stay at this price forever.
 
-**[Buy Now on Amazon — 53% Off →](https://www.amazon.in/dp/B0DGTTKCJX?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 53% Off →](https://www.amazon.in/dp/B0DGTTKCJX?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

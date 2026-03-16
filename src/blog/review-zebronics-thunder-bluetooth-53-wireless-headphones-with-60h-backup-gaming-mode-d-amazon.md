@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 The **ZEBRONICS THUNDER Bluetooth 5.3 Wireless Headphones with 60H Backup** at **₹799** (~~₹1,199~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹400 on a Zebronics headphones is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B07L8KNP5F?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B07L8KNP5F?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

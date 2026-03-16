@@ -8,7 +8,7 @@ originalPrice: 19999
 dealPrice: 1399
 discountPercent: 93
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0BF57RN3K?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0BF57RN3K?tag=mas03ad-21"
 image: "/images/fire-boltt-ninja-call-pro-plus-bluetooth-calling-smart-watch-183-hd-display-ai-v-amazon.jpg"
 expired: false
 tags: ["fire", "boltt", "ninja", "call", "pro", "plus", "bluetooth", "calling"]

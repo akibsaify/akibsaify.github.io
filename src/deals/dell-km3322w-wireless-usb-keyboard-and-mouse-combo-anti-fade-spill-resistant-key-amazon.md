@@ -8,7 +8,7 @@ originalPrice: 2499
 dealPrice: 1349
 discountPercent: 46
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B09T3H12GV?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B09T3H12GV?tag=mas03ad-21"
 image: "/images/dell-km3322w-wireless-usb-keyboard-and-mouse-combo-anti-fade-spill-resistant-key-amazon.jpg"
 expired: false
 tags: ["dell", "km3322w", "wireless", "usb", "keyboard", "and", "mouse", "combo"]

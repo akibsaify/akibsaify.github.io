@@ -38,6 +38,6 @@ If you're already set on buying headphones and just need a good deal — this is
 
 The **pTron Studio Evo 70hrs Playtime Wireless Over Ear Headphones with...** at **₹799** (~~₹3,199~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹2,400 on a pTron headphones is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0FGV2CNN5?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0FGV2CNN5?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

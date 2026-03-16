@@ -8,7 +8,7 @@ originalPrice: 2899
 dealPrice: 699
 discountPercent: 76
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B09B25Z8M2?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B09B25Z8M2?tag=mas03ad-21"
 image: "/images/safari-quill-large-laptop-backpack-26-ltrs-water-resistant-fabric-black-amazon.jpg"
 expired: false
 tags: ["safari", "quill", "large", "laptop", "backpack", "ltrs", "water", "resistant"]

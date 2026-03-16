@@ -8,7 +8,7 @@ originalPrice: 1199
 dealPrice: 471
 discountPercent: 61
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B085S444JV?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B085S444JV?tag=mas03ad-21"
 image: "/images/wesley-vintage-milestone-travel-laptop-backpack-with-156-inch-laptop-compartment-amazon.jpg"
 expired: false
 tags: ["wesley", "vintage", "milestone", "travel", "laptop", "backpack", "with", "inch"]

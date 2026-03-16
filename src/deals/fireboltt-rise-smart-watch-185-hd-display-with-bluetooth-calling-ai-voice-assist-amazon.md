@@ -8,7 +8,7 @@ originalPrice: 11999
 dealPrice: 1499
 discountPercent: 88
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0CMF25TKG?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0CMF25TKG?tag=mas03ad-21"
 image: "/images/fireboltt-rise-smart-watch-185-hd-display-with-bluetooth-calling-ai-voice-assist-amazon.jpg"
 expired: false
 tags: ["fire", "boltt", "rise", "smart", "watch", "display", "with", "bluetooth"]

@@ -8,7 +8,7 @@ originalPrice: 1595
 dealPrice: 699
 discountPercent: 56
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B07C6CSF6K?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B07C6CSF6K?tag=mas03ad-21"
 image: "/images/havells-bt5100c-rechargeable-beard-trimmer-with-hypoallergenic-blades-zero-trim-amazon.jpg"
 expired: false
 tags: ["havells", "bt5100c", "rechargeable", "beard", "trimmer", "with", "hypoallergenic", "blades"]

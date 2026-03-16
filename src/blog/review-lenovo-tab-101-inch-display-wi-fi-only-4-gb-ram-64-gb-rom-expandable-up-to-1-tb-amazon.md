@@ -38,6 +38,6 @@ If you're already set on buying speaker and just need a good deal — this is it
 
 ₹6,261 off a Lenovo speaker? That's a no-brainer for most people. The **Lenovo Tab| 10.1 Inch Display| Wi-Fi Only| 4 GB RAM + 64 GB ROM** at **₹11,739** won't stay at this price forever.
 
-**[Buy Now on Amazon — 35% Off →](https://www.amazon.in/dp/B0FDWFRC48?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 35% Off →](https://www.amazon.in/dp/B0FDWFRC48?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

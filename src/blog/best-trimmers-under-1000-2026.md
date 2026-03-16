@@ -16,11 +16,11 @@ Each product below is currently discounted and available at the deal price shown
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Hair Trimmer,Electric Shaving Machine](https://www.amazon.in/dp/B0G2HDVHK2?tag=dealdrops0d-21) | ₹99 | ~~₹499~~ | 80% off |
-| [New Offer T9 Vintage Professional Hair Tri...](https://www.amazon.in/dp/B0G93PWRPV?tag=dealdrops0d-21) | ₹99 | ~~₹499~~ | 80% off |
-| [Nova NHT 1076 Cordless: 30 Minutes Runtime...](https://www.amazon.in/dp/B07JLBFYX7?tag=dealdrops0d-21) | ₹408 | ~~₹899~~ | 55% off |
-| [Bombay Shaving Company Beard Trimmer For Men](https://www.amazon.in/dp/B098P8NRRW?tag=dealdrops0d-21) | ₹695 | ~~₹1,199~~ | 42% off |
-| [Havells Bt5100C Rechargeable Beard Trimmer](https://www.amazon.in/dp/B07C6CSF6K?tag=dealdrops0d-21) | ₹699 | ~~₹1,595~~ | 56% off |
+| [Hair Trimmer,Electric Shaving Machine](https://www.amazon.in/dp/B0G2HDVHK2?tag=mas03ad-21) | ₹99 | ~~₹499~~ | 80% off |
+| [New Offer T9 Vintage Professional Hair Tri...](https://www.amazon.in/dp/B0G93PWRPV?tag=mas03ad-21) | ₹99 | ~~₹499~~ | 80% off |
+| [Nova NHT 1076 Cordless: 30 Minutes Runtime...](https://www.amazon.in/dp/B07JLBFYX7?tag=mas03ad-21) | ₹408 | ~~₹899~~ | 55% off |
+| [Bombay Shaving Company Beard Trimmer For Men](https://www.amazon.in/dp/B098P8NRRW?tag=mas03ad-21) | ₹695 | ~~₹1,199~~ | 42% off |
+| [Havells Bt5100C Rechargeable Beard Trimmer](https://www.amazon.in/dp/B07C6CSF6K?tag=mas03ad-21) | ₹699 | ~~₹1,595~~ | 56% off |
 
 ---
 
@@ -40,7 +40,7 @@ Each product below is currently discounted and available at the deal price shown
 
 Currently going for ₹99 (down from ₹499), this is one of the better deals we've seen on Hair Trimmer,Electric Shaving Machine.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0G2HDVHK2?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0G2HDVHK2?tag=mas03ad-21)**
 
 ---
 
@@ -56,7 +56,7 @@ Currently going for ₹99 (down from ₹499), this is one of the better deals we
 
 Currently going for ₹99 (down from ₹499), this is one of the better deals we've seen on New Offer T9 Vintage Professional Hair Trimmer For Men –Golden Body.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0G93PWRPV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0G93PWRPV?tag=mas03ad-21)**
 
 ---
 
@@ -72,7 +72,7 @@ Currently going for ₹99 (down from ₹499), this is one of the better deals we
 
 This Nova NHT 1076 Cordless: 30 Minutes Runtime Trimmer for Men (Black) drops from ₹899 to just ₹408 — that's a saving of ₹491.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B07JLBFYX7?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B07JLBFYX7?tag=mas03ad-21)**
 
 ---
 
@@ -88,7 +88,7 @@ This Nova NHT 1076 Cordless: 30 Minutes Runtime Trimmer for Men (Black) drops fr
 
 This Bombay Shaving Company Beard Trimmer For Men drops from ₹1,199 to just ₹695 — that's a saving of ₹504.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B098P8NRRW?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B098P8NRRW?tag=mas03ad-21)**
 
 ---
 
@@ -104,7 +104,7 @@ This Bombay Shaving Company Beard Trimmer For Men drops from ₹1,199 to just �
 
 Currently going for ₹699 (down from ₹1,595), this is one of the better deals we've seen on Havells Bt5100C Rechargeable Beard Trimmer.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B07C6CSF6K?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B07C6CSF6K?tag=mas03ad-21)**
 
 ---
 

@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 At ₹529 with 67% off, the **LAPCARE Smart Tank 10000Mah Fast Charging Power Bank** delivers solid value. Lapcare makes reliable power bank, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0CGP252T4?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0CGP252T4?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

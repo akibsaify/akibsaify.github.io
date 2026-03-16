@@ -8,7 +8,7 @@ originalPrice: 4999
 dealPrice: 849
 discountPercent: 83
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DT98L8LJ?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DT98L8LJ?tag=mas03ad-21"
 image: "/images/punnkfunnk-novolux-hd-display-smartwatch-for-men-women-answermake-calls-heart-ra-amazon.jpg"
 expired: false
 tags: ["punnkfunnk", "novolux", "display", "smartwatch", "for", "men", "women", "answer"]

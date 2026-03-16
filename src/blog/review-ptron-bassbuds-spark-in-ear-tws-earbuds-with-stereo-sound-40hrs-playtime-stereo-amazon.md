@@ -37,6 +37,6 @@ If you're already set on buying headphones and just need a good deal — this is
 
 ₹1,401 off a pTron headphones? That's a no-brainer for most people. The **pTron Bassbuds Spark in-Ear TWS Earbuds with Stereo Sound** at **₹598** won't stay at this price forever.
 
-**[Buy Now on Amazon — 70% Off →](https://www.amazon.in/dp/B0F62JBFBS?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 70% Off →](https://www.amazon.in/dp/B0F62JBFBS?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

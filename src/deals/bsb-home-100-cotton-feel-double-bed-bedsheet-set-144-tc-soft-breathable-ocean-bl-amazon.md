@@ -8,7 +8,7 @@ originalPrice: 999
 dealPrice: 229
 discountPercent: 77
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FGJXTX15?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FGJXTX15?tag=mas03ad-21"
 image: "/images/bsb-home-100-cotton-feel-double-bed-bedsheet-set-144-tc-soft-breathable-ocean-bl-amazon.jpg"
 expired: false
 tags: ["bsb", "home", "100", "cotton", "feel", "double", "bed", "bedsheet"]

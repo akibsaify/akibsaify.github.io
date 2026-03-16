@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 The **ZEBRONICS Sound Feast 55, Portable Bluetooth Speaker** at **₹1,299** (~~₹2,799~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹1,500 on a Zebronics speaker is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0DQWTH8MK?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0DQWTH8MK?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

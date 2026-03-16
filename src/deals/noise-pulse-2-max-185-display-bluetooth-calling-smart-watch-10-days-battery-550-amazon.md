@@ -8,7 +8,7 @@ originalPrice: 5999
 dealPrice: 1399
 discountPercent: 77
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0B6BPTFT5?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0B6BPTFT5?tag=mas03ad-21"
 image: "/images/noise-pulse-2-max-185-display-bluetooth-calling-smart-watch-10-days-battery-550-amazon.jpg"
 expired: false
 tags: ["noise", "pulse", "max", "display", "bluetooth", "calling", "smart", "watch"]

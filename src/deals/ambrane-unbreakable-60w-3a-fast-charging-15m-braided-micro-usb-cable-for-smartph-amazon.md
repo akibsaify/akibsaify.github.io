@@ -8,7 +8,7 @@ originalPrice: 299
 dealPrice: 149
 discountPercent: 50
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B082LZGK39?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B082LZGK39?tag=mas03ad-21"
 image: "/images/ambrane-unbreakable-60w-3a-fast-charging-15m-braided-micro-usb-cable-for-smartph-amazon.jpg"
 expired: false
 tags: ["ambrane", "unbreakable", "60w", "fast", "charging", "braided", "micro", "usb"]

@@ -8,7 +8,7 @@ originalPrice: 33999
 dealPrice: 22999
 discountPercent: 32
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0F43VZ4H1?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0F43VZ4H1?tag=mas03ad-21"
 image: "/images/samsung-galaxy-m56-5g-mobile-light-green8gb-ram128gb-storage-segments-slimmestgo-amazon.jpg"
 expired: false
 tags: ["samsung", "galaxy", "m56", "mobile", "light", "green", "8gb", "ram"]

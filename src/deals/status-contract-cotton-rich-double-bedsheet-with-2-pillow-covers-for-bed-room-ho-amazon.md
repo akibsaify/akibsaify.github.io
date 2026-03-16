@@ -8,7 +8,7 @@ originalPrice: 799
 dealPrice: 299
 discountPercent: 63
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DHZP39G2?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DHZP39G2?tag=mas03ad-21"
 image: "/images/status-contract-cotton-rich-double-bedsheet-with-2-pillow-covers-for-bed-room-ho-amazon.jpg"
 expired: false
 tags: ["status", "contract", "cotton", "rich", "double", "bedsheet", "with", "pillow"]

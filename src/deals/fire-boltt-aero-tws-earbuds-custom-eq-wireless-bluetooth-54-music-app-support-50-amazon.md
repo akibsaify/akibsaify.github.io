@@ -8,7 +8,7 @@ originalPrice: 8999
 dealPrice: 699
 discountPercent: 92
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FM6B9Z45?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FM6B9Z45?tag=mas03ad-21"
 image: "/images/fire-boltt-aero-tws-earbuds-custom-eq-wireless-bluetooth-54-music-app-support-50-amazon.jpg"
 expired: false
 tags: ["fire", "boltt", "aero", "tws", "earbuds", "custom", "wireless", "bluetooth"]

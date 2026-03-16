@@ -38,6 +38,6 @@ If you're already set on buying smartwatch and just need a good deal — this is
 
 At ₹1,399 with 93% off, the **Fire-Boltt Ninja Call Pro Plus Bluetooth Calling Smart Watch** delivers solid value. Fire-Boltt makes reliable smartwatch, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0BF57RN3K?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0BF57RN3K?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

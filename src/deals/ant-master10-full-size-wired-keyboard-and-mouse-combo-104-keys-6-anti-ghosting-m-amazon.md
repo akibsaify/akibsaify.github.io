@@ -8,7 +8,7 @@ originalPrice: 1499
 dealPrice: 349
 discountPercent: 77
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FH25BLFV?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FH25BLFV?tag=mas03ad-21"
 image: "/images/ant-master10-full-size-wired-keyboard-and-mouse-combo-104-keys-6-anti-ghosting-m-amazon.jpg"
 expired: false
 tags: ["ant", "master10", "full", "size", "wired", "keyboard", "and", "mouse"]

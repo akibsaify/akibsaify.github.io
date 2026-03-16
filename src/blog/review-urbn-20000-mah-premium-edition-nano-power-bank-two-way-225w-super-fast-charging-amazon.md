@@ -37,6 +37,6 @@ If you're already set on buying power bank and just need a good deal — this is
 
 ₹3,600 off a URBN power bank? That's a no-brainer for most people. The **URBN 20000 mAh Premium Edition Nano Power Bank** at **₹1,399** won't stay at this price forever.
 
-**[Buy Now on Amazon — 72% Off →](https://www.amazon.in/dp/B0BXSR4ZBD?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 72% Off →](https://www.amazon.in/dp/B0BXSR4ZBD?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

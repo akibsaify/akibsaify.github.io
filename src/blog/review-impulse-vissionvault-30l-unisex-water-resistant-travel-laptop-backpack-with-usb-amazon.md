@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 ₹2,540 off a Impulse laptop? That's a no-brainer for most people. The **Impulse Vissionvault 30L Unisex Water Resistant Travel Laptop Bac...** at **₹459** won't stay at this price forever.
 
-**[Buy Now on Amazon — 85% Off →](https://www.amazon.in/dp/B0FS1PJ7H1?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 85% Off →](https://www.amazon.in/dp/B0FS1PJ7H1?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

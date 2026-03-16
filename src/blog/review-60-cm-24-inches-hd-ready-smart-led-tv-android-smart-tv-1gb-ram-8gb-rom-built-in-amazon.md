@@ -38,6 +38,6 @@ If you're already set on buying TV and just need a good deal — this is it.
 
 The **60 cm (24 Inches) HD Ready Smart LED TV** at **₹6,777** (~~₹12,999~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹6,222 on a 60 TV is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0GDG3Q5P5?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0GDG3Q5P5?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

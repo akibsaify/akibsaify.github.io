@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 At ₹1,799 with 64% off, the **NutriPro Juicer Mixer Grinder - Smoothie Maker - 500 Watts** delivers solid value. Nutripro makes reliable mixer, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B09J2SCVQT?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B09J2SCVQT?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

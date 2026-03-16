@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 ₹4,000 off a Blaupunkt speaker? That's a no-brainer for most people. The **Blaupunkt 2025 Launch ATOMIK Grab 20W Party Speaker Boombox** at **₹999** won't stay at this price forever.
 
-**[Buy Now on Amazon — 80% Off →](https://www.amazon.in/dp/B0DH8FHY3S?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 80% Off →](https://www.amazon.in/dp/B0DH8FHY3S?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

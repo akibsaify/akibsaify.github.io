@@ -37,6 +37,6 @@ If you're already set on buying smartwatch and just need a good deal — this is
 
 At ₹849 with 83% off, the **PunnkFunnk NovoLux HD Display Smartwatch for Men & Women Answer** delivers solid value. PunnkFunnk makes reliable smartwatch, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0DT98L8LJ?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0DT98L8LJ?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

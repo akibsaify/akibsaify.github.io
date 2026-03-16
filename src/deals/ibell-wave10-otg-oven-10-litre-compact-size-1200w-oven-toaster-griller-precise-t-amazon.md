@@ -8,7 +8,7 @@ originalPrice: 3999
 dealPrice: 2032
 discountPercent: 49
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DPKY2CX6?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DPKY2CX6?tag=mas03ad-21"
 image: "/images/ibell-wave10-otg-oven-10-litre-compact-size-1200w-oven-toaster-griller-precise-t-amazon.jpg"
 expired: false
 tags: ["ibell", "wave10", "otg", "oven", "litre", "compact", "size", "1200w"]

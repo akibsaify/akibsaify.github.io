@@ -8,7 +8,7 @@ originalPrice: 1199
 dealPrice: 799
 discountPercent: 33
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B07L8KNP5F?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B07L8KNP5F?tag=mas03ad-21"
 image: "/images/zebronics-thunder-bluetooth-53-wireless-headphones-with-60h-backup-gaming-mode-d-amazon.jpg"
 expired: false
 tags: ["zebronics", "thunder", "bluetooth", "wireless", "headphones", "with", "60h", "backup"]

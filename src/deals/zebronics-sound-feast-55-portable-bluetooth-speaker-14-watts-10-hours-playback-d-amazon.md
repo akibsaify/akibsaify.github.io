@@ -8,7 +8,7 @@ originalPrice: 2799
 dealPrice: 1299
 discountPercent: 54
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DQWTH8MK?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DQWTH8MK?tag=mas03ad-21"
 image: "/images/zebronics-sound-feast-55-portable-bluetooth-speaker-14-watts-10-hours-playback-d-amazon.jpg"
 expired: false
 tags: ["zebronics", "sound", "feast", "portable", "bluetooth", "speaker", "watts", "hours"]

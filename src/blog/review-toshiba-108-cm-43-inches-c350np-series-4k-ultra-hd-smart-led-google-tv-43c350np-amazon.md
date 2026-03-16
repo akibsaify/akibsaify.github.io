@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 At ₹20,999 with 48% off, the **Toshiba 108 cm (43 inches) C350NP Series 4K Ultra HD Smart LED Go...** delivers solid value. Toshiba makes reliable TV, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0D3XD9M5D?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0D3XD9M5D?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 ₹1,130 off a Zebronics speaker? That's a no-brainer for most people. The **ZEBRONICS Astra 35, Portable Bluetooth Speaker** at **₹769** won't stay at this price forever.
 
-**[Buy Now on Amazon — 60% Off →](https://www.amazon.in/dp/B0DJ3FFC8R?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 60% Off →](https://www.amazon.in/dp/B0DJ3FFC8R?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

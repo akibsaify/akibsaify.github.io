@@ -8,7 +8,7 @@ originalPrice: 18000
 dealPrice: 11739
 discountPercent: 35
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FDWFRC48?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FDWFRC48?tag=mas03ad-21"
 image: "/images/lenovo-tab-101-inch-display-wi-fi-only-4-gb-ram-64-gb-rom-expandable-up-to-1-tb-amazon.jpg"
 expired: false
 tags: ["lenovo", "tab", "inch", "display", "only", "ram", "rom", "expandable"]

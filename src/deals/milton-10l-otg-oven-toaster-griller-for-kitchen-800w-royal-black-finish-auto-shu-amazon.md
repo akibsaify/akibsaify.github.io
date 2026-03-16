@@ -8,7 +8,7 @@ originalPrice: 3999
 dealPrice: 2398
 discountPercent: 40
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FDQKQ638?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FDQKQ638?tag=mas03ad-21"
 image: "/images/milton-10l-otg-oven-toaster-griller-for-kitchen-800w-royal-black-finish-auto-shu-amazon.jpg"
 expired: false
 tags: ["milton", "10l", "otg", "oven", "toaster", "griller", "for", "kitchen"]

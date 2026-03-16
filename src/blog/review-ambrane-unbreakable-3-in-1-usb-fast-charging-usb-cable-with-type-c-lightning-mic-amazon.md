@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 ₹150 off a Ambrane tablet? That's a no-brainer for most people. The **Ambrane Unbreakable 3 in 1 USB Fast Charging USB Cable with Type C** at **₹249** won't stay at this price forever.
 
-**[Buy Now on Amazon — 38% Off →](https://www.amazon.in/dp/B094JNXNPV?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 38% Off →](https://www.amazon.in/dp/B094JNXNPV?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

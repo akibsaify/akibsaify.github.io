@@ -37,6 +37,6 @@ If you're already set on buying earbuds and just need a good deal — this is it
 
 At ₹699 with 80% off, the **Mivi DuoPods Sync Earbuds [New Launch]** delivers solid value. Mivi makes reliable earbuds, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0G2GGLTMF?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0G2GGLTMF?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

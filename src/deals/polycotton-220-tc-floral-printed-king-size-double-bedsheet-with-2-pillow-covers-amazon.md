@@ -8,7 +8,7 @@ originalPrice: 999
 dealPrice: 182
 discountPercent: 82
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0CJCDLRMV?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0CJCDLRMV?tag=mas03ad-21"
 image: "/images/polycotton-220-tc-floral-printed-king-size-double-bedsheet-with-2-pillow-covers-amazon.jpg"
 expired: false
 tags: ["polycotton", "220", "floral", "printed", "king", "size", "double", "bedsheet"]

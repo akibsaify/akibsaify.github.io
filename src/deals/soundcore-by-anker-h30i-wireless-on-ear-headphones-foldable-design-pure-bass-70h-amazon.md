@@ -8,7 +8,7 @@ originalPrice: 3999
 dealPrice: 1299
 discountPercent: 68
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0CD1FHLMH?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0CD1FHLMH?tag=mas03ad-21"
 image: "/images/soundcore-by-anker-h30i-wireless-on-ear-headphones-foldable-design-pure-bass-70h-amazon.jpg"
 expired: false
 tags: ["soundcore", "anker", "h30i", "wireless", "ear", "headphones", "foldable", "design"]

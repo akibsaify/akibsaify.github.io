@@ -8,7 +8,7 @@ originalPrice: 1499
 dealPrice: 489
 discountPercent: 67
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FQV7DSSG?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FQV7DSSG?tag=mas03ad-21"
 image: "/images/geonix-helio-r100-10000-mah-225w-fast-charging-power-bank-ultra-slim-power-bank-amazon.jpg"
 expired: false
 tags: ["geonix", "helio", "r100", "10000", "mah", "fast", "charging", "power"]

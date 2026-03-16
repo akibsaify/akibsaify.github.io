@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 The **Noise Pulse 2 Max 1.85 inch Display** at **₹1,399** (~~₹5,999~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹4,600 on a Noise smartwatch is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0B6BPTFT5?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0B6BPTFT5?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

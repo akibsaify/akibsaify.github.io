@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 ₹1,300 off a Zebronics keyboard? That's a no-brainer for most people. The **Zebronics Zeb-Transformer Gaming Keyboard and Mouse Combo (USB** at **₹1,099** won't stay at this price forever.
 
-**[Buy Now on Amazon — 54% Off →](https://www.amazon.in/dp/B07BRKK9JQ?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 54% Off →](https://www.amazon.in/dp/B07BRKK9JQ?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

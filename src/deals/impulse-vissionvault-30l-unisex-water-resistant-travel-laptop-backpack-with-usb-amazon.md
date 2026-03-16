@@ -8,7 +8,7 @@ originalPrice: 2999
 dealPrice: 459
 discountPercent: 85
 couponCode: "Save 2%"
-affiliateLink: "https://www.amazon.in/dp/B0FS1PJ7H1?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FS1PJ7H1?tag=mas03ad-21"
 image: "/images/impulse-vissionvault-30l-unisex-water-resistant-travel-laptop-backpack-with-usb-amazon.jpg"
 expired: false
 tags: ["impulse", "vissionvault", "30l", "unisex", "water", "resistant", "travel", "laptop"]

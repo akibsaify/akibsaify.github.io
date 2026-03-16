@@ -8,7 +8,7 @@ originalPrice: 1599
 dealPrice: 529
 discountPercent: 67
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0CGP252T4?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0CGP252T4?tag=mas03ad-21"
 image: "/images/lapcare-smart-tank-10000mah-fast-charging-power-bank-dual-usb-port-led-indicator-amazon.jpg"
 expired: false
 tags: ["lapcare", "smart", "tank", "10000mah", "fast", "charging", "power", "bank"]

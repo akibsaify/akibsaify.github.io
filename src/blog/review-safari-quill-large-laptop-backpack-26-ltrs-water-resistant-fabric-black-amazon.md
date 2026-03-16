@@ -42,6 +42,6 @@ For most people though, this is a solid buy at this price.
 
 The **Safari Quill Large Laptop Backpack 26 Ltrs Water Resistant Fabric...** at **₹699** (~~₹2,899~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹2,200 on a Safari laptop is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B09B25Z8M2?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B09B25Z8M2?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

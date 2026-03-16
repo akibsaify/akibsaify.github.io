@@ -8,7 +8,7 @@ originalPrice: 499
 dealPrice: 99
 discountPercent: 80
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0G2HDVHK2?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0G2HDVHK2?tag=mas03ad-21"
 image: "/images/hair-trimmerelectric-shaving-machineadjustable-blade-clippertrimmer-for-menbody-amazon.jpg"
 expired: false
 tags: ["hair", "trimmer", "electric", "shaving", "machine", "adjustable", "blade", "clipper"]

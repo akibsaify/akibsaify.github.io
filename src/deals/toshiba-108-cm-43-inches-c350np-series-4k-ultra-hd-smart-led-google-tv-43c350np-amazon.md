@@ -8,7 +8,7 @@ originalPrice: 39999
 dealPrice: 20999
 discountPercent: 48
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0D3XD9M5D?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D3XD9M5D?tag=mas03ad-21"
 image: "/images/toshiba-108-cm-43-inches-c350np-series-4k-ultra-hd-smart-led-google-tv-43c350np-amazon.jpg"
 expired: false
 tags: ["toshiba", "108", "inches", "c350np", "series", "ultra", "smart", "led"]

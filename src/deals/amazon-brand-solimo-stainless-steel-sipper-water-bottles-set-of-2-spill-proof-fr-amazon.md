@@ -8,7 +8,7 @@ originalPrice: 1099
 dealPrice: 539
 discountPercent: 51
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0BMQPP2TB?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0BMQPP2TB?tag=mas03ad-21"
 image: "/images/amazon-brand-solimo-stainless-steel-sipper-water-bottles-set-of-2-spill-proof-fr-amazon.jpg"
 expired: false
 tags: ["amazon", "brand", "solimo", "stainless", "steel", "sipper", "water", "bottles"]

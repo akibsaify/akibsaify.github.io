@@ -8,7 +8,7 @@ originalPrice: 1999
 dealPrice: 849
 discountPercent: 58
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FN87F535?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FN87F535?tag=mas03ad-21"
 image: "/images/zebronics-wireless-keyboard-mouse-combo-104-uv-printed-keys-key-12-multimedia-ke-amazon.jpg"
 expired: false
 tags: ["zebronics", "wireless", "keyboard", "mouse", "combo", "104", "printed", "keys"]

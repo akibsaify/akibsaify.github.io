@@ -8,7 +8,7 @@ originalPrice: 35990
 dealPrice: 16990
 discountPercent: 53
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DZHRYFG7?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DZHRYFG7?tag=mas03ad-21"
 image: "/images/tcl-101-cms-40-inches-v5c-series-full-hd-smart-qled-tv-google-tv-40v5c-amazon.jpg"
 expired: false
 tags: ["tcl", "101", "cms", "inches", "v5c", "series", "full", "smart"]

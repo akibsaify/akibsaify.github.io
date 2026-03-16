@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 ₹728 off a Wesley laptop? That's a no-brainer for most people. The **Wesley Vintage Milestone Travel Laptop Backpack with 15.6 inch La...** at **₹471** won't stay at this price forever.
 
-**[Buy Now on Amazon — 61% Off →](https://www.amazon.in/dp/B085S444JV?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 61% Off →](https://www.amazon.in/dp/B085S444JV?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

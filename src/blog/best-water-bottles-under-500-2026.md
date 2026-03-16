@@ -16,11 +16,11 @@ Here's what we found.
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Frenchware Water Bottle (1 Litre](https://www.amazon.in/dp/B0D8W7KHCP?tag=dealdrops0d-21) | ₹199 | ~~₹1,499~~ | 87% off |
-| [Boldfit Stainless Steel Water Bottle – BPA...](https://www.amazon.in/dp/B0FCFC9ZTV?tag=dealdrops0d-21) | ₹249 | ~~₹799~~ | 69% off |
-| [PEXPO Water Bottle 1 ltr Stainless Steel S...](https://www.amazon.in/dp/B0DRCYP93L?tag=dealdrops0d-21) | ₹289 | ~~₹649~~ | 55% off |
-| [Aristocrat Nova 15L Laptop Backpack for Me...](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21) | ₹379 | ~~₹999~~ | 62% off |
-| [Boldfit Water Bottles Stainless Steel Wate...](https://www.amazon.in/dp/B0DN5LKS1Q?tag=dealdrops0d-21) | ₹449 | ~~₹1,599~~ | 72% off |
+| [Frenchware Water Bottle (1 Litre](https://www.amazon.in/dp/B0D8W7KHCP?tag=mas03ad-21) | ₹199 | ~~₹1,499~~ | 87% off |
+| [Boldfit Stainless Steel Water Bottle – BPA...](https://www.amazon.in/dp/B0FCFC9ZTV?tag=mas03ad-21) | ₹249 | ~~₹799~~ | 69% off |
+| [PEXPO Water Bottle 1 ltr Stainless Steel S...](https://www.amazon.in/dp/B0DRCYP93L?tag=mas03ad-21) | ₹289 | ~~₹649~~ | 55% off |
+| [Aristocrat Nova 15L Laptop Backpack for Me...](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21) | ₹379 | ~~₹999~~ | 62% off |
+| [Boldfit Water Bottles Stainless Steel Wate...](https://www.amazon.in/dp/B0DN5LKS1Q?tag=mas03ad-21) | ₹449 | ~~₹1,599~~ | 72% off |
 
 ---
 
@@ -40,7 +40,7 @@ Here's what we found.
 
 Currently going for ₹199 (down from ₹1,499), this is one of the better deals we've seen on Frenchware Water Bottle (1 Litre.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D8W7KHCP?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D8W7KHCP?tag=mas03ad-21)**
 
 ---
 
@@ -56,7 +56,7 @@ Currently going for ₹199 (down from ₹1,499), this is one of the better deals
 
 At 69% off, the Boldfit Stainless Steel Water Bottle – BPA-Free is a steal. You save ₹550 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FCFC9ZTV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FCFC9ZTV?tag=mas03ad-21)**
 
 ---
 
@@ -72,7 +72,7 @@ At 69% off, the Boldfit Stainless Steel Water Bottle – BPA-Free is a steal. Yo
 
 At 55% off, the PEXPO Water Bottle 1 ltr Stainless Steel Sports/Fridge Bottle with Sipper Cap is a steal. You save ₹360 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DRCYP93L?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DRCYP93L?tag=mas03ad-21)**
 
 ---
 
@@ -88,7 +88,7 @@ At 55% off, the PEXPO Water Bottle 1 ltr Stainless Steel Sports/Fridge Bottle wi
 
 At 62% off, the Aristocrat Nova 15L Laptop Backpack for Men & Women with Bottle Pocket is a steal. You save ₹620 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21)**
 
 ---
 
@@ -104,7 +104,7 @@ At 62% off, the Aristocrat Nova 15L Laptop Backpack for Men & Women with Bottle 
 
 Currently going for ₹449 (down from ₹1,599), this is one of the better deals we've seen on Boldfit Water Bottles Stainless Steel Water Bottle 1 Litre Steel Water Bottles.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DN5LKS1Q?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DN5LKS1Q?tag=mas03ad-21)**
 
 ---
 

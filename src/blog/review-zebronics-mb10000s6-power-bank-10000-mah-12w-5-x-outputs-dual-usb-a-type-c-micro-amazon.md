@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 At ₹617 with 67% off, the **ZEBRONICS MB10000S6 Power Bank, 10000 mAh, 12W, 5 x Outputs - Dua...** delivers solid value. Zebronics makes reliable power bank, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0D22M58MR?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0D22M58MR?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

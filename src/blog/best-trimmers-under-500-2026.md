@@ -16,9 +16,9 @@ All prices below are verified deal prices — most include significant discounts
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Hair Trimmer,Electric Shaving Machine](https://www.amazon.in/dp/B0G2HDVHK2?tag=dealdrops0d-21) | ₹99 | ~~₹499~~ | 80% off |
-| [New Offer T9 Vintage Professional Hair Tri...](https://www.amazon.in/dp/B0G93PWRPV?tag=dealdrops0d-21) | ₹99 | ~~₹499~~ | 80% off |
-| [Nova NHT 1076 Cordless: 30 Minutes Runtime...](https://www.amazon.in/dp/B07JLBFYX7?tag=dealdrops0d-21) | ₹408 | ~~₹899~~ | 55% off |
+| [Hair Trimmer,Electric Shaving Machine](https://www.amazon.in/dp/B0G2HDVHK2?tag=mas03ad-21) | ₹99 | ~~₹499~~ | 80% off |
+| [New Offer T9 Vintage Professional Hair Tri...](https://www.amazon.in/dp/B0G93PWRPV?tag=mas03ad-21) | ₹99 | ~~₹499~~ | 80% off |
+| [Nova NHT 1076 Cordless: 30 Minutes Runtime...](https://www.amazon.in/dp/B07JLBFYX7?tag=mas03ad-21) | ₹408 | ~~₹899~~ | 55% off |
 
 ---
 
@@ -38,7 +38,7 @@ All prices below are verified deal prices — most include significant discounts
 
 This Hair Trimmer,Electric Shaving Machine drops from ₹499 to just ₹99 — that's a saving of ₹400.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0G2HDVHK2?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0G2HDVHK2?tag=mas03ad-21)**
 
 ---
 
@@ -54,7 +54,7 @@ This Hair Trimmer,Electric Shaving Machine drops from ₹499 to just ₹99 — t
 
 If you're looking for something reliable without overspending, New Offer T9 Vintage Professional Hair Trimmer For Men –Golden Body at ₹99 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0G93PWRPV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0G93PWRPV?tag=mas03ad-21)**
 
 ---
 
@@ -70,7 +70,7 @@ If you're looking for something reliable without overspending, New Offer T9 Vint
 
 At 55% off, the Nova NHT 1076 Cordless: 30 Minutes Runtime Trimmer for Men (Black) is a steal. You save ₹491 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B07JLBFYX7?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B07JLBFYX7?tag=mas03ad-21)**
 
 ---
 

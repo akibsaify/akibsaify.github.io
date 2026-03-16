@@ -37,6 +37,6 @@ If you're already set on buying keyboard and just need a good deal — this is i
 
 The **Dell KM3322W Wireless USB Keyboard and Mouse Combo** at **₹1,349** (~~₹2,499~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹1,150 on a Dell keyboard is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B09T3H12GV?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B09T3H12GV?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

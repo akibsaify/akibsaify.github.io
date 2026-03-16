@@ -37,6 +37,6 @@ If you're already set on buying laptop and just need a good deal — this is it.
 
 ₹620 off a Nova laptop? That's a no-brainer for most people. The **Aristocrat Nova 15L Laptop Backpack for Men & Women with Bottle P...** at **₹379** won't stay at this price forever.
 
-**[Buy Now on Amazon — 62% Off →](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 62% Off →](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

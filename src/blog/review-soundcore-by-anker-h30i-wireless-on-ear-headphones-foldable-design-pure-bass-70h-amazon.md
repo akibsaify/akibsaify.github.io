@@ -38,6 +38,6 @@ If you're already set on buying headphones and just need a good deal — this is
 
 ₹2,700 off a soundcore headphones? That's a no-brainer for most people. The **soundcore by Anker H30i Wireless On-Ear Headphones** at **₹1,299** won't stay at this price forever.
 
-**[Buy Now on Amazon — 68% Off →](https://www.amazon.in/dp/B0CD1FHLMH?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 68% Off →](https://www.amazon.in/dp/B0CD1FHLMH?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

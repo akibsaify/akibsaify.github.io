@@ -8,7 +8,7 @@ originalPrice: 3999
 dealPrice: 899
 discountPercent: 78
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0D96HMLYX?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D96HMLYX?tag=mas03ad-21"
 image: "/images/amazon-basics-20000-mah-power-bank-225w-fast-charging-dual-output-input-charge-3-amazon.jpg"
 expired: false
 tags: ["amazon", "basics", "20000", "mah", "power", "bank", "fast", "charging"]

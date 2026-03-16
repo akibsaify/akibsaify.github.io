@@ -8,7 +8,7 @@ originalPrice: 999
 dealPrice: 379
 discountPercent: 62
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21"
 image: "/images/aristocrat-nova-15l-laptop-backpack-for-men-women-with-bottle-pocket-padded-shou-amazon.jpg"
 expired: false
 tags: ["aristocrat", "nova", "15l", "laptop", "backpack", "for", "men", "women"]

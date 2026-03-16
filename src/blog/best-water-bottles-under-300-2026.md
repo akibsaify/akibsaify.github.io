@@ -16,9 +16,9 @@ Here's what we found.
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Frenchware Water Bottle (1 Litre](https://www.amazon.in/dp/B0D8W7KHCP?tag=dealdrops0d-21) | ₹199 | ~~₹1,499~~ | 87% off |
-| [Boldfit Stainless Steel Water Bottle – BPA...](https://www.amazon.in/dp/B0FCFC9ZTV?tag=dealdrops0d-21) | ₹249 | ~~₹799~~ | 69% off |
-| [PEXPO Water Bottle 1 ltr Stainless Steel S...](https://www.amazon.in/dp/B0DRCYP93L?tag=dealdrops0d-21) | ₹289 | ~~₹649~~ | 55% off |
+| [Frenchware Water Bottle (1 Litre](https://www.amazon.in/dp/B0D8W7KHCP?tag=mas03ad-21) | ₹199 | ~~₹1,499~~ | 87% off |
+| [Boldfit Stainless Steel Water Bottle – BPA...](https://www.amazon.in/dp/B0FCFC9ZTV?tag=mas03ad-21) | ₹249 | ~~₹799~~ | 69% off |
+| [PEXPO Water Bottle 1 ltr Stainless Steel S...](https://www.amazon.in/dp/B0DRCYP93L?tag=mas03ad-21) | ₹289 | ~~₹649~~ | 55% off |
 
 ---
 
@@ -38,7 +38,7 @@ Here's what we found.
 
 If you're looking for something reliable without overspending, Frenchware Water Bottle (1 Litre at ₹199 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D8W7KHCP?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D8W7KHCP?tag=mas03ad-21)**
 
 ---
 
@@ -54,7 +54,7 @@ If you're looking for something reliable without overspending, Frenchware Water 
 
 This Boldfit Stainless Steel Water Bottle – BPA-Free drops from ₹799 to just ₹249 — that's a saving of ₹550.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FCFC9ZTV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FCFC9ZTV?tag=mas03ad-21)**
 
 ---
 
@@ -70,7 +70,7 @@ This Boldfit Stainless Steel Water Bottle – BPA-Free drops from ₹799 to just
 
 A solid pick at this price point. PEXPO Water Bottle 1 ltr Stainless Steel Sports/Fridge Bottle with Sipper Cap offers good value with a 55% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DRCYP93L?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DRCYP93L?tag=mas03ad-21)**
 
 ---
 

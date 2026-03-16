@@ -38,6 +38,6 @@ If you're already set on buying laptop and just need a good deal — this is it.
 
 At ₹920 with 54% off, the **FUR JADEN 40L Weekender Travel Laptop Backpack with Anti Theft Pocket** delivers solid value. Fur Jaden makes reliable laptop, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0B34WJK3X?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B0B34WJK3X?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

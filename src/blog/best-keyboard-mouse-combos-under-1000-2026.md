@@ -16,11 +16,11 @@ All prices below are verified deal prices — most include significant discounts
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Ant MASTER10 Full Size Wired Keyboard and ...](https://www.amazon.in/dp/B0FH25BLFV?tag=dealdrops0d-21) | ₹349 | ~~₹1,499~~ | 77% off |
-| [Zebronics Wired Keyboard and Mouse Combo](https://www.amazon.in/dp/B07KR5P3YD?tag=dealdrops0d-21) | ₹594 | ~~₹1,499~~ | 60% off |
-| [Acer PalmEase Wired Keyboard & Mouse Combo...](https://www.amazon.in/dp/B0FCS5V5V1?tag=dealdrops0d-21) | ₹699 | ~~₹1,299~~ | 46% off |
-| [Lenovo 110 Keyboard & Mouse Wired Combo](https://www.amazon.in/dp/B0G7D9DV3M?tag=dealdrops0d-21) | ₹749 | ~~₹1,390~~ | 46% off |
-| [Zebronics Wireless Keyboard & Mouse Combo](https://www.amazon.in/dp/B0FN87F535?tag=dealdrops0d-21) | ₹849 | ~~₹1,999~~ | 58% off |
+| [Ant MASTER10 Full Size Wired Keyboard and ...](https://www.amazon.in/dp/B0FH25BLFV?tag=mas03ad-21) | ₹349 | ~~₹1,499~~ | 77% off |
+| [Zebronics Wired Keyboard and Mouse Combo](https://www.amazon.in/dp/B07KR5P3YD?tag=mas03ad-21) | ₹594 | ~~₹1,499~~ | 60% off |
+| [Acer PalmEase Wired Keyboard & Mouse Combo...](https://www.amazon.in/dp/B0FCS5V5V1?tag=mas03ad-21) | ₹699 | ~~₹1,299~~ | 46% off |
+| [Lenovo 110 Keyboard & Mouse Wired Combo](https://www.amazon.in/dp/B0G7D9DV3M?tag=mas03ad-21) | ₹749 | ~~₹1,390~~ | 46% off |
+| [Zebronics Wireless Keyboard & Mouse Combo](https://www.amazon.in/dp/B0FN87F535?tag=mas03ad-21) | ₹849 | ~~₹1,999~~ | 58% off |
 
 ---
 
@@ -40,7 +40,7 @@ All prices below are verified deal prices — most include significant discounts
 
 This Ant MASTER10 Full Size Wired Keyboard and Mouse Combo drops from ₹1,499 to just ₹349 — that's a saving of ₹1,150.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FH25BLFV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FH25BLFV?tag=mas03ad-21)**
 
 ---
 
@@ -56,7 +56,7 @@ This Ant MASTER10 Full Size Wired Keyboard and Mouse Combo drops from ₹1,499 t
 
 If you're looking for something reliable without overspending, Zebronics Wired Keyboard and Mouse Combo at ₹594 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B07KR5P3YD?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B07KR5P3YD?tag=mas03ad-21)**
 
 ---
 
@@ -72,7 +72,7 @@ If you're looking for something reliable without overspending, Zebronics Wired K
 
 If you're looking for something reliable without overspending, Acer PalmEase Wired Keyboard & Mouse Combo with Palm Rest at ₹699 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FCS5V5V1?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FCS5V5V1?tag=mas03ad-21)**
 
 ---
 
@@ -88,7 +88,7 @@ If you're looking for something reliable without overspending, Acer PalmEase Wir
 
 Currently going for ₹749 (down from ₹1,390), this is one of the better deals we've seen on Lenovo 110 Keyboard & Mouse Wired Combo.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0G7D9DV3M?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0G7D9DV3M?tag=mas03ad-21)**
 
 ---
 
@@ -104,7 +104,7 @@ Currently going for ₹749 (down from ₹1,390), this is one of the better deals
 
 This Zebronics Wireless Keyboard & Mouse Combo drops from ₹1,999 to just ₹849 — that's a saving of ₹1,150.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FN87F535?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FN87F535?tag=mas03ad-21)**
 
 ---
 

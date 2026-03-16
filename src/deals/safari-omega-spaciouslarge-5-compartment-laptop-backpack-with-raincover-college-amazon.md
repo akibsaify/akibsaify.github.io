@@ -8,7 +8,7 @@ originalPrice: 3396
 dealPrice: 649
 discountPercent: 81
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B097LC1DJ6?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B097LC1DJ6?tag=mas03ad-21"
 image: "/images/safari-omega-spaciouslarge-5-compartment-laptop-backpack-with-raincover-college-amazon.jpg"
 expired: false
 tags: ["safari", "omega", "spacious", "large", "compartment", "laptop", "backpack", "with"]

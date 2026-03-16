@@ -8,7 +8,7 @@ originalPrice: 2999
 dealPrice: 694
 discountPercent: 77
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0D5QTFT2T?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D5QTFT2T?tag=mas03ad-21"
 image: "/images/wesley-spartan-unisex-travel-hiking-laptop-bag-fits-upto-173-inch-with-raincover-amazon.jpg"
 expired: false
 tags: ["wesley", "spartan", "unisex", "travel", "hiking", "laptop", "bag", "fits"]

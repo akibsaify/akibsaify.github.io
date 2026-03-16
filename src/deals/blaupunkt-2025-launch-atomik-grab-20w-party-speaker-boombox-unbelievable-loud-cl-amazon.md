@@ -8,7 +8,7 @@ originalPrice: 4999
 dealPrice: 999
 discountPercent: 80
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DH8FHY3S?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DH8FHY3S?tag=mas03ad-21"
 image: "/images/blaupunkt-2025-launch-atomik-grab-20w-party-speaker-boombox-unbelievable-loud-cl-amazon.jpg"
 expired: false
 tags: ["blaupunkt", "2025", "launch", "atomik", "grab", "20w", "party", "speaker"]

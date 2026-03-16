@@ -37,6 +37,6 @@ If you're already set on buying TV and just need a good deal — this is it.
 
 The **acer 100 cm (40 inches) Ultra I Series FHD Smart LED Google TV AR...** at **₹14,990** (~~₹38,999~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹24,009 on a Acer TV is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0FDW1QWNC?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0FDW1QWNC?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

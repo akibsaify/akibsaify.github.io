@@ -16,13 +16,13 @@ Here are the best deals available right now on Amazon India, sorted by value. Ev
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Frenchware Water Bottle (1 Litre](https://www.amazon.in/dp/B0D8W7KHCP?tag=dealdrops0d-21) | ₹199 | ~~₹1,499~~ | 87% off |
-| [Boldfit Stainless Steel Water Bottle – BPA...](https://www.amazon.in/dp/B0FCFC9ZTV?tag=dealdrops0d-21) | ₹249 | ~~₹799~~ | 69% off |
-| [PEXPO Water Bottle 1 ltr Stainless Steel S...](https://www.amazon.in/dp/B0DRCYP93L?tag=dealdrops0d-21) | ₹289 | ~~₹649~~ | 55% off |
-| [Aristocrat Nova 15L Laptop Backpack for Me...](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21) | ₹379 | ~~₹999~~ | 62% off |
-| [Boldfit Water Bottles Stainless Steel Wate...](https://www.amazon.in/dp/B0DN5LKS1Q?tag=dealdrops0d-21) | ₹449 | ~~₹1,599~~ | 72% off |
-| [Amazon Brand - Solimo Stainless Steel Sipp...](https://www.amazon.in/dp/B0BMQPP2TB?tag=dealdrops0d-21) | ₹539 | ~~₹1,099~~ | 51% off |
-| [Perch Zenith ISI Certified Hot and Cold St...](https://www.amazon.in/dp/B0DFW6Y14L?tag=dealdrops0d-21) | ₹970 | ~~₹2,430~~ | 60% off |
+| [Frenchware Water Bottle (1 Litre](https://www.amazon.in/dp/B0D8W7KHCP?tag=mas03ad-21) | ₹199 | ~~₹1,499~~ | 87% off |
+| [Boldfit Stainless Steel Water Bottle – BPA...](https://www.amazon.in/dp/B0FCFC9ZTV?tag=mas03ad-21) | ₹249 | ~~₹799~~ | 69% off |
+| [PEXPO Water Bottle 1 ltr Stainless Steel S...](https://www.amazon.in/dp/B0DRCYP93L?tag=mas03ad-21) | ₹289 | ~~₹649~~ | 55% off |
+| [Aristocrat Nova 15L Laptop Backpack for Me...](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21) | ₹379 | ~~₹999~~ | 62% off |
+| [Boldfit Water Bottles Stainless Steel Wate...](https://www.amazon.in/dp/B0DN5LKS1Q?tag=mas03ad-21) | ₹449 | ~~₹1,599~~ | 72% off |
+| [Amazon Brand - Solimo Stainless Steel Sipp...](https://www.amazon.in/dp/B0BMQPP2TB?tag=mas03ad-21) | ₹539 | ~~₹1,099~~ | 51% off |
+| [Perch Zenith ISI Certified Hot and Cold St...](https://www.amazon.in/dp/B0DFW6Y14L?tag=mas03ad-21) | ₹970 | ~~₹2,430~~ | 60% off |
 
 ---
 
@@ -42,7 +42,7 @@ Here are the best deals available right now on Amazon India, sorted by value. Ev
 
 At 87% off, the Frenchware Water Bottle (1 Litre is a steal. You save ₹1,300 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D8W7KHCP?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D8W7KHCP?tag=mas03ad-21)**
 
 ---
 
@@ -58,7 +58,7 @@ At 87% off, the Frenchware Water Bottle (1 Litre is a steal. You save ₹1,300 c
 
 At 69% off, the Boldfit Stainless Steel Water Bottle – BPA-Free is a steal. You save ₹550 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FCFC9ZTV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FCFC9ZTV?tag=mas03ad-21)**
 
 ---
 
@@ -74,7 +74,7 @@ At 69% off, the Boldfit Stainless Steel Water Bottle – BPA-Free is a steal. Yo
 
 This PEXPO Water Bottle 1 ltr Stainless Steel Sports/Fridge Bottle with Sipper Cap drops from ₹649 to just ₹289 — that's a saving of ₹360.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DRCYP93L?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DRCYP93L?tag=mas03ad-21)**
 
 ---
 
@@ -90,7 +90,7 @@ This PEXPO Water Bottle 1 ltr Stainless Steel Sports/Fridge Bottle with Sipper C
 
 If you're looking for something reliable without overspending, Aristocrat Nova 15L Laptop Backpack for Men & Women with Bottle Pocket at ₹379 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FPWJX447?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FPWJX447?tag=mas03ad-21)**
 
 ---
 
@@ -106,7 +106,7 @@ If you're looking for something reliable without overspending, Aristocrat Nova 1
 
 Currently going for ₹449 (down from ₹1,599), this is one of the better deals we've seen on Boldfit Water Bottles Stainless Steel Water Bottle 1 Litre Steel Water Bottles.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DN5LKS1Q?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DN5LKS1Q?tag=mas03ad-21)**
 
 ---
 
@@ -122,7 +122,7 @@ Currently going for ₹449 (down from ₹1,599), this is one of the better deals
 
 This Amazon Brand - Solimo Stainless Steel Sipper Water Bottles drops from ₹1,099 to just ₹539 — that's a saving of ₹560.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0BMQPP2TB?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0BMQPP2TB?tag=mas03ad-21)**
 
 ---
 
@@ -138,7 +138,7 @@ This Amazon Brand - Solimo Stainless Steel Sipper Water Bottles drops from ₹1,
 
 This Perch Zenith ISI Certified Hot and Cold Steel Water Bottle 1 LTR drops from ₹2,430 to just ₹970 — that's a saving of ₹1,460.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DFW6Y14L?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DFW6Y14L?tag=mas03ad-21)**
 
 ---
 

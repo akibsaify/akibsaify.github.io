@@ -8,7 +8,7 @@ originalPrice: 3499
 dealPrice: 1199
 discountPercent: 66
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0CQJWMMG7?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0CQJWMMG7?tag=mas03ad-21"
 image: "/images/noise-buds-n1-truly-wireless-earbuds-with-chrome-finish-40h-of-playtime-quad-mic-amazon.jpg"
 expired: false
 tags: ["noise", "buds", "truly", "wireless", "earbuds", "with", "chrome", "finish"]

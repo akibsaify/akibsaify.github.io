@@ -38,6 +38,6 @@ If you're already set on buying smartphone and just need a good deal — this is
 
 ₹11,000 off a Samsung smartphone? That's a no-brainer for most people. The **Samsung Galaxy M56 5G Mobile (Light Green** at **₹22,999** won't stay at this price forever.
 
-**[Buy Now on Amazon — 32% Off →](https://www.amazon.in/dp/B0F43VZ4H1?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 32% Off →](https://www.amazon.in/dp/B0F43VZ4H1?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

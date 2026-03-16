@@ -38,6 +38,6 @@ If you're already set on buying trimmer and just need a good deal — this is it
 
 ₹896 off a Havells trimmer? That's a no-brainer for most people. The **Havells Bt5100C Rechargeable Beard Trimmer with Hypoallergenic Bl...** at **₹699** won't stay at this price forever.
 
-**[Buy Now on Amazon — 56% Off →](https://www.amazon.in/dp/B07C6CSF6K?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 56% Off →](https://www.amazon.in/dp/B07C6CSF6K?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

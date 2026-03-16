@@ -8,7 +8,7 @@ originalPrice: 1099
 dealPrice: 659
 discountPercent: 40
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B076CJMH9V?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B076CJMH9V?tag=mas03ad-21"
 image: "/images/van-heusen-amazon.jpg"
 expired: false
 tags: ["van", "heusen"]

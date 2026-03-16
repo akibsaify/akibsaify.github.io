@@ -16,14 +16,14 @@ Scroll down to see each deal with the exact discount and savings.
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Portronics Konnect Core 3 USB-A to Micro F...](https://www.amazon.in/dp/B0DTJ6BJYP?tag=dealdrops0d-21) | ₹115 | ~~₹499~~ | 77% off |
-| [TECHONTO® Ultra Boost Mini Portable Wirele...](https://www.amazon.in/dp/B0GNM6464L?tag=dealdrops0d-21) | ₹239 | ~~₹799~~ | 70% off |
-| [Prolet® Ultra Boost Mini Portable Bluetoot...](https://www.amazon.in/dp/B0GNMCJDBR?tag=dealdrops0d-21) | ₹249 | ~~₹799~~ | 69% off |
-| [ZEBRONICS Astra 35, Portable Bluetooth Spe...](https://www.amazon.in/dp/B0DJ3FFC8R?tag=dealdrops0d-21) | ₹769 | ~~₹1,899~~ | 60% off |
-| [Boat (2025) Stone 110 Bluetooth Speaker wi...](https://www.amazon.in/dp/B0F48NC7MZ?tag=dealdrops0d-21) | ₹799 | ~~₹2,490~~ | 68% off |
-| [pTron Newly Launched Fusion Tunes 10W Mini...](https://www.amazon.in/dp/B0D772K8X8?tag=dealdrops0d-21) | ₹799 | ~~₹3,199~~ | 75% off |
-| [Amazon Basics 20000 mAh Power Bank](https://www.amazon.in/dp/B0D96HMLYX?tag=dealdrops0d-21) | ₹899 | ~~₹3,999~~ | 78% off |
-| [Blaupunkt 2025 Launch ATOMIK Grab 20W Part...](https://www.amazon.in/dp/B0DH8FHY3S?tag=dealdrops0d-21) | ₹999 | ~~₹4,999~~ | 80% off |
+| [Portronics Konnect Core 3 USB-A to Micro F...](https://www.amazon.in/dp/B0DTJ6BJYP?tag=mas03ad-21) | ₹115 | ~~₹499~~ | 77% off |
+| [TECHONTO® Ultra Boost Mini Portable Wirele...](https://www.amazon.in/dp/B0GNM6464L?tag=mas03ad-21) | ₹239 | ~~₹799~~ | 70% off |
+| [Prolet® Ultra Boost Mini Portable Bluetoot...](https://www.amazon.in/dp/B0GNMCJDBR?tag=mas03ad-21) | ₹249 | ~~₹799~~ | 69% off |
+| [ZEBRONICS Astra 35, Portable Bluetooth Spe...](https://www.amazon.in/dp/B0DJ3FFC8R?tag=mas03ad-21) | ₹769 | ~~₹1,899~~ | 60% off |
+| [Boat (2025) Stone 110 Bluetooth Speaker wi...](https://www.amazon.in/dp/B0F48NC7MZ?tag=mas03ad-21) | ₹799 | ~~₹2,490~~ | 68% off |
+| [pTron Newly Launched Fusion Tunes 10W Mini...](https://www.amazon.in/dp/B0D772K8X8?tag=mas03ad-21) | ₹799 | ~~₹3,199~~ | 75% off |
+| [Amazon Basics 20000 mAh Power Bank](https://www.amazon.in/dp/B0D96HMLYX?tag=mas03ad-21) | ₹899 | ~~₹3,999~~ | 78% off |
+| [Blaupunkt 2025 Launch ATOMIK Grab 20W Part...](https://www.amazon.in/dp/B0DH8FHY3S?tag=mas03ad-21) | ₹999 | ~~₹4,999~~ | 80% off |
 
 ---
 
@@ -43,7 +43,7 @@ Scroll down to see each deal with the exact discount and savings.
 
 Currently going for ₹115 (down from ₹499), this is one of the better deals we've seen on Portronics Konnect Core 3 USB-A to Micro Fast Charging Cable for Smartphones.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DTJ6BJYP?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DTJ6BJYP?tag=mas03ad-21)**
 
 ---
 
@@ -59,7 +59,7 @@ Currently going for ₹115 (down from ₹499), this is one of the better deals w
 
 This TECHONTO® Ultra Boost Mini Portable Wireless Bluetooth Speaker with Heavy Bass drops from ₹799 to just ₹239 — that's a saving of ₹560.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GNM6464L?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GNM6464L?tag=mas03ad-21)**
 
 ---
 
@@ -75,7 +75,7 @@ This TECHONTO® Ultra Boost Mini Portable Wireless Bluetooth Speaker with Heavy 
 
 At 69% off, the Prolet® Ultra Boost Mini Portable Bluetooth Wireless Speaker is a steal. You save ₹550 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GNMCJDBR?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GNMCJDBR?tag=mas03ad-21)**
 
 ---
 
@@ -91,7 +91,7 @@ At 69% off, the Prolet® Ultra Boost Mini Portable Bluetooth Wireless Speaker is
 
 If you're looking for something reliable without overspending, ZEBRONICS Astra 35, Portable Bluetooth Speaker at ₹769 is worth considering.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DJ3FFC8R?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DJ3FFC8R?tag=mas03ad-21)**
 
 ---
 
@@ -107,7 +107,7 @@ If you're looking for something reliable without overspending, ZEBRONICS Astra 3
 
 Currently going for ₹799 (down from ₹2,490), this is one of the better deals we've seen on Boat (2025) Stone 110 Bluetooth Speaker with 3W Signature Sound.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0F48NC7MZ?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0F48NC7MZ?tag=mas03ad-21)**
 
 ---
 
@@ -123,7 +123,7 @@ Currently going for ₹799 (down from ₹2,490), this is one of the better deals
 
 At 75% off, the pTron Newly Launched Fusion Tunes 10W Mini Bluetooth Speaker is a steal. You save ₹2,400 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D772K8X8?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D772K8X8?tag=mas03ad-21)**
 
 ---
 
@@ -139,7 +139,7 @@ At 75% off, the pTron Newly Launched Fusion Tunes 10W Mini Bluetooth Speaker is 
 
 At 78% off, the Amazon Basics 20000 mAh Power Bank is a steal. You save ₹3,100 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D96HMLYX?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D96HMLYX?tag=mas03ad-21)**
 
 ---
 
@@ -155,7 +155,7 @@ At 78% off, the Amazon Basics 20000 mAh Power Bank is a steal. You save ₹3,100
 
 A solid pick at this price point. Blaupunkt 2025 Launch ATOMIK Grab 20W Party Speaker Boombox offers good value with a 80% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DH8FHY3S?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DH8FHY3S?tag=mas03ad-21)**
 
 ---
 

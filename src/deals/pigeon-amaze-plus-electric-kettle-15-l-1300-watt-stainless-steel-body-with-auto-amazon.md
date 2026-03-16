@@ -8,7 +8,7 @@ originalPrice: 1245
 dealPrice: 479
 discountPercent: 62
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B07WMS7TWB?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B07WMS7TWB?tag=mas03ad-21"
 image: "/images/pigeon-amaze-plus-electric-kettle-15-l-1300-watt-stainless-steel-body-with-auto-amazon.jpg"
 expired: false
 tags: ["pigeon", "amaze", "plus", "electric", "kettle", "1300", "watt", "stainless"]

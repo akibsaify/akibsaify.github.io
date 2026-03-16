@@ -8,7 +8,7 @@ originalPrice: 799
 dealPrice: 249
 discountPercent: 69
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0GNMCJDBR?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0GNMCJDBR?tag=mas03ad-21"
 image: "/images/prolet-ultra-boost-mini-portable-bluetooth-wireless-speaker-heavy-bass-clear-sou-amazon.jpg"
 expired: false
 tags: ["prolet", "ultra", "boost", "mini", "portable", "bluetooth", "wireless", "speaker"]

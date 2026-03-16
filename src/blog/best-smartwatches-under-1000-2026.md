@@ -16,11 +16,11 @@ Here are the best deals available right now on Amazon India, sorted by value. Ev
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Lapster USB all types smartwatch charger c...](https://www.amazon.in/dp/B09WJCRHKV?tag=dealdrops0d-21) | ₹149 | ~~₹999~~ | 85% off |
-| [Bouncefit D20 Y68 Fitness Band Smart Watch...](https://www.amazon.in/dp/B0C6F1GT12?tag=dealdrops0d-21) | ₹397 | ~~₹2,999~~ | 87% off |
-| [Bouncefit M I D116 Fitness Band Smart Watc...](https://www.amazon.in/dp/B0D95TMQ3M?tag=dealdrops0d-21) | ₹398 | ~~₹2,999~~ | 87% off |
-| [mi Smart Watch for Kids Men Boys 10-12 Yea...](https://www.amazon.in/dp/B0GPWBM6T1?tag=dealdrops0d-21) | ₹419 | ~~₹2,899~~ | 86% off |
-| [PunnkFunnk NovoLux HD Display Smartwatch f...](https://www.amazon.in/dp/B0DT98L8LJ?tag=dealdrops0d-21) | ₹849 | ~~₹4,999~~ | 83% off |
+| [Lapster USB all types smartwatch charger c...](https://www.amazon.in/dp/B09WJCRHKV?tag=mas03ad-21) | ₹149 | ~~₹999~~ | 85% off |
+| [Bouncefit D20 Y68 Fitness Band Smart Watch...](https://www.amazon.in/dp/B0C6F1GT12?tag=mas03ad-21) | ₹397 | ~~₹2,999~~ | 87% off |
+| [Bouncefit M I D116 Fitness Band Smart Watc...](https://www.amazon.in/dp/B0D95TMQ3M?tag=mas03ad-21) | ₹398 | ~~₹2,999~~ | 87% off |
+| [mi Smart Watch for Kids Men Boys 10-12 Yea...](https://www.amazon.in/dp/B0GPWBM6T1?tag=mas03ad-21) | ₹419 | ~~₹2,899~~ | 86% off |
+| [PunnkFunnk NovoLux HD Display Smartwatch f...](https://www.amazon.in/dp/B0DT98L8LJ?tag=mas03ad-21) | ₹849 | ~~₹4,999~~ | 83% off |
 
 ---
 
@@ -40,7 +40,7 @@ Here are the best deals available right now on Amazon India, sorted by value. Ev
 
 Currently going for ₹149 (down from ₹999), this is one of the better deals we've seen on Lapster USB all types smartwatch charger cable for Boat Xtend.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B09WJCRHKV?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B09WJCRHKV?tag=mas03ad-21)**
 
 ---
 
@@ -56,7 +56,7 @@ Currently going for ₹149 (down from ₹999), this is one of the better deals w
 
 A solid pick at this price point. Bouncefit D20 Y68 Fitness Band Smart Watch for Men offers good value with a 87% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0C6F1GT12?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0C6F1GT12?tag=mas03ad-21)**
 
 ---
 
@@ -72,7 +72,7 @@ A solid pick at this price point. Bouncefit D20 Y68 Fitness Band Smart Watch for
 
 This Bouncefit M I D116 Fitness Band Smart Watch for Men drops from ₹2,999 to just ₹398 — that's a saving of ₹2,601.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D95TMQ3M?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D95TMQ3M?tag=mas03ad-21)**
 
 ---
 
@@ -88,7 +88,7 @@ This Bouncefit M I D116 Fitness Band Smart Watch for Men drops from ₹2,999 to 
 
 A solid pick at this price point. mi Smart Watch for Kids Men Boys 10-12 Years Old offers good value with a 86% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GPWBM6T1?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GPWBM6T1?tag=mas03ad-21)**
 
 ---
 
@@ -104,7 +104,7 @@ A solid pick at this price point. mi Smart Watch for Kids Men Boys 10-12 Years O
 
 Currently going for ₹849 (down from ₹4,999), this is one of the better deals we've seen on PunnkFunnk NovoLux HD Display Smartwatch for Men & Women Answer/Make Calls.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DT98L8LJ?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DT98L8LJ?tag=mas03ad-21)**
 
 ---
 

@@ -8,7 +8,7 @@ originalPrice: 3199
 dealPrice: 799
 discountPercent: 75
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FGV2CNN5?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FGV2CNN5?tag=mas03ad-21"
 image: "/images/ptron-studio-evo-70hrs-playtime-wireless-over-ear-headphones-with-hd-mic-low-lat-amazon.jpg"
 expired: false
 tags: ["ptron", "studio", "evo", "70hrs", "playtime", "wireless", "over", "ear"]

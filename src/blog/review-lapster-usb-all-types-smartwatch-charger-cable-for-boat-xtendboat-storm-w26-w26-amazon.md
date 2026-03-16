@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 ₹850 off a Lapster smartwatch? That's a no-brainer for most people. The **Lapster USB all types smartwatch charger cable for Boat Xtend** at **₹149** won't stay at this price forever.
 
-**[Buy Now on Amazon — 85% Off →](https://www.amazon.in/dp/B09WJCRHKV?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 85% Off →](https://www.amazon.in/dp/B09WJCRHKV?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

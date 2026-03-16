@@ -38,6 +38,6 @@ If you're already set on buying water bottle and just need a good deal — this 
 
 ₹1,460 off a Perch water bottle? That's a no-brainer for most people. The **Perch Zenith ISI Certified Hot and Cold Steel Water Bottle 1 LTR** at **₹970** won't stay at this price forever.
 
-**[Buy Now on Amazon — 60% Off →](https://www.amazon.in/dp/B0DFW6Y14L?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 60% Off →](https://www.amazon.in/dp/B0DFW6Y14L?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

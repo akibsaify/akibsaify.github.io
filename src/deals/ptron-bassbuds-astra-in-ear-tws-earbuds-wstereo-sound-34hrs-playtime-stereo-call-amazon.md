@@ -8,7 +8,7 @@ originalPrice: 2899
 dealPrice: 597
 discountPercent: 79
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0D78XSMSM?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D78XSMSM?tag=mas03ad-21"
 image: "/images/ptron-bassbuds-astra-in-ear-tws-earbuds-wstereo-sound-34hrs-playtime-stereo-call-amazon.jpg"
 expired: false
 tags: ["ptron", "bassbuds", "astra", "ear", "tws", "earbuds", "stereo", "sound"]

@@ -8,7 +8,7 @@ originalPrice: 499
 dealPrice: 99
 discountPercent: 80
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0G93PWRPV?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0G93PWRPV?tag=mas03ad-21"
 image: "/images/new-offer-t9-vintage-professional-hair-trimmer-for-men-golden-bodycordless4-guid-amazon.jpg"
 expired: false
 tags: ["new", "offer", "vintage", "professional", "hair", "trimmer", "for", "men"]

@@ -8,7 +8,7 @@ originalPrice: 1499
 dealPrice: 199
 discountPercent: 87
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0D8W7KHCP?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D8W7KHCP?tag=mas03ad-21"
 image: "/images/frenchware-water-bottle-1-litre-premium-stainless-steel-teal-bottle-for-fridge-s-amazon.jpg"
 expired: false
 tags: ["frenchware", "water", "bottle", "litre", "premium", "stainless", "steel", "teal"]

@@ -8,7 +8,7 @@ originalPrice: 1700
 dealPrice: 1109
 discountPercent: 35
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0BWRKRHST?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0BWRKRHST?tag=mas03ad-21"
 image: "/images/amazon-solimo-set-of-3-stainless-steel-casseroles-glass-lid-flat-bottom-dishwash-amazon.jpg"
 expired: false
 tags: ["amazon", "solimo", "set", "stainless", "steel", "casseroles", "glass", "lid"]

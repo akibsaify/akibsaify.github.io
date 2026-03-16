@@ -37,6 +37,6 @@ If you're already set on buying water bottle and just need a good deal — this 
 
 The **PEXPO Water Bottle 1 ltr Stainless Steel Sports** at **₹289** (~~₹649~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹360 on a PEXPO water bottle is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0DRCYP93L?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0DRCYP93L?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

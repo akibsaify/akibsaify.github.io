@@ -8,7 +8,7 @@ originalPrice: 399
 dealPrice: 249
 discountPercent: 38
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B094JNXNPV?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B094JNXNPV?tag=mas03ad-21"
 image: "/images/ambrane-unbreakable-3-in-1-usb-fast-charging-usb-cable-with-type-c-lightning-mic-amazon.jpg"
 expired: false
 tags: ["ambrane", "unbreakable", "usb", "fast", "charging", "usb", "cable", "with"]

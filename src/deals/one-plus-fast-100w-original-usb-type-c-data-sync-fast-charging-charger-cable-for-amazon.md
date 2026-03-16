@@ -8,7 +8,7 @@ originalPrice: 999
 dealPrice: 250
 discountPercent: 75
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B099S3F6ZD?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B099S3F6ZD?tag=mas03ad-21"
 image: "/images/one-plus-fast-100w-original-usb-type-c-data-sync-fast-charging-charger-cable-for-amazon.jpg"
 expired: false
 tags: ["one", "plus", "fast", "100w", "original", "usb", "type", "data"]

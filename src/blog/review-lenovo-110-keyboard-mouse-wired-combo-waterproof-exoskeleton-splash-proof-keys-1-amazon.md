@@ -37,6 +37,6 @@ If you're already set on buying keyboard and just need a good deal — this is i
 
 ₹641 off a Lenovo keyboard? That's a no-brainer for most people. The **Lenovo 110 Keyboard & Mouse Wired Combo** at **₹749** won't stay at this price forever.
 
-**[Buy Now on Amazon — 46% Off →](https://www.amazon.in/dp/B0G7D9DV3M?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 46% Off →](https://www.amazon.in/dp/B0G7D9DV3M?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

@@ -8,7 +8,7 @@ originalPrice: 12999
 dealPrice: 6777
 discountPercent: 48
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0GDG3Q5P5?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0GDG3Q5P5?tag=mas03ad-21"
 image: "/images/60-cm-24-inches-hd-ready-smart-led-tv-android-smart-tv-1gb-ram-8gb-rom-built-in-amazon.jpg"
 expired: false
 tags: ["inches", "ready", "smart", "led", "android", "smart", "1gb", "ram"]

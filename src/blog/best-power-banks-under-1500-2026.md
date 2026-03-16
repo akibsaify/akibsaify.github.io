@@ -16,13 +16,13 @@ All prices below are verified deal prices — most include significant discounts
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Geonix Helio R100 10000 mAh 22.5W Fast Cha...](https://www.amazon.in/dp/B0FQV7DSSG?tag=dealdrops0d-21) | ₹489 | ~~₹1,499~~ | 67% off |
-| [Salpido 10000mAh Power Bank with Dual Output](https://www.amazon.in/dp/B0GGBMDBG2?tag=dealdrops0d-21) | ₹499 | ~~₹1,999~~ | 75% off |
-| [LAPCARE Smart Tank 10000Mah Fast Charging ...](https://www.amazon.in/dp/B0CGP252T4?tag=dealdrops0d-21) | ₹529 | ~~₹1,599~~ | 67% off |
-| [ZEBRONICS MB10000S6 Power Bank, 10000 mAh,...](https://www.amazon.in/dp/B0D22M58MR?tag=dealdrops0d-21) | ₹617 | ~~₹1,899~~ | 67% off |
-| [Hammer Ultra Charge 10000mAh 22.5W Power B...](https://www.amazon.in/dp/B0CXM92ZHM?tag=dealdrops0d-21) | ₹749 | ~~₹2,199~~ | 66% off |
-| [Amazon Basics 20000 mAh Power Bank](https://www.amazon.in/dp/B0D96HMLYX?tag=dealdrops0d-21) | ₹899 | ~~₹3,999~~ | 78% off |
-| [URBN 20000 mAh Premium Edition Nano Power ...](https://www.amazon.in/dp/B0BXSR4ZBD?tag=dealdrops0d-21) | ₹1,399 | ~~₹4,999~~ | 72% off |
+| [Geonix Helio R100 10000 mAh 22.5W Fast Cha...](https://www.amazon.in/dp/B0FQV7DSSG?tag=mas03ad-21) | ₹489 | ~~₹1,499~~ | 67% off |
+| [Salpido 10000mAh Power Bank with Dual Output](https://www.amazon.in/dp/B0GGBMDBG2?tag=mas03ad-21) | ₹499 | ~~₹1,999~~ | 75% off |
+| [LAPCARE Smart Tank 10000Mah Fast Charging ...](https://www.amazon.in/dp/B0CGP252T4?tag=mas03ad-21) | ₹529 | ~~₹1,599~~ | 67% off |
+| [ZEBRONICS MB10000S6 Power Bank, 10000 mAh,...](https://www.amazon.in/dp/B0D22M58MR?tag=mas03ad-21) | ₹617 | ~~₹1,899~~ | 67% off |
+| [Hammer Ultra Charge 10000mAh 22.5W Power B...](https://www.amazon.in/dp/B0CXM92ZHM?tag=mas03ad-21) | ₹749 | ~~₹2,199~~ | 66% off |
+| [Amazon Basics 20000 mAh Power Bank](https://www.amazon.in/dp/B0D96HMLYX?tag=mas03ad-21) | ₹899 | ~~₹3,999~~ | 78% off |
+| [URBN 20000 mAh Premium Edition Nano Power ...](https://www.amazon.in/dp/B0BXSR4ZBD?tag=mas03ad-21) | ₹1,399 | ~~₹4,999~~ | 72% off |
 
 ---
 
@@ -42,7 +42,7 @@ All prices below are verified deal prices — most include significant discounts
 
 Currently going for ₹489 (down from ₹1,499), this is one of the better deals we've seen on Geonix Helio R100 10000 mAh 22.5W Fast Charging Power Bank.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0FQV7DSSG?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0FQV7DSSG?tag=mas03ad-21)**
 
 ---
 
@@ -58,7 +58,7 @@ Currently going for ₹489 (down from ₹1,499), this is one of the better deals
 
 Currently going for ₹499 (down from ₹1,999), this is one of the better deals we've seen on Salpido 10000mAh Power Bank with Dual Output.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GGBMDBG2?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GGBMDBG2?tag=mas03ad-21)**
 
 ---
 
@@ -74,7 +74,7 @@ Currently going for ₹499 (down from ₹1,999), this is one of the better deals
 
 This LAPCARE Smart Tank 10000Mah Fast Charging Power Bank drops from ₹1,599 to just ₹529 — that's a saving of ₹1,070.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0CGP252T4?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0CGP252T4?tag=mas03ad-21)**
 
 ---
 
@@ -90,7 +90,7 @@ This LAPCARE Smart Tank 10000Mah Fast Charging Power Bank drops from ₹1,599 to
 
 This ZEBRONICS MB10000S6 Power Bank, 10000 mAh, 12W, 5 x Outputs - Dual USB A drops from ₹1,899 to just ₹617 — that's a saving of ₹1,282.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D22M58MR?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D22M58MR?tag=mas03ad-21)**
 
 ---
 
@@ -106,7 +106,7 @@ This ZEBRONICS MB10000S6 Power Bank, 10000 mAh, 12W, 5 x Outputs - Dual USB A dr
 
 A solid pick at this price point. Hammer Ultra Charge 10000mAh 22.5W Power Bank 20W PD Fast Charging offers good value with a 66% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0CXM92ZHM?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0CXM92ZHM?tag=mas03ad-21)**
 
 ---
 
@@ -122,7 +122,7 @@ A solid pick at this price point. Hammer Ultra Charge 10000mAh 22.5W Power Bank 
 
 A solid pick at this price point. Amazon Basics 20000 mAh Power Bank offers good value with a 78% discount off the original MRP.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0D96HMLYX?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0D96HMLYX?tag=mas03ad-21)**
 
 ---
 
@@ -138,7 +138,7 @@ A solid pick at this price point. Amazon Basics 20000 mAh Power Bank offers good
 
 Currently going for ₹1,399 (down from ₹4,999), this is one of the better deals we've seen on URBN 20000 mAh Premium Edition Nano Power Bank.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0BXSR4ZBD?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0BXSR4ZBD?tag=mas03ad-21)**
 
 ---
 

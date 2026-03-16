@@ -38,6 +38,6 @@ If you're already set on buying TV and just need a good deal — this is it.
 
 The **VW 80 cm (32 inches) Frameless Series HD Ready Android Smart LED...** at **₹7,999** (~~₹16,999~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹9,000 on a VW TV is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B07MNNH484?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B07MNNH484?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

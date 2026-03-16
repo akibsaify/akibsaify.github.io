@@ -8,7 +8,7 @@ originalPrice: 1190
 dealPrice: 511
 discountPercent: 57
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B01BVDS1BE?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B01BVDS1BE?tag=mas03ad-21"
 image: "/images/ganesh-14-in-1-multipurpose-chopper-fruits-vegetable-cutters-grater-peeler-chips-amazon.jpg"
 expired: false
 tags: ["ganesh", "multipurpose", "chopper", "fruits", "vegetable", "cutters", "grater", "peeler"]

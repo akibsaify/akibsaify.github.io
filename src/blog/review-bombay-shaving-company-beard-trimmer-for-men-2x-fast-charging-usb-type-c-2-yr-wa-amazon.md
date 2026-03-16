@@ -38,6 +38,6 @@ If you're already set on buying trimmer and just need a good deal — this is it
 
 ₹504 off a Bombay Shaving trimmer? That's a no-brainer for most people. The **Bombay Shaving Company Beard Trimmer For Men** at **₹695** won't stay at this price forever.
 
-**[Buy Now on Amazon — 42% Off →](https://www.amazon.in/dp/B098P8NRRW?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 42% Off →](https://www.amazon.in/dp/B098P8NRRW?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

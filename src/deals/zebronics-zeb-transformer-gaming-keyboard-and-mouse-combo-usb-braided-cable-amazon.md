@@ -8,7 +8,7 @@ originalPrice: 2399
 dealPrice: 1099
 discountPercent: 54
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B07BRKK9JQ?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B07BRKK9JQ?tag=mas03ad-21"
 image: "/images/zebronics-zeb-transformer-gaming-keyboard-and-mouse-combo-usb-braided-cable-amazon.jpg"
 expired: false
 tags: ["zebronics", "zeb", "transformer", "gaming", "keyboard", "and", "mouse", "combo"]

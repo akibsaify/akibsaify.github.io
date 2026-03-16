@@ -37,6 +37,6 @@ If you're already set on buying speaker and just need a good deal — this is it
 
 ₹3,091 off a boAt speaker? That's a no-brainer for most people. The **Boat Stone 352 Pro/Stone 358 Pro w/ 14W Signature Sound** at **₹1,899** won't stay at this price forever.
 
-**[Buy Now on Amazon — 62% Off →](https://www.amazon.in/dp/B0D6W7F7WH?tag=dealdrops0d-21)**
+**[Buy Now on Amazon — 62% Off →](https://www.amazon.in/dp/B0D6W7F7WH?tag=mas03ad-21)**
 
 > *Deal prices can change anytime. Click through to confirm the current price on Amazon.*

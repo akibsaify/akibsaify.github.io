@@ -8,7 +8,7 @@ originalPrice: 1599
 dealPrice: 449
 discountPercent: 72
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DN5LKS1Q?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DN5LKS1Q?tag=mas03ad-21"
 image: "/images/boldfit-water-bottles-stainless-steel-water-bottle-1-litre-steel-water-bottles-f-amazon.jpg"
 expired: false
 tags: ["boldfit", "water", "bottles", "stainless", "steel", "water", "bottle", "litre"]

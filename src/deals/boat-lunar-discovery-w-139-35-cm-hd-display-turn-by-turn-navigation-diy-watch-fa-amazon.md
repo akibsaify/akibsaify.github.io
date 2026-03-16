@@ -8,7 +8,7 @@ originalPrice: 8499
 dealPrice: 1299
 discountPercent: 85
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DFYL4635?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DFYL4635?tag=mas03ad-21"
 image: "/images/boat-lunar-discovery-w-139-35-cm-hd-display-turn-by-turn-navigation-diy-watch-fa-amazon.jpg"
 expired: false
 tags: ["boat", "lunar", "discovery", "display", "turn", "turn", "navigation", "diy"]

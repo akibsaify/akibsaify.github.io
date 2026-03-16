@@ -8,7 +8,7 @@ originalPrice: 1199
 dealPrice: 695
 discountPercent: 42
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B098P8NRRW?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B098P8NRRW?tag=mas03ad-21"
 image: "/images/bombay-shaving-company-beard-trimmer-for-men-2x-fast-charging-usb-type-c-2-yr-wa-amazon.jpg"
 expired: false
 tags: ["bombay", "shaving", "company", "beard", "trimmer", "for", "men", "fast"]

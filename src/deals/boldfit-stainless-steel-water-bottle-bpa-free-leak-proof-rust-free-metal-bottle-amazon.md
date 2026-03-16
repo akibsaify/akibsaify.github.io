@@ -8,7 +8,7 @@ originalPrice: 799
 dealPrice: 249
 discountPercent: 69
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FCFC9ZTV?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FCFC9ZTV?tag=mas03ad-21"
 image: "/images/boldfit-stainless-steel-water-bottle-bpa-free-leak-proof-rust-free-metal-bottle-amazon.jpg"
 expired: false
 tags: ["boldfit", "stainless", "steel", "water", "bottle", "bpa", "free", "leak"]

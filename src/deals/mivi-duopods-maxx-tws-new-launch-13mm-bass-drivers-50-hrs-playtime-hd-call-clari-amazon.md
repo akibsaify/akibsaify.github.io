@@ -8,7 +8,7 @@ originalPrice: 2999
 dealPrice: 599
 discountPercent: 80
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FDGS4SQR?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FDGS4SQR?tag=mas03ad-21"
 image: "/images/mivi-duopods-maxx-tws-new-launch-13mm-bass-drivers-50-hrs-playtime-hd-call-clari-amazon.jpg"
 expired: false
 tags: ["mivi", "duopods", "maxx", "tws", "new", "launch", "13mm", "bass"]

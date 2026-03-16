@@ -37,6 +37,6 @@ If you're already set on buying keyboard and just need a good deal — this is i
 
 At ₹594 with 60% off, the **Zebronics Wired Keyboard and Mouse Combo with 104 Keys and a USB...** delivers solid value. Zebronics makes reliable keyboard, and this price point is hard to beat right now.
 
-**[Get This Deal on Amazon →](https://www.amazon.in/dp/B07KR5P3YD?tag=dealdrops0d-21)**
+**[Get This Deal on Amazon →](https://www.amazon.in/dp/B07KR5P3YD?tag=mas03ad-21)**
 
 > *This is an affiliate link — if you buy through it, we earn a small commission at no extra cost to you. It helps us keep finding deals like this.*

@@ -8,7 +8,7 @@ originalPrice: 2199
 dealPrice: 749
 discountPercent: 66
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0CXM92ZHM?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0CXM92ZHM?tag=mas03ad-21"
 image: "/images/hammer-ultra-charge-10000mah-225w-power-bank-20w-pd-fast-charging-3-output-2-inp-amazon.jpg"
 expired: false
 tags: ["hammer", "ultra", "charge", "10000mah", "power", "bank", "20w", "fast"]

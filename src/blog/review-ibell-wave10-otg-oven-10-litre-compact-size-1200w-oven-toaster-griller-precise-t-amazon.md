@@ -41,6 +41,6 @@ For most people though, this is a solid buy at this price.
 
 The **iBELL WAVE10 OTG Oven, 10 Litre** at **₹2,032** (~~₹3,999~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹1,967 on a ibell oven is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0DPKY2CX6?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0DPKY2CX6?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

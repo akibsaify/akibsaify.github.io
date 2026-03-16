@@ -8,7 +8,7 @@ originalPrice: 1899
 dealPrice: 617
 discountPercent: 67
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0D22M58MR?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0D22M58MR?tag=mas03ad-21"
 image: "/images/zebronics-mb10000s6-power-bank-10000-mah-12w-5-x-outputs-dual-usb-a-type-c-micro-amazon.jpg"
 expired: false
 tags: ["zebronics", "mb10000s6", "power", "bank", "10000", "mah", "12w", "outputs"]

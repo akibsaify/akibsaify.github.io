@@ -8,7 +8,7 @@ originalPrice: 2490
 dealPrice: 799
 discountPercent: 68
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0F48NC7MZ?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0F48NC7MZ?tag=mas03ad-21"
 image: "/images/boat-2025-stone-110-bluetooth-speaker-with-3w-signature-sound-up-to-15hrs-playba-amazon.jpg"
 expired: false
 tags: ["boat", "2025", "stone", "110", "bluetooth", "speaker", "with", "signature"]

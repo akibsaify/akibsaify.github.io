@@ -8,7 +8,7 @@ originalPrice: 5999
 dealPrice: 1499
 discountPercent: 75
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0G4VYPZ69?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0G4VYPZ69?tag=mas03ad-21"
 image: "/images/goboult-q-over-ear-bluetooth-headphones-with-70h-playtime-40mm-bass-drivers-zen-amazon.jpg"
 expired: false
 tags: ["goboult", "over", "ear", "bluetooth", "headphones", "with", "70h", "playtime"]

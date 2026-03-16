@@ -8,7 +8,7 @@ originalPrice: 2899
 dealPrice: 419
 discountPercent: 86
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0GPWBM6T1?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0GPWBM6T1?tag=mas03ad-21"
 image: "/images/mi-smart-watch-for-kids-men-boys-10-12-years-old-women-girls-id116-bluetooth-sma-amazon.jpg"
 expired: false
 tags: ["smart", "watch", "for", "kids", "men", "boys", "years", "old"]

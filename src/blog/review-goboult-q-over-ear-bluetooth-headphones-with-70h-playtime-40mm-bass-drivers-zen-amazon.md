@@ -37,6 +37,6 @@ If you're already set on buying headphones and just need a good deal — this is
 
 The **GOBOULT Q Over Ear Bluetooth Headphones with 70H Playtime** at **₹1,499** (~~₹5,999~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹4,500 on a GoBoult headphones is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0G4VYPZ69?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0G4VYPZ69?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

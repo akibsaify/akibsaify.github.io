@@ -8,7 +8,7 @@ originalPrice: 3999
 dealPrice: 2199
 discountPercent: 45
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DCZ3WDTB?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DCZ3WDTB?tag=mas03ad-21"
 image: "/images/xiaomi-power-bank-4i-20000mah-33w-super-fast-charging-pd-smart-12-layer-protecti-amazon.jpg"
 expired: false
 tags: ["xiaomi", "power", "bank", "20000mah", "33w", "super", "fast", "charging"]

@@ -8,7 +8,7 @@ originalPrice: 2599
 dealPrice: 599
 discountPercent: 77
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0FQJGBKCX?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0FQJGBKCX?tag=mas03ad-21"
 image: "/images/ptron-studio-w-60hrs-playtime-wireless-over-ear-headphones-with-hd-mic-immersive-amazon.jpg"
 expired: false
 tags: ["ptron", "studio", "60hrs", "playtime", "wireless", "over", "ear", "headphones"]

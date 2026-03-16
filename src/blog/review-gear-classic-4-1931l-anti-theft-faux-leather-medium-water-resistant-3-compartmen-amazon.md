@@ -37,6 +37,6 @@ If you're already set on buying laptop and just need a good deal — this is it.
 
 The **Gear Classic 4 19 inch/31L Anti Theft Faux Leather Medium Water R...** at **₹1,399** (~~₹4,399~~) is a strong deal that's hard to ignore. Whether you're buying for yourself or as a gift, saving ₹3,000 on a Gear laptop is worth jumping on.
 
-**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0D87KZP1Z?tag=dealdrops0d-21)**
+**[Check Current Price on Amazon →](https://www.amazon.in/dp/B0D87KZP1Z?tag=mas03ad-21)**
 
 > *Prices and availability are subject to change. We recommend clicking through to verify the current price on Amazon before purchasing.*

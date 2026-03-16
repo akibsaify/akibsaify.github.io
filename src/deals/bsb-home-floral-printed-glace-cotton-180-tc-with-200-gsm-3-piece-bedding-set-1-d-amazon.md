@@ -8,7 +8,7 @@ originalPrice: 799
 dealPrice: 229
 discountPercent: 71
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0148E7BLY?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0148E7BLY?tag=mas03ad-21"
 image: "/images/bsb-home-floral-printed-glace-cotton-180-tc-with-200-gsm-3-piece-bedding-set-1-d-amazon.jpg"
 expired: false
 tags: ["bsb", "home", "floral", "printed", "glace", "cotton", "180", "with"]

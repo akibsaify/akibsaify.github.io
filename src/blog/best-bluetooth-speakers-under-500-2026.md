@@ -16,9 +16,9 @@ Scroll down to see each deal with the exact discount and savings.
 
 | Product | Deal Price | MRP | Discount |
 |---------|-----------|-----|----------|
-| [Portronics Konnect Core 3 USB-A to Micro F...](https://www.amazon.in/dp/B0DTJ6BJYP?tag=dealdrops0d-21) | ₹115 | ~~₹499~~ | 77% off |
-| [TECHONTO® Ultra Boost Mini Portable Wirele...](https://www.amazon.in/dp/B0GNM6464L?tag=dealdrops0d-21) | ₹239 | ~~₹799~~ | 70% off |
-| [Prolet® Ultra Boost Mini Portable Bluetoot...](https://www.amazon.in/dp/B0GNMCJDBR?tag=dealdrops0d-21) | ₹249 | ~~₹799~~ | 69% off |
+| [Portronics Konnect Core 3 USB-A to Micro F...](https://www.amazon.in/dp/B0DTJ6BJYP?tag=mas03ad-21) | ₹115 | ~~₹499~~ | 77% off |
+| [TECHONTO® Ultra Boost Mini Portable Wirele...](https://www.amazon.in/dp/B0GNM6464L?tag=mas03ad-21) | ₹239 | ~~₹799~~ | 70% off |
+| [Prolet® Ultra Boost Mini Portable Bluetoot...](https://www.amazon.in/dp/B0GNMCJDBR?tag=mas03ad-21) | ₹249 | ~~₹799~~ | 69% off |
 
 ---
 
@@ -38,7 +38,7 @@ Scroll down to see each deal with the exact discount and savings.
 
 At 77% off, the Portronics Konnect Core 3 USB-A to Micro Fast Charging Cable for Smartphones is a steal. You save ₹384 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0DTJ6BJYP?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0DTJ6BJYP?tag=mas03ad-21)**
 
 ---
 
@@ -54,7 +54,7 @@ At 77% off, the Portronics Konnect Core 3 USB-A to Micro Fast Charging Cable for
 
 At 70% off, the TECHONTO® Ultra Boost Mini Portable Wireless Bluetooth Speaker with Heavy Bass is a steal. You save ₹560 compared to the regular price.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GNM6464L?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GNM6464L?tag=mas03ad-21)**
 
 ---
 
@@ -70,7 +70,7 @@ At 70% off, the TECHONTO® Ultra Boost Mini Portable Wireless Bluetooth Speaker 
 
 Currently going for ₹249 (down from ₹799), this is one of the better deals we've seen on Prolet® Ultra Boost Mini Portable Bluetooth Wireless Speaker.
 
-**[Check Price on Amazon](https://www.amazon.in/dp/B0GNMCJDBR?tag=dealdrops0d-21)**
+**[Check Price on Amazon](https://www.amazon.in/dp/B0GNMCJDBR?tag=mas03ad-21)**
 
 ---
 

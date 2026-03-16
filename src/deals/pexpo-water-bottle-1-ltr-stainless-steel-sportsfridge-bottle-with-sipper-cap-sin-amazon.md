@@ -8,7 +8,7 @@ originalPrice: 649
 dealPrice: 289
 discountPercent: 55
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DRCYP93L?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DRCYP93L?tag=mas03ad-21"
 image: "/images/pexpo-water-bottle-1-ltr-stainless-steel-sportsfridge-bottle-with-sipper-cap-sin-amazon.jpg"
 expired: false
 tags: ["pexpo", "water", "bottle", "ltr", "stainless", "steel", "sports", "fridge"]

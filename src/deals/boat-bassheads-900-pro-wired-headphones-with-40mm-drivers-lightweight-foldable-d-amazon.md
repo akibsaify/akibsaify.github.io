@@ -8,7 +8,7 @@ originalPrice: 4990
 dealPrice: 999
 discountPercent: 80
 couponCode: ""
-affiliateLink: "https://www.amazon.in/dp/B0DHDDF5J2?tag=dealdrops0d-21"
+affiliateLink: "https://www.amazon.in/dp/B0DHDDF5J2?tag=mas03ad-21"
 image: "/images/boat-bassheads-900-pro-wired-headphones-with-40mm-drivers-lightweight-foldable-d-amazon.jpg"
 expired: false
 tags: ["boat", "bassheads", "900", "pro", "wired", "headphones", "with", "40mm"]
