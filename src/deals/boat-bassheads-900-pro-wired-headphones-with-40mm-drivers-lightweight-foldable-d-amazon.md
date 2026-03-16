@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 4990
-dealPrice: 999
-discountPercent: 80
+dealPrice: 924
+discountPercent: 81
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DHDDF5J2?tag=mas03ad-21"
 image: "/images/boat-bassheads-900-pro-wired-headphones-with-40mm-drivers-lightweight-foldable-d-amazon.jpg"

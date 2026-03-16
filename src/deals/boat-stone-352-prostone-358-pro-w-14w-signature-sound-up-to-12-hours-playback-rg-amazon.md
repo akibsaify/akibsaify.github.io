@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 4990
-dealPrice: 1899
-discountPercent: 62
+dealPrice: 1589
+discountPercent: 68
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0D6W7F7WH?tag=mas03ad-21"
 image: "/images/boat-stone-352-prostone-358-pro-w-14w-signature-sound-up-to-12-hours-playback-rg-amazon.jpg"

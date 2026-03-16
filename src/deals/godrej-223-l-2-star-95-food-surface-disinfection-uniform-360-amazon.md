@@ -10,7 +10,7 @@ discountPercent: 41
 couponCode: ""
 affiliateLink: "https://amzn.to/3P5kp9e"
 image: "/images/godrej-223-l-2-star-95-food-surface-disinfection-uniform-360-amazon.jpg"
-expired: false
+expired: true
 tags: ["godrej", "223", "star", "food", "surface", "disinfection"]
 ---
 
