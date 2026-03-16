@@ -973,6 +973,39 @@ ul, ol { list-style: none; }
   margin-top: 2rem;
 }
 
+/* ── Generic Info Pages (Privacy, Contact, etc.) ─────────────── */
+.page-hero { background: linear-gradient(135deg, var(--primary) 0%, #4A1FA0 100%); color: #fff; padding: 3rem 1rem 2.5rem; text-align: center; }
+.page-hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 0.6rem; }
+.page-hero p { opacity: 0.82; max-width: 480px; margin: 0 auto; }
+.page-content { max-width: 680px; margin: 0 auto; padding: 2rem 1rem; }
+.page-content h2 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin: 1.75rem 0 0.6rem; }
+.page-content h3 { font-size: 1rem; font-weight: 600; color: var(--heading); margin: 1.25rem 0 0.4rem; }
+.page-content p { font-size: 0.93rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 0.75rem; }
+.page-content ul { list-style: disc; padding-left: 1.5rem; color: var(--text-muted); font-size: 0.93rem; line-height: 1.9; margin-bottom: 0.75rem; }
+.page-content a { color: var(--accent); font-weight: 600; }
+.page-content .disclosure {
+  background: var(--gold-soft);
+  border: 1.5px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  font-size: 0.85rem;
+  color: #7a5c00;
+  margin-top: 1.5rem;
+}
+.page-content .info-box {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+.page-content .contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
 /* ── Footer ───────────────────────────────────────────────────── */
 .site-footer {
   background: linear-gradient(180deg, #1A0D3B 0%, #0F0824 100%);
