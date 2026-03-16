@@ -1,6 +1,6 @@
 ---
-title: "BrowseBook 14.1" FHD IPS Laptop | Best Student & Office Work Laptop | Celeron N4020 | 4GB RAM | 128GB SSD | Windows 11 | 38Wh | 1.3kg | Grey — 57% Off on Amazon"
-description: "Save ₹17,010 on BrowseBook 14.1" FHD IPS Laptop | Best Student & Office Work Laptop | Celeron N4020 | 4GB RAM | 128GB SSD | Windows 11 | 38Wh | 1.3kg | Grey. Deal price ₹12,990 vs MRP ₹30,000. 57% off on Amazon India."
+title: "BrowseBook 14.1 inch FHD IPS Laptop | Best Student & Office Work Laptop | Celeron N4020 | 4GB RAM | 128GB SSD | Windows 11 | 38Wh | 1.3kg | Grey — 57% Off on Amazon"
+description: "Save ₹17,010 on BrowseBook 14.1 inch FHD IPS Laptop | Best Student & Office Work Laptop | Celeron N4020 | 4GB RAM | 128GB SSD | Windows 11 | 38Wh | 1.3kg | Grey. Deal price ₹12,990 vs MRP ₹30,000. 57% off on Amazon India."
 date: 2026-03-16
 category: electronics
 store: amazon

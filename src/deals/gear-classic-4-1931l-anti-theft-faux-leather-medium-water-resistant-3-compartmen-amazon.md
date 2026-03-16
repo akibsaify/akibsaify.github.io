@@ -1,6 +1,6 @@
 ---
-title: "Gear Classic 4 19"/31L Anti Theft Faux Leather Medium Water Resistant 3 Compartment Laptop Backpack/Casual Backpack/Daypack/Travel Backpack/College Bag For Men/Women(Teal-Brown) — 68% Off on Amazon"
-description: "Save ₹3,000 on Gear Classic 4 19"/31L Anti Theft Faux Leather Medium Water Resistant 3 Compartment Laptop Backpack/Casual Backpack/Daypack/Travel Backpack/College Bag For Men/Women(Teal-Brown). Deal price ₹1,399 vs MRP ₹4,399. 68% off on Amazon India."
+title: "Gear Classic 4 19 inch/31L Anti Theft Faux Leather Medium Water Resistant 3 Compartment Laptop Backpack/Casual Backpack/Daypack/Travel Backpack/College Bag For Men/Women(Teal-Brown) — 68% Off on Amazon"
+description: "Save ₹3,000 on Gear Classic 4 19 inch/31L Anti Theft Faux Leather Medium Water Resistant 3 Compartment Laptop Backpack/Casual Backpack/Daypack/Travel Backpack/College Bag For Men/Women(Teal-Brown). Deal price ₹1,399 vs MRP ₹4,399. 68% off on Amazon India."
 date: 2026-03-16
 category: electronics
 store: amazon

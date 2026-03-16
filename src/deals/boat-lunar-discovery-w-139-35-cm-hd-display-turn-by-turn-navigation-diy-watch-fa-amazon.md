@@ -1,6 +1,6 @@
 ---
-title: "Boat Lunar Discovery w/ 1.39" (3.5 cm) HD Display, Turn-by-Turn Navigation, DIY Watch Face Studio, Bluetooth Calling, Emergency SOS, QR Tray, Smart Watch for Men & Women(Active Black) — 85% Off on Amazon"
-description: "Save ₹7,200 on Boat Lunar Discovery w/ 1.39" (3.5 cm) HD Display, Turn-by-Turn Navigation, DIY Watch Face Studio, Bluetooth Calling, Emergency SOS, QR Tray, Smart Watch for Men & Women(Active Black). Deal price ₹1,299 vs MRP ₹8,499. 85% off on Amazon India."
+title: "Boat Lunar Discovery w/ 1.39 inch (3.5 cm) HD Display, Turn-by-Turn Navigation, DIY Watch Face Studio, Bluetooth Calling, Emergency SOS, QR Tray, Smart Watch for Men & Women(Active Black) — 85% Off on Amazon"
+description: "Save ₹7,200 on Boat Lunar Discovery w/ 1.39 inch (3.5 cm) HD Display, Turn-by-Turn Navigation, DIY Watch Face Studio, Bluetooth Calling, Emergency SOS, QR Tray, Smart Watch for Men & Women(Active Black). Deal price ₹1,299 vs MRP ₹8,499. 85% off on Amazon India."
 date: 2026-03-16
 category: electronics
 store: amazon

@@ -1,6 +1,6 @@
 ---
-title: "Noise Pulse 2 Max 1.85" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Sports Modes, Smartwatch for Men and Women (Deep Wine) — 77% Off on Amazon"
-description: "Save ₹4,600 on Noise Pulse 2 Max 1.85" Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Sports Modes, Smartwatch for Men and Women (Deep Wine). Deal price ₹1,399 vs MRP ₹5,999. 77% off on Amazon India."
+title: "Noise Pulse 2 Max 1.85 inch Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Sports Modes, Smartwatch for Men and Women (Deep Wine) — 77% Off on Amazon"
+description: "Save ₹4,600 on Noise Pulse 2 Max 1.85 inch Display, Bluetooth Calling Smart Watch, 10 Days Battery, 550 NITS Brightness, Smart DND, 100 Sports Modes, Smartwatch for Men and Women (Deep Wine). Deal price ₹1,399 vs MRP ₹5,999. 77% off on Amazon India."
 date: 2026-03-16
 category: electronics
 store: amazon
