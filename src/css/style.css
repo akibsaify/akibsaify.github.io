@@ -1122,3 +1122,29 @@ ul, ol { list-style: none; }
   to   { opacity: 1; transform: translateY(0); }
 }
 .fade-in { animation: fadeInUp 0.4s ease both; }
+
+/* ── FAQ Section (AEO/GEO Optimization) ── */
+.faq-list { display: flex; flex-direction: column; gap: 0.5rem; }
+.faq-item {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.faq-question {
+  padding: 0.85rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  list-style: none;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::before { content: "▸ "; color: var(--accent); font-weight: 700; }
+details[open] .faq-question::before { content: "▾ "; }
+.faq-answer {
+  padding: 0 1rem 0.85rem;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}

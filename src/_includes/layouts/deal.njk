@@ -6,7 +6,8 @@ layout: layouts/base.njk
 {% set ogImage = image if image else "" %}
 {% set ogType = "product" %}
 
-{# ── Schema markup (Product + Offer + BreadcrumbList) ── #}
+{# ── Schema markup (Product + Offer + FAQPage + BreadcrumbList) ── #}
+{% set savings = originalPrice - dealPrice if originalPrice > dealPrice else 0 %}
 {% block head %}
 <script type="application/ld+json">
 {
@@ -17,6 +18,10 @@ layout: layouts/base.njk
       "name": "{{ title }}",
       "description": "{{ description }}",
       {% if image %}"image": "{{ site.url }}{{ image }}",{% endif %}
+      "brand": {
+        "@type": "Brand",
+        "name": "{{ store | capitalize }}"
+      },
       "offers": {
         "@type": "Offer",
         "url": "{{ site.url }}{{ page.url }}",
@@ -27,8 +32,38 @@ layout: layouts/base.njk
         "seller": {
           "@type": "Organization",
           "name": "{{ store | capitalize }}"
-        }
+        },
+        "itemCondition": "https://schema.org/NewCondition"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the current price of {{ title }}?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The {{ title }} is currently available at ₹{{ dealPrice }} on {{ store | capitalize }}. The original MRP is ₹{{ originalPrice }}, giving you a {{ discountPercent }}% discount and saving ₹{{ savings }}."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this deal still active?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This deal was last verified on {{ date | shortDate }}. Prices on {{ store | capitalize }} can change at any time. Click the deal link to check the latest price."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can I save on {{ title }}?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can save ₹{{ savings }} ({{ discountPercent }}% off) on this product. The deal price is ₹{{ dealPrice }} compared to the MRP of ₹{{ originalPrice }}."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -181,6 +216,29 @@ layout: layouts/base.njk
         <div class="step__text">Complete your payment. No coupon code needed — discount is auto-applied.</div>
       </div>
       {% endif %}
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="container--narrow" style="margin-top:2rem;margin-bottom:2rem;">
+    <h2 style="font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:1rem;">❓ Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-question">What is the current price of {{ title }}?</summary>
+        <p class="faq-answer">The {{ title }} is currently available at ₹{{ dealPrice }} on {{ store | capitalize }}. The original MRP is ₹{{ originalPrice }}, giving you a {{ discountPercent }}% discount and saving you ₹{{ savings }}.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">Is this deal still active?</summary>
+        <p class="faq-answer">This deal was last verified on {{ date | shortDate }}. Prices on {{ store | capitalize }} can change at any time. Click the "Get This Deal" button to check the latest price.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">How much can I save on {{ title }}?</summary>
+        <p class="faq-answer">You save ₹{{ savings }} ({{ discountPercent }}% off). The deal price is ₹{{ dealPrice }} compared to the MRP of ₹{{ originalPrice }}.</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-question">Is this product genuine?</summary>
+        <p class="faq-answer">Yes, this product is sold directly through {{ store | capitalize }}. We only list deals from authorized sellers on verified marketplaces.</p>
+      </details>
     </div>
   </div>
 
