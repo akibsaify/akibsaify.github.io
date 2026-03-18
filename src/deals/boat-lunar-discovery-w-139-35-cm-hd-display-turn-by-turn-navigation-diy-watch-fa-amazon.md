@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 8499
-dealPrice: 1299
-discountPercent: 85
+dealPrice: 1499
+discountPercent: 82
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DFYL4635?tag=mas03ad-21"
 image: "/images/boat-lunar-discovery-w-139-35-cm-hd-display-turn-by-turn-navigation-diy-watch-fa-amazon.jpg"

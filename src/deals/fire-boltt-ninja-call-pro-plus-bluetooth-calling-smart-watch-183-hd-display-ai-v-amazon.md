@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 19999
-dealPrice: 1399
-discountPercent: 93
+dealPrice: 1199
+discountPercent: 94
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0BF57RN3K?tag=mas03ad-21"
 image: "/images/fire-boltt-ninja-call-pro-plus-bluetooth-calling-smart-watch-183-hd-display-ai-v-amazon.jpg"

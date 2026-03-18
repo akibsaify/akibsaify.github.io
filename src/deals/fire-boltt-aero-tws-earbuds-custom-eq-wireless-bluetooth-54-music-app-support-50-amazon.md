@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 8999
-dealPrice: 699
-discountPercent: 92
+dealPrice: 799
+discountPercent: 91
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FM6B9Z45?tag=mas03ad-21"
 image: "/images/fire-boltt-aero-tws-earbuds-custom-eq-wireless-bluetooth-54-music-app-support-50-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 11999
-dealPrice: 1499
-discountPercent: 88
+dealPrice: 1299
+discountPercent: 89
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CMF25TKG?tag=mas03ad-21"
 image: "/images/fireboltt-rise-smart-watch-185-hd-display-with-bluetooth-calling-ai-voice-assist-amazon.jpg"
