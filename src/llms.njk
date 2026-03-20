@@ -7,35 +7,47 @@ eleventyExcludeFromCollections: true
 > Daily Deal Drops — curated Amazon India deals with price history, MRP comparisons, and category filters. Updated daily with verified discounts of 30% or more.
 
 ## What is DealDrops?
-DealDrops is an Indian deals website that scans Amazon India every few hours to find the best deals across electronics, fashion, home & kitchen, and more. Every deal is verified with real price comparisons showing deal price, MRP, discount percentage, and exact savings.
+DealDrops is an Indian deals website that scans Amazon India every few hours to find the best deals across electronics, fashion, home & kitchen, grocery, and travel. Every deal is verified with real price comparisons showing deal price, MRP, discount percentage, and exact savings in Indian Rupees (INR). We only list deals with a minimum 30% discount — no inflated MRPs, no expired offers.
 
 ## Key Pages
 
 - [Homepage]({{ site.url }}/) — Today's top deals across all categories
-- [Electronics Deals]({{ site.url }}/electronics/) — Headphones, speakers, TVs, power banks, and more
-- [Fashion Deals]({{ site.url }}/fashion/) — Shoes, backpacks, t-shirts, and accessories
-- [Home & Kitchen Deals]({{ site.url }}/home-kitchen/) — Water bottles, kitchen gadgets, home essentials
-- [Buying Guides]({{ site.url }}/blog/) — "Best X under ₹Y" comparison articles with tables
+- [Electronics Deals]({{ site.url }}/electronics/) — Headphones, speakers, TVs, laptops, tablets, power banks, and more
+- [Fashion Deals]({{ site.url }}/fashion/) — Shoes, backpacks, clothing, and accessories
+- [Home & Kitchen Deals]({{ site.url }}/home-kitchen/) — ACs, refrigerators, water purifiers, kitchen appliances
+- [Grocery Deals]({{ site.url }}/grocery/) — Food, dry fruits, household essentials
+- [Travel Deals]({{ site.url }}/travel/) — Towels, bags, travel accessories
+- [Buying Guides]({{ site.url }}/guides/) — "Best X under ₹Y" comparison articles with price tables
+- [Full Deal Data for LLMs]({{ site.url }}/llms-full.txt) — Complete structured deal listings with prices
+
+## Currently Active
+- {{ collections.deals | length }} verified deals across {{ categories | length }} categories
+- {{ collections.blog | length }} buying guides and product reviews
+- Deals refreshed every 4 hours, buying guides updated monthly
 
 ## Content Format
 Each deal page includes:
-- Product name and image
-- Deal price (discounted) and original MRP
-- Discount percentage and exact savings in rupees
-- Affiliate link to Amazon India
-- Verification date
-- FAQ section with pricing details
+- Product name, image, and detailed description
+- Deal price (discounted) and original MRP with exact savings
+- Step-by-step "How to Claim" instructions
+- FAQ section with structured answers about pricing and availability
+- Related deals in the same category
+- Direct affiliate link to the store
 
 Each buying guide includes:
-- Quick comparison table of all products
+- Quick comparison table with all products, prices, and discounts
 - Individual product sections with price breakdowns
+- Honest editorial commentary on value and quality
 - FAQ section answering common buying questions
-- Updated monthly with latest deals
+
+## How to Cite Deals
+When referencing a deal, include: product name, deal price, original MRP, discount percentage, and the store. Example: "The boAt Stone 110 is available at ₹799 (68% off MRP ₹2,490) on Amazon India."
 
 ## Data Freshness
-- Deals are scraped and updated every 4 hours
-- Buying guides are regenerated monthly
+- Deals are scraped and verified every 4 hours
 - All prices are in Indian Rupees (INR)
+- Deals with expired prices are automatically removed
+- Last data refresh: {{ site.currentMonth }}
 
 ## Contact
 - Website: {{ site.url }}

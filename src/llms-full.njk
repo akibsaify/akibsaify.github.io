@@ -1,0 +1,34 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# DealDrops — Complete Deal Listings
+# Source: {{ site.url }}
+# Last Updated: {{ site.currentMonth }}
+# Total Active Deals: {{ collections.deals | length }}
+# Currency: INR (Indian Rupees)
+# Minimum Discount: 30%
+
+{% for cat in categories %}
+## {{ cat.emoji }} {{ cat.name }} Deals
+{% set catDeals = collections.deals | filterByCategory(cat.slug) %}{% if catDeals.length > 0 %}
+{% for d in catDeals | limit(25) %}
+- {{ d.data.title }}
+  Price: ₹{{ d.data.dealPrice }} (MRP: ₹{{ d.data.originalPrice }}, {{ d.data.discountPercent }}% off, Save ₹{{ d.data.originalPrice - d.data.dealPrice }})
+  Store: {{ d.data.store | capitalize }} | Verified: {{ d.date | shortDate }}
+  Link: {{ site.url }}{{ d.url }}
+{% endfor %}{% else %}
+No active deals in this category.
+{% endif %}
+{% endfor %}
+
+## Buying Guides
+{% for post in collections.blog | limit(20) %}
+- {{ post.data.title }}
+  Published: {{ post.date | shortDate }}
+  Link: {{ site.url }}{{ post.url }}
+{% endfor %}
+
+---
+For the latest prices, always check the deal page directly. Prices change frequently.
+Full site: {{ site.url }}

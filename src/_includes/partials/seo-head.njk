@@ -71,6 +71,44 @@
         "url": "{{ site.whatsapp }}",
         "availableLanguage": ["English", "Hindi"]
       }
+    },
+    {
+      "@type": "WebPage",
+      "url": "{{ site.url }}/",
+      "name": "{{ site.name }} — Best Deals & Offers in India",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero__title", ".hero__tagline", ".section-title"]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is DealDrops?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DealDrops is an Indian deals website that scans Amazon and other stores every few hours to find verified deals with a minimum 30% discount. All prices are compared against the original MRP to show real savings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many active deals does DealDrops have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "DealDrops currently has {{ collections.deals | length }} active verified deals across electronics, fashion, home & kitchen, grocery, and travel categories. Deals are updated every few hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are DealDrops deals verified?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every deal on DealDrops is automatically verified against the store's current price. We only list deals with a minimum 30% discount from the original MRP, and expired deals are removed automatically."
+          }
+        }
+      ]
     }
   ]
 }

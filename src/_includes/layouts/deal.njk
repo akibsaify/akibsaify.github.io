@@ -36,6 +36,16 @@ layout: layouts/base.njk
       }
     },
     {
+      "@type": "WebPage",
+      "url": "{{ site.url }}{{ page.url }}",
+      "name": "{{ title }} — {{ discountPercent }}% Off Deal",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".deal-meta__title", ".price-box", ".faq-answer"]
+      },
+      "lastReviewed": "{{ date | isoDate }}"
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -62,6 +72,48 @@ layout: layouts/base.njk
             "text": "You can save ₹{{ savings }} ({{ discountPercent }}% off) on this product. The deal price is ₹{{ dealPrice }} compared to the MRP of ₹{{ originalPrice }}."
           }
         }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to get {{ discountPercent }}% off on {{ title }}",
+      "description": "Step-by-step guide to claim this {{ store | capitalize }} deal and save ₹{{ savings }}.",
+      "totalTime": "PT2M",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "INR",
+        "value": "{{ dealPrice }}"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Click the deal link",
+          "text": "Click the 'Get This Deal' button to open {{ store | capitalize }} in a new tab."
+        },
+        {% if couponCode %}{
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Apply the coupon code",
+          "text": "Copy the coupon code {{ couponCode }} and paste it at checkout on {{ store | capitalize }}."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Complete your purchase",
+          "text": "Add the product to your cart, apply the code, and complete payment to save {{ discountPercent }}%."
+        }{% else %}{
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Add to cart",
+          "text": "Add the product to your cart — the discounted price of ₹{{ dealPrice }} is already applied automatically."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Complete your purchase",
+          "text": "Complete your payment. No coupon code needed — the discount is auto-applied."
+        }{% endif %}
       ]
     },
     {

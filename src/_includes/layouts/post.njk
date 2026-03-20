@@ -31,7 +31,40 @@ layout: layouts/base.njk
         "cssSelector": [".post-body h2", ".post-body p:first-of-type", ".post-body table"]
       },
       "isAccessibleForFree": true,
-      "inLanguage": "en-IN"
+      "inLanguage": "en-IN",
+      "about": {
+        "@type": "Thing",
+        "name": "{{ title }}"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best {{ category if category else 'product' }} deals right now in {{ site.currentMonth }}?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ description }}"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are these deals verified?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every deal listed on DealDrops is verified daily. We only feature products with a minimum 30% discount from the original MRP. Prices are checked against the store every few hours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often are these deals updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This guide is updated regularly with the latest prices and new product drops. Deals are verified every few hours — last updated {{ date | shortDate }}."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",

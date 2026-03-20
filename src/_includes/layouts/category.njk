@@ -29,7 +29,17 @@ layout: layouts/base.njk
           "@type": "ListItem",
           "position": {{ loop.index }},
           "url": "{{ site.url }}{{ d.url }}",
-          "name": "{{ d.data.title }}"
+          "name": "{{ d.data.title }}",
+          "item": {
+            "@type": "Product",
+            "name": "{{ d.data.title }}",
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": "{{ d.data.dealPrice }}",
+              "availability": "https://schema.org/InStock"
+            }
+          }
         }{% if not loop.last %},{% endif %}
         {% endfor %}
       ]
