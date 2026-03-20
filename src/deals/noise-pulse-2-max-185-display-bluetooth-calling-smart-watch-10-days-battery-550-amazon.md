@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 5999
-dealPrice: 1399
-discountPercent: 77
+dealPrice: 1199
+discountPercent: 80
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0B6BPTFT5?tag=mas03ad-21"
 image: "/images/noise-pulse-2-max-185-display-bluetooth-calling-smart-watch-10-days-battery-550-amazon.jpg"

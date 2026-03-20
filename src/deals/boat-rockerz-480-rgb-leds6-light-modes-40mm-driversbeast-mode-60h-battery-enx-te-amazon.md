@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 3790
-dealPrice: 1799
-discountPercent: 53
+dealPrice: 1499
+discountPercent: 60
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DGTTKCJX?tag=mas03ad-21"
 image: "/images/boat-rockerz-480-rgb-leds6-light-modes-40mm-driversbeast-mode-60h-battery-enx-te-amazon.jpg"
