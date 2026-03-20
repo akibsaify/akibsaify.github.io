@@ -176,17 +176,28 @@
         }).slice(0, 8);
 
         if (matches.length === 0) {
-          searchResults.innerHTML = '<div class="search-no-results">No deals found for "' + q + '"</div>';
+          var noRes = document.createElement("div");
+          noRes.className = "search-no-results";
+          noRes.textContent = 'No deals found for "' + q + '"';
+          searchResults.innerHTML = "";
+          searchResults.appendChild(noRes);
           return;
         }
 
+        // Safely escape HTML to prevent XSS
+        function esc(str) {
+          var el = document.createElement("span");
+          el.textContent = str;
+          return el.innerHTML;
+        }
+
         searchResults.innerHTML = matches.map(function (deal) {
-          return '<a href="' + deal.u + '" class="search-result-item">' +
-            '<div class="search-result-title">' + deal.t.substring(0, 60) + '</div>' +
+          return '<a href="' + esc(deal.u) + '" class="search-result-item">' +
+            '<div class="search-result-title">' + esc(deal.t.substring(0, 60)) + '</div>' +
             '<div class="search-result-meta">' +
-              '<span class="search-result-price">' + deal.p + '</span>' +
-              '<span class="search-result-discount">' + deal.d + '% OFF</span>' +
-              '<span class="search-result-cat">' + deal.c + '</span>' +
+              '<span class="search-result-price">' + esc(deal.p) + '</span>' +
+              '<span class="search-result-discount">' + esc(deal.d) + '% OFF</span>' +
+              '<span class="search-result-cat">' + esc(deal.c) + '</span>' +
             '</div>' +
           '</a>';
         }).join("");

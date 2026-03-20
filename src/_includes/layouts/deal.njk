@@ -27,7 +27,6 @@ layout: layouts/base.njk
         "url": "{{ site.url }}{{ page.url }}",
         "priceCurrency": "INR",
         "price": "{{ dealPrice }}",
-        "priceValidUntil": "{{ date | isoDate }}",
         "availability": "https://schema.org/InStock",
         "seller": {
           "@type": "Organization",
@@ -277,10 +276,10 @@ layout: layouts/base.njk
 
 {% block scripts %}
 <script>
-  // Hide sticky CTA when main button is visible
+  // Hide sticky CTA when main button is visible (mobile only)
   const mainBtn = document.getElementById('main-deal-btn');
   const stickyCta = document.getElementById('sticky-cta');
-  if (mainBtn && stickyCta) {
+  if (mainBtn && stickyCta && window.innerWidth < 600) {
     const obs = new IntersectionObserver(entries => {
       stickyCta.style.display = entries[0].isIntersecting ? 'none' : 'flex';
     }, { threshold: 0 });

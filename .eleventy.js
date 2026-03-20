@@ -11,7 +11,25 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("deals", function(collection) {
     return collection.getFilteredByGlob("src/deals/*.md")
       .filter(item => !item.data.expired)
-      .sort((a, b) => b.date - a.date);
+      .sort((a, b) => {
+        // High-value deals first (by deal price descending), then newest
+        const priceA = Number(a.data.dealPrice) || 0;
+        const priceB = Number(b.data.dealPrice) || 0;
+        if (priceB !== priceA) return priceB - priceA;
+        return b.date - a.date;
+      });
+  });
+
+  // High-value deals only (₹1000+) for homepage featured section
+  eleventyConfig.addCollection("highValueDeals", function(collection) {
+    return collection.getFilteredByGlob("src/deals/*.md")
+      .filter(item => !item.data.expired && Number(item.data.dealPrice) >= 1000)
+      .sort((a, b) => {
+        const priceA = Number(a.data.dealPrice) || 0;
+        const priceB = Number(b.data.dealPrice) || 0;
+        if (priceB !== priceA) return priceB - priceA;
+        return b.date - a.date;
+      });
   });
 
   eleventyConfig.addCollection("allDeals", function(collection) {
@@ -77,7 +95,7 @@ module.exports = function(eleventyConfig) {
 
   // Absolute URL
   eleventyConfig.addFilter("absoluteUrl", function(url, base) {
-    return (base || "https://0110059.xyz") + url;
+    return (base || "https://deals.0110059.xyz") + url;
   });
 
   // Discount % (recalculate from prices if not in frontmatter)

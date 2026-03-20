@@ -17,7 +17,7 @@
         width="400"
         height="300">
       {% else %}
-      <div class="deal-card__placeholder">
+      <div class="deal-card__placeholder" role="img" aria-label="{{ d.data.category | capitalize }} product">
         {% if d.data.category == 'electronics' %}📱
         {% elif d.data.category == 'fashion' %}👗
         {% elif d.data.category == 'home-kitchen' %}🏠

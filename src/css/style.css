@@ -707,10 +707,13 @@ ul, ol { list-style: none; }
   border-top: 1.5px solid var(--border);
   padding: 0.75rem 1rem;
   z-index: 150;
-  display: flex;
+  display: none;
   gap: 0.75rem;
   align-items: center;
   box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
+}
+@media (max-width: 599px) {
+  .sticky-cta { display: flex; }
 }
 .sticky-cta__price { flex: 1; min-width: 0; }
 .sticky-cta__price .price { font-size: 1.1rem; font-weight: 800; color: var(--green); }
@@ -1074,7 +1077,8 @@ ul, ol { list-style: none; }
 .footer-logo { font-size: 1.2rem; font-weight: 800; color: #fff; letter-spacing: -0.04em; margin-bottom: 0.4rem; }
 .footer-logo span { color: var(--accent); }
 .footer-tagline { font-size: 0.82rem; opacity: 0.6; }
-.footer-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.footer-cols { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+@media (min-width: 480px) { .footer-cols { grid-template-columns: 1fr 1fr; } }
 .footer-col h4 { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #fff; margin-bottom: 0.75rem; }
 .footer-col ul { display: flex; flex-direction: column; gap: 0.4rem; }
 .footer-col a { font-size: 0.82rem; color: rgba(255,255,255,0.65); }
@@ -1139,6 +1143,13 @@ ul, ol { list-style: none; }
 .deals-grid .deal-card:nth-child(7) { animation-delay: 0.35s; }
 .deals-grid .deal-card:nth-child(8) { animation-delay: 0.4s; }
 
+/* Respect reduced motion & ensure cards are visible if animation fails */
+@media (prefers-reduced-motion: reduce) {
+  .deals-grid .deal-card { opacity: 1; animation: none; }
+  .fade-in { animation: none; }
+  .how-step:hover, .cat-card:hover, .deal-card:hover { transform: none; }
+}
+
 /* Premium image background */
 .deal-card__image-wrap { background: linear-gradient(135deg, #FAFAFA 0%, #F1F5F9 100%); }
 
@@ -1195,6 +1206,8 @@ details[open] .faq-question::before { content: "▾ "; }
   font-size: 0.9rem;
   outline: none;
   transition: border-color 0.2s;
+  background: var(--white);
+  color: var(--text);
 }
 .search-bar input:focus { border-color: var(--accent); }
 .search-results {
