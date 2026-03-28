@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 1499
-dealPrice: 899
-discountPercent: 40
+dealPrice: 1099
+discountPercent: 27
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0BHYJ8CVF?tag=mas03ad-21"
 image: "/images/portronics-key2-combo-wireless-keyboard-and-mouse-setwith-24-ghz-usb-receiversil-amazon.jpg"

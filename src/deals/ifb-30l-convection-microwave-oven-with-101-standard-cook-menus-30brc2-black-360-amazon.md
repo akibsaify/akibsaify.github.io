@@ -5,7 +5,7 @@ date: 2026-03-18
 category: grocery
 store: amazon
 originalPrice: 19390
-dealPrice: 14989
+dealPrice: 14850
 discountPercent: 23
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B016ZLKJSU?tag=mas03ad-21"

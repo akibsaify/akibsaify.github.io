@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 81000
-dealPrice: 52999
-discountPercent: 35
+dealPrice: 59999
+discountPercent: 26
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DDY1HWZL?tag=mas03ad-21"
 image: "/images/lenovo-v15-amd-ryzen-7-7730u-156-3962cm-fhd-250-nits-antiglare-thin-and-light-la-amazon.jpg"

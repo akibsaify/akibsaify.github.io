@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 82990
-dealPrice: 62800
-discountPercent: 24
+dealPrice: 61777
+discountPercent: 26
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CV9J1QSM?tag=mas03ad-21"
 image: "/images/msi-thin-15-intel-13th-gen-core-i5-13420h-40cm-fhd-144hz-gaming-laptop16gb512gb-amazon.jpg"

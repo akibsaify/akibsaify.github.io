@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 107990
-dealPrice: 84999
-discountPercent: 21
+dealPrice: 86041
+discountPercent: 20
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0F5N2ZK2S?tag=mas03ad-21"
 image: "/images/asus-gaming-v16-2025-14th-genintel-core-5-210h-gaming-laptop-rtx-4050-6gb16gb-ra-amazon.jpg"

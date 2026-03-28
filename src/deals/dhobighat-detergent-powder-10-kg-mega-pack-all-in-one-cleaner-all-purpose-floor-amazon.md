@@ -5,8 +5,8 @@ date: 2026-03-16
 category: grocery
 store: amazon
 originalPrice: 950
-dealPrice: 232
-discountPercent: 76
+dealPrice: 299
+discountPercent: 69
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CX18GD2Z?tag=mas03ad-21"
 image: "/images/dhobighat-detergent-powder-10-kg-mega-pack-all-in-one-cleaner-all-purpose-floor-amazon.jpg"

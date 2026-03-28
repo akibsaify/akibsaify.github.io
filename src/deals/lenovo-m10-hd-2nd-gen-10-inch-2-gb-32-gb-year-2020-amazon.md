@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 20000
-dealPrice: 8499
-discountPercent: 58
+dealPrice: 8699
+discountPercent: 57
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B094NH8KGD?tag=mas03ad-21"
 image: "/images/lenovo-m10-hd-2nd-gen-10-inch-2-gb-32-gb-year-2020-amazon.jpg"

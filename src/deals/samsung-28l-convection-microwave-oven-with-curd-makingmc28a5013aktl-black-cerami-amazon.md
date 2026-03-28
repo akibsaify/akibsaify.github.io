@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 15590
-dealPrice: 12890
-discountPercent: 17
+dealPrice: 12699
+discountPercent: 19
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B09XBMXQ34?tag=mas03ad-21"
 image: "/images/samsung-28l-convection-microwave-oven-with-curd-makingmc28a5013aktl-black-cerami-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-18
 category: home-kitchen
 store: amazon
 originalPrice: 54900
-dealPrice: 35850
-discountPercent: 35
+dealPrice: 35390
+discountPercent: 36
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DSVRQJHY?tag=mas03ad-21"
 image: "/images/godrej-15-ton-5-star-5-years-comprehensive-warranty-ai-powered-5-in-1-convertibl-amazon.jpg"

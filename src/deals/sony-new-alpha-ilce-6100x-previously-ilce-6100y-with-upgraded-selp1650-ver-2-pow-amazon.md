@@ -5,8 +5,8 @@ date: 2026-03-18
 category: home-kitchen
 store: amazon
 originalPrice: 89990
-dealPrice: 73990
-discountPercent: 18
+dealPrice: 73159
+discountPercent: 19
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DTK5596V?tag=mas03ad-21"
 image: "/images/sony-new-alpha-ilce-6100x-previously-ilce-6100y-with-upgraded-selp1650-ver-2-pow-amazon.jpg"
