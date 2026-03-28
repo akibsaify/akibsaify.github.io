@@ -5,8 +5,8 @@ date: 2026-03-18
 category: home-kitchen
 store: amazon
 originalPrice: 12450
-dealPrice: 9900
-discountPercent: 20
+dealPrice: 9740
+discountPercent: 22
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DGLLG6FR?tag=mas03ad-21"
 image: "/images/whirlpool-70-kg-5-star-magic-clean-semi-automatic-top-loading-washing-machine-ma-amazon.jpg"

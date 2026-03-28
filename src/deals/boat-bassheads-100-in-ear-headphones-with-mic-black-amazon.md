@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 999
-dealPrice: 399
-discountPercent: 60
+dealPrice: 299
+discountPercent: 70
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B071Z8M4KX?tag=mas03ad-21"
 image: "/images/boat-bassheads-100-in-ear-headphones-with-mic-black-amazon.jpg"
