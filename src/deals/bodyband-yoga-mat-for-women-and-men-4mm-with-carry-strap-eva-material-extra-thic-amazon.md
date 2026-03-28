@@ -5,8 +5,8 @@ date: 2026-03-17
 category: grocery
 store: amazon
 originalPrice: 699
-dealPrice: 189
-discountPercent: 73
+dealPrice: 349
+discountPercent: 50
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0C49ZCDMG?tag=mas03ad-21"
 image: "/images/bodyband-yoga-mat-for-women-and-men-4mm-with-carry-strap-eva-material-extra-thic-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-16
 category: grocery
 store: amazon
 originalPrice: 2499
-dealPrice: 1499
-discountPercent: 40
+dealPrice: 1649
+discountPercent: 34
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CG1NYPKS?tag=mas03ad-21"
 image: "/images/beardo-chrome-beast-multipurpose-full-body-groomer-trimmer-set-for-men-40-length-amazon.jpg"

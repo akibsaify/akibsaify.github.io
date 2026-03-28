@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 1999
-dealPrice: 1180
-discountPercent: 41
+dealPrice: 1124
+discountPercent: 44
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0C1RWFFQR?tag=mas03ad-21"
 image: "/images/peter-england-amazon.jpg"

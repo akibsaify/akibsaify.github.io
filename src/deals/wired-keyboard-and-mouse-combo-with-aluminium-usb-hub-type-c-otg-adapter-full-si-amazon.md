@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 1200
-dealPrice: 599
-discountPercent: 50
+dealPrice: 699
+discountPercent: 42
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0GM4PWHQC?tag=mas03ad-21"
 image: "/images/wired-keyboard-and-mouse-combo-with-aluminium-usb-hub-type-c-otg-adapter-full-si-amazon.jpg"

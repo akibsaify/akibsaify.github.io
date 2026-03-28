@@ -5,8 +5,8 @@ date: 2026-03-16
 category: home-kitchen
 store: amazon
 originalPrice: 3999
-dealPrice: 1229
-discountPercent: 69
+dealPrice: 1009
+discountPercent: 75
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DNR2C9HH?tag=mas03ad-21"
 image: "/images/placeholder.jpg"

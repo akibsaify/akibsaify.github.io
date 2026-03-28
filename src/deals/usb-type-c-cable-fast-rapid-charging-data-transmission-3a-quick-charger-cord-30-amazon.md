@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 299
-dealPrice: 209
-discountPercent: 30
+dealPrice: 149
+discountPercent: 50
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0C1GXMSJK?tag=mas03ad-21"
 image: "/images/usb-type-c-cable-fast-rapid-charging-data-transmission-3a-quick-charger-cord-30-amazon.jpg"

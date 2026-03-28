@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 949
-dealPrice: 526
-discountPercent: 45
+dealPrice: 699
+discountPercent: 26
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CBMTG6D5?tag=mas03ad-21"
 image: "/images/vega-trimmer-men-beard-with-90-mins-runtime-stainless-steel-blades-40-length-set-amazon.jpg"

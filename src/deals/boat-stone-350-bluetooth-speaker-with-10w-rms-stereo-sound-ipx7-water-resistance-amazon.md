@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 3490
-dealPrice: 1499
-discountPercent: 57
+dealPrice: 1399
+discountPercent: 60
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CJRWP3YW?tag=mas03ad-21"
 image: "/images/boat-stone-350-bluetooth-speaker-with-10w-rms-stereo-sound-ipx7-water-resistance-amazon.jpg"

@@ -10,7 +10,7 @@ discountPercent: 90
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0GHQ9R95V?tag=mas03ad-21"
 image: "/images/fire-boltt-newly-launched-aero-drift-tws-earbuds-custom-eq-wireless-bluetooth-54-amazon.jpg"
-expired: false
+expired: true
 tags: ["fire", "boltt", "newly", "launched", "aero", "drift", "tws", "earbuds"]
 ---
 

@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 4199
-dealPrice: 389
-discountPercent: 91
+dealPrice: 699
+discountPercent: 83
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0C6TQGCDY?tag=mas03ad-21"
 image: "/images/wildhorn-31l-laptop-backpack-for-menwomen-i-fits-upto-156-laptop-i-waterproof-i-amazon.jpg"

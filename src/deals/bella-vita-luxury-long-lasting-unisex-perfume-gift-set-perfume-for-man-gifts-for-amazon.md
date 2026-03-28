@@ -5,8 +5,8 @@ date: 2026-03-16
 category: fashion
 store: amazon
 originalPrice: 849
-dealPrice: 494
-discountPercent: 42
+dealPrice: 549
+discountPercent: 35
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B09XLK9GVS?tag=mas03ad-21"
 image: "/images/bella-vita-luxury-long-lasting-unisex-perfume-gift-set-perfume-for-man-gifts-for-amazon.jpg"

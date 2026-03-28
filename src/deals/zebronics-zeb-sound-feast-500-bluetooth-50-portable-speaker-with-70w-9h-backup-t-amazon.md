@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 9499
-dealPrice: 3549
-discountPercent: 63
+dealPrice: 3999
+discountPercent: 58
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B098JVB1WD?tag=mas03ad-21"
 image: "/images/zebronics-zeb-sound-feast-500-bluetooth-50-portable-speaker-with-70w-9h-backup-t-amazon.jpg"

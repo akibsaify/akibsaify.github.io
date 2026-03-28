@@ -5,8 +5,8 @@ date: 2026-03-16
 category: fashion
 store: amazon
 originalPrice: 795
-dealPrice: 249
-discountPercent: 69
+dealPrice: 349
+discountPercent: 56
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B09KTNPSZL?tag=mas03ad-21"
 image: "/images/bombay-shaving-company-mexico-perfume-for-men-woody-long-lasting-fragrance-eau-d-amazon.jpg"

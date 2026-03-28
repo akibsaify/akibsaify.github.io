@@ -10,7 +10,7 @@ discountPercent: 63
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FQVBDKTZ?tag=mas03ad-21"
 image: "/images/geonix-helio-r200-225w-power-bank-with-20000mah-battery-225w-fast-charging-12-la-amazon.jpg"
-expired: false
+expired: true
 tags: ["geonix", "helio", "r200", "power", "bank", "with", "20000mah", "battery"]
 ---
 

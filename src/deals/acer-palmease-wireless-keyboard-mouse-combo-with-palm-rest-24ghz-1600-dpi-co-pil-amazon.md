@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 1999
-dealPrice: 1299
-discountPercent: 35
+dealPrice: 1199
+discountPercent: 40
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0GJTT63ML?tag=mas03ad-21"
 image: "/images/acer-palmease-wireless-keyboard-mouse-combo-with-palm-rest-24ghz-1600-dpi-co-pil-amazon.jpg"
