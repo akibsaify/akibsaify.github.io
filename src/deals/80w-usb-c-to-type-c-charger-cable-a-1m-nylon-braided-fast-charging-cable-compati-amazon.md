@@ -9,7 +9,7 @@ dealPrice: 199
 discountPercent: 82
 couponCode: "Save 2%"
 affiliateLink: "https://www.amazon.in/dp/B0FLPHFR1P?tag=mas03ad-21"
-image: "/images/80w-usb-c-to-type-c-charger-cable-â-1m-nylon-braided-fast-charging-cable-compati-amazon.jpg"
+image: "/images/80w-usb-c-to-type-c-charger-cable-a-1m-nylon-braided-fast-charging-cable-compati-amazon.jpg"
 expired: false
 tags: ["80w", "usb", "type", "charger", "cable", "nylon", "braided", "fast"]
 ---

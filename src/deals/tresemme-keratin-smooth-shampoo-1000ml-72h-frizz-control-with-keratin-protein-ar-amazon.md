@@ -9,7 +9,7 @@ dealPrice: 697
 discountPercent: 45
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B07L3ZCJ53?tag=mas03ad-21"
-image: "/images/tresemmé-keratin-smooth-shampoo-1000ml-72h-frizz-control-with-keratin-protein-ar-amazon.jpg"
+image: "/images/tresemme-keratin-smooth-shampoo-1000ml-72h-frizz-control-with-keratin-protein-ar-amazon.jpg"
 expired: false
 tags: ["tresemm\u00e9", "keratin", "smooth", "shampoo", "1000ml", "72h", "frizz", "control"]
 ---

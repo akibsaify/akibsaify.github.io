@@ -9,7 +9,7 @@ dealPrice: 324
 discountPercent: 50
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B08T28XGRG?tag=mas03ad-21"
-image: "/images/yardley-london-gentleman-classic-liquid-perfume-spray-fresh-woody-fougère-notes-amazon.jpg"
+image: "/images/yardley-london-gentleman-classic-liquid-perfume-spray-fresh-woody-fougere-notes-amazon.jpg"
 expired: false
 tags: ["yardley", "london", "gentleman", "classic", "liquid", "perfume", "spray", "fresh"]
 ---
