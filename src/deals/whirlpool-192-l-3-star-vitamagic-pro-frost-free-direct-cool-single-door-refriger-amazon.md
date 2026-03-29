@@ -5,8 +5,8 @@ date: 2026-03-18
 category: home-kitchen
 store: amazon
 originalPrice: 20650
-dealPrice: 16000
-discountPercent: 23
+dealPrice: 16999
+discountPercent: 18
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DVC6NTTL?tag=mas03ad-21"
 image: "/images/whirlpool-192-l-3-star-vitamagic-pro-frost-free-direct-cool-single-door-refriger-amazon.jpg"
