@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 2999
-dealPrice: 899
-discountPercent: 70
+dealPrice: 699
+discountPercent: 77
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FDGS4SQR?tag=mas03ad-21"
 image: "/images/mivi-duopods-maxx-tws-new-launch-13mm-bass-drivers-50-hrs-playtime-hd-call-clari-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-18
 category: home-kitchen
 store: amazon
 originalPrice: 78990
-dealPrice: 36490
-discountPercent: 54
+dealPrice: 35290
+discountPercent: 55
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0G9SR834W?tag=mas03ad-21"
 image: "/images/samsung-15-ton-3-star-bespoke-ai-inverter-smart-split-ac-2026-model-wifi-energy-amazon.jpg"

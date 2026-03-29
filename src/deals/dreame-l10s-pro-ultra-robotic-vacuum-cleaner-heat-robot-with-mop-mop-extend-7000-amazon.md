@@ -5,8 +5,8 @@ date: 2026-03-18
 category: home-kitchen
 store: amazon
 originalPrice: 249999
-dealPrice: 49999
-discountPercent: 80
+dealPrice: 13230
+discountPercent: 95
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0D6RFK84F?tag=mas03ad-21"
 image: "/images/dreame-l10s-pro-ultra-robotic-vacuum-cleaner-heat-robot-with-mop-mop-extend-7000-amazon.jpg"
