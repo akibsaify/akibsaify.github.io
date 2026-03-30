@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 3499
-dealPrice: 699
-discountPercent: 80
+dealPrice: 899
+discountPercent: 74
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0G2GGLTMF?tag=mas03ad-21"
 image: "/images/mivi-duopods-sync-earbuds-new-launch-60-hours-playtime-ai-enc-for-hd-calls-13mm-amazon.jpg"
