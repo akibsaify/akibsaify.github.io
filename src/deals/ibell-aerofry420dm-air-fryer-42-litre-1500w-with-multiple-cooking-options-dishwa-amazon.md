@@ -10,7 +10,7 @@ discountPercent: 62
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0F3T4VX73?tag=mas03ad-21"
 image: "/images/ibell-aerofry420dm-air-fryer-42-litre-1500w-with-multiple-cooking-options-dishwa-amazon.jpg"
-expired: false
+expired: true
 tags: ["ibell", "aerofry420dm", "air", "fryer", "litre", "1500w", "with", "multiple"]
 ---
 
