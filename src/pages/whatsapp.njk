@@ -34,7 +34,7 @@ permalink: /whatsapp/
       originalPrice: {{ deal.data.originalPrice or 0 }},
       discount: {{ deal.data.discountPercent or 0 }},
       category: {{ deal.data.category | dump | safe }},
-      url: "https://deals.0110059.xyz{{ deal.url }}",
+      url: "https://deals.akibsaify.in{{ deal.url }}",
       date: "{{ deal.date | isoDate }}"
     }{% if not loop.last %},{% endif %}
     {% endfor %}
@@ -62,7 +62,7 @@ permalink: /whatsapp/
 
     text += `${'─'.repeat(30)}\n`;
     text += `Prices may change anytime\n`;
-    text += `More deals: https://deals.0110059.xyz`;
+    text += `More deals: https://deals.akibsaify.in`;
 
     return text;
   }

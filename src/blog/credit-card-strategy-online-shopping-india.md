@@ -81,4 +81,4 @@ Start with one co-branded card for the platform you use most. Get comfortable. T
 
 ---
 
-We track the best deals across Amazon, Flipkart, and other platforms daily at [DealDrops](https://deals.0110059.xyz). If you want sale alerts and the best credit card offers delivered straight to your phone, join our [WhatsApp channel](https://whatsapp.com/channel/0029VbC9F9eFMqrOw7IZ0z0D) -- no spam, just deals worth your time.
+We track the best deals across Amazon, Flipkart, and other platforms daily at [DealDrops](https://deals.akibsaify.in). If you want sale alerts and the best credit card offers delivered straight to your phone, join our [WhatsApp channel](https://whatsapp.com/channel/0029VbC9F9eFMqrOw7IZ0z0D) -- no spam, just deals worth your time.

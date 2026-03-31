@@ -87,7 +87,7 @@ pageDescription: "Save up to 80% with verified deals and coupon codes on Amazon,
       <a href="/electronics/" class="view-all">View all</a>
     </div>
     <div class="deals-grid">
-      {% for dealItem in collections.deals | limit(8) %}
+      {% for dealItem in collections.highValueDeals | limit(8) %}
         {% set deal = dealItem %}
         {% include "partials/deal-card.njk" %}
       {% endfor %}

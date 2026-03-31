@@ -96,7 +96,7 @@ module.exports = function(eleventyConfig) {
 
   // Absolute URL
   eleventyConfig.addFilter("absoluteUrl", function(url, base) {
-    return (base || "https://deals.0110059.xyz") + url;
+    return (base || "https://deals.akibsaify.in") + url;
   });
 
   // Discount % (recalculate from prices if not in frontmatter)
