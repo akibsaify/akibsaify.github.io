@@ -215,3 +215,15 @@
   }
 
 })();
+
+// GA4: Track affiliate link clicks
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href*="tag=mas03ad-21"], a[href*="amzn.to"], a[href*="fkrt.it"]');
+  if (link && typeof gtag === 'function') {
+    gtag('event', 'affiliate_click', {
+      link_url: link.href,
+      link_text: link.textContent.trim().substring(0, 100),
+      page_path: window.location.pathname
+    });
+  }
+});
