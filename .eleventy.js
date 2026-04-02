@@ -22,14 +22,16 @@ module.exports = function(eleventyConfig) {
   });
 
   // High-value deals only (₹1000+) for homepage featured section
+  // Sorted by date (newest first) so fresh deals always appear on top
   eleventyConfig.addCollection("highValueDeals", function(collection) {
     return collection.getFilteredByGlob("src/deals/*.md")
       .filter(item => !item.data.expired && Number(item.data.dealPrice) >= 1000)
       .sort((a, b) => {
-        const priceA = Number(a.data.dealPrice) || 0;
+        // Newest deals first, then by price for same-day deals
+        if (b.date.getTime() !== a.date.getTime()) return b.date - a.date;
         const priceB = Number(b.data.dealPrice) || 0;
-        if (priceB !== priceA) return priceB - priceA;
-        return b.date - a.date;
+        const priceA = Number(a.data.dealPrice) || 0;
+        return priceB - priceA;
       });
   });
 
