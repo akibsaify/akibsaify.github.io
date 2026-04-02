@@ -5,8 +5,8 @@ date: 2026-03-28
 category: travel
 store: amazon
 originalPrice: 19999
-dealPrice: 4999
-discountPercent: 75
+dealPrice: 6245
+discountPercent: 69
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FY1H1XDC?tag=mas03ad-21"
 image: "/images/4k-digital-camera-for-photography-64mp-point-and-shoot-digital-cameras-with-16x-amazon.jpg"

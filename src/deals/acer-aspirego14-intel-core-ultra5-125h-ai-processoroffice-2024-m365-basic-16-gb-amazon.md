@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 72999
-dealPrice: 52990
-discountPercent: 27
+dealPrice: 54961
+discountPercent: 25
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FDL57MKD?tag=mas03ad-21"
 image: "/images/acer-aspirego14-intel-core-ultra5-125h-ai-processoroffice-2024-m365-basic-16-gb-amazon.jpg"

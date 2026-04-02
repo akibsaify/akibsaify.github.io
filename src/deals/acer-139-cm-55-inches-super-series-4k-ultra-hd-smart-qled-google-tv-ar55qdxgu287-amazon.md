@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 77999
-dealPrice: 32999
-discountPercent: 58
+dealPrice: 29990
+discountPercent: 62
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0D9BW9PPP?tag=mas03ad-21"
 image: "/images/acer-139-cm-55-inches-super-series-4k-ultra-hd-smart-qled-google-tv-ar55qdxgu287-amazon.jpg"

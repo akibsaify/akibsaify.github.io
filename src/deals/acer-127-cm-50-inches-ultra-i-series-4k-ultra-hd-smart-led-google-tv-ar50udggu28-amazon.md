@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 63999
-dealPrice: 23999
-discountPercent: 63
+dealPrice: 24999
+discountPercent: 61
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FDW7819M?tag=mas03ad-21"
 image: "/images/acer-127-cm-50-inches-ultra-i-series-4k-ultra-hd-smart-led-google-tv-ar50udggu28-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 39500
-dealPrice: 16999
-discountPercent: 57
+dealPrice: 17999
+discountPercent: 54
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FLKJ3JGZ?tag=mas03ad-21"
 image: "/images/acer-100-cm-40-inches-ultra-v-series-full-hd-smart-qled-google-tv-ar40qdvgu2841b-amazon.jpg"

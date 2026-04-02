@@ -5,8 +5,8 @@ date: 2026-03-28
 category: fashion
 store: amazon
 originalPrice: 9999
-dealPrice: 6999
-discountPercent: 30
+dealPrice: 6685
+discountPercent: 33
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B07RCGTZ4M?tag=mas03ad-21"
 image: "/images/agaro-ace-wet-dry-vacuum-cleaner-for-home-1600-watts-215-kpa-suction-power-21-li-amazon.jpg"

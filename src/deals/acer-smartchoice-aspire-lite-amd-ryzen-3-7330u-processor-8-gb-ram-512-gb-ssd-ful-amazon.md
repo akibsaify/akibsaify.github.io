@@ -10,7 +10,7 @@ discountPercent: 23
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CWTSF1TK?tag=mas03ad-21"
 image: "/images/acer-smartchoice-aspire-lite-amd-ryzen-3-7330u-processor-8-gb-ram-512-gb-ssd-ful-amazon.jpg"
-expired: false
+expired: true
 tags: ["acer", "smartchoice", "aspire", "lite", "amd", "ryzen", "7330u", "processor"]
 ---
 

@@ -5,8 +5,8 @@ date: 2026-03-18
 category: home-kitchen
 store: amazon
 originalPrice: 49990
-dealPrice: 26779
-discountPercent: 46
+dealPrice: 25999
+discountPercent: 48
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FP1VVZMX?tag=mas03ad-21"
 image: "/images/agaro-imperial-robot-vacuum-cleaner-dual-brush-dry-vacuum-wet-mop-automatic-clea-amazon.jpg"

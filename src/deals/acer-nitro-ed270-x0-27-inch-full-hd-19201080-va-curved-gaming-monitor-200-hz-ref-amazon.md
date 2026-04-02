@@ -10,7 +10,7 @@ discountPercent: 23
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B09R1QVPQL?tag=mas03ad-21"
 image: "/images/acer-nitro-ed270-x0-27-inch-full-hd-19201080-va-curved-gaming-monitor-200-hz-ref-amazon.jpg"
-expired: false
+expired: true
 tags: ["acer", "nitro", "ed270", "inch", "full", "1920", "1080", "curved"]
 ---
 

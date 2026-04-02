@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 19999
-dealPrice: 14599
-discountPercent: 27
+dealPrice: 15399
+discountPercent: 23
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DF2Z924K?tag=mas03ad-21"
 image: "/images/acer-ed270u-s3-27-inch-wqhd-2560x1440-1500r-curved-gaming-backlit-led-lcd-monito-amazon.jpg"

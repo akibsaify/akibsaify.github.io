@@ -5,8 +5,8 @@ date: 2026-03-31
 category: electronics
 store: amazon
 originalPrice: 51999
-dealPrice: 19999
-discountPercent: 62
+dealPrice: 23999
+discountPercent: 54
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FLKHQCDW?tag=mas03ad-21"
 image: "/images/acer-108-cm-43-inches-ultra-v-series-4k-ultra-hd-smart-qled-google-tv-ar43qdvgu2-amazon.jpg"

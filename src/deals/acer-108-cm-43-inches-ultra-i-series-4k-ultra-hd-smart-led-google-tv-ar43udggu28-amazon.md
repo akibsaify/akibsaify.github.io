@@ -5,8 +5,8 @@ date: 2026-03-20
 category: electronics
 store: amazon
 originalPrice: 47999
-dealPrice: 18999
-discountPercent: 60
+dealPrice: 20499
+discountPercent: 57
 couponCode: "Save ₹1,000"
 affiliateLink: "https://www.amazon.in/dp/B0FDW1R3WG?tag=mas03ad-21"
 image: "/images/acer-108-cm-43-inches-ultra-i-series-4k-ultra-hd-smart-led-google-tv-ar43udggu28-amazon.jpg"

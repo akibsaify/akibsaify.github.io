@@ -10,7 +10,7 @@ discountPercent: 63
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DKNLRY8Q?tag=mas03ad-21"
 image: "/images/acer-126-cm-50-inches-g-plus-series-4k-ultra-hd-led-smart-google-tv-ar50udggr285-amazon.jpg"
-expired: false
+expired: true
 tags: ["acer", "126", "inches", "plus", "series", "ultra", "led", "smart"]
 ---
 

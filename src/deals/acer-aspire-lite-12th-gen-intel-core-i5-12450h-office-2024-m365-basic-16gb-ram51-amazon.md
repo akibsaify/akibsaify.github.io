@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 66999
-dealPrice: 48990
-discountPercent: 27
+dealPrice: 51990
+discountPercent: 22
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DDL495SX?tag=mas03ad-21"
 image: "/images/acer-aspire-lite-12th-gen-intel-core-i5-12450h-office-2024-m365-basic-16gb-ram51-amazon.jpg"

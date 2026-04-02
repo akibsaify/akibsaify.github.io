@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 3999
-dealPrice: 1999
-discountPercent: 50
+dealPrice: 2299
+discountPercent: 43
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0G61CFR13?tag=mas03ad-21"
 image: "/images/acer-nitro-g-wired-mechanical-gaming-keyboard-98-layout-with-multifunction-knob-amazon.jpg"

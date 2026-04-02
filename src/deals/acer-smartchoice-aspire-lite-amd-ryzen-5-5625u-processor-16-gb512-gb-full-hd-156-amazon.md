@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 89999
-dealPrice: 42990
-discountPercent: 52
+dealPrice: 44990
+discountPercent: 50
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DG2GCTD7?tag=mas03ad-21"
 image: "/images/acer-smartchoice-aspire-lite-amd-ryzen-5-5625u-processor-16-gb512-gb-full-hd-156-amazon.jpg"

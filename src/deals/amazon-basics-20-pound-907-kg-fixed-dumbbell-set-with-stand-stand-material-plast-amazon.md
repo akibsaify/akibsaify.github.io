@@ -5,8 +5,8 @@ date: 2026-03-29
 category: travel
 store: amazon
 originalPrice: 5000
-dealPrice: 2579
-discountPercent: 48
+dealPrice: 2869
+discountPercent: 43
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0727Q5F94?tag=mas03ad-21"
 image: "/images/amazon-basics-20-pound-907-kg-fixed-dumbbell-set-with-stand-stand-material-plast-amazon.jpg"

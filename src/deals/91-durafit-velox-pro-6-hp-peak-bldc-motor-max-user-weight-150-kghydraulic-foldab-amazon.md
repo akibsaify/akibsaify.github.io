@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 89999
-dealPrice: 32999
-discountPercent: 63
+dealPrice: 33999
+discountPercent: 62
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FH4LYN52?tag=mas03ad-21"
 image: "/images/91-durafit-velox-pro-6-hp-peak-bldc-motor-max-user-weight-150-kghydraulic-foldab-amazon.jpg"

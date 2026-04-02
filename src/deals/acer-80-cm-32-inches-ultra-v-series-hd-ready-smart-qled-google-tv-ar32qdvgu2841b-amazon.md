@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 24999
-dealPrice: 11999
-discountPercent: 52
+dealPrice: 13499
+discountPercent: 46
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FLKFG6KH?tag=mas03ad-21"
 image: "/images/acer-80-cm-32-inches-ultra-v-series-hd-ready-smart-qled-google-tv-ar32qdvgu2841b-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-18
 category: grocery
 store: amazon
 originalPrice: 3999
-dealPrice: 1299
-discountPercent: 68
+dealPrice: 2099
+discountPercent: 48
 couponCode: "Save 2%"
 affiliateLink: "https://www.amazon.in/dp/B0DY7K46CB?tag=mas03ad-21"
 image: "/images/41-foods-premium-dry-fruits-combo-of-almonds-cashews-figs-pistachios-raisins-and-amazon.jpg"

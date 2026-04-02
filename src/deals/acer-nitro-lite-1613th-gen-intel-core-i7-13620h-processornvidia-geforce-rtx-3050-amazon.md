@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 99999
-dealPrice: 72900
-discountPercent: 27
+dealPrice: 80000
+discountPercent: 20
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FF4TTHNM?tag=mas03ad-21"
 image: "/images/acer-nitro-lite-1613th-gen-intel-core-i7-13620h-processornvidia-geforce-rtx-3050-amazon.jpg"
