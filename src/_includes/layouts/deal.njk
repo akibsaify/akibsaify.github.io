@@ -43,7 +43,12 @@ layout: layouts/base.njk
         "@type": "SpeakableSpecification",
         "cssSelector": [".deal-meta__title", ".price-box", ".faq-answer"]
       },
-      "lastReviewed": "{{ date | isoDate }}"
+      "lastReviewed": "{{ date | isoDate }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author }}",
+        "url": "https://me.akibsaify.in"
+      }
     },
     {
       "@type": "FAQPage",
@@ -303,6 +308,29 @@ layout: layouts/base.njk
       </details>
     </div>
   </div>
+
+  <!-- Related Guides -->
+  {% set relatedGuides = collections.blog | limit(2) %}
+  {% if relatedGuides.length > 0 %}
+  <div style="margin-bottom:2rem;">
+    <div class="section-header">
+      <h2 class="section-title">Buying Guides</h2>
+      <a href="/blog/" class="view-all">All guides →</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.75rem;">
+      {% for guide in relatedGuides %}
+      <a href="{{ guide.url }}" style="display:flex;gap:0.75rem;background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);padding:1rem;align-items:center;text-decoration:none;">
+        <span style="font-size:1.5rem;">📖</span>
+        <div style="flex:1;">
+          <div style="font-size:0.72rem;color:var(--text-muted);margin-bottom:0.15rem;">{{ guide.date | shortDate }}</div>
+          <div style="font-size:0.9rem;font-weight:700;color:var(--text);">{{ guide.data.title }}</div>
+        </div>
+        <span style="color:var(--accent);font-size:0.9rem;">→</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 
   <!-- Ad: Before Related Deals -->
   <div style="margin-bottom:1.5rem;text-align:center;">

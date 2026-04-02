@@ -19,12 +19,18 @@ layout: layouts/base.njk
       "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
       "author": {
         "@type": "Person",
-        "name": "{{ site.author }}"
+        "name": "{{ site.author }}",
+        "url": "https://me.akibsaify.in",
+        "sameAs": ["https://instagram.com/akibonline"]
       },
       "publisher": {
         "@type": "Organization",
         "name": "{{ site.name }}",
-        "url": "{{ site.url }}"
+        "url": "{{ site.url }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/favicon.svg"
+        }
       },
       "speakable": {
         "@type": "SpeakableSpecification",
@@ -106,7 +112,7 @@ layout: layouts/base.njk
     </nav>
     <div class="blog-hero__label">{{ category | capitalize if category else "Guide" }} · {{ date | shortDate }}</div>
     <h1 class="blog-hero__title">{{ title }}</h1>
-    <p class="blog-hero__meta">By {{ site.author }} · {{ readTime if readTime else "5" }} min read</p>
+    <p class="blog-hero__meta">By <a href="https://me.akibsaify.in" style="color:#fff;text-decoration:underline;" rel="author">{{ site.author }}</a> · {{ readTime if readTime else "5" }} min read</p>
   </div>
 </div>
 
@@ -155,6 +161,19 @@ layout: layouts/base.njk
   <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border);">
     {% set title = title %}
     {% include "partials/share-buttons.njk" %}
+  </div>
+
+  <!-- Browse Deals by Category -->
+  <div style="margin-top:2rem;padding:1.25rem;background:linear-gradient(135deg,#f0f7ff,#e8f4f8);border-radius:var(--radius);">
+    <h3 style="font-size:0.95rem;font-weight:700;margin-bottom:0.75rem;">Browse Live Deals</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+      <a href="/electronics/" style="padding:0.4rem 0.8rem;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:0.8rem;font-weight:600;color:var(--text);text-decoration:none;">⚡ Electronics</a>
+      <a href="/fashion/" style="padding:0.4rem 0.8rem;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:0.8rem;font-weight:600;color:var(--text);text-decoration:none;">👗 Fashion</a>
+      <a href="/home-kitchen/" style="padding:0.4rem 0.8rem;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:0.8rem;font-weight:600;color:var(--text);text-decoration:none;">🏠 Home & Kitchen</a>
+      <a href="/grocery/" style="padding:0.4rem 0.8rem;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:0.8rem;font-weight:600;color:var(--text);text-decoration:none;">🛒 Grocery</a>
+      <a href="/travel/" style="padding:0.4rem 0.8rem;background:var(--white);border:1px solid var(--border);border-radius:20px;font-size:0.8rem;font-weight:600;color:var(--text);text-decoration:none;">✈️ Travel</a>
+    </div>
+    <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.5rem;">Updated hourly with verified discounts from Amazon, Flipkart & more.</p>
   </div>
 
   <!-- Related posts -->

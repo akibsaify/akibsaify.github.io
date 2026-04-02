@@ -1,0 +1,37 @@
+{#
+  Comparison Table Partial
+  Usage in guides:
+  {% set products = [
+    { name: "Product A", price: "₹1,299", rating: "4.5/5", pros: "Great sound, long battery", cons: "No ANC", link: "https://..." },
+    { name: "Product B", price: "₹1,999", rating: "4.3/5", pros: "ANC, comfortable", cons: "Heavy", link: "https://..." }
+  ] %}
+  {% include "partials/comparison-table.njk" %}
+#}
+{% if products and products.length > 0 %}
+<div class="comparison-table-wrap" style="overflow-x:auto;margin:1.5rem 0;">
+  <table class="comparison-table" style="width:100%;border-collapse:collapse;font-size:0.9rem;background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+    <thead>
+      <tr style="background:var(--primary);color:#fff;">
+        <th style="padding:0.75rem 1rem;text-align:left;font-weight:600;">Product</th>
+        <th style="padding:0.75rem 1rem;text-align:center;font-weight:600;">Price</th>
+        <th style="padding:0.75rem 1rem;text-align:center;font-weight:600;">Rating</th>
+        <th style="padding:0.75rem 1rem;text-align:left;font-weight:600;">Pros</th>
+        <th style="padding:0.75rem 1rem;text-align:left;font-weight:600;">Cons</th>
+        <th style="padding:0.75rem 1rem;text-align:center;font-weight:600;">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for product in products %}
+      <tr style="border-bottom:1px solid var(--border);{% if loop.index0 % 2 == 1 %}background:var(--bg-secondary);{% endif %}">
+        <td style="padding:0.75rem 1rem;font-weight:600;">{{ product.name }}</td>
+        <td style="padding:0.75rem 1rem;text-align:center;font-weight:700;color:var(--accent);">{{ product.price }}</td>
+        <td style="padding:0.75rem 1rem;text-align:center;">{{ product.rating }}</td>
+        <td style="padding:0.75rem 1rem;color:#16a34a;">{{ product.pros }}</td>
+        <td style="padding:0.75rem 1rem;color:#dc2626;">{{ product.cons }}</td>
+        <td style="padding:0.75rem 1rem;text-align:center;"><a href="{{ product.link }}" target="_blank" rel="noopener nofollow" style="color:var(--primary);font-weight:600;">View Deal →</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
