@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 14599
-dealPrice: 11589
-discountPercent: 21
+dealPrice: 10999
+discountPercent: 25
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DZHXSXP4?tag=mas03ad-21"
 image: "/images/acer-nitro-vg270-x1-27-inch-ips-full-hd-backlit-led-gaming-monitor-i-05-ms-respo-amazon.jpg"

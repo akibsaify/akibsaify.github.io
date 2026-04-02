@@ -5,8 +5,8 @@ date: 2026-03-29
 category: grocery
 store: amazon
 originalPrice: 4499
-dealPrice: 1349
-discountPercent: 70
+dealPrice: 1899
+discountPercent: 58
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0F48PCHYR?tag=mas03ad-21"
 image: "/images/ant-esports-thunder10-60-wired-mechanical-gaming-keyboard-mouse-combo-anti-ghost-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 3899
-dealPrice: 1349
-discountPercent: 65
+dealPrice: 1849
+discountPercent: 53
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DX1T5T18?tag=mas03ad-21"
 image: "/images/ant-esports-km500w-pro-wireless-gaming-keyboard-mouse-combo-rechargeable-104-key-amazon.jpg"

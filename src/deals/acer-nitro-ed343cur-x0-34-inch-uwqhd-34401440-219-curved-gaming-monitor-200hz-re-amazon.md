@@ -10,7 +10,7 @@ discountPercent: 17
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B083BWT63C?tag=mas03ad-21"
 image: "/images/acer-nitro-ed343cur-x0-34-inch-uwqhd-34401440-219-curved-gaming-monitor-200hz-re-amazon.jpg"
-expired: false
+expired: true
 tags: ["acer", "nitro", "ed343cur", "inch", "uwqhd", "3440", "1440", "curved"]
 ---
 

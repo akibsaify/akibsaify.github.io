@@ -10,7 +10,7 @@ discountPercent: 47
 couponCode: "Save 3%"
 affiliateLink: "https://www.amazon.in/dp/B0GQH6FY4Z?tag=mas03ad-21"
 image: "/images/aqua-grand-ro-water-purifier-for-home-7-stage-rouvufcopper-high-tds-2000-ppm-mem-amazon.jpg"
-expired: false
+expired: true
 tags: ["aqua", "grand", "water", "purifier", "for", "home", "stage", "copper"]
 ---
 

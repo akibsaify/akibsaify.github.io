@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 2999
-dealPrice: 999
-discountPercent: 67
+dealPrice: 1099
+discountPercent: 63
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DFCW6K1S?tag=mas03ad-21"
 image: "/images/ant-esports-mk800-pro-wired-mecha-membrane-backlit-gaming-keyboard-with-87-keys-amazon.jpg"

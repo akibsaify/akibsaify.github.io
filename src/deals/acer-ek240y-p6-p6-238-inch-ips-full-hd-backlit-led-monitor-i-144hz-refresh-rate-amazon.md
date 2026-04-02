@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 8999
-dealPrice: 6749
-discountPercent: 25
+dealPrice: 6649
+discountPercent: 26
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FFD2YSBY?tag=mas03ad-21"
 image: "/images/acer-ek240y-p6-p6-238-inch-ips-full-hd-backlit-led-monitor-i-144hz-refresh-rate-amazon.jpg"

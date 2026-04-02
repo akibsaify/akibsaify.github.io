@@ -5,8 +5,8 @@ date: 2026-03-29
 category: electronics
 store: amazon
 originalPrice: 4199
-dealPrice: 1499
-discountPercent: 64
+dealPrice: 1799
+discountPercent: 57
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0F198FYBS?tag=mas03ad-21"
 image: "/images/ant-esports-mk1300-v2-60-wired-mechanical-gaming-keyboard-61-keys-compact-mini-s-amazon.jpg"

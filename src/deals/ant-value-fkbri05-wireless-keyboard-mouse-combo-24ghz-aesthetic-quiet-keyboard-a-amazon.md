@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 1999
-dealPrice: 599
-discountPercent: 70
+dealPrice: 749
+discountPercent: 63
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0BFXQL2S6?tag=mas03ad-21"
 image: "/images/ant-value-fkbri05-wireless-keyboard-mouse-combo-24ghz-aesthetic-quiet-keyboard-a-amazon.jpg"
