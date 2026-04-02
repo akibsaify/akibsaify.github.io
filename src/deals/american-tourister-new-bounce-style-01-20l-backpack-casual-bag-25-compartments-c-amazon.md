@@ -5,8 +5,8 @@ date: 2026-03-29
 category: fashion
 store: amazon
 originalPrice: 2470
-dealPrice: 999
-discountPercent: 60
+dealPrice: 899
+discountPercent: 64
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0D66QLF74?tag=mas03ad-21"
 image: "/images/american-tourister-new-bounce-style-01-20l-backpack-casual-bag-25-compartments-c-amazon.jpg"

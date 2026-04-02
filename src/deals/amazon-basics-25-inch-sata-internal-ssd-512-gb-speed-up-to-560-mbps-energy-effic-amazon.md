@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 9699
-dealPrice: 4596
-discountPercent: 53
+dealPrice: 6999
+discountPercent: 28
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0D7M1M9BM?tag=mas03ad-21"
 image: "/images/amazon-basics-25-inch-sata-internal-ssd-512-gb-speed-up-to-560-mbps-energy-effic-amazon.jpg"

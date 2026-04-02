@@ -5,8 +5,8 @@ date: 2026-03-29
 category: electronics
 store: amazon
 originalPrice: 9950
-dealPrice: 3799
-discountPercent: 62
+dealPrice: 3499
+discountPercent: 65
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0F5HGKNSR?tag=mas03ad-21"
 image: "/images/american-tourister-amazon.jpg"

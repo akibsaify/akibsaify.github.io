@@ -5,8 +5,8 @@ date: 2026-03-18
 category: fashion
 store: amazon
 originalPrice: 2470
-dealPrice: 794
-discountPercent: 68
+dealPrice: 899
+discountPercent: 64
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0D66QLF74?tag=mas03ad-21"
 image: "/images/american-tourister-new-bounce-style-01-27l-volume-college-4-compartment-backpack-amazon.jpg"

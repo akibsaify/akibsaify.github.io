@@ -10,7 +10,7 @@ discountPercent: 71
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FBRKD1BK?tag=mas03ad-21"
 image: "/images/ant-esports-mk1200-mini-60-wired-mechanical-gaming-keyboard-red-switch-rainbow-b-amazon.jpg"
-expired: false
+expired: true
 tags: ["ant", "esports", "mk1200", "mini", "wired", "mechanical", "gaming", "keyboard"]
 ---
 

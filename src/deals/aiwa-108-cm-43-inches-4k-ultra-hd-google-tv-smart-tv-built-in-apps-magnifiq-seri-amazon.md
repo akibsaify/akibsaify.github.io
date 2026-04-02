@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 57990
-dealPrice: 19499
-discountPercent: 66
+dealPrice: 17499
+discountPercent: 70
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0BSR1ZYSB?tag=mas03ad-21"
 image: "/images/aiwa-108-cm-43-inches-4k-ultra-hd-google-tv-smart-tv-built-in-apps-magnifiq-seri-amazon.jpg"
