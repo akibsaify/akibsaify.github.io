@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 137990
-dealPrice: 105990
-discountPercent: 23
+dealPrice: 114990
+discountPercent: 17
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FB96WF9W?tag=mas03ad-21"
 image: "/images/asus-gaming-v16-2025-14th-genintel-core-7-240h-gaming-laptoprtx-5050-8gb16gb-ram-amazon.jpg"

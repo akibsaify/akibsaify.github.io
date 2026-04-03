@@ -5,8 +5,8 @@ date: 2026-03-31
 category: electronics
 store: amazon
 originalPrice: 26500
-dealPrice: 10999
-discountPercent: 58
+dealPrice: 12499
+discountPercent: 53
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0F5PXXWM9?tag=mas03ad-21"
 image: "/images/aquaguard-sure-delight-aquasaver-rouvuf-tech-2-year-filter-life-with-mega-sedime-amazon.jpg"

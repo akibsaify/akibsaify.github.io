@@ -5,8 +5,8 @@ date: 2026-03-18
 category: home-kitchen
 store: amazon
 originalPrice: 13000
-dealPrice: 7199
-discountPercent: 45
+dealPrice: 7999
+discountPercent: 38
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0CW62435R?tag=mas03ad-21"
 image: "/images/aquaguard-sure-delight-romc-1x-water-purifier-free-service-plan-worth-2000-india-amazon.jpg"

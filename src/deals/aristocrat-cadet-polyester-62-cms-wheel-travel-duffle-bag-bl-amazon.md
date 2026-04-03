@@ -5,8 +5,8 @@ date: 2026-03-16
 category: travel
 store: amazon
 originalPrice: 3990
-dealPrice: 1199
-discountPercent: 70
+dealPrice: 1299
+discountPercent: 67
 couponCode: ""
 affiliateLink: "https://amzn.to/3P3HHfJ"
 image: "/images/aristocrat-cadet-polyester-62-cms-wheel-travel-duffle-bag-bl-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 7990
-dealPrice: 1359
-discountPercent: 83
+dealPrice: 5399
+discountPercent: 32
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FC6RZNDC?tag=mas03ad-21"
 image: "/images/aristocrat-amazon.jpg"
