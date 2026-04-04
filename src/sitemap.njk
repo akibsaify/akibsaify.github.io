@@ -39,7 +39,7 @@ eleventyExcludeFromCollections: true
   </url>
   {% endfor %}
 
-  {% for deal in collections.allDeals %}
+  {% for deal in collections.deals %}
   <url>
     <loc>{{ site.url }}{{ deal.url }}</loc>
     <lastmod>{{ deal.date | isoDate }}</lastmod>

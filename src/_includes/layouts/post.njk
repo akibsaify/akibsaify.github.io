@@ -15,7 +15,7 @@ layout: layouts/base.njk
       "headline": "{{ title }}",
       "description": "{{ description }}",
       "datePublished": "{{ date | isoDate }}",
-      "dateModified": "{{ date | isoDate }}",
+      "dateModified": "{{ (lastModified if lastModified else date) | isoDate }}",
       "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
       "author": {
         "@type": "Person",
@@ -118,13 +118,14 @@ layout: layouts/base.njk
 
 <div class="container container--narrow" style="padding-top:2rem;padding-bottom:3rem;">
 
-  <!-- Table of Contents -->
-  {% if toc %}
+  <!-- Auto-generated Table of Contents -->
+  {% set headings = content | extractHeadings %}
+  {% if headings.length > 2 %}
   <div class="toc">
-    <div class="toc__title">📑 Table of Contents</div>
+    <div class="toc__title">📑 In This Guide</div>
     <nav class="toc__list">
-      {% for item in toc %}
-      <a href="#{{ item.id }}">{{ item.text }}</a>
+      {% for item in headings %}
+      <a href="#{{ item.id }}" {% if item.level == 3 %}style="padding-left:1rem;font-size:0.82rem;"{% endif %}>{{ item.text }}</a>
       {% endfor %}
     </nav>
   </div>
@@ -176,11 +177,13 @@ layout: layouts/base.njk
     <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.5rem;">Updated hourly with verified discounts from Amazon, Flipkart & more.</p>
   </div>
 
-  <!-- Related posts -->
-  {% set relatedPosts = collections.blog | exclude(page.url) | limit(3) %}
+  <!-- Related posts (topical: match by tags first, then category, fallback to latest) -->
+  {% set tagMatches = collections.blog | filterByTags(tags) | exclude(page.url) | limit(3) %}
+  {% set catMatches = collections.blog | filterBlogByCategory(category) | exclude(page.url) | limit(3) %}
+  {% set relatedPosts = tagMatches if tagMatches.length >= 2 else (catMatches if catMatches.length >= 2 else collections.blog | exclude(page.url) | limit(3)) %}
   {% if relatedPosts.length > 0 %}
   <div style="margin-top:2.5rem;">
-    <h2 style="font-size:1rem;font-weight:700;color:var(--primary);margin-bottom:1rem;">More Guides</h2>
+    <h2 style="font-size:1rem;font-weight:700;color:var(--primary);margin-bottom:1rem;">Related Guides</h2>
     <div style="display:flex;flex-direction:column;gap:0.75rem;">
       {% for post in relatedPosts %}
       <a href="{{ post.url }}" style="display:flex;gap:0.75rem;background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius);padding:1rem;align-items:flex-start;">

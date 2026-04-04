@@ -10,6 +10,15 @@
 <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
+<!-- hreflang for India targeting -->
+<link rel="alternate" hreflang="en-in" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}">
+
+<!-- noindex expired deals -->
+{% if expired %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
+
 <!-- Geo & Language targeting for India -->
 <meta name="geo.region" content="IN">
 <meta name="geo.placename" content="Delhi">
@@ -48,7 +57,7 @@
       "inLanguage": "en-IN",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "{{ site.url }}/electronics/?q={search_term_string}",
+        "target": "{{ site.url }}/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },

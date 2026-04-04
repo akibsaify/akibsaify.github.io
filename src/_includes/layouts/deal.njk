@@ -309,8 +309,10 @@ layout: layouts/base.njk
     </div>
   </div>
 
-  <!-- Related Guides -->
-  {% set relatedGuides = collections.blog | limit(2) %}
+  <!-- Related Guides (topical: match by category/tags, fallback to latest) -->
+  {% set catGuides = collections.blog | filterBlogByCategory(category) | limit(2) %}
+  {% set tagGuides = collections.blog | filterByTags(tags) | limit(2) %}
+  {% set relatedGuides = catGuides if catGuides.length >= 1 else (tagGuides if tagGuides.length >= 1 else collections.blog | limit(2)) %}
   {% if relatedGuides.length > 0 %}
   <div style="margin-bottom:2rem;">
     <div class="section-header">

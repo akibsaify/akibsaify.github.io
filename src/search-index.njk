@@ -2,4 +2,4 @@
 permalink: /search-index.json
 eleventyExcludeFromCollections: true
 ---
-[{% for deal in collections.deals %}{"t":"{{ deal.data.title | replace('"', '\\"') }}","p":"₹{{ deal.data.dealPrice }}","m":"₹{{ deal.data.originalPrice }}","d":"{{ deal.data.discountPercent }}","c":"{{ deal.data.category }}","u":"{{ deal.url }}","i":"{{ deal.data.image }}"}{% if not loop.last %},{% endif %}{% endfor %}]
+[{% for deal in collections.deals %}{"t":"{{ deal.data.title | replace('"', '\\"') }}","p":"₹{{ deal.data.dealPrice }}","m":"₹{{ deal.data.originalPrice }}","d":"{{ deal.data.discountPercent }}","c":"{{ deal.data.category }}","u":"{{ deal.url }}","i":"{{ deal.data.image }}","k":"deal"}{% if not loop.last %},{% endif %}{% endfor %}{% if collections.blog.length > 0 %},{% endif %}{% for post in collections.blog %}{"t":"{{ post.data.title | replace('"', '\\"') }}","p":"","m":"","d":"","c":"{{ post.data.category or 'guide' }}","u":"{{ post.url }}","i":"","k":"guide"}{% if not loop.last %},{% endif %}{% endfor %}]

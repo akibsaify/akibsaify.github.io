@@ -106,6 +106,73 @@ module.exports = function(eleventyConfig) {
     return Math.round(((original - deal) / original) * 100);
   });
 
+  // Filter blog posts by tags (for topical related guides)
+  eleventyConfig.addFilter("filterByTags", function(collection, tags) {
+    if (!tags || !tags.length) return collection;
+    const tagSet = new Set(tags.map(t => t.toLowerCase()));
+    return collection.filter(item => {
+      const itemTags = item.data.tags || [];
+      return itemTags.some(t => tagSet.has(t.toLowerCase()));
+    });
+  });
+
+  // Filter blog posts by category
+  eleventyConfig.addFilter("filterBlogByCategory", function(collection, category) {
+    if (!category) return collection;
+    const cat = category.toLowerCase();
+    return collection.filter(item => {
+      const itemCat = (item.data.category || "").toLowerCase();
+      const itemTags = (item.data.tags || []).map(t => t.toLowerCase());
+      return itemCat === cat || itemTags.includes(cat);
+    });
+  });
+
+  // Extract headings from HTML content for auto-TOC
+  eleventyConfig.addFilter("extractHeadings", function(content) {
+    if (!content) return [];
+    const headings = [];
+    const regex = /<h([23])[^>]*id="([^"]*)"[^>]*>(.*?)<\/h\1>/gi;
+    let match;
+    while ((match = regex.exec(content)) !== null) {
+      headings.push({
+        level: parseInt(match[1]),
+        id: match[2],
+        text: match[3].replace(/<[^>]+>/g, "").trim()
+      });
+    }
+    return headings;
+  });
+
+  // ── Markdown-it: Add IDs to headings for TOC linking ──────────────
+  eleventyConfig.amendLibrary("md", mdLib => {
+    const originalHeadingOpen = mdLib.renderer.rules.heading_open ||
+      function(tokens, idx, options, env, self) {
+        return self.renderToken(tokens, idx, options);
+      };
+
+    mdLib.renderer.rules.heading_open = function(tokens, idx, options, env, self) {
+      const token = tokens[idx];
+      const level = parseInt(token.tag.slice(1));
+      if (level === 2 || level === 3) {
+        // Get the text content from the next inline token
+        const contentToken = tokens[idx + 1];
+        if (contentToken && contentToken.children) {
+          const text = contentToken.children
+            .filter(t => t.type === "text" || t.type === "code_inline")
+            .map(t => t.content)
+            .join("");
+          const id = text.toLowerCase()
+            .replace(/[^\w\s-]/g, "")
+            .replace(/\s+/g, "-")
+            .replace(/-+/g, "-")
+            .trim();
+          token.attrSet("id", id);
+        }
+      }
+      return originalHeadingOpen(tokens, idx, options, env, self);
+    };
+  });
+
   // ── Return config ────────────────────────────────────────────────────
   return {
     dir: {
