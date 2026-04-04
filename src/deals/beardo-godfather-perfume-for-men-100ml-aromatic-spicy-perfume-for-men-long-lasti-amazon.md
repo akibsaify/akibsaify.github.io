@@ -5,8 +5,8 @@ date: 2026-03-28
 category: fashion
 store: amazon
 originalPrice: 1200
-dealPrice: 503
-discountPercent: 58
+dealPrice: 384
+discountPercent: 68
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B08NX1V7MC?tag=mas03ad-21"
 image: "/images/beardo-godfather-perfume-for-men-100ml-aromatic-spicy-perfume-for-men-long-lasti-amazon.jpg"
