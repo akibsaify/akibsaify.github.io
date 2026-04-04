@@ -5,8 +5,8 @@ date: 2026-03-31
 category: home-kitchen
 store: amazon
 originalPrice: 6500
-dealPrice: 4290
-discountPercent: 34
+dealPrice: 4190
+discountPercent: 36
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B07SPVPSP7?tag=mas03ad-21"
 image: "/images/bajaj-snowvent-150-watts-tower-fan-blue-turquoise-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-28
 category: grocery
 store: amazon
 originalPrice: 3850
-dealPrice: 2195
-discountPercent: 43
+dealPrice: 2100
+discountPercent: 45
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0D4D6PPTK?tag=mas03ad-21"
 image: "/images/bajaj-mx-45-steam-aluminium-soleplate-iron-2000-watts-power-for-faster-ironing-n-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-28
 category: home-kitchen
 store: amazon
 originalPrice: 3100
-dealPrice: 1299
-discountPercent: 58
+dealPrice: 1499
+discountPercent: 52
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0BW4KJ6D1?tag=mas03ad-21"
 image: "/images/bajaj-frore-1200-mm-48-1-star-rated-ceiling-fans-for-home-bee-star-rated-energy-amazon.jpg"
