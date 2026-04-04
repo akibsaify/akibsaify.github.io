@@ -10,7 +10,7 @@ discountPercent: 15
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FKBMW1BP?tag=mas03ad-21"
 image: "/images/asus-vivobook-15-intel-core-i3-13th-gen-1315u-12gb-ram-512gb-ssd-fhd-156-windows-amazon.jpg"
-expired: false
+expired: true
 tags: ["asus", "vivobook", "intel", "core", "13th", "gen", "1315u", "12gb"]
 ---
 

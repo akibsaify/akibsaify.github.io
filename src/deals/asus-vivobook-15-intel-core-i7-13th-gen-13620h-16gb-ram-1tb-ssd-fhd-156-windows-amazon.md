@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 87990
-dealPrice: 68990
-discountPercent: 22
+dealPrice: 71990
+discountPercent: 18
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FC2K5LJB?tag=mas03ad-21"
 image: "/images/asus-vivobook-15-intel-core-i7-13th-gen-13620h-16gb-ram-1tb-ssd-fhd-156-windows-amazon.jpg"

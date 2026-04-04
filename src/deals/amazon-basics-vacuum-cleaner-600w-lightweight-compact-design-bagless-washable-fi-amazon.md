@@ -10,7 +10,7 @@ discountPercent: 42
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FPGD996F?tag=mas03ad-21"
 image: "/images/amazon-basics-vacuum-cleaner-600w-lightweight-compact-design-bagless-washable-fi-amazon.jpg"
-expired: false
+expired: true
 tags: ["amazon", "basics", "vacuum", "cleaner", "600w", "lightweight", "compact", "design"]
 ---
 

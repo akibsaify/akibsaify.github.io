@@ -10,7 +10,7 @@ discountPercent: 15
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FN9FV4ZZ?tag=mas03ad-21"
 image: "/images/asus-vivobook-go-14-amd-ryzen-5-7520u-16gb-ram-512gb-ssd-fhd-14-60hz42whrs-windo-amazon.jpg"
-expired: false
+expired: true
 tags: ["asus", "vivobook", "amd", "ryzen", "7520u", "16gb", "ram", "512gb"]
 ---
 

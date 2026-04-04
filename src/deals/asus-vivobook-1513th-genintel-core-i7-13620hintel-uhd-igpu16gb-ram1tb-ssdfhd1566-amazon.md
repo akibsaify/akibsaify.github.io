@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 87990
-dealPrice: 68990
-discountPercent: 22
+dealPrice: 71990
+discountPercent: 18
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FC2NW1KF?tag=mas03ad-21"
 image: "/images/asus-vivobook-1513th-genintel-core-i7-13620hintel-uhd-igpu16gb-ram1tb-ssdfhd1566-amazon.jpg"

@@ -10,7 +10,7 @@ discountPercent: 16
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0F5MZHKTQ?tag=mas03ad-21"
 image: "/images/asus-tuf-gaming-a15-amd-ryzen-7-7435hs-nvidia-geforce-rtx-3050-16gb-ram-1tb-ssd-amazon.jpg"
-expired: false
+expired: true
 tags: ["asus", "tuf", "gaming", "a15", "amd", "ryzen", "7435hs", "nvidia"]
 ---
 

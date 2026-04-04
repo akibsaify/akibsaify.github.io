@@ -5,8 +5,8 @@ date: 2026-03-28
 category: home-kitchen
 store: amazon
 originalPrice: 2799
-dealPrice: 2099
-discountPercent: 25
+dealPrice: 1999
+discountPercent: 29
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B07N2MGB3G?tag=mas03ad-21"
 image: "/images/agaro-marvel-9l-otg-oven-800w-compact-toaster-griller-for-baking-toasting-grilli-amazon.jpg"
