@@ -10,7 +10,7 @@ discountPercent: 40
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0G6JW35L3?tag=mas03ad-21"
 image: "/images/benq-ew270q-27-2k-qhd-200hz-ips-gaming-monitor-hdri12001-contrast90-p3-gamut350-amazon.jpg"
-expired: false
+expired: true
 tags: ["benq", "ew270q", "qhd", "200hz", "ips", "gaming", "monitor", "hdri"]
 ---
 
