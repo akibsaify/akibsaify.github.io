@@ -5,8 +5,8 @@ date: 2026-03-16
 category: electronics
 store: amazon
 originalPrice: 38999
-dealPrice: 14990
-discountPercent: 62
+dealPrice: 15999
+discountPercent: 59
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FDW1QWNC?tag=mas03ad-21"
 image: "/images/acer-100-cm-40-inches-ultra-i-series-fhd-smart-led-google-tv-ar40fdggu2841bd-amazon.jpg"
