@@ -5,8 +5,8 @@ date: 2026-03-28
 category: home-kitchen
 store: amazon
 originalPrice: 2999
-dealPrice: 1693
-discountPercent: 44
+dealPrice: 1579
+discountPercent: 47
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B07SRM58TP?tag=mas03ad-21"
 image: "/images/agaro-regal-800-watts-handheld-vacuum-cleaner-for-home-use-dry-vacuuming-65-kpa-amazon.jpg"
