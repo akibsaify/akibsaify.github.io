@@ -5,8 +5,8 @@ date: 2026-03-28
 category: grocery
 store: amazon
 originalPrice: 2899
-dealPrice: 1599
-discountPercent: 45
+dealPrice: 1499
+discountPercent: 48
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B084H8LWC3?tag=mas03ad-21"
 image: "/images/bigmuscles-nutrition-premium-gold-whey-1kg-informed-choice-uk-certified-isolate-amazon.jpg"

@@ -5,8 +5,8 @@ date: 2026-03-18
 category: travel
 store: amazon
 originalPrice: 10000
-dealPrice: 3699
-discountPercent: 63
+dealPrice: 3999
+discountPercent: 60
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B077Y8DLSN?tag=mas03ad-21"
 image: "/images/amazonbasics-4-person-polyester-dome-water-resistant-tent-for-camping-and-hiking-amazon.jpg"

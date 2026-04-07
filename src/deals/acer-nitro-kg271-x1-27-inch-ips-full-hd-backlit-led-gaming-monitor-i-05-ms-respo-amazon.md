@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 13999
-dealPrice: 10450
-discountPercent: 25
+dealPrice: 10999
+discountPercent: 21
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B083BV3Z1D?tag=mas03ad-21"
 image: "/images/acer-nitro-kg271-x1-27-inch-ips-full-hd-backlit-led-gaming-monitor-i-05-ms-respo-amazon.jpg"

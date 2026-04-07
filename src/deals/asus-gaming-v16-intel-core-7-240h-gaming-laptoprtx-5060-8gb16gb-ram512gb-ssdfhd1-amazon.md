@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 149990
-dealPrice: 119990
-discountPercent: 20
+dealPrice: 124990
+discountPercent: 17
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FB98PMHL?tag=mas03ad-21"
 image: "/images/asus-gaming-v16-intel-core-7-240h-gaming-laptoprtx-5060-8gb16gb-ram512gb-ssdfhd1-amazon.jpg"

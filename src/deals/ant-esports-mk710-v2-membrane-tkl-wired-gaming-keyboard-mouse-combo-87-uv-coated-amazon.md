@@ -10,7 +10,7 @@ discountPercent: 67
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0DX1H1H6M?tag=mas03ad-21"
 image: "/images/ant-esports-mk710-v2-membrane-tkl-wired-gaming-keyboard-mouse-combo-87-uv-coated-amazon.jpg"
-expired: false
+expired: true
 tags: ["ant", "esports", "mk710", "membrane", "tkl", "wired", "gaming", "keyboard"]
 ---
 

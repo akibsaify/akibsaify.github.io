@@ -5,8 +5,8 @@ date: 2026-03-28
 category: grocery
 store: amazon
 originalPrice: 3799
-dealPrice: 2299
-discountPercent: 39
+dealPrice: 2100
+discountPercent: 45
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FLVFFMK2?tag=mas03ad-21"
 image: "/images/bigmuscles-nutrition-gold-whey-isolate-1kg-rich-chocolate-27g-whey-protein-isola-amazon.jpg"

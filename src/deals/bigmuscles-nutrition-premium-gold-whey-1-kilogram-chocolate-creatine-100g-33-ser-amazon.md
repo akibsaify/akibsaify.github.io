@@ -10,7 +10,7 @@ discountPercent: 42
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0BH7M9YN5?tag=mas03ad-21"
 image: "/images/bigmuscles-nutrition-premium-gold-whey-1-kilogram-chocolate-creatine-100g-33-ser-amazon.jpg"
-expired: false
+expired: true
 tags: ["bigmuscles", "nutrition", "premium", "gold", "whey", "kilogram", "chocolate", "creatine"]
 ---
 

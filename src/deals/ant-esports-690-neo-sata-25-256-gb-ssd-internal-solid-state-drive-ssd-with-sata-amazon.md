@@ -5,8 +5,8 @@ date: 2026-03-28
 category: electronics
 store: amazon
 originalPrice: 9999
-dealPrice: 4150
-discountPercent: 58
+dealPrice: 4059
+discountPercent: 59
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0GKFN42TS?tag=mas03ad-21"
 image: "/images/ant-esports-690-neo-sata-25-256-gb-ssd-internal-solid-state-drive-ssd-with-sata-amazon.jpg"

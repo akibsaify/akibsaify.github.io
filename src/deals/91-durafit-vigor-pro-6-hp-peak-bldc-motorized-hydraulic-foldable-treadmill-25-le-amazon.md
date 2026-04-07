@@ -5,8 +5,8 @@ date: 2026-03-18
 category: electronics
 store: amazon
 originalPrice: 69999
-dealPrice: 29999
-discountPercent: 57
+dealPrice: 31999
+discountPercent: 54
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0FDGXJZB1?tag=mas03ad-21"
 image: "/images/91-durafit-vigor-pro-6-hp-peak-bldc-motorized-hydraulic-foldable-treadmill-25-le-amazon.jpg"

@@ -10,7 +10,7 @@ discountPercent: 16
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0G5NLZD53?tag=mas03ad-21"
 image: "/images/asus-gaming-v16-2025-intel-core-5-210h-rtx-3050-6gb-16gb-ram-512gb-ssd-fhd-16-40-amazon.jpg"
-expired: false
+expired: true
 tags: ["asus", "gaming", "v16", "2025", "intel", "core", "210h", "rtx"]
 ---
 
