@@ -10,7 +10,7 @@ discountPercent: 41
 couponCode: ""
 affiliateLink: "https://www.amazon.in/dp/B0GH288K2B?tag=mas03ad-21"
 image: "/images/blue-star-1-ton-5-starwi-fi-smart-inverter-split-ac-copperconvertible-5-in-1-coo-amazon.jpg"
-expired: false
+expired: true
 tags: ["blue", "star", "ton", "star", "smart", "inverter", "split", "copper"]
 ---
 
